@@ -1,0 +1,11 @@
+{%- assign related_collections = collection.metafields.custom.related_collections.value -%}
+{%- if related_collections -%}
+  <div class="collection__description--cat-links">
+    {%- for cat in related_collections -%}
+      <a class="cat-links__link" href="{{ cat.url }}">
+        <span class="cat-links__link--img"><img src="{{ cat.featured_image | img_url }}"></span>
+        <span class="cat-links__link--text">{{ cat.title }}</span>
+      </a>
+    {%- endfor -%}
+  </div>
+{%- endif -%}

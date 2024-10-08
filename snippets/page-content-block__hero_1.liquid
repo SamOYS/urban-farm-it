@@ -1,0 +1,30 @@
+<div class="collection-hero">
+    <img
+      class="collection-hero__image image-fit lazyload"
+      src=""
+      data-src="{{ image }}"
+      data-sizes="auto"
+      alt="{{ image_alt_text | escape }}"
+    >
+    <noscript>
+      <img
+        class="collection-hero__image image-fit"
+        src="{{ image }}"
+        alt="{{ image_alt_text | escape }}"
+      >
+    </noscript>
+
+    <div class="collection-hero__content">
+      <div class="page-width">
+        <header class="section-header section-header--hero">
+          <div class="section-header__shadow">
+            {%- render 'breadcrumbs' -%}
+            <h1 class="section-header__title">
+              {{ heading }}
+            </h1>
+          </div>
+        </header>
+        <p>{{ text }}</p>
+      </div>
+    </div>
+  </div>

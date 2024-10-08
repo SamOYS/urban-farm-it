@@ -1,0 +1,168 @@
+{% comment %} {% liquid
+  assign current_variant = product.selected_or_first_available_variant
+%}
+<div id="product-nav" class="product-nav">
+  <div class="product-nav__wrapper page-width">
+    <h2 class="product-nav__title" style="font-size: 1rem; margin: 0; color: #fff;">{{ product.title }}</h2>
+    <div class="product-nav__add-to-cart">
+      <div class="product-nav__price">
+        {%- assign hide_sale_price = true -%}
+        {%- if product.compare_at_price_max > product.price -%}
+          {%- if current_variant.compare_at_price > current_variant.price -%}
+            {%- assign hide_sale_price = false -%}
+          {%- endif -%}
+          <span
+            data-a11y-price
+            class="visually-hidden"
+            aria-hidden="{{ hide_sale_price }}"
+          >
+            {{ 'products.general.regular_price' | t }}
+          </span>
+          {% unless hide_sale_price %}
+            <span data-product-price-wrap class="{% if hide_sale_price %} hide{% endif %}">
+              <span data-compare-price class="product__price product__price--compare">
+                {%- if current_variant.compare_at_price > current_variant.price -%}
+                  {{ current_variant.compare_at_price | money }}
+                {%- endif -%}
+              </span>
+            </span>
+
+            <span data-compare-price-a11y class="visually-hidden">
+              {{- 'products.general.sale_price' | t -}}
+            </span>
+          {% endunless %}
+        {%- else -%}
+          {% comment %}<span data-a11y-price class="visually-hidden">{{ 'products.general.regular_price' | t }}</span>{% endcomment %}
+        {%- endif -%}
+
+        {% comment %} MAIN PRICE {% endcomment %}
+        <span
+          data-product-price
+          class="product__price{% if current_variant.compare_at_price > current_variant.price %} on-sale{% endif %}"
+        >
+          {%- unless product.empty? -%}
+            {{ current_variant.price | money }}
+          {%- else -%}
+            {{ 1999 | money }}
+          {%- endunless -%}
+        </span>
+
+        {% comment %} PRODUCT SAVINGS {% endcomment %}
+        {%- unless hide_sale_price -%}
+          {%- if settings.product_save_amount -%}
+            {%- if settings.product_save_type == 'dollar' -%}
+              {%- capture saved_amount -%}{{ current_variant.compare_at_price | minus: current_variant.price | money }}{%- endcapture -%}
+            {%- else -%}
+              {%- capture saved_amount -%}{{ current_variant.compare_at_price | minus: current_variant.price | times: 100.0 | divided_by: current_variant.compare_at_price | round }}%{%- endcapture -%}
+            {%- endif -%}
+          {%- endif -%}
+        {%- endunless -%}
+
+        {% comment %} END: PRODUCT SAVINGS {% endcomment %}
+      </div>
+      <div class="product-nav__btn">
+        <button type="submit" name="add" class="btn btn--full add-to-cart" form="{{ form_id }}">
+          <span data-add-to-cart-text="" data-default-text="Add to cart">Add to cart</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+  #product-nav {
+    display: block;
+    position: fixed;
+    top: -100px;
+    background: black;
+    width: 100%;
+    box-shadow: 1px 1px 4px 1px rgb(0 0 0 / 20%);
+    z-index: 25;
+    transition: top 0.3s ease-out;
+  }
+
+  #product-nav.sticky {
+    top: 0;
+  }
+
+  .product-nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .product-nav__add-to-cart {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .product-nav__btn {
+    background-color: green !important;
+    border: 2px solid white;
+  }
+
+  .product-nav__price * {
+    font-size: 2rem;
+    color: white;
+  }
+
+  .product-nav__price {
+    display: flex;
+    align-items: center;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .product-nav__add-to-cart {
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    .product-nav__title {
+      display: none;
+    }
+
+    #product-nav {
+      top: unset;
+      bottom: -100px;
+      transition: bottom 0.3s ease-out;
+    }
+
+    #product-nav.sticky {
+      top: unset;
+      bottom: 0;
+    }
+  }
+</style>
+<script>
+  (function() {
+    document.addEventListener('DOMContentLoaded', function() {
+
+      const navbar = document.getElementById("product-nav");
+      const productContent = document.querySelector(".product-section");
+      const sticky = productContent.offsetTop + productContent.offsetHeight;
+
+      function stickyNav() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky");
+          navbar.setAttribute('aria-sticky', 'true');
+        } else {
+          navbar.classList.remove("sticky");
+          navbar.setAttribute('aria-sticky', 'false');
+        }
+      }
+
+      function throttle(fn, wait) {
+        let time = Date.now();
+        return function() {
+          if ((time + wait - Date.now()) < 0) {
+            fn();
+            time = Date.now();
+          }
+        }
+      }
+      window.addEventListener('scroll', throttle(stickyNav, 100));
+    });
+  })();
+</script>
+ {% endcomment %}
