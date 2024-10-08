@@ -1,0 +1,225 @@
+{%- liquid 
+   assign cross_sell_products = product.metafields.custom.cross_sell_products.value 
+-%}
+{%- if section_header == blank -%}{% assign section_header = 'Customers Also Buy:' %}{%- endif -%}
+{%- if cross_sell_products -%}
+  <div class="product-block">
+    <div id="cross-sell-module">
+      <h4 class="cross-sell__header">{{ section_header }}</h4>
+      {%- for cs_product in cross_sell_products -%}
+        {%- liquid 
+           assign sale_percentage = cs_product.metafields.custom.sale_perc
+           assign sale_end_date = cs_product.metafields.custom.sale_perc_end_date
+           assign current_date = 'now' | date: '%s' 
+           assign sale_end_unix = sale_end_date | date: '%s'
+        -%}
+        {% if sale_percentage and cs_product.gift_card? != true %}
+          {% assign cs_product_price = cs_product.variants.first.price %}
+          {% assign custom_discount_multiplier = 1.0 | minus: sale_percentage %}
+          {% assign custom_price = cs_product_price | times: custom_discount_multiplier %}
+          {% else %}
+          {% assign custom_price = cs_product.variants.first.price %}
+        {% endif %}
+        <label for="cross-sell-{{ forloop.index }}" class="cross-sell__product">
+          <div class="cross-sell__product-image">
+            <img
+              src="{{ cs_product.featured_image.src | img_url: 'small' }}"
+              data-src="{{ cs_product.featured_image.src | img_url: 'medium' }}"
+              alt="{{ cs_product.title | escape }}"
+              height="100"
+              width="100"
+              loading="lazy"
+              class="lazyload"
+            >
+          </div>
+          <div class="cross-sell__product-details">
+            <input
+              type="checkbox"
+              id="cross-sell-{{ forloop.index }}"
+              name="cross-sell"
+              value="{{ cs_product.variants.first.id }}"
+              data-price="{{ custom_price | money }}"
+              class="cross-sell__checkbox"
+            >
+            <div class="cross-sell__product-info">
+              <span class="cross-sell__product-title">{{ cs_product.title }}</span>
+              <span class="cross-sell__product-price">{{ custom_price | money }}</span>
+              {%- if cs_product.variants.size > 1 -%}
+                <select class="cross-sell__variant-select">
+                  {%- for variant in cs_product.variants -%}
+                    {% if sale_percentage %}
+                      {% assign custom_variant_price = variant.price | times: custom_discount_multiplier %}
+                    {% else %}
+                      {% assign custom_variant_price = variant.price %}
+                    {% endif %}
+                    <option value="{{ variant.id }}" data-price="{{ custom_variant_price | money }}">
+                      {{ variant.title }}
+                    </option>
+                  {%- endfor -%}
+                </select>
+              {%- endif -%}
+            </div>
+            <span class="cross-sell__added-label">Added</span>
+            <span class="cross-sell__label"></span>
+          </div>
+        </label>
+      {%- endfor -%}
+    </div>
+  </div>
+  <style>
+    #cross-sell-module {
+        background-color: #F3F3F3;
+        padding: 1rem 0.85rem;
+        max-width: 500px;
+        border-radius: var(--buttonRadius);
+        overflow: hidden;
+    }
+    .cross-sell__header {
+        font-family: 'Josefin Sans';
+        font-weight: bold;
+        letter-spacing: -1px;
+        -webkit-text-stroke: .5px;
+        font-size: 1rem;
+    }
+    .cross-sell__product {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        cursor: pointer;
+        padding: 0.35rem 0.75rem;
+        margin: 0;
+    }
+    .cross-sell__product-image {
+        background: #fff;
+        height: 100px;
+        border-radius: 3px;
+        /*width: 100px;
+        padding: 2px;
+        display: flex;
+        align-items: center;*/
+        box-shadow: 0px 0px 3px 0px rgb(0 0 0 / 14%);
+        /*border: 2px solid #000;*/
+    }
+    .cross-sell__product-image img {
+        max-width: 100px;
+        height: 100%;
+        border-radius: 3px;
+        /*object-fit: cover; */
+    }
+    .cross-sell__product-details {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        position: relative;
+        width: 100%;
+        min-height: 100px;
+    }
+    @media only screen and (max-width: 768px) {
+      .cross-sell__product-details {
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+      }
+    }
+    .cross-sell__checkbox {
+        padding: 0;
+        height: initial;
+        width: initial;
+        margin-bottom: 0;
+        display: none;
+        cursor: pointer;
+    }
+    .cross-sell__label {
+        position: relative;
+        cursor: pointer;
+        display: inline-block;
+        background-color: #fff;
+    }
+    .cross-sell__label:before {
+        content:'';
+        -webkit-appearance: none;
+        background-color: transparent;
+        border: 2px solid #000;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+        padding: 10px;
+        position: relative;
+        vertical-align: middle;
+        cursor: pointer;
+        display: block;
+        border-radius: var(--buttonRadius);
+    }
+
+    .cross-sell__checkbox:checked ~ .cross-sell__label:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 2px;
+        left: 9px;
+        width: 6px;
+        height: 14px;
+        border: solid #000;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+    }
+    .cross-sell__product-info {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .cross-sell__product-title, .cross-sell__product-price {
+        display: block;
+        width: 100%;
+        letter-spacing: 0;
+    }
+    .cross-sell__product-price {
+        font-size: 1rem;
+    }
+
+    .cross-sell__variant-select {
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-top: 0.5rem;
+        background-color: #fff;
+    }
+
+    .cross-sell__added-label {
+      display: none;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      background-color: #55c33b;
+      color: #ffffff;
+      font-size: 0.75rem;
+      border-radius: 2px;
+      padding: 0.2rem 0.5rem 0.1rem 0.5rem;
+      text-align: center;
+      text-transform: none;
+      letter-spacing: 0;
+    }
+    .cross-sell__checkbox:checked ~ .cross-sell__added-label {
+      display: block;
+    }
+  </style>
+  <script type="text/javascript">
+    document.querySelectorAll('.cross-sell__variant-select').forEach((select) => {
+      select.addEventListener('change', (event) => {
+        // find the price and variant ID for the selected variant
+        const option = event.target.options[event.target.selectedIndex];
+        const price = option.dataset.price;
+        const variantId = option.value;
+
+        // find the parent product details container
+        const productDetails = event.target.closest('.cross-sell__product-details');
+
+        // update the checkbox value and data-price attribute
+        const checkbox = productDetails.querySelector('.cross-sell__checkbox');
+        checkbox.value = variantId;
+        checkbox.dataset.price = price;
+
+        // update the displayed price
+        const priceDisplay = productDetails.querySelector('.cross-sell__product-price');
+        priceDisplay.textContent = price;
+      });
+    });
+  </script>
+{%- endif -%}

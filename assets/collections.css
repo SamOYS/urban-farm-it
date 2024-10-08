@@ -1,0 +1,217 @@
+.collection-grid {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-areas:
+    'header products'
+    'sidebar products';
+  grid-template-rows: auto 1fr;
+}
+
+.collection-grid__header {
+  grid-area: header;
+}
+
+.collection-grid__sidebar {
+  grid-area: sidebar;
+}
+
+.collection-grid__product-grid {
+  grid-area: products;
+}
+
+.breadcrumb {
+  margin-top: 0 !important;
+}
+
+h1 {
+  margin-bottom: 10px !important;
+}
+
+@media only screen and (min-width: 769px) {
+  #CollectionSidebar {
+    position: sticky;
+    /* top:10px; */
+    top: 98px;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+}
+
+.collection__description {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.collection__description--read-more {
+  min-width: fit-content;
+  font-weight: bold;
+  font-size: 12px;
+  color: #0000af !important;
+  cursor: pointer;
+  /* margin-top: 0.75rem; */
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.collection__description--text[active] {
+  height: 25px;
+  overflow: hidden;
+}
+
+.collection__description--text[active] p:first-of-type {
+  height: 25px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.collection__description--cat-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0 0 0.5rem 0;
+}
+.collection__description--cat-links {
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  padding: 0.15rem 0;
+}
+
+.collection__description--cat-links {
+  /* Ensure the content can overflow and require a scrollbar */
+  overflow-x: auto;
+  /* Hide vertical scrollbar if not necessary */
+  overflow-y: hidden;
+}
+
+/* Style the scrollbar track (background) */
+.collection__description--cat-links::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Light grey track */
+}
+
+/* Style the scrollbar handle */
+.collection__description--cat-links::-webkit-scrollbar-thumb {
+  background: #dcdcdc; /* Dark grey handle */
+}
+
+/* Handle hover state for scrollbar handle */
+.collection__description--cat-links::-webkit-scrollbar-thumb:hover {
+  background: #777; /* Slightly darker grey on hover */
+}
+
+/* Optional: Set the size of the scrollbar */
+.collection__description--cat-links::-webkit-scrollbar {
+  height: 2px; /* Set the height of the scrollbar */
+}
+@media only screen and (max-width: 767px) {
+}
+
+.cat-links__link {
+  display: flex !important;
+  font-size: 0.95rem;
+  align-items: center;
+  gap: 0.5rem;
+  background: #fff;
+  width: fit-content;
+  padding: 0.5rem;
+  border-radius: var(--buttonRadius);
+  border: 1px solid #bdbdbd;
+  transition: all 0.1s ease-in-out;
+}
+
+.cat-links__link--img {
+  min-width: 30px;
+}
+
+.cat-links__link--img img {
+  display: block;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.cat-links__link--text {
+  white-space: nowrap;
+  min-width: fit-content;
+}
+
+.plp_quick_links {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+}
+
+.plp_quick_links .quick-link {
+  font-size: 0.85rem;
+  background: #f2f2f2;
+  color: black;
+  padding: 0.5rem 1.25rem;
+  border-radius: 5px;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  position: relative;
+  min-width: fit-content;
+}
+
+.plp_quick_links .quick-link .quick-link__text {
+  padding-left: 2rem;
+}
+
+.plp_quick_links .quick-link .quick-link__image {
+  display: block !important;
+  height: 30px !important;
+  width: 30px !important;
+  border-radius: 50% !important;
+  position: absolute !important;
+  left: 15px !important;
+  border: 2px solid #fff;
+}
+
+/* Product Listing Product Titles */
+.grid-product__meta .grid-product__title {
+  font-family: 'DM Sans';
+  text-transform: capitalize;
+}
+
+@media only screen and (max-width: 1800px) {
+  .collection-grid {
+    grid-template-columns: 25% 75%;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .collection-grid {
+    grid-template-areas:
+      'header header'
+      'sidebar products';
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .collection-grid {
+    grid-template-columns: 100%;
+    grid-template-areas:
+      'header'
+      'products';
+    grid-template-rows: auto;
+  }
+
+  /* .collection-grid__sidebar {
+    display: none;
+  } */
+
+  .collection__description--cat-links {
+    margin: 1rem 0;
+  }
+
+  .collection-grid__header {
+    padding-top: 1rem;
+  }
+}

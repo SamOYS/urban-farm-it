@@ -1,0 +1,292 @@
+{%- liquid
+  assign number_of_comments = article.comments_count
+  if comment.status == 'pending'
+    assign number_of_comments = article.comments_count | plus: 1
+  endif
+-%}
+{% render 'article-custom-hero' %}
+
+{% liquid
+  assign content_block = article.metafields.content_block
+  assign block_type = content_block.type
+  assign block_heading = content_block.heading
+  assign block_heading_type = content_block.heading_type
+  assign block_heading_alignment = content_block.heading_alignment
+  assign block_image = content_block.image
+  assign block_content = content_block.html_content
+  assign block_reverse_direction = content_block.reverse
+
+  assign len = block_type.size | minus: 1
+%}
+
+<div
+  id="article_wrapper"
+  class="grid page-width page-width--article page-content"
+  style="display: flex; gap: 1.5rem;">
+  <article class="article" style="margin: 0 auto">
+    <div class="article__body rte">
+      {{ article.content }}    
+    </div>
+
+    {%- if section.settings.social_sharing_blog -%}
+      {%- render 'social-sharing'
+        , share_title: article.title,
+        share_permalink: article.url,
+        share_image: article.image -%}
+    {%- endif -%}
+
+    {%- if blog.comments_enabled? -%}
+      {%- if number_of_comments > 0 -%}
+        <hr class="hr--large">
+        <h3>{{ 'blogs.comments.with_count' | t: count: number_of_comments }}</h3>
+        <hr class="hr--small hr--clear">
+      {%- endif -%}
+
+      {%- paginate article.comments by 5 -%}
+        <div id="comments">
+          {%- if comment and comment.errors == blank -%}
+            <hr class="hr--small hr--clear">
+            <p class="note note--success">
+              {%- if blog.moderated? -%}
+                {{ 'blogs.comments.success_moderated' | t }}
+              {%- else -%}
+                {{ 'blogs.comments.success' | t }}
+              {%- endif -%}
+            </p>
+          {%- endif -%}
+
+          {%- if number_of_comments > 0 -%}
+            <ul class="no-bullets">
+              {%- if comment.status == 'pending' -%}
+                <li id="Comment-{{ comment.id }}" class="article__comment">
+                  {%- render 'comment', comment: comment -%}
+                </li>
+              {%- endif -%}
+
+              {%- for comment in article.comments -%}
+                <li id="Comment-{{ comment.id }}" class="article__comment">
+                  {%- render 'comment', comment: comment -%}
+                </li>
+
+                {%- unless forloop.last -%}
+                  <li><hr class="hr--clear"></li>
+                {%- endunless -%}
+              {%- endfor -%}
+            </ul>
+
+            {%- if paginate.pages > 1 -%}
+              {%- render 'pagination', paginate: paginate, hash: '#comments' -%}
+            {%- endif -%}
+          {%- endif -%}
+
+          <hr class="hr--large">
+
+          <header class="section-header{% unless settings.type_headers_align_text %} section-header--with-link{% endunless %}">
+            <h3 class="section-header__title">{{ 'blogs.comments.title' | t }}</h3>
+          </header>
+
+          <div class="form-vertical">
+            {%- form 'new_comment', article -%}
+              {{ form.errors | default_errors }}
+
+              <div class="grid grid--small">
+                <div class="grid__item medium-up--one-half">
+                  <label for="CommentAuthor">{{ 'blogs.comments.name' | t }}</label>
+                  <input
+                    class="input-full{% if form.errors contains 'author' %} error{% endif %}"
+                    type="text"
+                    name="comment[author]"
+                    id="CommentAuthor"
+                    value="{{ form.author }}"
+                    autocapitalize="words">
+                </div>
+                <div class="grid__item medium-up--one-half">
+                  <label for="CommentEmail">{{ 'blogs.comments.email' | t }}</label>
+                  <input
+                    class="input-full{% if form.errors contains 'email' %} error{% endif %}"
+                    type="email"
+                    name="comment[email]"
+                    id="CommentEmail"
+                    value="{{ form.email }}"
+                    autocorrect="off"
+                    autocapitalize="off">
+                </div>
+              </div>
+
+              <label for="CommentBody">{{ 'blogs.comments.message' | t }}</label>
+              <textarea
+                class="input-full{% if form.errors contains 'body' %} error{% endif %}"
+                name="comment[body]"
+                id="CommentBody">{{ form.body }}</textarea>
+
+              {%- if blog.moderated? -%}
+                <p>
+                  <small>{{ 'blogs.comments.moderated' | t }}</small>
+                </p>
+              {%- endif -%}
+
+              <button type="submit" class="btn btn--secondary">
+                {{ 'blogs.comments.post' | t }}
+              </button>
+
+              {% comment %}
+              Remove the following three lines of code to remove the note
+              about being protected by Google's reCAPTCHA service.
+              By removing it, the small reCAPTCHA widget will appear in the
+              bottom right corner of the page.
+              {% endcomment %}
+              {{ 'shopify.online_store.spam_detection.disclaimer_html' | t }}
+            {%- endform -%}
+          </div>
+        </div>
+      {%- endpaginate -%}
+    {%- endif -%}
+
+    <hr class="hr--large">
+  </article>
+
+  <!--
+  <div class="text-center">
+  <a href="{{ blog.url }}" class="btn return-link"><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-arrow-left" viewBox="0 0 50 15"><path d="M50 5.38v4.25H15V15L0 7.5 15 0v5.38z"/></svg> {{ 'blogs.article.back_to_blog' | t: title: blog.title }}</a>
+  </div>
+  --></div>
+
+{% if template contains 'article' %}
+  {% assign author_name = article.author.name | default: shop.name %}
+  {% assign date_published = article.published_at | date: '%Y-%m-%dT%H:%M:%S%z' %}
+  {% assign date_modified = article.updated_at | date: '%Y-%m-%dT%H:%M:%S%z' %}
+  {% assign image_url = article.image.src | default: shop.logo | img_url: 'master' %}
+
+  {% assign article_authors_string = article.metafields.custom.article_authors | remove: '["' | remove: '"]' %}
+  {% assign article_authors = article_authors_string | split: '","' %}
+
+  <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+                  "@graph": [
+                    {
+                      "@type": "WebPage",
+                      "@id": {{ shop.url | append: article.url | json }},
+    "url": {{ shop.url | append: article.url | json }},
+    "name": {{ article.title | json }},
+    "breadcrumb": {
+                        "@type": "BreadcrumbList",
+                        "itemListElement": [
+                          {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "item": {
+                              "@id": {{ shop.url | json }},
+    "name": {{ shop.name | json }}
+    }
+    },
+                          {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "item": {
+                              "@id": {{ shop.url | append: article.url | json }},
+    "name": {{ article.title | json }}
+    }
+    }
+                        ]
+                      },
+                      "mainEntity": {
+                        "@id": {{ shop.url | append: article.url | append: '#article' | json }}
+    },
+    {% if reviewer != blank %}
+      "reviewedBy": {
+      "@type": "Person",
+                              "name": "{{ reviewer.author_name }}",
+      "sameAs": []
+                            },
+    {% endif %}
+    "potentialAction": {
+    "@type": "ReadAction",
+                        "target": {{ shop.url | append: article.url | json }}
+    }
+    },
+                    {
+                      "@type": "Article",
+                      "@id": {{ shop.url | append: article.url | append: '#article' | json }},
+    "headline": {{ article.title | json }},
+    "description": {{ article.content | strip_html | truncatewords: 25 | json }},
+    "image": {
+                        "@type": "ImageObject",
+                        "url": {{ image_url | json }},
+    "height": 1200,
+                        "width": 1200
+                      },
+                      "author": [
+    {% for author in article.metafields.custom.author_metaobject.value %}
+      {
+      "@type": "Person",
+                                "name": {{ author['author_name'] | json }},
+      "url": "{{ shop.url }}/blogs/authors/{{ author['author_name'] | downcase | replace: " ", "-" }}"
+      }
+      {% unless forloop.last %},{% endunless %}
+    {% endfor %}
+    ],
+    "mainEntityOfPage": {
+                        "@type": "WebPage",
+                        "@id": {{ shop.url | append: article.url | json }}
+    },
+    "datePublished": {{ date_published | json }},
+    "dateModified": {{ date_modified | json }},
+    "publisher": {
+                  "@type": "Organization",
+                  "name": {{ shop.name | json }},
+    "logo": {
+                    "@type": "ImageObject",
+                    "url": {{ shop.logo | img_url: 'master' | json }},
+    "height": 60,
+                    "width": 60
+                  }
+                }
+                }
+                ]
+                }</script>
+{% endif %}
+
+<script src="{{ 'article.js' | asset_url }}" defer="defer"></script>
+
+{% schema %}
+  {
+    "name": "t:sections.article-template.name",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "image_hero",
+        "label": "t:sections.article-template.settings.image_hero.label",
+        "info": "t:sections.article-template.settings.image_hero.info",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "blog_show_tags",
+        "label": "t:sections.article-template.settings.blog_show_tags.label",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "blog_show_date",
+        "label": "t:sections.article-template.settings.blog_show_date.label",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "blog_show_comments",
+        "label": "t:sections.article-template.settings.blog_show_comments.label",
+        "default": true
+      }, {
+        "type": "checkbox",
+        "id": "blog_show_author",
+        "label": "t:sections.article-template.settings.blog_show_author.label"
+      }, {
+        "type": "checkbox",
+        "id": "social_sharing_blog",
+        "label": "t:sections.article-template.settings.social_sharing_blog.label",
+        "default": true
+      }
+    ]
+  }
+{% endschema %}

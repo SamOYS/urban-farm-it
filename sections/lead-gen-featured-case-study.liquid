@@ -1,0 +1,171 @@
+{% if section.settings.featured_article != blank %}
+  {% assign article = articles[section.settings.featured_article] %}
+  <section
+    id="LeadGenFeaturedCaseStudy"
+    data-section-id="{{ section.id }}"
+    data-section-type="lead-gen-casestudy"
+    class="lead-gen__casestudy container page-width"
+  >
+    <parallax-image class="parallax-container">
+      <div class="parallax-image" data-movement="15%" data-parallax-image data-angle="up">
+        <picture>
+          <img style="width: 100%" src="{{ article.image | img_url: '1500x' }}" alt="{{ article.image.alt }}">
+        </picture>
+      </div>
+    </parallax-image>
+    <div class="container page-width" style="z-index:1">
+      <p>Featured Case Study</p>
+      <h2 class="section-title">{{ article.title }}</h2>
+      <p class="header__excerpt">{{ article.metafields.casestudy.headline }}</p>
+      {% comment %}<p class="header__excerpt">{{ article.excerpt_or_content | strip_html | truncatewords: 30 }}</p>{% endcomment %}
+      <a href="{{ article.url }}" class="btn">Read more</a>
+    </div>
+  </section>
+{% endif %}
+
+{% style %}
+  [data-section-id="{{ section.id }}"] {
+      padding: 1.5rem 0;
+      min-height: max(500px, 50vh);
+      display: flex;
+      align-items: center;
+      background: #1A1A1A;
+      color: #fff;
+      position: relative;
+      overflow: hidden;
+  }
+
+  [data-section-id="{{ section.id }}"] .logo {
+      width: 150px;
+  }
+
+  [data-section-id="{{ section.id }}"] parallax-image::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 0;
+      background-color: #000;
+      opacity: 0.65;
+  }
+
+  [data-section-id="{{ section.id }}"] .section-title {
+      width: fit-content;
+      font-family: 'DM Sans' !important;
+      text-transform: unset !important;
+      font-size: clamp(30px, 5vw, 40px);
+      font-weight: bold !important;
+      letter-spacing: unset !important;
+      margin-bottom: 1.5rem;
+      -webkit-text-stroke: unset !important;
+      position: relative;
+  }
+
+  [data-section-id="{{ section.id }}"] .container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+
+  [data-section-id="{{ section.id }}"] .btn {
+      border: 1px solid #fff;
+      width: fit-content;
+  }
+
+  [data-section-id="{{ section.id }}"] .inner-circle {
+      width: 1em;
+      height: 1em;
+      border-radius: 100%;
+      background-color: #00D27A;
+  }
+
+  [data-section-id="{{ section.id }}"] .inner-circle:not(:first-of-type) {
+      margin-left: -0.5em;
+  }
+
+  [data-section-id="{{ section.id }}"] .header__subtitle {
+      font-family: 'Josefin Sans' !important;
+      letter-spacing: -.075em !important;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: .5em;
+  }
+
+  [data-section-id="{{ section.id }}"] .header__title {
+      font-family: 'DM Sans' !important;
+      text-transform: unset !important;
+      letter-spacing: 0 !important;
+      font-size: clamp(40px, 5vw, 80px);
+  }
+
+  @media only screen and (min-width: 769px) {
+      [data-section-id="{{ section.id }}"] .header__title {
+          max-width: 75%;
+      }
+  }
+
+  [data-section-id="{{ section.id }}"] .header__excerpt {
+      font-size: clamp(14px, 5vw, 18px);
+  }
+
+  @media only screen and (min-width: 769px) {
+      [data-section-id="{{ section.id }}"] .header__excerpt {
+          max-width: 50%;
+      }
+  }
+
+  [data-section-id="{{ section.id }}"] .header__title-highlight {
+      color: #00D27A;
+  }
+
+  [data-section-id="{{ section.id }}"] .header__title-people {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      vertical-align: middle;
+      height: 1em;
+      width: 2.5em;
+      margin: 0 .25em;
+  }
+
+  [data-section-id="{{ section.id }}"] .header__title-people img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50px;
+  }
+{% endstyle %}
+
+{% schema %}
+{
+  "name": "LG: Case Study",
+  "settings": [
+    {
+      "type": "article",
+      "id": "featured_article",
+      "label": "Featured Article"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image",
+      "info": "This image will be used as the background with a parallax effect."
+    },
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo",
+      "info": "Upload the logo to be displayed at the top of the section."
+    }
+  ],
+  "presets": [
+    {
+      "name": "LG: Case Study",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

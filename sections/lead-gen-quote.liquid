@@ -1,0 +1,200 @@
+<section
+  id="LeadGenQuote-{{ section.id }}"
+  data-section-id="{{ section.id }}"
+  data-section-type="lead-gen-quote"
+  class="lead-gen__quote"
+>
+  <div class="container page-width">
+    <p>{{ section.settings.quote }}</p>
+    <div class="reviewer">
+      <!--
+        <div class="reviewer__image">
+          <picture>
+            <img src="{{ section.settings.reviewer_image | img_url: '150x150', crop: 'center' }}">
+          </picture>
+        </div>
+      -->
+      <h3 class="reviewer__name">{{ section.settings.reviewer_name }}</h3>
+      <div class="reviewer__title">{{ section.settings.reviewer_title }}</div>
+    </div>
+  </div>
+</section>
+
+{% style %}
+  [data-section-id="{{ section.id }}"] h2,
+  [data-section-id="{{ section.id }}"] h3 {
+      font-family: 'DM Sans' !important;
+      text-transform: unset !important;
+      letter-spacing: -1px !important;
+      line-height: 0.9;
+      -webkit-text-stroke: 0 !important;
+  }
+
+  [data-section-id="{{ section.id }}"] {
+      overflow: hidden;
+  }
+
+  [data-section-id="{{ section.id }}"] p {
+    margin: 0;
+    width: 65%;
+    font-size: clamp(20px, 5vw, 30px);
+    position: relative;
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+
+  [data-section-id="{{ section.id }}"] .reviewer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  [data-section-id="{{ section.id }}"] .reviewer__image {
+      max-width: 150px;
+      margin-bottom: 1rem;
+  }
+
+  [data-section-id="{{ section.id }}"] .reviewer__image img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    object-position: top;
+  }
+
+  {% if section.settings.direction == 'center' %}
+  [data-section-id="{{ section.id }}"] p::before {
+      content: "";
+      left: 100%;
+      width: 40%;
+      height: 1px;
+      background-color: #000;
+      position: absolute;
+      margin-left: 10%;
+      top: 50%;
+      transform: translateY(-50%);
+  }
+  {% endif %}
+
+  [data-section-id="{{ section.id }}"] p::after {
+      content: "";
+      width: 90%;
+      height: 1px;
+      background-color: #000;
+      position: absolute;
+      {% case section.settings.direction %}
+          {% when 'right' %}
+              right: 100%;
+              margin-right: 10%;
+          {% when 'center' %}
+              width: 40%;
+              right: 100%;
+              margin-right: 10%;
+          {% when 'left' %}
+              left: 100%;
+              margin-left: 10%;
+      {% endcase %}
+      top: 50%;
+      transform: translateY(-50%);
+  }
+
+  @media only screen and (max-width: 768px) {
+      [data-section-id="{{ section.id }}"] p {
+          width: 100%;
+      }
+  }
+
+  [data-section-id="{{ section.id }}"] .container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      {% case section.settings.direction %}
+          {% when 'right' %}
+              justify-content: flex-end;
+          {% when 'center' %}
+              justify-content: center;
+          {% when 'left' %}
+              justify-content: flex-start;
+      {% endcase %}
+      overflow: hidden;
+  }
+{% endstyle %}
+
+{% schema %}
+{
+  "name": "LG: Quote",
+  "class": "index-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "quote",
+      "label": "Quote Text",
+      "default": "We provide consultancy services to assist individuals, professionals, and companies in developing and optimising their projects."
+    },
+    {
+      "type": "text",
+      "id": "reviewer_name",
+      "label": "Reviewer Name",
+      "default": "Georgina Howson-Ball"
+    },
+    {
+      "type": "text",
+      "id": "reviewer_title",
+      "label": "Reviewer Title",
+      "default": "Facilities and HSE Manager - Student Castle"
+    },
+    {
+      "type": "image_picker",
+      "id": "reviewer_image",
+      "label": "Reviewer Image"
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Text Alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "select",
+      "id": "direction",
+      "label": "Direction",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "right"
+    }
+  ],
+  "presets": [
+    {
+      "name": "LG: Quote",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

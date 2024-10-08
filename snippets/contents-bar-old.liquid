@@ -1,0 +1,20 @@
+<div class="contents-bar grid__item medium-up--one-fifth grid__item--sidebar" style="position: sticky; height: fit-content; top: 0;" status="open">
+    <ol class="contents-table">
+        {% assign counter = 1 %}
+        {% for i in (0..len) %}
+        {% if block_heading[i] != '' %}
+            <li class="sd-{{ block_heading_type[i] }}">
+            <div style="width: fit-content; font-size: 2rem;">
+                {% if block_heading_type[i] == 'h2' -%}
+                {{- counter | append: '.' -}}
+                {%- assign counter = counter | plus: 1 -%}
+                {%- else -%}
+                -
+                {%- endif %}
+            </div>
+            <a href="{{ block_heading[i] | md5 | prepend: "#" }}">{{ block_heading[i] }}</a>
+            </li>
+        {% endif %}
+        {% endfor %}
+    </ol>
+</div>

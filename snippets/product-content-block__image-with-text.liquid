@@ -1,0 +1,46 @@
+<div class="shopify-section index-section">
+  <div class="page-width feature-row-wrapper">
+    {%- capture image_layout -%}
+      <div class="feature-row__item" style="max-width: 500px" data-aos>
+          {%- if image != blank -%}
+            <div>
+              {%- if button_label != blank and button_link != blank -%}<a href="{{ button_link }}">{%- endif -%}
+                <div class="image-wrap" style="">
+                  <img class="feature-row__image lazyload"
+                    data-src="{{ image }}"
+                    data-widths="[180, 360, 540, 750, 900, 1080]"
+                    data-sizes="auto"
+                    alt="{{ image_alt_text }}">
+                </div>
+              {%- if button_label != blank and button_link != blank -%}</a>{%- endif -%}
+            </div>
+          {%- endif -%}
+      
+      </div>
+    {%- endcapture -%}
+
+    <div class="feature-row">
+        {{ image_layout }}
+      <div class="feature-row__item feature-row__text feature-row__text--{{ layout }} text-{{ align_text }}" data-aos>
+        {%- if subtitle != blank -%}
+          <div class="subheading appear-delay{% cycle '','-1','-2','-3','-4' %}">{{ subtitle }}</div>
+        {%- endif -%}
+        {%- if heading != blank -%}
+          <h2 class="appear-delay{% cycle '','-1','-2','-3','-4' %}">{{ heading | escape }}</h2>
+        {%- endif -%}
+        {%- if text != blank -%}
+          <div class="rte appear-delay{% cycle '','-1','-2','-3','-4' %}">{{ text }}</div>
+        {%- endif -%}
+        {%- if button_label != blank -%}
+          <div class="appear-delay{% cycle '','-1','-2','-3','-4' %}">
+            <a href="{{ button_link }}" class="btn{% if button_style == 'secondary' %} btn--tertiary{% endif %}">
+              {{ button_label }}
+            </a>
+          </div>
+        {%- endif -%}
+      </div>
+
+    </div>
+  </div>
+
+</div>

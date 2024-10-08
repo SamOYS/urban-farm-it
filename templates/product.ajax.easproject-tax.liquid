@@ -1,0 +1,22 @@
+{%- layout none -%}
+{
+    {%- if product -%}
+        "item": {
+            "product": {{ product | json }},
+            "title": {{ product.title | json }},
+            "product_id": {{ product.id | json }},
+            "quantity": 1,
+            "gift_card": {{ product.gift_card? | json }},
+            "variant_id": {{ product.selected_or_first_available_variant.id | json }},
+            "price": {{ product.selected_or_first_available_variant.price | divided_by: 100.00 | json }},
+            "weight": {{ product.selected_or_first_available_variant.weight | json }},
+            "collection_ids": {{ product.collections | map: 'id' | json }},
+            "requires_shipping": {{ product.selected_or_first_available_variant.requires_shipping | json }},
+            {%- if product.has_only_default_variant -%}
+                "metafields": {{ product.metafields.easproject | replace: "=>", ": " }}
+            {%- else -%}
+                "metafields": {{ product.selected_or_first_available_variant.metafields.easproject | replace: "=>", ": " }}
+            {%- endif -%}
+        }
+    {%- endif -%}
+}

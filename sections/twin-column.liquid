@@ -1,0 +1,285 @@
+{% schema %}
+{
+  "name": "Twin column section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "url",
+      "id": "video",
+      "label": "Video"
+    },
+    {
+      "type": "liquid",
+      "id": "text",
+      "label": "Text"
+    },
+    {
+      "type": "checkbox",
+      "id": "inverse",
+      "label": "Inverse layout",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "mobile_first",
+      "label": "Show image first on mobile",
+      "default": false
+    },
+    {
+      "type": "select",
+      "id": "justify_content",
+      "label": "Horizontal Alignment",
+      "options": [
+        { "value": "flex-start", "label": "Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "flex-end", "label": "Right" },
+        { "value": "space-between", "label": "Space Between" },
+        { "value": "space-around", "label": "Space Around" }
+      ],
+      "default": "flex-start"
+    },
+    {
+      "type": "select",
+      "id": "align_items",
+      "label": "Vertical Alignment",
+      "options": [
+        { "value": "flex-start", "label": "Top" },
+        { "value": "center", "label": "Center" },
+        { "value": "flex-end", "label": "Bottom" },
+        { "value": "stretch", "label": "Stretch" }
+      ],
+      "default": "flex-start"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color",
+      "default": "#000000"
+    },
+    {
+      "type": "select",
+      "id": "bg_horizontal_position",
+      "label": "Background Horizontal Position",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "right", "label": "Right" },
+        { "value": "custom", "label": "Custom" }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "text",
+      "id": "bg_horizontal_position_custom",
+      "label": "Custom Background Horizontal Position"
+    },
+    {
+      "type": "select",
+      "id": "bg_vertical_position",
+      "label": "Background Vertical Position",
+      "options": [
+        { "value": "top", "label": "Top" },
+        { "value": "center", "label": "Center" },
+        { "value": "bottom", "label": "Bottom" },
+        { "value": "custom", "label": "Custom" }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "text",
+      "id": "bg_vertical_position_custom",
+      "label": "Custom Background Vertical Position"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Twin Columns",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}
+
+{% if section.settings.inverse %}
+  {% assign order_text = 2 %}
+  {% assign order_image = 1 %}
+{% else %}
+  {% assign order_text = 1 %}
+  {% assign order_image = 2 %}
+{% endif %}
+
+{% if section.settings.mobile_first %}
+  {% assign mobile_order_text = 2 %}
+  {% assign mobile_order_image = 1 %}
+{% else %}
+  {% assign mobile_order_text = 1 %}
+  {% assign mobile_order_image = 2 %}
+{% endif %}
+
+<div
+  class="twin-column-section"
+  data-section-index="{{ section.index }}"
+  data-section-id="{{ section.id }}"
+  style="background-color: {{ section.settings.background_color }};"
+>
+  <div
+    class="text-column"
+    style="order: {{ order_text }}; color: {{ section.settings.text_color }}; justify-content: {{ section.settings.justify_content }}; align-items: {{ section.settings.align_items }};"
+  >
+    <div class="text-column__content page-width">{{ section.settings.text }}</div>
+  </div>
+  {% if section.settings.bg_horizontal_position == 'custom' %}
+    {% assign bg_horizontal_position = section.settings.bg_horizontal_position_custom %}
+  {% else %}
+    {% assign bg_horizontal_position = section.settings.bg_horizontal_position %}
+  {% endif %}
+
+  {% if section.settings.bg_vertical_position == 'custom' %}
+    {% assign bg_vertical_position = section.settings.bg_vertical_position_custom %}
+  {% else %}
+    {% assign bg_vertical_position = section.settings.bg_vertical_position %}
+  {% endif %}
+
+  <div
+    class="image-column"
+    style="order: {{ order_image }};"
+  >
+    <div
+      class="image-background"
+      style="
+          {%- unless section.settings.video != blank %}background-image: url({{ section.settings.image | img_url: 'master' }});
+          background-position: {{ bg_horizontal_position }} {{ bg_vertical_position }};{% endunless -%}
+        height: 100%;
+        width: 100%; position: relative;
+      "
+    >
+      {%- if section.settings.video != blank -%}
+        <video
+          src="{{ section.settings.video }}"
+          style="
+            height: 100%;
+            width: 100%;
+            background-size: cover !important;
+            position: absolute;
+            min-width: 100%;
+            min-height: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+          "
+          loop
+          muted
+          playsinline
+          autoplay
+        ></video>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+<style>
+      :root {
+        --nav-height-desktop: 165.25px;
+        --nav-height-mobile: 168px;
+    }
+
+    [data-section-id="{{ section.id }}"] .social-icons * {
+      fill: {{ section.settings.text_color }};
+    }
+
+    /* Desktop layout */
+    .twin-column-section {
+        display: flex;
+        flex-direction: row;
+        height: max(700px, calc(100vh - var(--nav-height-desktop)));
+    }
+
+    .twin-column-section[data-section-index="0"] {
+        height: max(700px, 100vh);
+    }
+
+    .page-width {
+        /* your existing styles */
+    }
+
+    .text-column {
+        flex: 1;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .image-column {
+        flex: 1;
+        background-image: url(); /* the url will be inserted via liquid */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .image-column .image-background {
+      background-size: cover;
+      background-repeat: no-repeat;
+          background-attachment: fixed;
+    }
+
+
+    /* Mobile layout */
+    @media (max-width: 768px) {
+
+          h1 {
+      font-size: 60px !important;
+          }
+        .twin-column-section {
+            flex-direction: column-reverse;
+            height: auto;
+
+        }
+
+        .twin-column-section[data-section-index="0"] {
+            height: auto;
+        }
+
+  .image-background {
+    background-position: center top !important;
+    background-attachment: scroll !important;
+  }
+
+  .text-column__content {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .image-column {
+    flex: none;
+    height: 300px;
+  }
+    }
+
+    @media (max-width: 767px) {
+    .twin-column-section .text-column,
+    .twin-column-section .image-column {
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .twin-column-section .text-column,
+    .twin-column-section .image-column {
+      width: 50%;
+    }
+  }
+</style>
+
+{% javascript %}
+{% endjavascript %}
