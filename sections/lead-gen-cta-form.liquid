@@ -1,0 +1,258 @@
+{% assign title_words = section.settings.title | split: ' ' %}
+{% assign title_first_word = title_words.first %}
+{% assign title_remaining_words = title_words | slice: 1, title_words.size | join: ' ' %}
+
+<section
+  id="BookConsultation"
+  data-section-id="{{ section.id }}"
+  data-section-type="lead-gen-cta"
+  class="lead-gen__cta"
+>
+  <div
+    class="container page-width"
+    {% if section.settings.header_background_image %}
+      style="z-index: 1"
+    {% endif %}
+  >
+    <div class="section-header">
+      <h2 class="section-title">{{ section.settings.title }}</h2>
+      <p class="section-excerpt">
+        {{ section.settings.excerpt }}
+      </p>
+    </div>
+
+    <div class="cta-container">
+      <div class="benefits">
+        {% for block in section.blocks %}
+          {% if block.type == 'benefit' %}
+            <div class="benefit">
+              <div class="benefit__icon">
+                {% if block.settings.icon != blank %}
+                  {{ block.settings.icon | img_url: '30x30' | img_tag }}
+                {% else %}
+                  {% render 'icon-tick' %}
+                {% endif %}
+              </div>
+              <div class="benefit__content">
+                <h3 class="benefit__heading">{{ block.settings.heading }}</h3>
+                <p class="benefit__description">
+                  {{ block.settings.description }}
+                </p>
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+      <div class="form">
+        <div
+          class="calendly-inline-widget"
+          data-url="{{ section.settings.calendly_url }}"
+          style="min-width:320px;"
+        ></div>
+        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+            <script>
+              // Add an event listener for messages from the Calendly iframe
+              window.addEventListener('message', function(e) {
+                if (e.data.event && e.data.event === 'calendly.event_scheduled') {
+                  // Fire your Google Ads conversion event
+                  gtag('event', 'conversion', {'send_to': 'AW-455174778/1m1sCOKcmdsZEPrUhdkB'});
+                }
+              });
+            </script>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "LG: CTA Form",
+  "class": "index-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Book a Consultation Today",
+      "placeholder": "Enter section title"
+    },
+    {
+      "type": "textarea",
+      "id": "excerpt",
+      "label": "Excerpt",
+      "default": "Ready to speak with an expert? We're here to assess your needs, answer your questions, and develop a customised plan for your success.",
+      "placeholder": "Enter section excerpt"
+    },
+    {
+      "type": "text",
+      "id": "calendly_url",
+      "label": "Calendly URL",
+      "default": "https://calendly.com/urban-farm-it/15min?primary_color=34a853",
+      "placeholder": "Enter Calendly URL"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "benefit",
+      "name": "Benefit",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Benefit Heading",
+          "placeholder": "Enter benefit heading"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "Benefit description goes here.",
+          "placeholder": "Enter benefit description"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "LG: CTA Form",
+      "category": "CTA",
+      "blocks": [
+        {
+          "type": "benefit",
+          "settings": {
+            "heading": "Expertise and Innovation",
+            "description": "Benefit from our team's extensive knowledge and stay ahead of the curve with innovative cultivation strategies."
+          }
+        },
+        {
+          "type": "benefit",
+          "settings": {
+            "heading": "Increase Yields and Profitability",
+            "description": "Our proven methods help optimise your operation, leading to higher yields and increased profitability."
+          }
+        },
+        {
+          "type": "benefit",
+          "settings": {
+            "heading": "Personalised Support",
+            "description": "We're committed to your success. Our team provides tailored support and guidance every step of the way."
+          }
+        },
+        {
+          "type": "benefit",
+          "settings": {
+            "heading": "Sustainable Practices",
+            "description": "Embrace eco-friendly cultivation methods that prioritise sustainability and minimise your environmental impact."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+{% style %}
+  [data-section-id="{{ section.id }}"] h2,
+  [data-section-id="{{ section.id }}"] h3 {
+      font-family: 'DM Sans' !important;
+      text-transform: unset !important;
+      letter-spacing: -1px !important;
+      line-height: 0.9;
+      -webkit-text-stroke: 0 !important;
+  }
+
+  [data-section-id="{{ section.id }}"] {
+    padding: 3.5rem 0;
+    background-color: #f8f8f8;
+  }
+
+  [data-section-id="{{ section.id }}"] .cta-container {
+    display: flex;
+    gap: 2rem;
+  }
+  [data-section-id="{{ section.id }}"] .benefits {
+    width: 40%;
+  }
+
+  [data-section-id="{{ section.id }}"] .form {
+    width: 60%;
+  }
+  [data-section-id="{{ section.id }}"] .section-title {
+      width: fit-content;
+      font-family: 'DM Sans' !important;
+      text-transform: unset !important;
+      font-size: clamp(30px, 5vw, 40px);
+      font-weight: bold !important;
+      letter-spacing: unset !important;
+      margin-left: auto;
+      margin-right: auto;
+      -webkit-text-stroke: unset !important;
+      position: relative;
+      text-align: center;
+  }
+
+  [data-section-id="{{ section.id }}"] .section-excerpt {
+    font-size: clamp(12px, 5vw, 18px);
+    text-align: center;
+  }
+
+  [data-section-id="{{ section.id }}"] .section-header {
+    max-width: 50%;
+    margin: 0 auto 2.5rem auto;
+  }
+
+  [data-section-id="{{ section.id }}"] .calendly-inline-widget iframe {
+      min-height: 800px !important;
+  }
+
+  [data-section-id="{{ section.id }}"] .benefits {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  [data-section-id="{{ section.id }}"] .benefit {
+    display: flex;
+    gap: 1rem;
+  }
+
+  [data-section-id="{{ section.id }}"] .benefit__icon svg {
+    height: 30px;
+    width: 30px;
+    fill: #03A500;
+  }
+
+  /* Media Queries */
+  @media screen and (max-width: 768px) {
+    [data-section-id="{{ section.id }}"] .section-header {
+      max-width: 100%;
+    }
+
+    [data-section-id="{{ section.id }}"] .benefits,
+    [data-section-id="{{ section.id }}"] .form {
+      width: 100%;
+    }
+
+    [data-section-id="{{ section.id }}"] .cta-container {
+      flex-wrap: wrap;
+    }
+
+    [data-section-id="{{ section.id }}"] .benefit__icon svg {
+      height: 25px;
+      width: 25px;
+    }
+
+    [data-section-id="{{ section.id }}"] .benefit__heading {
+      font-size: clamp(14px, 5vw, 16px);
+    }
+
+  }
+{% endstyle %}

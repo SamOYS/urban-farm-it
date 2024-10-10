@@ -1,0 +1,155 @@
+{% liquid
+      assign author_metaobjects = article.metafields.custom.author_metaobject.value
+      assign article_read_time = article.metafields.custom.read_time
+      assign reviewer = article.metafields.custom.reviewer.value
+%}
+<section id="article-hero" class="article-hero">
+  <div class="grid-container">
+    <div class="article-hero__image-wrapper">
+      <picture class="article-hero__image">
+        <source srcset="{{ article.image.src | img_url: '1944x' }}" media="(min-width: 1200px)" type="image/webp" class="lazyload">
+        <source srcset="{{ article.image.src | img_url: '1000x' }}" media="(min-width: 768px)" type="image/webp" class="lazyload">
+        <img src="{{ article.image.src | img_url: '500x' }}" data-src="{{ article.image.src | img_url: '500x' }}" class="lazyload" alt="{{ article.image.alt | escape }}">
+      </picture>
+    </div>
+    <div class="article-hero__contents">
+      <div class="hero-contents__main">
+        <a href="{{ blog.url }}" class="article-category">{{ blog.title }}</a>
+        <h1 class="article-title">{{ article.title }}</h1>
+        <div class="article-meta">
+          <div class="article-meta__authors">
+            {%- unless author_metaobjects -%}
+              By {{ article.author }}
+              {%- else -%}
+              By
+            {%- for author in article.metafields.custom.author_metaobject.value -%}
+               {% assign author_name = author.author_name %}
+               {% assign author_image = author.author_image_url %}  
+                <a href="/blogs/authors/{{ author_name | downcase | replace: " ", "-" }}" class="article-meta__author">{{- author_name -}}</a>
+                {%- unless forloop.last %}
+                  and
+                {% endunless -%}
+            {%- endfor -%}
+            {%- endunless -%}
+            
+          </div>
+          {% if reviewer %}<div class="article-meta__reviewer">
+            <span style="padding: 0 12px;">•</span>
+            Reviewed by <a href="/blogs/authors/{{ reviewer.author_name | downcase | replace: " ", "-" }}" class="article-meta__author">{{- reviewer.author_name -}}</a>
+          </div>
+          {% endif %}
+          <div class="article-meta__updated-date"><span style="padding: 0 12px;">•</span>Updated on {{ article.updated_at | date: "%b %d, %Y" }}</div>
+          {% if article_read_time %}<div class="article-meta__read-time"><span style="padding: 0 12px;">•</span>{{ article_read_time }} min read</div>{% endif %}
+        </div>
+        <p class="article-excerpt">{{ article.excerpt }}</p>
+      </div>
+      <div class="hero-contents__misc">Published on {{ article.published_at | date: "%b %d, %Y" }}</div>
+    </div>
+  </div>
+</section>
+
+
+<style>
+
+.article-hero {
+  background-color: #f8f8f8;
+}
+
+ .grid-container {
+   --grid-columns: 1;
+  display: grid;
+  gap: 2rem 0;
+  grid-template-columns: repeat(var(--grid-columns), minmax(0, 1fr));
+}
+
+@media only screen and (min-width: 49.9375rem) {
+  .grid-container {
+    --grid-columns: 12;
+    gap: 2rem;
+    min-height: 70vh;
+  }
+}
+
+.article-hero__image-wrapper {
+  grid-column: auto / span 5;
+  overflow: hidden;
+  min-height: 180px;
+}
+
+@media only screen and (min-width: 49.9375rem) {
+  .article-hero__image-wrapper {
+   display: block;
+  }
+}
+
+/* .article-hero__image-wrapper picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+} */
+
+.article-hero__image-wrapper img {
+  object-fit: cover;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.article-hero__contents {
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  grid-column: auto / span 7;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding: 1.25rem;
+}
+
+@media only screen and (min-width: 49.9375rem) {
+  .article-hero__contents {
+    padding: 3.5rem 1.25rem;
+  }
+}
+
+.article-hero__contents .article-category {
+  font-size: .85rem;
+}
+
+.article-hero__contents .article-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: .25rem;
+  width: 100%;
+  border-bottom: 1px solid hsla(206,7%,44%,.3);
+  border-top: 1px solid hsla(206,7%,44%,.3);
+  padding: 16px 0;
+  font-size: 1rem;
+}
+
+.article-hero__contents .article-meta span {
+  display: none;
+}
+
+@media only screen and (min-width: 49.9375rem) {
+  .article-hero__contents .article-meta {
+    flex-direction: row;
+    align-items: center;
+    width: fit-content;
+  }
+  .article-hero__contents .article-meta span {
+    display: inline;
+  }
+}
+
+.article-hero__contents .article-excerpt {
+  margin: 1.5rem 0;
+  font-size: 1rem;
+}
+
+.hero-contents__misc {
+  margin-top: auto;
+  font-size: 1rem;
+}
+</style>

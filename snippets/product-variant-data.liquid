@@ -1,0 +1,69 @@
+<script type="application/json" id="variant-data" data-default-variant-only="{{ product.has_only_default_variant }}">
+  {
+    {% for variant in product.variants %}
+      "{{ variant.id }}": [{
+        "value": "{{ variant.metafields.custom.lead_time | metafield_text }}{% if variant.metafields.custom.lead_time and variant.metafields.custom.lead_time != "None" %} (Business Days){% endif %}",
+        "cssSelector": "[data-section=\"lead-time\"]",
+        "parentContainerSelector": "#lead-time"
+      }, {
+        "value": {{ variant.metafields.custom.variant_specification | metafield_tag | json }},
+        "cssSelector": "[data-section=\"specification\"]",
+        "parentContainerSelector": ".collapsible-content_wrapper"
+      }]{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  }
+</script>
+
+<script
+  type="text/javascript"
+>
+     
+(document.addEventListener('DOMContentLoaded', () => {
+    const variantJSONElement = document.getElementById('variant-data');
+    if (variantJSONElement) {
+      const productHasOnlyDefaultVariant = variantJSONElement.dataset.defaultVariantOnly === 'true';
+      
+      if (!productHasOnlyDefaultVariant) {
+        let variantData;
+        try {
+          variantData = JSON.parse(variantJSONElement.innerHTML);
+        } catch (e) {
+          console.error('Error parsing variant data:', e);
+          return;
+        }
+  
+        document.addEventListener('variant:change', (e) => {
+          const variantId = e.detail.variant.id;
+          const variantElements = Array.from(variantData[variantId] || []);
+          
+          if (!variantElements.length) {
+            console.warn('No variant elements found for id:', variantId);
+            return;
+          }
+          variantElements.forEach(variant => {
+            const { value, cssSelector, parentContainerSelector } = variant;
+            
+            if (value && value.trim() !== '') {
+              const element = document.querySelector(cssSelector);
+              if (element) {
+                element.innerHTML = value;
+                if (parentContainerSelector) {
+                  const parentElement = document.querySelector(parentContainerSelector);
+                  if (value === 'None') {
+                    if (!parentElement.classList.contains('hide')) parentElement.classList.add('hide');
+                  } else {
+                    if (parentElement.classList.contains('hide')) parentElement.classList.remove('hide');
+                  }
+                }
+              } else {
+                console.warn(`Element not found for selector: ${cssSelector}`);
+              }
+            }
+          });
+        });
+      }
+    } else {
+      console.warn('variant-data element not found');
+    }
+  }))();
+</script>

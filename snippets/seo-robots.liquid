@@ -1,0 +1,29 @@
+{% assign seo_robots = 'index, follow' %}
+{% case template.name %}
+  {% when 'page' %}
+    {% if page.metafields.seo.robots %}
+      {% assign seo_robots = page.metafields.seo.robots %}
+    {% endif %}
+  {% when 'product' %}
+    {% if product.metafields.seo.robots %}
+      {% assign seo_robots = product.metafields.seo.robots %}
+    {% endif %}
+  {% when 'collection' %}
+    {% if collection.metafields.seo.robots %}
+      {% assign seo_robots = collection.metafields.seo.robots %}
+    {% endif %}
+  {% when 'blog' %}
+    {% if blog.metafields.seo.robots %}
+      {% assign seo_robots = blog.metafields.seo.robots %}
+    {% endif %}
+  {% when 'article' %}
+    {% if article.metafields.seo.robots %}
+      {% assign seo_robots = article.metafields.seo.robots %}
+    {% endif %}
+
+  {%- if group.user_agent.value == '*' -%}
+    {{ 'Disallow: /*?pr_prod_strat=*' }}
+  {%- endif -%}
+  
+{% endcase %}
+<meta name="robots" content="{{ seo_robots }}">

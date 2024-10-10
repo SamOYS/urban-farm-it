@@ -1,0 +1,53 @@
+{%- assign cross_sell_products = product.metafields.custom.cross_sell_products.value -%}
+{%- if cross_sell_products -%}
+{{ 'component-cross-sell.css' | asset_url | stylesheet_tag }}
+<cross-sell>
+    <h4 class="cross-sell__header">Customer's Also Buy</h4>
+    {%- for cross_sell_product in cross_sell_products -%}
+        {% assign custom_price = cross_sell_product.variants.first.price %}
+    <label for="cross-sell-{{ forloop.index }}" class="cross-sell__product">
+        <div class="cross-sell__product-image">
+        <img
+            src="{{ cross_sell_product.featured_image.src | img_url: 'small' }}"
+            data-src="{{ cross_sell_product.featured_image.src | img_url: 'medium' }}"
+            alt="{{ cross_sell_product.title | escape }}"
+            height="100"
+            width="100"
+            loading="lazy"
+            class="lazyload"
+        >
+        </div>
+        <div class="cross-sell__product-details">
+        <input
+            type="checkbox"
+            id="cross-sell-{{ forloop.index }}"
+            name="cross-sell"
+            value="{{ cross_sell_product.variants.first.id }}"
+            data-price="{{ custom_price | money }}"
+            data-quantity="1"
+            class="cross-sell__checkbox"
+        >
+        <div class="cross-sell__product-info">
+            <span class="cross-sell__product-title">{{ cross_sell_product.title }}</span>
+            <span class="cross-sell__product-price">{{ custom_price | money }}</span>
+
+            {% render 'quantity-input', min: 1, qty: 1, custom_class: 'cross-sell__product-qty' %}
+
+            {%- if cross_sell_product.variants.size > 1 -%}
+            <select class="cross-sell__variant-select">
+                {%- for variant in cross_sell_product.variants -%}
+                <option value="{{ variant.id }}" data-price="{{ variant.price | money }}">
+                    {{ variant.title }}
+                </option>
+                {%- endfor -%}
+            </select>
+            {%- endif -%}
+        </div>
+        <span class="cross-sell__added-label">Added</span>
+        <span class="cross-sell__label"></span>
+        </div>
+    </label>
+    {%- endfor -%}
+</cross-sell>
+{{ 'component-cross-sell.js' | asset_url | script_tag  }}
+{%- endif -%}
