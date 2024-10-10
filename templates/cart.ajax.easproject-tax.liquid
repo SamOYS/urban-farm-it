@@ -1,0 +1,17 @@
+{%- layout none -%}
+{
+    "cart": {{ cart | json }},
+    "symbol": {{ cart.currency.symbol | json }},
+    "items":[
+        {%- for line_item in cart.items -%}
+            {%- assign last = false -%}
+            {%- if forloop.last -%}
+                {%- assign last = true -%}
+            {%- endif -%}
+            {
+                "collection_ids": {{ line_item.product.collections | map: 'id' | json }}
+            }{%- unless last -%},{%- endunless -%}
+        {%- endfor -%}
+    ]
+}
+

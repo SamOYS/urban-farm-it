@@ -1,0 +1,101 @@
+<section 
+id="LeadGenLogos-{{ section.id }}"
+data-section-id="{{ section.id }}"
+data-section-type="lead-gen-logos"
+class="lead-gen__logos">
+    <div class="container page-width page-width--narrow">
+        <h2 class="section-title">Trusted by</h2>
+        <div class="logos">
+            <div class="logo"><img src="https://cdn.shopify.com/s/files/1/0699/1940/8408/files/1.png?v=1710957315" alt=""></div>
+            <div class="logo"><img src="https://cdn.shopify.com/s/files/1/0699/1940/8408/files/2_3b3c7b62-e453-49a4-a955-29f2ee424d11.png?v=1710957315" alt=""></div>
+            <div class="logo"><img src="https://cdn.shopify.com/s/files/1/0699/1940/8408/files/3.png?v=1710957315" alt=""></div>
+        </div>
+    </div>
+</section>
+
+{% style %}
+
+    [data-section-id="{{ section.id }}"] {
+        overflow: hidden;
+        padding: 5rem 0 1.25rem 0;
+    }
+
+    [data-section-id="{{ section.id }}"] .section-title {
+        min-width: 25%;
+        font-family: 'DM Sans' !important;
+        text-transform: unset !important;
+        font-size: clamp(18px, 5vw, 20px);
+        font-weight: bold !important;
+        letter-spacing: unset !important;
+        margin-bottom: 0;
+        -webkit-text-stroke: unset !important;
+        position: relative;
+    }
+
+    [data-section-id="{{ section.id }}"] p {
+        margin: 0;
+        width: 50%;
+        font-size: clamp(16px, 5vw, 24px);
+        position: relative;
+    }
+
+    [data-section-id="{{ section.id }}"] p::after {
+        content: "";
+        width: 90%;
+        height: 1px;
+        background-color: #000;
+        position: absolute;
+        right: 100%;
+        margin-right: 10%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    @media only screen and (max-width: 768px) {
+        [data-section-id="{{ section.id }}"] p {
+            width: 100%;
+        }
+    }
+
+    [data-section-id="{{ section.id }}"] .container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        overflow: hidden;
+    }
+
+    @media only screen and (max-width: 768px) {
+        [data-section-id="{{ section.id }}"] .container {
+            flex-direction: column;
+        }
+    }
+
+
+    [data-section-id="{{ section.id }}"] .logos {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    [data-section-id="{{ section.id }}"] .logos .logo {
+        width: 33%;
+    }
+
+    [data-section-id="{{ section.id }}"] .logos .logo img {
+        height: 75px;
+        width: auto;
+        object-fit: contain;
+    }
+{% endstyle %}
+
+{% schema %}
+{
+  "name": "LG: Logos",
+  "settings": [],
+  "presets": [{
+    "name": "LG: Logos",
+    "settings": {}
+  }]
+}
+{% endschema %}

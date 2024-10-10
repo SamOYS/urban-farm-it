@@ -1,0 +1,77 @@
+{%- assign key_features = product.metafields.custom.key_features -%}
+{%- unless key_features == blank -%}
+  <div class="page-width page-width--narrow">
+    <h2 style="margin-bottom: 2rem;">{{ section.settings.title }}</h2>
+    {{ key_features | metafield_tag }}
+  </div>
+  <style>
+    #shopify-section-{{ section.id }} {
+      padding: 3.5rem 0;
+      background: #1A1A1A;
+      color: #fff;
+      border-radius: var(--buttonRadius);
+    }
+
+    #shopify-section-{{ section.id }} ul {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: disc outside;
+      column-gap: 3rem;
+      row-gap: 1rem;
+      margin: 0 15px;
+    }
+
+    #shopify-section-{{ section.id }} ul li {
+      width: calc(50% - 3rem);
+      font-size: 1.2rem;
+    }
+    .page-width--three-quarters {
+      width: 75%;
+    }
+
+    @media only screen and (max-width: 767px) {
+      .page-width--three-quarters {
+        width: 100%;
+      }
+
+      #shopify-section-{{ section.id }} ul {
+        display: block;
+        margin: 0 auto;
+        padding-left: 1rem;
+      }
+
+      #shopify-section-{{ section.id }} ul li {
+        width: 100%;
+        margin-right: 0;
+      }
+    }
+  </style>
+{%- endunless -%}
+
+{% schema %}
+{
+  "name": "PDP Key Features",
+  "class": "index-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "t:sections.key_features.settings.title.label",
+      "default": "Key Features"
+    }
+  ],
+  "blocks": [],
+  "presets": [
+    {
+      "name": "PDP Key Features",
+      "blocks": []
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

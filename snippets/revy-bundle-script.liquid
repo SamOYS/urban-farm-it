@@ -1,0 +1,9 @@
+{% comment %}
+  <script>
+    window.revyBundleThemeSettings = {
+    	cart: {{ cart | json }},
+      locale: '{{ request.locale.iso_code }}'
+    };
+  </script>
+  <script async src="https://api.revy.io/bundle.js?shop=urban-farm-it.myshopify.com" type="text/javascript"></script>
+{% endcomment %}

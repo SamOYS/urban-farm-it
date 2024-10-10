@@ -1,0 +1,85 @@
+<section
+  id="LeadGenCTABanner"
+  data-section-id="{{ section.id }}"
+  data-section-type="lead-gen-cta-banner"
+  class="lead-gen__cta-banner index-content"
+>
+  <div class="container page-width">
+    <div class="content">
+      {% if section.settings.section_title %}
+        <h2 class="section-title">{{ section.settings.section_title }}</h2>
+      {% endif %}
+      {% if section.settings.section_byline %}
+        <p>{{ section.settings.section_byline }}</p>
+      {% endif %}
+    </div>
+    {% if section.settings.cta != blank -%}
+      <a href="{{ section.settings.cta }}" class="btn">Book Consultation</a>
+    {%- endif %}
+  </div>
+</section>
+
+{% style %}
+  [data-section-id="{{ section.id }}"] {
+      padding: 2.5rem 0;
+      background: linear-gradient(to right, #03A500, #013F00);;
+  }
+
+  [data-section-id="{{ section.id }}"] .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  @media only screen and (max-width: 678px) {
+      [data-section-id="{{ section.id }}"] .container {
+          flex-direction: column;
+          align-items: flex-start;
+      }
+  }
+
+  [data-section-id="{{ section.id }}"] .btn {
+      border: 1px solid #fff;
+      width: fit-content;
+      height: fit-content;
+  }
+
+  [data-section-id="{{ section.id }}"] .section-title {
+      width: fit-content;
+      font-family: 'DM Sans' !important;
+      text-transform: unset !important;
+      font-size: clamp(30px, 5vw, 40px);
+      font-weight: bold !important;
+      letter-spacing: unset !important;
+      margin-bottom: .25rem;
+      -webkit-text-stroke: unset !important;
+      position: relative;
+  }
+{% endstyle %}
+
+{% schema %}
+{
+  "name": "LG: CTA Banner",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_title",
+      "label": "Section Title"
+    },
+    {
+        "type": "text",
+        "id": "section_byline",
+        "label": "Section Byline"
+    },
+    {
+        "type": "url",
+        "id": "cta",
+        "label": "CTA Link"
+    }
+  ],
+  "presets": [{
+    "name": "LG: CTA Banner",
+    "category": "CTA"
+  }]
+}
+{% endschema %}
