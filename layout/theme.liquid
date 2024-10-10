@@ -167,7 +167,7 @@
       gtag('config', 'AW-455174778');
     </script>
 
-  </head>
+  {% include 'pagefly-app-header' %}</head>
   <body
     class="template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}{% if request.path == '/challenge' %} template-challange{% endif %}"
     data-center-text="{{ settings.type_body_align_text }}"
