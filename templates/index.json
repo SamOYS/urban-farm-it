@@ -21,7 +21,7 @@
             "title": "Introducing\nHydro-Herb \nHydroponic Kits",
             "title_size": 50,
             "subheading": "Launch offer: Get 20% off!",
-            "link": "shopify:\/\/collections\/hydro-herb",
+            "link": "shopify://collections/hydro-herb",
             "link_text": "Browse the Range",
             "link_2": "",
             "link_text_2": "",
@@ -31,7 +31,7 @@
             "link_text_4": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-left",
-            "image": "shopify:\/\/shop_images\/Box_2.jpg",
+            "image": "shopify://shop_images/Box_2.jpg",
             "parallax_direction": "top",
             "overlay_opacity": 70,
             "focal_point": "center center"
@@ -46,7 +46,7 @@
             "title": "Join a Masterclass in Mushroom Cultivation with Mycelia Academy!",
             "title_size": 65,
             "subheading": "Sept 25th-29th 2023 & Nov 13th-17th, 2023, Deinze, Belgium",
-            "link": "shopify:\/\/products\/mycelia-substrate-production-course",
+            "link": "shopify://products/mycelia-substrate-production-course",
             "link_text": "LEARN MORE",
             "link_2": "",
             "link_text_2": "",
@@ -56,7 +56,7 @@
             "link_text_4": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-left",
-            "image": "shopify:\/\/shop_images\/20210921_133336-scaled.jpg",
+            "image": "shopify://shop_images/20210921_133336-scaled.jpg",
             "parallax_direction": "top",
             "overlay_opacity": 40,
             "focal_point": "center center"
@@ -71,9 +71,9 @@
             "title": "THE HOME OF\nGROW YOUR OWN",
             "title_size": 58,
             "subheading": "Join the urban farming revolution",
-            "link": "shopify:\/\/collections\/mushroom-spawn",
+            "link": "shopify://collections/mushroom-spawn",
             "link_text": "Shop Mushroom Spawn",
-            "link_2": "shopify:\/\/collections\/mushroom-growing-kits",
+            "link_2": "shopify://collections/mushroom-growing-kits",
             "link_text_2": "Shop Mushroom Kits",
             "link_3": "",
             "link_text_3": "Optional button",
@@ -81,7 +81,7 @@
             "link_text_4": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-left",
-            "image": "shopify:\/\/shop_images\/STILL_THINKING_IT_OVER_600_x_850_px_Website.png",
+            "image": "shopify://shop_images/STILL_THINKING_IT_OVER_600_x_850_px_Website.png",
             "parallax_direction": "top",
             "overlay_opacity": 52,
             "focal_point": "center center"
@@ -96,9 +96,9 @@
             "title": "THE HOME OF\nGROW YOUR OWN",
             "title_size": 58,
             "subheading": "Join the urban farming revolution",
-            "link": "shopify:\/\/collections\/mushroom-spawn",
+            "link": "shopify://collections/mushroom-spawn",
             "link_text": "Shop Mushroom Spawn",
-            "link_2": "shopify:\/\/collections\/mushroom-growing-kits",
+            "link_2": "shopify://collections/mushroom-growing-kits",
             "link_text_2": "Shop Mushroom Kits",
             "link_3": "",
             "link_text_3": "Optional button",
@@ -106,7 +106,7 @@
             "link_text_4": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-left",
-            "image": "shopify:\/\/shop_images\/STILL_THINKING_IT_OVER_600_x_850_px_Website.png",
+            "image": "shopify://shop_images/STILL_THINKING_IT_OVER_600_x_850_px_Website.png",
             "parallax_direction": "top",
             "overlay_opacity": 52,
             "focal_point": "center center"
@@ -122,15 +122,15 @@
             "subheading": "We Make Growing Your Own Food Simple. Join The Urban Farming Revolution.",
             "link": "",
             "link_text": "",
-            "link_2": "shopify:\/\/collections\/mushroom-growing-kits",
+            "link_2": "shopify://collections/mushroom-growing-kits",
             "link_text_2": "Shop Mushroom Kits",
-            "link_3": "shopify:\/\/collections\/mushroom-spawn",
+            "link_3": "shopify://collections/mushroom-spawn",
             "link_text_3": "Shop Mushroom Spawn",
             "link_4": "",
             "link_text_4": "",
             "color_accent": "#ffffff",
             "text_align": "vertical-bottom horizontal-left",
-            "image": "shopify:\/\/shop_images\/lions-mane-urban-farm.jpg",
+            "image": "shopify://shop_images/lions-mane-urban-farm.jpg",
             "parallax_direction": "top",
             "overlay_opacity": 60,
             "focal_point": "center center"
@@ -166,14 +166,14 @@
           "settings": {
             "heading": "Father's Day Offer",
             "heading_size": "h2",
-            "text": "<p>Up to 20% Off Lion's Mane Kit in our Father's Day Bundle. Offer ends 14\/06\/2024.<\/p>",
+            "text": "<p>Up to 20% Off Lion's Mane Kit in our Father's Day Bundle. Offer ends 14/06/2024.</p>",
             "content_alignment": "left"
           }
         },
         "template--17405694869784__6b420381-8028-4878-973b-664a38446acb-1679000491fc7216ca-2": {
           "type": "button",
           "settings": {
-            "button_link": "shopify:\/\/products\/fathers-day-bundle",
+            "button_link": "shopify://products/fathers-day-bundle",
             "button": "Shop Bundle",
             "button_style": "solid"
           }
@@ -217,28 +217,28 @@
         "template--17405694869784__fb8bbd2c-3caa-4673-bb63-5d53b4609210-1674494534c4fab4ed-0": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/New_Project_10.png",
+            "image": "shopify://shop_images/New_Project_10.png",
             "link": ""
           }
         },
         "template--17405694869784__fb8bbd2c-3caa-4673-bb63-5d53b4609210-1674494534c4fab4ed-1": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/New_Project_13.png",
+            "image": "shopify://shop_images/New_Project_13.png",
             "link": ""
           }
         },
         "5af45e65-2f30-4155-9a57-d7866c94b4a1": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1280px-The_Guardian_svg.png",
+            "image": "shopify://shop_images/1280px-The_Guardian_svg.png",
             "link": ""
           }
         },
         "logo_image_QH3GgM": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/the-sunday-times-logo.png",
+            "image": "shopify://shop_images/the-sunday-times-logo.png",
             "link": ""
           }
         }
@@ -250,7 +250,7 @@
         "logo_image_QH3GgM"
       ],
       "custom_css": [
-        "{\/*background: #f3f3f3;*\/ margin-top: 2rem; padding: 35px 0; margin-bottom: 4rem;}",
+        "{/*background: #f3f3f3;*/ margin-top: 2rem; padding: 35px 0; margin-bottom: 4rem;}",
         ".logo-bar__item img {height: 60px; object-fit: contain;}"
       ],
       "settings": {
@@ -265,7 +265,7 @@
         "template--20076144230680__fca4059d-473b-43a5-985e-8c38eb77fb54-liquid-1": {
           "type": "liquid",
           "settings": {
-            "code": "<div class=\"tp-widget\">\n<div class=\"tp-widget__label-rating\">\n<div class=\"tp-widget__label\">Excellent<\/div>\n<img class=\"tp-widget__rating-img\" alt=\"TrustScore 4.7 out of 5\" src=\"https:\/\/cdn.trustpilot.net\/brand-assets\/4.1.0\/stars\/stars-4.5.svg\">\n<\/div>\n<div class=\"tp-widget__logo\">\n{% render 'icon-trustpilot' %}\n<\/div>\n<\/div>\n\n<style>\n.tp-widget {\ndisplay: flex;\nalign-items: center;\ngap: 1rem;\njustify-content: center;\nmargin: .5rem 0 !important;\n}\n\n.tp-widget__label-rating {\ndisplay: flex;\ngap: 1rem;\n}\n\n.tp-widget__rating-img {\ndisplay: block;\nwidth: 100px;\n}\n\n.tp-widget__logo {\nposition: relative; height: 0; width: 100px; padding: 0; padding-bottom: 40px;\n}\n.tp-widget__logo svg {\nposition: absolute;\n    height: 100%;\n    width: 100%;\n    left: 0;\n    top: -2px;\n}\n\n@media only screen and (max-width: 769px) {\n.tp-widget {\nflex-wrap: wrap;\njustify-content: center;\nflex-direction: column-reverse;\ngap: 0;\nmargin-bottom: 26px !important;\n}\n.tp-widget__logo {\nwidth: 70px;\n}\n.tp-widget__label-rating {\nwidth: 100%;\njustify-content: center;\n}\n}\n<\/style>",
+            "code": "<div class=\"tp-widget\">\n<div class=\"tp-widget__label-rating\">\n<div class=\"tp-widget__label\">Excellent</div>\n<img class=\"tp-widget__rating-img\" alt=\"TrustScore 4.7 out of 5\" src=\"https://cdn.trustpilot.net/brand-assets/4.1.0/stars/stars-4.5.svg\">\n</div>\n<div class=\"tp-widget__logo\">\n{% render 'icon-trustpilot' %}\n</div>\n</div>\n\n<style>\n.tp-widget {\ndisplay: flex;\nalign-items: center;\ngap: 1rem;\njustify-content: center;\nmargin: .5rem 0 !important;\n}\n\n.tp-widget__label-rating {\ndisplay: flex;\ngap: 1rem;\n}\n\n.tp-widget__rating-img {\ndisplay: block;\nwidth: 100px;\n}\n\n.tp-widget__logo {\nposition: relative; height: 0; width: 100px; padding: 0; padding-bottom: 40px;\n}\n.tp-widget__logo svg {\nposition: absolute;\n    height: 100%;\n    width: 100%;\n    left: 0;\n    top: -2px;\n}\n\n@media only screen and (max-width: 769px) {\n.tp-widget {\nflex-wrap: wrap;\njustify-content: center;\nflex-direction: column-reverse;\ngap: 0;\nmargin-bottom: 26px !important;\n}\n.tp-widget__logo {\nwidth: 70px;\n}\n.tp-widget__label-rating {\nwidth: 100%;\njustify-content: center;\n}\n}\n</style>",
             "width": "100%",
             "alignment": "center"
           }
@@ -323,6 +323,25 @@
         "space_around": true
       }
     },
+    "text_and_image_hdnVeG": {
+      "type": "text-and-image",
+      "custom_css": [
+        ".image-wrap {background: #ffffff;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/process-urban-farm.svg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "GIFTING MUSHROOMS IS EASY!",
+        "text": "<p><strong>We have put together these Oyster Mushroom growing gift kits to ensure it has everything your gift receiver needs to start growing mushrooms at home! </strong></p><p>Within the kit is a spawn voucher. This system is unlike any other mushroom kit on the market and guarantees freshness, quality, and high yield.</p><p>When the gift recipient is ready, they simply scan the QR code (found within the main kit box) and we will send out the fresh living spawn free of charge to them to start their home growing mushrooms!</p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "left",
+        "divider": false
+      }
+    },
     "5c43a624-463d-4e3a-97e9-384226df35db": {
       "type": "featured-collections",
       "blocks": {
@@ -331,7 +350,7 @@
           "settings": {
             "collection": "mushroom-growing-kits",
             "title": "",
-            "custom_image": "shopify:\/\/shop_images\/1_45b1b4bb-1e42-43a1-ab69-ae3d7aa191bf.png",
+            "custom_image": "shopify://shop_images/1_45b1b4bb-1e42-43a1-ab69-ae3d7aa191bf.png",
             "focal_point": "center center"
           }
         },
@@ -340,7 +359,7 @@
           "settings": {
             "collection": "mushroom-spawn",
             "title": "",
-            "custom_image": "shopify:\/\/shop_images\/4.png",
+            "custom_image": "shopify://shop_images/4.png",
             "focal_point": "center center"
           }
         },
@@ -349,7 +368,7 @@
           "settings": {
             "collection": "mushroom-growing-bags",
             "title": "",
-            "custom_image": "shopify:\/\/shop_images\/3_2429f5d7-a202-42a5-933f-8ab240d7703a.png",
+            "custom_image": "shopify://shop_images/3_2429f5d7-a202-42a5-933f-8ab240d7703a.png",
             "focal_point": "center center"
           }
         },
@@ -358,7 +377,7 @@
           "settings": {
             "collection": "mushroom-fruiting-blocks",
             "title": "",
-            "custom_image": "shopify:\/\/shop_images\/6.png",
+            "custom_image": "shopify://shop_images/6.png",
             "focal_point": "center center"
           }
         },
@@ -368,7 +387,7 @@
           "settings": {
             "collection": "mushroom-plugs",
             "title": "",
-            "custom_image": "shopify:\/\/shop_images\/5.png",
+            "custom_image": "shopify://shop_images/5.png",
             "focal_point": "center center"
           }
         },
@@ -378,7 +397,7 @@
           "settings": {
             "collection": "wholesale-mushroom-spawn",
             "title": "",
-            "custom_image": "shopify:\/\/shop_images\/7.png",
+            "custom_image": "shopify://shop_images/7.png",
             "focal_point": "center center"
           }
         }
@@ -463,31 +482,28 @@
         "divider": false
       }
     },
+    "text_and_video_k7w8t8": {
+      "type": "text-and-video",
+      "settings": {
+        "video_url": "https://www.youtube.com/watch?v=XylDYnolixY&ab_channel=UrbanFarm-It",
+        "video_width": 700,
+        "subtitle": "",
+        "title": "LATEST FROM URBAN FARM-IT",
+        "text": "<p><strong>Is it difficult to grow mushrooms? </strong></p><p>Although it may seem tricky at first, once you understand the basics of growing mushrooms, the process is pretty simple! Take care to prevent contamination, monitor temperature and humidity, and you will be enjoying fresh, homegrown, gourmet mushrooms before you know it!</p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false
+      }
+    },
     "eb4896ee-6596-41ba-bfa4-66255a1db1d7": {
       "type": "featured-video",
       "disabled": true,
       "settings": {
         "title": "LATEST FROM UFI",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=XylDYnolixY&ab_channel=UrbanFarm-It",
-        "divider": false
-      }
-    },
-    "text_and_image_hdnVeG": {
-      "type": "text-and-image",
-      "custom_css": [
-        ".image-wrap {background: #ffffff;}"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/process-urban-farm.svg",
-        "image_width": 700,
-        "subtitle": "",
-        "title": "GIFTING MUSHROOMS IS EASY!",
-        "text": "<p><strong>We have put together these Oyster Mushroom growing gift kits to ensure it has everything your gift receiver needs to start growing mushrooms at home! <\/strong><\/p><p>Within the kit is a spawn voucher. This system is unlike any other mushroom kit on the market and guarantees freshness, quality, and high yield.<\/p><p>When the gift recipient is ready, they simply scan the QR code (found within the main kit box) and we will send out the fresh living spawn free of charge to them to start their home growing mushrooms!<\/p>",
-        "button_label": "",
-        "button_link": "",
-        "button_style": "primary",
-        "align_text": "left",
-        "layout": "left",
+        "video_url": "https://www.youtube.com/watch?v=XylDYnolixY&ab_channel=UrbanFarm-It",
         "divider": false
       }
     },
@@ -505,22 +521,6 @@
         "blog_image_size": "wide",
         "divider": false
       }
-    },
-    "text_and_video_k7w8t8": {
-      "type": "text-and-video",
-      "settings": {
-        "video_url": "https:\/\/www.youtube.com\/watch?v=XylDYnolixY&ab_channel=UrbanFarm-It",
-        "video_width": 700,
-        "subtitle": "",
-        "title": "LATEST FROM URBAN FARM-IT",
-        "text": "<p><strong>Is it difficult to grow mushrooms? <\/strong><\/p><p>Although it may seem tricky at first, once you understand the basics of growing mushrooms, the process is pretty simple! Take care to prevent contamination, monitor temperature and humidity, and you will be enjoying fresh, homegrown, gourmet mushrooms before you know it!<\/p>",
-        "button_label": "",
-        "button_link": "",
-        "button_style": "primary",
-        "align_text": "left",
-        "layout": "right",
-        "divider": false
-      }
     }
   },
   "order": [
@@ -531,6 +531,7 @@
     "featured-collection",
     "featured_collection_iNhC9c",
     "1709734695343915d4",
+    "text_and_image_hdnVeG",
     "5c43a624-463d-4e3a-97e9-384226df35db",
     "b447e8ea-f624-4716-9919-3e5c8efc200a",
     "ea1c3eab-e21f-4c18-9074-32b1f75794a6",
@@ -538,7 +539,6 @@
     "f8a896d6-fcdf-4d7d-a94a-dd0b17fe7434",
     "text_and_video_k7w8t8",
     "eb4896ee-6596-41ba-bfa4-66255a1db1d7",
-    "text_and_image_hdnVeG",
     "718845b1-dd83-479e-9dfb-b2c91d4a2c9d"
   ]
 }
