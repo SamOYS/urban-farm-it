@@ -52,18 +52,6 @@
             "code": "<p>Remember, Lion's mane kits are fresh and perishable! Simply choose the right delivery option for you and we’ll handle the rest.</p>\n    <!--\n    <label>\n        <input type=\"checkbox\" id=\"christmasCheckbox\"> Deliver in time for Christmas\n    </label>\n    -->\n</div>\n\n<script>\n    document.addEventListener('DOMContentLoaded', function() {\n        // Locate the checkbox and textarea by their IDs\n        const christmasCheckbox = document.getElementById('christmasCheckbox');\n        const cartNoteDrawer = document.getElementById('CartNoteDrawer');\n\n        if (christmasCheckbox && cartNoteDrawer) {\n            // Check the initial state of the textarea and checkbox\n            updateTextArea();\n\n            // Event listener for when the checkbox state changes\n            christmasCheckbox.addEventListener('change', function() {\n                updateTextArea();\n            });\n        }\n\n        function updateTextArea() {\n            const currentNote = cartNoteDrawer.value;\n            const christmasTag = \"[Christmas_Delivery_Selected]\";\n\n            // Check if the tag is already in the textarea\n            const tagExists = currentNote.includes(christmasTag);\n\n            if (christmasCheckbox.checked) {\n                // Append the tag if it doesn't already exist\n                if (!tagExists) {\n                    cartNoteDrawer.value = `${currentNote} ${christmasTag}`;\n                }\n            } else {\n                // Remove the tag if it exists\n                if (tagExists) {\n                    cartNoteDrawer.value = currentNote.replace(christmasTag, \"\").trim();\n                }\n            }\n        }\n    });\n</script>"
           }
         },
-        "c11da764-83b0-4131-ba30-5bba256f27a8": {
-          "type": "custom",
-          "settings": {
-            "code": "{% render 'component-cross-sell' %}"
-          }
-        },
-        "c7cb76d9-e206-4d28-a3fe-1dff3ce406da": {
-          "type": "custom",
-          "settings": {
-            "code": "{% assign product_variant =  product.metafields.gift_option.product_variant %}{% if product_variant %}\n<label>PURCHASING AS A GIFT?</label>\n<div class=\"variant-input-wrap\">\n<a class=\"custom-variant__button-label\" href=\"{{ product_variant[0]  | prepend: \"/products/\"| prepend: shop.url }}\">\n<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"800px\" height=\"800px\" viewBox=\"0 0 24 24\" fill=\"none\">\n<path d=\"M5 10.0802V20.0802H19V14M5 10.0802H4V7.0802H20V10.0802H5ZM12 7.0802C12.8333 5.24687 14.9999 1.5802 16.9999 3.5802C18.9999 5.5802 14.5 6.91353 12 7.0802ZM12 7.0802C11.1667 5.24687 8.99999 1.5802 6.99999 3.5802C4.99999 5.5802 9.5 6.91353 12 7.0802Z\" stroke=\"#000000\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>See Gift Version\n</a>\n</div>\n{% endif %}"
-          }
-        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -81,6 +69,18 @@
             "should_show_points_label": true,
             "points_text_logged_in": "<p>Earn [points_amount] when you buy this item.</p>",
             "points_text_logged_out": "<p>Members earn [points_amount] when they buy this item. <a href=\"/account/register/\">Sign up</a> or <a href=\"/account/login/\">log in</a>.</p>"
+          }
+        },
+        "c7cb76d9-e206-4d28-a3fe-1dff3ce406da": {
+          "type": "custom",
+          "settings": {
+            "code": "{% assign product_variant =  product.metafields.gift_option.product_variant %}{% if product_variant %}\n<label>PURCHASING AS A GIFT?</label>\n<div class=\"variant-input-wrap\">\n<a class=\"custom-variant__button-label\" href=\"{{ product_variant[0]  | prepend: \"/products/\"| prepend: shop.url }}\">\n<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"800px\" height=\"800px\" viewBox=\"0 0 24 24\" fill=\"none\">\n<path d=\"M5 10.0802V20.0802H19V14M5 10.0802H4V7.0802H20V10.0802H5ZM12 7.0802C12.8333 5.24687 14.9999 1.5802 16.9999 3.5802C18.9999 5.5802 14.5 6.91353 12 7.0802ZM12 7.0802C11.1667 5.24687 8.99999 1.5802 6.99999 3.5802C4.99999 5.5802 9.5 6.91353 12 7.0802Z\" stroke=\"#000000\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>See Gift Version\n</a>\n</div>\n{% endif %}"
+          }
+        },
+        "c11da764-83b0-4131-ba30-5bba256f27a8": {
+          "type": "custom",
+          "settings": {
+            "code": "{% render 'component-cross-sell' %}"
           }
         },
         "b3fc12dd-8538-4787-b64f-7850c280141e": {
@@ -167,10 +167,10 @@
         "price",
         "variant_picker",
         "194ded2d-f119-4381-a208-2d5d04229c50",
-        "c11da764-83b0-4131-ba30-5bba256f27a8",
-        "c7cb76d9-e206-4d28-a3fe-1dff3ce406da",
         "buy_buttons",
         "smile_loyalty_rewards_smile_points_on_product_page_MNQ97z",
+        "c7cb76d9-e206-4d28-a3fe-1dff3ce406da",
+        "c11da764-83b0-4131-ba30-5bba256f27a8",
         "b3fc12dd-8538-4787-b64f-7850c280141e",
         "separator",
         "e89378ea-77b2-49f4-90ba-5a690c3081f5",

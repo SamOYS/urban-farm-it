@@ -289,10 +289,10 @@
 
       ],
       "settings": {
-        "title": "Mushroom Growing Kits",
+        "title": "POPULAR DIY GROWING KITS",
         "title_alignment": "left",
         "enable_description": true,
-        "description": "FREE SHIPPING ON ALL GROWING KITS",
+        "description": "Delicious mushrooms from kit to kitchen – free shipping included! ",
         "home_featured_products": "mushroom-growing-kits",
         "per_row": 4,
         "rows": 1,
@@ -304,10 +304,10 @@
     "featured_collection_iNhC9c": {
       "type": "featured-collection",
       "settings": {
-        "title": "Gift Kits",
+        "title": "GIFT GROWING KITS",
         "title_alignment": "left",
         "enable_description": true,
-        "description": "",
+        "description": "Order with a spawn voucher as the perfect gift – free shipping included! ",
         "home_featured_products": "mushroom-growing-kits-gift",
         "per_row": 4,
         "rows": 1,
@@ -441,8 +441,8 @@
       "settings": {
         "title": "Mushroom Spawn",
         "title_alignment": "left",
-        "enable_description": false,
-        "description": "Our famous kits.",
+        "enable_description": true,
+        "description": "Kickstart your at-home mushroom growing with top-quality spawn.",
         "home_featured_products": "mushroom-spawn",
         "per_row": 4,
         "rows": 1,
@@ -454,10 +454,10 @@
     "featured_collection_iiJVaJ": {
       "type": "featured-collection",
       "settings": {
-        "title": "New! Mushroom {{ section.settings.home_featured_products.title }}",
+        "title": "NEW! LIQUID GROWING CULTURES",
         "title_alignment": "left",
-        "enable_description": false,
-        "description": "",
+        "enable_description": true,
+        "description": "Faster results with substrate-ready mushroom mycelium that gets you growing sooner.",
         "home_featured_products": "liquid-cultures",
         "per_row": 4,
         "rows": 1,
@@ -488,8 +488,8 @@
         "video_url": "https://www.youtube.com/watch?v=XylDYnolixY&ab_channel=UrbanFarm-It",
         "video_width": 700,
         "subtitle": "",
-        "title": "LATEST FROM URBAN FARM-IT",
-        "text": "<p><strong>Is it difficult to grow mushrooms? </strong></p><p>Although it may seem tricky at first, once you understand the basics of growing mushrooms, the process is pretty simple! Take care to prevent contamination, monitor temperature and humidity, and you will be enjoying fresh, homegrown, gourmet mushrooms before you know it!</p>",
+        "title": "MUSHROOM GROWING MADE SIMPLE",
+        "text": "<p><strong>Is it difficult to grow mushrooms?</strong></p><p>While it might seem a bit tricky at first, growing mushrooms is actually pretty straightforward once you get the hang of it! Just keep an eye on preventing contamination, and make sure the temperature and humidity are right, and you'll be harvesting your own fresh, gourmet mushrooms in no time!</p>",
         "button_label": "",
         "button_link": "",
         "button_style": "primary",
