@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "dev": "shopify theme dev -s urban-farm-it --port=9297",
+    "build": "vite build --minify",
+    "watch": "vite build -w"
+  },
+  "dependencies": {
+    "vite": "^5.4.9"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "sass-embedded": "^1.79.5",
+    "tailwindcss": "^3.4.13"
+  }
+}

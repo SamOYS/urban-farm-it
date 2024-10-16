@@ -117,6 +117,7 @@
         <div class="grid-product__label--text">{{ kit_type }}</div>
       </div>
     {%- endif -%}
+
     {% comment %} Common Species Name {% endcomment %}
     {% assign common_name = product.metafields.custom.common_name %}
     {%- if common_name != blank -%}
@@ -162,6 +163,15 @@
 
     <a href="{{ product.url }}" class="grid-product__link">
       <div class="grid-product__image-mask">
+          {% assign featured_icon = product.metafields.custom.featured_icon %}
+          {%- if featured_icon != blank -%}
+              <img src="{{ featured_icon | file_url }}" alt="{{ kit_type }} icon" class="tw-absolute lg:tw-bottom-2 tw-bottom-1 tw-z-10 xl:tw-w-20 xl:tw-h-20 tw-w-8 tw-h-8 tw-left-2">
+          {%- endif -%}
+
+          {% assign featured_tag = product.metafields.custom.featured_tag %}
+          {%- if featured_tag != blank -%}
+              <img src="{{ featured_tag | file_url }}" alt="{{ featured_tag }} icon" class="tw-absolute tw-bottom-0 tw-z-10 xl:tw-w-48 tw-w-20 tw-h-auto tw-right-0">
+          {%- endif -%}
         {%- if quick_shop_enable -%}
           <div class="quick-product__btn quick-product__btn--not-ready js-modal-open-quick-modal-{{ product.id }} small--hide">
             <span class="quick-product__label">{{ settings.quick_shop_text }}</span>

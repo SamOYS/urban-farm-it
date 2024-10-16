@@ -1,0 +1,16 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+// Global
+.section-tw {
+  @apply tw-mb-12;
+  @screen md {
+    @apply tw-mb-36;
+  }
+}
+
+
+.hidden-tw {
+  @apply tw-hidden;
+}

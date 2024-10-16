@@ -1,1 +1,535 @@
-{"sections":{"9624ea0d-516e-42d5-a087-263e8ac67743":{"type":"slideshow","blocks":{"template--20076144230680__9624ea0d-516e-42d5-a087-263e8ac67743-image-1":{"type":"image","disabled":true,"settings":{"show_breadcrumbs":false,"top_subheading":"","title":"Introducing\nHydro-Herb \nHydroponic Kits","title_size":50,"subheading":"Launch offer: Get 20% off!","link":"shopify:\/\/collections\/hydro-herb","link_text":"Browse the Range","link_2":"","link_text_2":"","link_3":"","link_text_3":"Optional button","link_4":"","link_text_4":"","color_accent":"rgba(0,0,0,0)","text_align":"vertical-center horizontal-left","image":"shopify:\/\/shop_images\/Box_2.jpg","parallax_direction":"top","overlay_opacity":70,"focal_point":"center center"}},"83db8b86-d6ed-4e05-aced-8451952bc00d":{"type":"image","disabled":true,"settings":{"show_breadcrumbs":false,"top_subheading":"IN-PERSON COURSE, BELGIUM","title":"Join a Masterclass in Mushroom Cultivation with Mycelia Academy!","title_size":65,"subheading":"Sept 25th-29th 2023 & Nov 13th-17th, 2023, Deinze, Belgium","link":"shopify:\/\/products\/mycelia-substrate-production-course","link_text":"LEARN MORE","link_2":"","link_text_2":"","link_3":"","link_text_3":"Optional button","link_4":"","link_text_4":"","color_accent":"rgba(0,0,0,0)","text_align":"vertical-center horizontal-left","image":"shopify:\/\/shop_images\/20210921_133336-scaled.jpg","parallax_direction":"top","overlay_opacity":40,"focal_point":"center center"}},"cd2752eb-c47a-4ef1-925b-d64437848e25":{"type":"image","disabled":true,"settings":{"show_breadcrumbs":false,"top_subheading":"","title":"THE HOME OF\nGROW YOUR OWN","title_size":58,"subheading":"Join the urban farming revolution","link":"shopify:\/\/collections\/mushroom-spawn","link_text":"Shop Mushroom Spawn","link_2":"shopify:\/\/collections\/mushroom-growing-kits","link_text_2":"Shop Mushroom Kits","link_3":"","link_text_3":"Optional button","link_4":"","link_text_4":"","color_accent":"rgba(0,0,0,0)","text_align":"vertical-center horizontal-left","image":"shopify:\/\/shop_images\/STILL_THINKING_IT_OVER_600_x_850_px_Website.png","parallax_direction":"top","overlay_opacity":52,"focal_point":"center center"}},"a58ef568-0dfc-4b6a-9d58-1b74af3edcb3":{"type":"image","disabled":true,"settings":{"show_breadcrumbs":false,"top_subheading":"","title":"THE HOME OF\nGROW YOUR OWN","title_size":58,"subheading":"Join the urban farming revolution","link":"shopify:\/\/collections\/mushroom-spawn","link_text":"Shop Mushroom Spawn","link_2":"shopify:\/\/collections\/mushroom-growing-kits","link_text_2":"Shop Mushroom Kits","link_3":"","link_text_3":"Optional button","link_4":"","link_text_4":"","color_accent":"rgba(0,0,0,0)","text_align":"vertical-center horizontal-left","image":"shopify:\/\/shop_images\/STILL_THINKING_IT_OVER_600_x_850_px_Website.png","parallax_direction":"top","overlay_opacity":52,"focal_point":"center center"}},"7cdf59c5-6a10-43b9-a4b9-2d1efb4a9a4f":{"type":"image","settings":{"show_breadcrumbs":false,"top_subheading":"","title":"Grow Your Own Mushrooms, \nWith Ease","title_size":65,"subheading":"We Make Growing Your Own Food Simple. Join The Urban Farming Revolution.","link":"","link_text":"","link_2":"shopify:\/\/collections\/mushroom-growing-kits","link_text_2":"Shop Mushroom Kits","link_3":"shopify:\/\/collections\/mushroom-spawn","link_text_3":"Shop Mushroom Spawn","link_4":"","link_text_4":"","color_accent":"rgba(0,0,0,0)","text_align":"vertical-bottom horizontal-left","image":"shopify:\/\/shop_images\/Copy_of_IMG20210605155801.webp","parallax_direction":"top","overlay_opacity":32,"focal_point":"center center"}}},"block_order":["template--20076144230680__9624ea0d-516e-42d5-a087-263e8ac67743-image-1","83db8b86-d6ed-4e05-aced-8451952bc00d","cd2752eb-c47a-4ef1-925b-d64437848e25","a58ef568-0dfc-4b6a-9d58-1b74af3edcb3","7cdf59c5-6a10-43b9-a4b9-2d1efb4a9a4f"],"custom_css":["@media (min-width: 768px) and (max-width: 1024px) {h1 {font-size: 2rem !important; }}","@media (max-width: 767px) {h1 {font-size: 1.5rem !important; }}"],"settings":{"section_height":"650px","mobile_height":"auto","parallax":true,"enable_trustpilot":true,"style":"minimal","autoplay":false,"autoplay_speed":5}},"6b420381-8028-4878-973b-664a38446acb":{"type":"countdown","blocks":{"template--17405694869784__6b420381-8028-4878-973b-664a38446acb-1679000491fc7216ca-0":{"type":"content","settings":{"heading":"Father's Day Offer","heading_size":"h2","text":"<p>Up to 20% Off Lion's Mane Kit in our Father's Day Bundle. Offer ends 14\/06\/2024.<\/p>","content_alignment":"left"}},"template--17405694869784__6b420381-8028-4878-973b-664a38446acb-1679000491fc7216ca-2":{"type":"button","settings":{"button_link":"shopify:\/\/products\/fathers-day-bundle","button":"Shop Bundle","button_style":"solid"}},"e43e222b-b787-4b12-a040-f59c35c13b88":{"type":"timer","settings":{"year":"2024","month":"06","day":"14","hour":"15","minute":"00","hide_timer":true,"text":""}}},"block_order":["template--17405694869784__6b420381-8028-4878-973b-664a38446acb-1679000491fc7216ca-0","template--17405694869784__6b420381-8028-4878-973b-664a38446acb-1679000491fc7216ca-2","e43e222b-b787-4b12-a040-f59c35c13b88"],"disabled":true,"custom_css":["a {color: #fff !important; text-decoration: underline; font-weight: bold;}"],"settings":{"layout":"banner","full_width":true,"text_color":"#ffffff","background_color":"#0c286d","overlay_color":"#000000","overlay_opacity":0,"focal_point":"center","mobile_image_focal_point":"top"}},"fb8bbd2c-3caa-4673-bb63-5d53b4609210":{"type":"logo-list","blocks":{"template--17405694869784__fb8bbd2c-3caa-4673-bb63-5d53b4609210-1674494534c4fab4ed-0":{"type":"logo_image","settings":{"image":"shopify:\/\/shop_images\/New_Project_10.png","link":""}},"template--17405694869784__fb8bbd2c-3caa-4673-bb63-5d53b4609210-1674494534c4fab4ed-1":{"type":"logo_image","settings":{"image":"shopify:\/\/shop_images\/New_Project_13.png","link":""}},"5af45e65-2f30-4155-9a57-d7866c94b4a1":{"type":"logo_image","settings":{"image":"shopify:\/\/shop_images\/1280px-The_Guardian_svg.png","link":""}},"logo_image_QH3GgM":{"type":"logo_image","settings":{"image":"shopify:\/\/shop_images\/the-sunday-times-logo.png","link":""}}},"block_order":["template--17405694869784__fb8bbd2c-3caa-4673-bb63-5d53b4609210-1674494534c4fab4ed-0","template--17405694869784__fb8bbd2c-3caa-4673-bb63-5d53b4609210-1674494534c4fab4ed-1","5af45e65-2f30-4155-9a57-d7866c94b4a1","logo_image_QH3GgM"],"custom_css":["{\/*background: #f3f3f3;*\/ margin-top: 2rem; padding: 35px 0; margin-bottom: 4rem;}",".logo-bar__item img {height: 60px; object-fit: contain;}"],"settings":{"title":"Featured by","logo_opacity":100,"divider":false}},"fca4059d-473b-43a5-985e-8c38eb77fb54":{"type":"advanced-content","blocks":{"template--20076144230680__fca4059d-473b-43a5-985e-8c38eb77fb54-liquid-1":{"type":"liquid","settings":{"code":"<div class=\"tp-widget\">\n<div class=\"tp-widget__label-rating\">\n<div class=\"tp-widget__label\">Excellent<\/div>\n<img class=\"tp-widget__rating-img\" alt=\"TrustScore 4.7 out of 5\" src=\"https:\/\/cdn.trustpilot.net\/brand-assets\/4.1.0\/stars\/stars-4.5.svg\">\n<\/div>\n<div class=\"tp-widget__logo\">\n{% render 'icon-trustpilot' %}\n<\/div>\n<\/div>\n\n<style>\n.tp-widget {\ndisplay: flex;\nalign-items: center;\ngap: 1rem;\njustify-content: center;\nmargin: .5rem 0 !important;\n}\n\n.tp-widget__label-rating {\ndisplay: flex;\ngap: 1rem;\n}\n\n.tp-widget__rating-img {\ndisplay: block;\nwidth: 100px;\n}\n\n.tp-widget__logo {\nposition: relative; height: 0; width: 100px; padding: 0; padding-bottom: 40px;\n}\n.tp-widget__logo svg {\nposition: absolute;\n    height: 100%;\n    width: 100%;\n    left: 0;\n    top: -2px;\n}\n\n@media only screen and (max-width: 769px) {\n.tp-widget {\nflex-wrap: wrap;\njustify-content: center;\nflex-direction: column-reverse;\ngap: 0;\nmargin-bottom: 26px !important;\n}\n.tp-widget__logo {\nwidth: 70px;\n}\n.tp-widget__label-rating {\nwidth: 100%;\njustify-content: center;\n}\n}\n<\/style>","width":"100%","alignment":"center"}}},"block_order":["template--20076144230680__fca4059d-473b-43a5-985e-8c38eb77fb54-liquid-1"],"disabled":true,"custom_css":[],"settings":{"full_width":false,"space_around":false}},"featured-collection":{"type":"featured-collection","custom_css":[],"settings":{"title":"Mushroom Growing Kits","title_alignment":"left","enable_description":false,"description":"","home_featured_products":"mushroom-growing-kits","per_row":4,"rows":1,"mobile_scrollable":true,"view_all":false,"divider":false}},"featured_collection_iNhC9c":{"type":"featured-collection","settings":{"title":"Gift Kits","title_alignment":"left","enable_description":true,"description":"","home_featured_products":"mushroom-growing-kits-gift","per_row":4,"rows":1,"mobile_scrollable":true,"view_all":false,"divider":false}},"1709734695343915d4":{"type":"apps","settings":{"full_width":false,"space_around":true}},"5c43a624-463d-4e3a-97e9-384226df35db":{"type":"featured-collections","blocks":{"template--17405694869784__5c43a624-463d-4e3a-97e9-384226df35db-1683064678265e7716-0":{"type":"collection","settings":{"collection":"mushroom-growing-kits","title":"","custom_image":"shopify:\/\/shop_images\/1_45b1b4bb-1e42-43a1-ab69-ae3d7aa191bf.png","focal_point":"center center"}},"template--17405694869784__5c43a624-463d-4e3a-97e9-384226df35db-1683064678265e7716-1":{"type":"collection","settings":{"collection":"mushroom-spawn","title":"","custom_image":"shopify:\/\/shop_images\/4.png","focal_point":"center center"}},"template--17405694869784__5c43a624-463d-4e3a-97e9-384226df35db-1683064678265e7716-2":{"type":"collection","settings":{"collection":"mushroom-growing-bags","title":"","custom_image":"shopify:\/\/shop_images\/3_2429f5d7-a202-42a5-933f-8ab240d7703a.png","focal_point":"center center"}},"template--17405694869784__5c43a624-463d-4e3a-97e9-384226df35db-1683064678265e7716-3":{"type":"collection","settings":{"collection":"mushroom-fruiting-blocks","title":"","custom_image":"shopify:\/\/shop_images\/6.png","focal_point":"center center"}},"e1f2d622-889e-48a6-97ef-036154664e57":{"type":"collection","settings":{"collection":"mushroom-plugs","title":"","custom_image":"shopify:\/\/shop_images\/5.png","focal_point":"center center"}},"170dadfb-9424-40da-be3c-d64a1ffe8eea":{"type":"collection","settings":{"collection":"wholesale-mushroom-spawn","title":"","custom_image":"shopify:\/\/shop_images\/7.png","focal_point":"center center"}}},"block_order":["template--17405694869784__5c43a624-463d-4e3a-97e9-384226df35db-1683064678265e7716-0","template--17405694869784__5c43a624-463d-4e3a-97e9-384226df35db-1683064678265e7716-1","template--17405694869784__5c43a624-463d-4e3a-97e9-384226df35db-1683064678265e7716-2","template--17405694869784__5c43a624-463d-4e3a-97e9-384226df35db-1683064678265e7716-3","e1f2d622-889e-48a6-97ef-036154664e57","170dadfb-9424-40da-be3c-d64a1ffe8eea"],"custom_css":[".collection-item__title span {font-size: 1.5rem; width: 100% !important; background-color: black !important; color: #fff !important; letter-spacing: 0px;}"],"settings":{"title":"SHOP THE RANGE","divider":false,"per_row":3,"enable_gutter":false}},"b447e8ea-f624-4716-9919-3e5c8efc200a":{"type":"featured-collection","disabled":true,"settings":{"title":"Hydroponic Kits 🌱","title_alignment":"left","enable_description":false,"description":"","home_featured_products":"hydroponic-kits","per_row":4,"rows":1,"mobile_scrollable":true,"view_all":false,"divider":false}},"ea1c3eab-e21f-4c18-9074-32b1f75794a6":{"type":"featured-collection","settings":{"title":"Mushroom Spawn","title_alignment":"left","enable_description":false,"description":"Our famous kits.","home_featured_products":"mushroom-spawn","per_row":4,"rows":1,"mobile_scrollable":true,"view_all":false,"divider":false}},"featured_collection_iiJVaJ":{"type":"featured-collection","settings":{"title":"New! Mushroom {{ section.settings.home_featured_products.title }}","title_alignment":"left","enable_description":false,"description":"","home_featured_products":"liquid-cultures","per_row":4,"rows":1,"mobile_scrollable":true,"view_all":false,"divider":false}},"f8a896d6-fcdf-4d7d-a94a-dd0b17fe7434":{"type":"featured-collection","disabled":true,"settings":{"title":"Mushroom Substrates","title_alignment":"left","enable_description":false,"description":"Our famous kits.","home_featured_products":"mushroom-substrates","per_row":4,"rows":1,"mobile_scrollable":true,"view_all":false,"divider":false}},"718845b1-dd83-479e-9dfb-b2c91d4a2c9d":{"type":"featured-authors","settings":{"title":"MUSHROOM CULTIVATION GUIDES","blog":"mushroom-cultivation","post_limit":6,"blog_show_tags":false,"blog_show_date":true,"blog_show_comments":true,"blog_show_author":true,"view_all":true,"blog_image_size":"wide","divider":false}},"eb4896ee-6596-41ba-bfa4-66255a1db1d7":{"type":"featured-video","settings":{"title":"LATEST FROM UFI","video_url":"https:\/\/www.youtube.com\/watch?v=XylDYnolixY&ab_channel=UrbanFarm-It","divider":false}}},"order":["9624ea0d-516e-42d5-a087-263e8ac67743","6b420381-8028-4878-973b-664a38446acb","fb8bbd2c-3caa-4673-bb63-5d53b4609210","fca4059d-473b-43a5-985e-8c38eb77fb54","featured-collection","featured_collection_iNhC9c","1709734695343915d4","5c43a624-463d-4e3a-97e9-384226df35db","b447e8ea-f624-4716-9919-3e5c8efc200a","ea1c3eab-e21f-4c18-9074-32b1f75794a6","featured_collection_iiJVaJ","f8a896d6-fcdf-4d7d-a94a-dd0b17fe7434","718845b1-dd83-479e-9dfb-b2c91d4a2c9d","eb4896ee-6596-41ba-bfa4-66255a1db1d7"]}
+{
+  "sections": {
+    "9624ea0d-516e-42d5-a087-263e8ac67743": {
+      "type": "slideshow",
+      "blocks": {
+        "template--20076144230680__9624ea0d-516e-42d5-a087-263e8ac67743-image-1": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "show_breadcrumbs": false,
+            "top_subheading": "",
+            "title": "Introducing\nHydro-Herb \nHydroponic Kits",
+            "title_size": 50,
+            "subheading": "Launch offer: Get 20% off!",
+            "link": "shopify:\/\/collections\/hydro-herb",
+            "link_text": "Browse the Range",
+            "link_2": "",
+            "link_text_2": "",
+            "link_3": "",
+            "link_text_3": "Optional button",
+            "link_4": "",
+            "link_text_4": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-left",
+            "image": "shopify:\/\/shop_images\/Box_2.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 70,
+            "focal_point": "center center"
+          }
+        },
+        "83db8b86-d6ed-4e05-aced-8451952bc00d": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "show_breadcrumbs": false,
+            "top_subheading": "IN-PERSON COURSE, BELGIUM",
+            "title": "Join a Masterclass in Mushroom Cultivation with Mycelia Academy!",
+            "title_size": 65,
+            "subheading": "Sept 25th-29th 2023 & Nov 13th-17th, 2023, Deinze, Belgium",
+            "link": "shopify:\/\/products\/mycelia-substrate-production-course",
+            "link_text": "LEARN MORE",
+            "link_2": "",
+            "link_text_2": "",
+            "link_3": "",
+            "link_text_3": "Optional button",
+            "link_4": "",
+            "link_text_4": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-left",
+            "image": "shopify:\/\/shop_images\/20210921_133336-scaled.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 40,
+            "focal_point": "center center"
+          }
+        },
+        "cd2752eb-c47a-4ef1-925b-d64437848e25": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "show_breadcrumbs": false,
+            "top_subheading": "",
+            "title": "THE HOME OF\nGROW YOUR OWN",
+            "title_size": 58,
+            "subheading": "Join the urban farming revolution",
+            "link": "shopify:\/\/collections\/mushroom-spawn",
+            "link_text": "Shop Mushroom Spawn",
+            "link_2": "shopify:\/\/collections\/mushroom-growing-kits",
+            "link_text_2": "Shop Mushroom Kits",
+            "link_3": "",
+            "link_text_3": "Optional button",
+            "link_4": "",
+            "link_text_4": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-left",
+            "image": "shopify:\/\/shop_images\/STILL_THINKING_IT_OVER_600_x_850_px_Website.png",
+            "parallax_direction": "top",
+            "overlay_opacity": 52,
+            "focal_point": "center center"
+          }
+        },
+        "a58ef568-0dfc-4b6a-9d58-1b74af3edcb3": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "show_breadcrumbs": false,
+            "top_subheading": "",
+            "title": "THE HOME OF\nGROW YOUR OWN",
+            "title_size": 58,
+            "subheading": "Join the urban farming revolution",
+            "link": "shopify:\/\/collections\/mushroom-spawn",
+            "link_text": "Shop Mushroom Spawn",
+            "link_2": "shopify:\/\/collections\/mushroom-growing-kits",
+            "link_text_2": "Shop Mushroom Kits",
+            "link_3": "",
+            "link_text_3": "Optional button",
+            "link_4": "",
+            "link_text_4": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-left",
+            "image": "shopify:\/\/shop_images\/STILL_THINKING_IT_OVER_600_x_850_px_Website.png",
+            "parallax_direction": "top",
+            "overlay_opacity": 52,
+            "focal_point": "center center"
+          }
+        },
+        "7cdf59c5-6a10-43b9-a4b9-2d1efb4a9a4f": {
+          "type": "image",
+          "settings": {
+            "show_breadcrumbs": false,
+            "top_subheading": "",
+            "title": "EASILY GROW YOUR OWN \nMUSHROOMS, AT HOME!",
+            "title_size": 65,
+            "subheading": "We Make Growing Your Own Food Simple. Join The Urban Farming Revolution.",
+            "link": "",
+            "link_text": "",
+            "link_2": "shopify:\/\/collections\/mushroom-growing-kits",
+            "link_text_2": "Shop Mushroom Kits",
+            "link_3": "shopify:\/\/collections\/mushroom-spawn",
+            "link_text_3": "Shop Mushroom Spawn",
+            "link_4": "",
+            "link_text_4": "",
+            "color_accent": "#ffffff",
+            "text_align": "vertical-bottom horizontal-left",
+            "image": "shopify:\/\/shop_images\/lions-mane-urban-farm.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 60,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--20076144230680__9624ea0d-516e-42d5-a087-263e8ac67743-image-1",
+        "83db8b86-d6ed-4e05-aced-8451952bc00d",
+        "cd2752eb-c47a-4ef1-925b-d64437848e25",
+        "a58ef568-0dfc-4b6a-9d58-1b74af3edcb3",
+        "7cdf59c5-6a10-43b9-a4b9-2d1efb4a9a4f"
+      ],
+      "custom_css": [
+        "@media (min-width: 768px) and (max-width: 1024px) {h1 {font-size: 2rem !important; }}",
+        "@media (max-width: 767px) {h1 {font-size: 1.5rem !important; }}"
+      ],
+      "settings": {
+        "section_height": "750px",
+        "mobile_height": "auto",
+        "parallax": true,
+        "enable_trustpilot": true,
+        "style": "minimal",
+        "autoplay": false,
+        "autoplay_speed": 5
+      }
+    },
+    "6b420381-8028-4878-973b-664a38446acb": {
+      "type": "countdown",
+      "blocks": {
+        "template--17405694869784__6b420381-8028-4878-973b-664a38446acb-1679000491fc7216ca-0": {
+          "type": "content",
+          "settings": {
+            "heading": "Father's Day Offer",
+            "heading_size": "h2",
+            "text": "<p>Up to 20% Off Lion's Mane Kit in our Father's Day Bundle. Offer ends 14\/06\/2024.<\/p>",
+            "content_alignment": "left"
+          }
+        },
+        "template--17405694869784__6b420381-8028-4878-973b-664a38446acb-1679000491fc7216ca-2": {
+          "type": "button",
+          "settings": {
+            "button_link": "shopify:\/\/products\/fathers-day-bundle",
+            "button": "Shop Bundle",
+            "button_style": "solid"
+          }
+        },
+        "e43e222b-b787-4b12-a040-f59c35c13b88": {
+          "type": "timer",
+          "settings": {
+            "year": "2024",
+            "month": "06",
+            "day": "14",
+            "hour": "15",
+            "minute": "00",
+            "hide_timer": true,
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17405694869784__6b420381-8028-4878-973b-664a38446acb-1679000491fc7216ca-0",
+        "template--17405694869784__6b420381-8028-4878-973b-664a38446acb-1679000491fc7216ca-2",
+        "e43e222b-b787-4b12-a040-f59c35c13b88"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "a {color: #fff !important; text-decoration: underline; font-weight: bold;}"
+      ],
+      "settings": {
+        "layout": "banner",
+        "full_width": true,
+        "text_color": "#ffffff",
+        "background_color": "#0c286d",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "focal_point": "center",
+        "mobile_image_focal_point": "top"
+      }
+    },
+    "fb8bbd2c-3caa-4673-bb63-5d53b4609210": {
+      "type": "logo-list",
+      "blocks": {
+        "template--17405694869784__fb8bbd2c-3caa-4673-bb63-5d53b4609210-1674494534c4fab4ed-0": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/New_Project_10.png",
+            "link": ""
+          }
+        },
+        "template--17405694869784__fb8bbd2c-3caa-4673-bb63-5d53b4609210-1674494534c4fab4ed-1": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/New_Project_13.png",
+            "link": ""
+          }
+        },
+        "5af45e65-2f30-4155-9a57-d7866c94b4a1": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1280px-The_Guardian_svg.png",
+            "link": ""
+          }
+        },
+        "logo_image_QH3GgM": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/the-sunday-times-logo.png",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17405694869784__fb8bbd2c-3caa-4673-bb63-5d53b4609210-1674494534c4fab4ed-0",
+        "template--17405694869784__fb8bbd2c-3caa-4673-bb63-5d53b4609210-1674494534c4fab4ed-1",
+        "5af45e65-2f30-4155-9a57-d7866c94b4a1",
+        "logo_image_QH3GgM"
+      ],
+      "custom_css": [
+        "{\/*background: #f3f3f3;*\/ margin-top: 2rem; padding: 35px 0; margin-bottom: 4rem;}",
+        ".logo-bar__item img {height: 60px; object-fit: contain;}"
+      ],
+      "settings": {
+        "title": "Featured by",
+        "logo_opacity": 100,
+        "divider": false
+      }
+    },
+    "fca4059d-473b-43a5-985e-8c38eb77fb54": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--20076144230680__fca4059d-473b-43a5-985e-8c38eb77fb54-liquid-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div class=\"tp-widget\">\n<div class=\"tp-widget__label-rating\">\n<div class=\"tp-widget__label\">Excellent<\/div>\n<img class=\"tp-widget__rating-img\" alt=\"TrustScore 4.7 out of 5\" src=\"https:\/\/cdn.trustpilot.net\/brand-assets\/4.1.0\/stars\/stars-4.5.svg\">\n<\/div>\n<div class=\"tp-widget__logo\">\n{% render 'icon-trustpilot' %}\n<\/div>\n<\/div>\n\n<style>\n.tp-widget {\ndisplay: flex;\nalign-items: center;\ngap: 1rem;\njustify-content: center;\nmargin: .5rem 0 !important;\n}\n\n.tp-widget__label-rating {\ndisplay: flex;\ngap: 1rem;\n}\n\n.tp-widget__rating-img {\ndisplay: block;\nwidth: 100px;\n}\n\n.tp-widget__logo {\nposition: relative; height: 0; width: 100px; padding: 0; padding-bottom: 40px;\n}\n.tp-widget__logo svg {\nposition: absolute;\n    height: 100%;\n    width: 100%;\n    left: 0;\n    top: -2px;\n}\n\n@media only screen and (max-width: 769px) {\n.tp-widget {\nflex-wrap: wrap;\njustify-content: center;\nflex-direction: column-reverse;\ngap: 0;\nmargin-bottom: 26px !important;\n}\n.tp-widget__logo {\nwidth: 70px;\n}\n.tp-widget__label-rating {\nwidth: 100%;\njustify-content: center;\n}\n}\n<\/style>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--20076144230680__fca4059d-473b-43a5-985e-8c38eb77fb54-liquid-1"
+      ],
+      "disabled": true,
+      "custom_css": [
+
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": false
+      }
+    },
+    "featured-collection": {
+      "type": "featured-collection",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "title": "Mushroom Growing Kits",
+        "title_alignment": "left",
+        "enable_description": true,
+        "description": "FREE SHIPPING ON ALL GROWING KITS",
+        "home_featured_products": "mushroom-growing-kits",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": false,
+        "divider": false
+      }
+    },
+    "featured_collection_iNhC9c": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Gift Kits",
+        "title_alignment": "left",
+        "enable_description": true,
+        "description": "",
+        "home_featured_products": "mushroom-growing-kits-gift",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": false,
+        "divider": false
+      }
+    },
+    "1709734695343915d4": {
+      "type": "apps",
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "5c43a624-463d-4e3a-97e9-384226df35db": {
+      "type": "featured-collections",
+      "blocks": {
+        "template--17405694869784__5c43a624-463d-4e3a-97e9-384226df35db-1683064678265e7716-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "mushroom-growing-kits",
+            "title": "",
+            "custom_image": "shopify:\/\/shop_images\/1_45b1b4bb-1e42-43a1-ab69-ae3d7aa191bf.png",
+            "focal_point": "center center"
+          }
+        },
+        "template--17405694869784__5c43a624-463d-4e3a-97e9-384226df35db-1683064678265e7716-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "mushroom-spawn",
+            "title": "",
+            "custom_image": "shopify:\/\/shop_images\/4.png",
+            "focal_point": "center center"
+          }
+        },
+        "template--17405694869784__5c43a624-463d-4e3a-97e9-384226df35db-1683064678265e7716-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "mushroom-growing-bags",
+            "title": "",
+            "custom_image": "shopify:\/\/shop_images\/3_2429f5d7-a202-42a5-933f-8ab240d7703a.png",
+            "focal_point": "center center"
+          }
+        },
+        "template--17405694869784__5c43a624-463d-4e3a-97e9-384226df35db-1683064678265e7716-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "mushroom-fruiting-blocks",
+            "title": "",
+            "custom_image": "shopify:\/\/shop_images\/6.png",
+            "focal_point": "center center"
+          }
+        },
+        "e1f2d622-889e-48a6-97ef-036154664e57": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": "mushroom-plugs",
+            "title": "",
+            "custom_image": "shopify:\/\/shop_images\/5.png",
+            "focal_point": "center center"
+          }
+        },
+        "170dadfb-9424-40da-be3c-d64a1ffe8eea": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": "wholesale-mushroom-spawn",
+            "title": "",
+            "custom_image": "shopify:\/\/shop_images\/7.png",
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--17405694869784__5c43a624-463d-4e3a-97e9-384226df35db-1683064678265e7716-0",
+        "template--17405694869784__5c43a624-463d-4e3a-97e9-384226df35db-1683064678265e7716-1",
+        "template--17405694869784__5c43a624-463d-4e3a-97e9-384226df35db-1683064678265e7716-2",
+        "template--17405694869784__5c43a624-463d-4e3a-97e9-384226df35db-1683064678265e7716-3",
+        "e1f2d622-889e-48a6-97ef-036154664e57",
+        "170dadfb-9424-40da-be3c-d64a1ffe8eea"
+      ],
+      "custom_css": [
+        ".collection-item__title span {font-size: 1.5rem; width: 100% !important; background-color: black !important; color: #fff !important; letter-spacing: 0px;}"
+      ],
+      "settings": {
+        "title": "SHOP THE RANGE",
+        "divider": false,
+        "per_row": 4,
+        "enable_gutter": false
+      }
+    },
+    "b447e8ea-f624-4716-9919-3e5c8efc200a": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Hydroponic Kits 🌱",
+        "title_alignment": "left",
+        "enable_description": false,
+        "description": "",
+        "home_featured_products": "hydroponic-kits",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": false,
+        "divider": false
+      }
+    },
+    "ea1c3eab-e21f-4c18-9074-32b1f75794a6": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Mushroom Spawn",
+        "title_alignment": "left",
+        "enable_description": false,
+        "description": "Our famous kits.",
+        "home_featured_products": "mushroom-spawn",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": false,
+        "divider": false
+      }
+    },
+    "featured_collection_iiJVaJ": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "New! Mushroom {{ section.settings.home_featured_products.title }}",
+        "title_alignment": "left",
+        "enable_description": false,
+        "description": "",
+        "home_featured_products": "liquid-cultures",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": false,
+        "divider": false
+      }
+    },
+    "f8a896d6-fcdf-4d7d-a94a-dd0b17fe7434": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Mushroom Substrates",
+        "title_alignment": "left",
+        "enable_description": false,
+        "description": "Our famous kits.",
+        "home_featured_products": "mushroom-substrates",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": false,
+        "divider": false
+      }
+    },
+    "eb4896ee-6596-41ba-bfa4-66255a1db1d7": {
+      "type": "featured-video",
+      "disabled": true,
+      "settings": {
+        "title": "LATEST FROM UFI",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=XylDYnolixY&ab_channel=UrbanFarm-It",
+        "divider": false
+      }
+    },
+    "text_and_image_hdnVeG": {
+      "type": "text-and-image",
+      "custom_css": [
+        ".image-wrap {background: #ffffff;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/process-urban-farm.svg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "GIFTING MUSHROOMS IS EASY!",
+        "text": "<p><strong>We have put together these Oyster Mushroom growing gift kits to ensure it has everything your gift receiver needs to start growing mushrooms at home! <\/strong><\/p><p>Within the kit is a spawn voucher. This system is unlike any other mushroom kit on the market and guarantees freshness, quality, and high yield.<\/p><p>When the gift recipient is ready, they simply scan the QR code (found within the main kit box) and we will send out the fresh living spawn free of charge to them to start their home growing mushrooms!<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "left",
+        "divider": false
+      }
+    },
+    "718845b1-dd83-479e-9dfb-b2c91d4a2c9d": {
+      "type": "featured-authors",
+      "settings": {
+        "title": "MUSHROOM CULTIVATION GUIDES",
+        "blog": "mushroom-cultivation",
+        "post_limit": 6,
+        "blog_show_tags": false,
+        "blog_show_date": true,
+        "blog_show_comments": true,
+        "blog_show_author": true,
+        "view_all": true,
+        "blog_image_size": "wide",
+        "divider": false
+      }
+    },
+    "text_and_video_k7w8t8": {
+      "type": "text-and-video",
+      "settings": {
+        "video_url": "https:\/\/www.youtube.com\/watch?v=XylDYnolixY&ab_channel=UrbanFarm-It",
+        "video_width": 700,
+        "subtitle": "",
+        "title": "LATEST FROM URBAN FARM-IT",
+        "text": "<p><strong>Is it difficult to grow mushrooms? <\/strong><\/p><p>Although it may seem tricky at first, once you understand the basics of growing mushrooms, the process is pretty simple! Take care to prevent contamination, monitor temperature and humidity, and you will be enjoying fresh, homegrown, gourmet mushrooms before you know it!<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "9624ea0d-516e-42d5-a087-263e8ac67743",
+    "6b420381-8028-4878-973b-664a38446acb",
+    "fb8bbd2c-3caa-4673-bb63-5d53b4609210",
+    "fca4059d-473b-43a5-985e-8c38eb77fb54",
+    "featured-collection",
+    "featured_collection_iNhC9c",
+    "1709734695343915d4",
+    "5c43a624-463d-4e3a-97e9-384226df35db",
+    "b447e8ea-f624-4716-9919-3e5c8efc200a",
+    "ea1c3eab-e21f-4c18-9074-32b1f75794a6",
+    "featured_collection_iiJVaJ",
+    "f8a896d6-fcdf-4d7d-a94a-dd0b17fe7434",
+    "text_and_video_k7w8t8",
+    "eb4896ee-6596-41ba-bfa4-66255a1db1d7",
+    "text_and_image_hdnVeG",
+    "718845b1-dd83-479e-9dfb-b2c91d4a2c9d"
+  ]
+}

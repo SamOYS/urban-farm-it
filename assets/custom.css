@@ -617,19 +617,21 @@ button.btn::after {
 
 /* Kit Type Labels on Product Grids */
 .grid-product__label {
-  padding: 0.15rem 0.25rem;
+  padding: 0.25rem 0.5rem;
   border-radius: 2px;
   font-size: 0.75rem;
-  color: #000;
+  color: #FFFFFF;
   position: absolute;
-  top: 5px;
+  top: 0px;
   display: flex;
-  right: 5px;
+  right: 0px;
   z-index: 1;
   align-items: center;
   gap: 5px;
-  background: #f3f3f3;
+  background: #0060C7;
 }
+
+
 
 .grid-product__label--text {
   display: flex;
@@ -647,9 +649,15 @@ button.btn::after {
 }
 
 .grid-product__label[data-kit-type='gift-option'] {
-  background: #0060c7;
+  background: #27B5CB;
   color: #fff;
 }
+
+.grid-product__label[data-kit-type='new-product'] {
+  background: #F6740A;
+  color: #fff;
+}
+
 
 .grid-product__label[data-kit-type='ready-to-fruit'] {
   background: #28a745;

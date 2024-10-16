@@ -58,8 +58,16 @@
     data-group="{{image_set_full}}"
   {% endif %}>
 
-  <div data-product-image-main class="product-image-main">
+  <div data-product-image-main class="product-image-main !tw-relative">
+      {% assign featured_icon = product.metafields.custom.featured_icon %}
+      {%- if featured_icon != blank -%}
+          <img src="{{ featured_icon | file_url }}" alt="{{ kit_type }} icon" class="!tw-absolute !tw-block !tw-bottom-2 !tw-z-10 lg:!tw-w-20 lg:!tw-h-20 !tw-w-12 !tw-h-12 !tw-left-2">
+      {%- endif -%}
 
+      {% assign featured_tag = product.metafields.custom.featured_tag %}
+      {%- if featured_tag != blank -%}
+          <img src="{{ featured_tag | file_url }}" alt="{{ featured_tag }} icon" class="!tw-absolute !tw-block !tw-bottom-0 !tw-z-10 lg:!tw-w-48 !tw-w-28 !tw-h-auto !tw-right-0">
+      {%- endif -%}
     {%- if media.media_type == 'model' -%}
       {%- liquid
         if media.preview_image.aspect_ratio

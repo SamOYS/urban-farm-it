@@ -1,0 +1,166 @@
+{%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
+
+    <div class="index-section">
+
+        <div class="page-width feature-row-wrapper">
+            {%- capture video_layout -%}
+                <div class="feature-row__item-video tw-w-full lg:!tw-w-1/2 tw-bg-black" style="" data-aos>
+                    {%- if section.settings.video_url != blank -%}
+                        <div>
+                        {%- if section.settings.button_label != blank and section.settings.button_link != blank -%}<a href="{{ section.settings.button_link }}">{%- endif -%}
+                                <div class="video-wrapper">
+                                  <iframe class="tw-w-full tw-h-[500px] tw-max-w-full" src="https://www.youtube.com/embed/{{ section.settings.video_url | split: 'v=' | last | split: '&' | first }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                {%- if section.settings.button_label != blank and section.settings.button_link != blank -%}</a>{%- endif -%}
+                        </div>
+                    {%- endif -%}
+                </div>
+            {%- endcapture -%}
+
+            <div class="feature-row !tw-m-0 !tw-bg-[#EFEFEF]">
+                {%- if section.settings.layout == 'left' -%}
+                    {{ video_layout }}
+                {%- endif -%}
+
+                <div class="tw-py-10 tw-px-4 lg:tw-pl-8 tw-w-full lg:tw-w-1/2 !lg:tw-pr-0 feature-row__item-video feature-row__text feature-row__text--{{ section.settings.layout }} text-{{ section.settings.align_text }}" data-aos>
+                    {%- if section.settings.subtitle != blank -%}
+                        <div class="subheading appear-delay{% cycle '','-1','-2','-3','-4' %}">{{ section.settings.subtitle }}</div>
+                    {%- endif -%}
+                    {%- if section.settings.title != blank -%}
+                        <h2 class="appear-delay{% cycle '','-1','-2','-3','-4' %}">{{ section.settings.title | escape }}</h2>
+                    {%- endif -%}
+                    {%- if section.settings.text != blank -%}
+                        <div class="rte appear-delay{% cycle '','-1','-2','-3','-4' %}">{{ section.settings.text }}</div>
+                    {%- endif -%}
+                    {%- if section.settings.button_label != blank -%}
+                        <div class="appear-delay{% cycle '','-1','-2','-3','-4' %}">
+                            <a href="{{ section.settings.button_link }}" class="btn{% if section.settings.button_style == 'secondary' %} btn--tertiary{% endif %}">
+                                {{ section.settings.button_label }}
+                            </a>
+                        </div>
+                    {%- endif -%}
+                </div>
+
+                {%- if section.settings.layout == 'right' -%}
+                    {{ video_layout }}
+                {%- endif -%}
+            </div>
+        </div>
+
+    </div>
+
+    {%- if section.settings.divider -%}</div>{%- endif -%}
+
+{% schema %}
+{
+  "name": "Text and Video",
+  "settings": [
+    {
+      "type": "url",
+      "id": "video_url",
+      "label": "Video URL"
+    },
+    {
+      "type": "range",
+      "id": "video_width",
+      "label": "Video Width",
+      "default": 700,
+      "min": 200,
+      "max": 700,
+      "step": 10,
+      "unit": "px"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Video with text"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text",
+      "default": "<p>Pair large text with a video to tell a story, explain a detail about your product, or describe a new promotion.</p>"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Label"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    },
+    {
+      "type": "select",
+      "id": "button_style",
+      "label": "Button Style",
+      "default": "primary",
+      "options": [
+        {
+          "value": "primary",
+          "label": "Primary"
+        },
+        {
+          "value": "secondary",
+          "label": "Secondary"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "align_text",
+      "label": "Text Alignment",
+      "default": "left",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "layout",
+      "label": "Layout",
+      "default": "right",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "divider",
+      "label": "Divider",
+      "default": false
+    }
+  ],
+  "presets": [
+    {
+      "name": "Video with Text"
+    }
+  ]
+}
+
+{% endschema %}
