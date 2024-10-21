@@ -241,21 +241,13 @@
             "image": "shopify://shop_images/the-sunday-times-logo.png",
             "link": ""
           }
-        },
-        "logo_image_jE3YKA": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/The_Sun__2.svg",
-            "link": ""
-          }
         }
       },
       "block_order": [
         "template--17405694869784__fb8bbd2c-3caa-4673-bb63-5d53b4609210-1674494534c4fab4ed-0",
         "template--17405694869784__fb8bbd2c-3caa-4673-bb63-5d53b4609210-1674494534c4fab4ed-1",
         "5af45e65-2f30-4155-9a57-d7866c94b4a1",
-        "logo_image_QH3GgM",
-        "logo_image_jE3YKA"
+        "logo_image_QH3GgM"
       ],
       "custom_css": [
         "{/*background: #f3f3f3;*/ margin-top: 2rem; padding: 35px 0; margin-bottom: 4rem;}",
