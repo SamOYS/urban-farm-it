@@ -15,7 +15,7 @@
         "b499b114-20e9-405a-ab8e-20e639dafbf1": {
           "type": "custom",
           "settings": {
-            "code": "<div\n          style=\"\n            margin-top: 0 !important;\n            font-size: 0.85rem;\n          \"\n          class=\"jdgm-widget jdgm-preview-badge\"\n          data-id=\"{{ product.id }}\"\n          data-template=\"manual-installation\"\n        >\n          {{ product.metafields.judgeme.badge }}\n        <\/div>"
+            "code": "<div\n          style=\"\n            margin-top: 0 !important;\n            font-size: 0.85rem;\n          \"\n          class=\"jdgm-widget jdgm-preview-badge\"\n          data-id=\"{{ product.id }}\"\n          data-template=\"manual-installation\"\n        >\n          {{ product.metafields.judgeme.badge }}\n        </div>"
           }
         },
         "price": {
@@ -40,20 +40,20 @@
         "618417c1-ec01-45b8-8f31-d4b9a6132113": {
           "type": "custom",
           "settings": {
-            "code": "Not ready to grow right away, or purchasing as a gift? Select the <b>Spawn Voucher<\/b> option."
+            "code": "Not ready to grow right away, or purchasing as a gift? Select the <b>Gift</b> option."
           }
         },
         "117d5508-99ad-4aa0-a1e3-e8a8ad0c4870": {
           "type": "custom",
           "settings": {
-            "code": "{%- liquid\n  assign current_time = 'now' | date: '%s'\n  assign start_time = '2023-11-24 00:00' | date: '%s'\n  assign end_time = '2023-11-28 00:00' | date: '%s'\n-%}\n\n{%- if current_time >= start_time and current_time < end_time -%}\n{%- liquid\n   assign bogo_products = product.metafields.custom.bogo_products.value | sort: 'title' \n-%}\n{%- if section_header == blank -%}{% assign section_header = 'Choose Your Second Kit at 50% Off:' %}{%- endif -%}\n{%- if bogo_products -%}\n  <div class=\"product-block\">\n    <div id=\"bogo-module\">\n<h3>BLACK FRIDAY SALE<\/h3>\n<p>Buy One Get One 50% Off!<\/p>\n      <h4 class=\"bogo__header\">{{ section_header }}<\/h4>\n      <select class=\"bogo__product-select\" id=\"bogo-product-select\">\n        <option value=\"\">Select a Product<\/option>\n        {%- for bogo_product in bogo_products -%}\n          {% assign discounted_price = bogo_product.variants.first.price | times: 0.5 %}\n          <option value=\"{{ bogo_product.variants.first.id }}\" data-price=\"{{ discounted_price }}\">\n            {{ bogo_product.title }} - {{ discounted_price | money }}\n          <\/option>\n        {%- endfor -%}\n      <\/select>\n      <span class=\"bogo__selected-product-price\" id=\"bogo-selected-product-price\"><\/span>\n    <\/div>\n  <\/div>\n  <style>\n    #bogo-module {\n        background-color: #000;\ncolor: #fff;\n        padding: 1rem 0.85rem;\n        max-width: 500px;\n    }\n    .bogo__header {\n        font-family: 'Archivo Black';\n        letter-spacing: 0;\n        font-size: 1rem;\n    }\n    .bogo__product-select {\n        width: 100%;\n        padding: 0.5rem;\n        margin: 0.5rem 0;\n        background-color: #fff;color:#000;\n        border: 1px solid #ddd;\n    }\n    .bogo__selected-product-price {\n        display: block;\n        margin-top: 0.5rem;\n        font-family: 'Archivo Black';\n        font-size: 1rem;\n    }\n  <\/style>\n  <script type=\"text\/javascript\">\n    document.getElementById('bogo-product-select').addEventListener('change', function(event) {\n      var selectedOption = event.target.options[event.target.selectedIndex];\n      var priceDisplay = document.getElementById('bogo-selected-product-price');\n\n      \/\/ Update the displayed price\n    });\n  <\/script>\n{%- endif -%}{% endif %}"
+            "code": "{%- liquid\n  assign current_time = 'now' | date: '%s'\n  assign start_time = '2023-11-24 00:00' | date: '%s'\n  assign end_time = '2023-11-28 00:00' | date: '%s'\n-%}\n\n{%- if current_time >= start_time and current_time < end_time -%}\n{%- liquid\n   assign bogo_products = product.metafields.custom.bogo_products.value | sort: 'title' \n-%}\n{%- if section_header == blank -%}{% assign section_header = 'Choose Your Second Kit at 50% Off:' %}{%- endif -%}\n{%- if bogo_products -%}\n  <div class=\"product-block\">\n    <div id=\"bogo-module\">\n<h3>BLACK FRIDAY SALE</h3>\n<p>Buy One Get One 50% Off!</p>\n      <h4 class=\"bogo__header\">{{ section_header }}</h4>\n      <select class=\"bogo__product-select\" id=\"bogo-product-select\">\n        <option value=\"\">Select a Product</option>\n        {%- for bogo_product in bogo_products -%}\n          {% assign discounted_price = bogo_product.variants.first.price | times: 0.5 %}\n          <option value=\"{{ bogo_product.variants.first.id }}\" data-price=\"{{ discounted_price }}\">\n            {{ bogo_product.title }} - {{ discounted_price | money }}\n          </option>\n        {%- endfor -%}\n      </select>\n      <span class=\"bogo__selected-product-price\" id=\"bogo-selected-product-price\"></span>\n    </div>\n  </div>\n  <style>\n    #bogo-module {\n        background-color: #000;\ncolor: #fff;\n        padding: 1rem 0.85rem;\n        max-width: 500px;\n    }\n    .bogo__header {\n        font-family: 'Archivo Black';\n        letter-spacing: 0;\n        font-size: 1rem;\n    }\n    .bogo__product-select {\n        width: 100%;\n        padding: 0.5rem;\n        margin: 0.5rem 0;\n        background-color: #fff;color:#000;\n        border: 1px solid #ddd;\n    }\n    .bogo__selected-product-price {\n        display: block;\n        margin-top: 0.5rem;\n        font-family: 'Archivo Black';\n        font-size: 1rem;\n    }\n  </style>\n  <script type=\"text/javascript\">\n    document.getElementById('bogo-product-select').addEventListener('change', function(event) {\n      var selectedOption = event.target.options[event.target.selectedIndex];\n      var priceDisplay = document.getElementById('bogo-selected-product-price');\n\n      // Update the displayed price\n    });\n  </script>\n{%- endif -%}{% endif %}"
           }
         },
         "c7cb76d9-e206-4d28-a3fe-1dff3ce406da": {
           "type": "custom",
           "disabled": true,
           "settings": {
-            "code": "{% assign product_variant =  product.metafields.gift_option.product_variant %}{% if product_variant %}\n<div style=\"padding: 1rem 0.85rem;background:#d9edf7;    max-width: 500px;\">\n<h3 class=\"cross-sell__header\" style=\"font-size: 1rem;-webkit-text-stroke: unset;\">PURCHASING AS A GIFT?<\/h3>\n<p>This kit includes live mushroom spawn to be used promptly after purchase. For later use or as a gift, consider our gift option with a complimentary spawn voucher, redeemable when ready to grow.<\/p>\n<div class=\"variant-input-wrap\">\n<a class=\"custom-variant__button-label\" href=\"{{ product_variant[0]  | prepend: \"\/products\/\"| prepend: shop.url }}\">\n<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"800px\" height=\"800px\" viewBox=\"0 0 24 24\" fill=\"none\">\n<path d=\"M5 10.0802V20.0802H19V14M5 10.0802H4V7.0802H20V10.0802H5ZM12 7.0802C12.8333 5.24687 14.9999 1.5802 16.9999 3.5802C18.9999 5.5802 14.5 6.91353 12 7.0802ZM12 7.0802C11.1667 5.24687 8.99999 1.5802 6.99999 3.5802C4.99999 5.5802 9.5 6.91353 12 7.0802Z\" stroke=\"#000000\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\/>\n<\/svg>See Gift Version\n<\/a>\n<\/div>\n<\/div>\n{% endif %}"
+            "code": "{% assign product_variant =  product.metafields.gift_option.product_variant %}{% if product_variant %}\n<div style=\"padding: 1rem 0.85rem;background:#d9edf7;    max-width: 500px;\">\n<h3 class=\"cross-sell__header\" style=\"font-size: 1rem;-webkit-text-stroke: unset;\">PURCHASING AS A GIFT?</h3>\n<p>This kit includes live mushroom spawn to be used promptly after purchase. For later use or as a gift, consider our gift option with a complimentary spawn voucher, redeemable when ready to grow.</p>\n<div class=\"variant-input-wrap\">\n<a class=\"custom-variant__button-label\" href=\"{{ product_variant[0]  | prepend: \"/products/\"| prepend: shop.url }}\">\n<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"800px\" height=\"800px\" viewBox=\"0 0 24 24\" fill=\"none\">\n<path d=\"M5 10.0802V20.0802H19V14M5 10.0802H4V7.0802H20V10.0802H5ZM12 7.0802C12.8333 5.24687 14.9999 1.5802 16.9999 3.5802C18.9999 5.5802 14.5 6.91353 12 7.0802ZM12 7.0802C11.1667 5.24687 8.99999 1.5802 6.99999 3.5802C4.99999 5.5802 9.5 6.91353 12 7.0802Z\" stroke=\"#000000\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>See Gift Version\n</a>\n</div>\n</div>\n{% endif %}"
           }
         },
         "c11da764-83b0-4131-ba30-5bba256f27a8": {
@@ -70,9 +70,10 @@
           }
         },
         "b3fc12dd-8538-4787-b64f-7850c280141e": {
-          "type": "shopify:\/\/apps\/planet\/blocks\/shopify-planet\/12047591-3a2d-45cc-9dfd-2ce5eaa45dee",
+          "type": "shopify://apps/planet/blocks/shopify-planet/12047591-3a2d-45cc-9dfd-2ce5eaa45dee",
           "settings": {
             "badgeMode": "info",
+            "customText": "",
             "showLogo": true,
             "showMoreInfo": true,
             "showStats": false,
@@ -92,7 +93,7 @@
           }
         },
         "e89378ea-77b2-49f4-90ba-5a690c3081f5": {
-          "type": "shopify:\/\/apps\/volume-discounts\/blocks\/offer_table_block\/25745434-52e7-4378-88f1-890df18a0110",
+          "type": "shopify://apps/volume-discounts/blocks/offer_table_block/25745434-52e7-4378-88f1-890df18a0110",
           "settings": {
           }
         },
@@ -140,7 +141,7 @@
           "type": "tab",
           "settings": {
             "title": "Delivery & Returns",
-            "content": "<p><strong>Delivery<\/strong><\/p><p><strong>Note: <\/strong>Please refer to the specific lead times shown on product pages for more accurate delivery times.<\/p><ol><li><strong>Small Orders (E.g. 100ml Spawn, Plugs)<\/strong>: Sent via Royal Mail large letters.<\/li><li><strong>Medium-Sized Orders (under 2kg)<\/strong>: Royal Mail 24-48 hour tracked parcel.<\/li><li><strong>Large Orders (2kg+)<\/strong>: via DPD Express.<\/li><\/ol><p><strong>Returns<\/strong><\/p><ol><li><strong>Standard Returns<\/strong>: Returns and exchanges within 14 days of receipt. The item must be unused and in its original packaging. See our <a href=\"\/policies\/refund-policy\" target=\"_blank\" title=\"Refund Policy\">returns policy here<\/a>.<\/li><\/ol><p>This does not apply to our Gift E-Cards, which are delivered via email.<\/p>",
+            "content": "<p><strong>Delivery</strong></p><p><strong>Note: </strong>Please refer to the specific lead times shown on product pages for more accurate delivery times.</p><ol><li><strong>Small Orders (E.g. 100ml Spawn, Plugs)</strong>: Sent via Royal Mail large letters.</li><li><strong>Medium-Sized Orders (under 2kg)</strong>: Royal Mail 24-48 hour tracked parcel.</li><li><strong>Large Orders (2kg+)</strong>: via DPD Express.</li></ol><p><strong>Returns</strong></p><ol><li><strong>Standard Returns</strong>: Returns and exchanges within 14 days of receipt. The item must be unused and in its original packaging. See our <a href=\"/policies/refund-policy\" target=\"_blank\" title=\"Refund Policy\">returns policy here</a>.</li></ol><p>This does not apply to our Gift E-Cards, which are delivered via email.</p>",
             "page": ""
           }
         }
@@ -187,7 +188,7 @@
         "f63ca0e8-94c7-4eba-b06d-8bf8b5f2bacf": {
           "type": "step",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Drill.gif",
+            "image": "shopify://shop_images/Drill.gif",
             "step_title": "DRILL HOLES",
             "step_description": "Drill evenly spaced holes into the log with the provided drill bit"
           }
@@ -195,7 +196,7 @@
         "f9b0111b-c432-4178-99df-a91c0d6da62f": {
           "type": "step",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Insert.gif",
+            "image": "shopify://shop_images/Insert.gif",
             "step_title": "INSERT PLUGS",
             "step_description": "Inoculate the log by inserting the included mushroom plugs"
           }
@@ -203,7 +204,7 @@
         "731c258f-d64d-470b-91f7-30802adc9469": {
           "type": "step",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Untitled_design.gif",
+            "image": "shopify://shop_images/Untitled_design.gif",
             "step_title": "HEAT WAX",
             "step_description": "Melt the wax to prepare for the sealing process"
           }
@@ -211,7 +212,7 @@
         "8f1b30ac-23fa-4b3d-83ee-8772a8eb05cc": {
           "type": "step",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Untitled_design_2_1.gif",
+            "image": "shopify://shop_images/Untitled_design_2_1.gif",
             "step_title": "SEAL PLUGS",
             "step_description": "Seal the inserted plugs for protection & to retain moisture"
           }
@@ -267,7 +268,7 @@
         "subtitle": "",
         "heading": "\"[ONE OF] THE BEST MUSHROOM GROWING KITS TO BUY IN THE UK RIGHT NOW\"",
         "heading_type": "h2",
-        "text": "<img style=\"display: block; height: 45px;\" src=\"https:\/\/images.immediate.co.uk\/production\/volatile\/sites\/4\/2022\/08\/cropped-BBC-Science-Focus-logo-2018-web-2364b48-a244f87.jpg?quality=90&webp=true&resize=291,88\">",
+        "text": "<img style=\"display: block; height: 45px;\" src=\"https://images.immediate.co.uk/production/volatile/sites/4/2022/08/cropped-BBC-Science-Focus-logo-2018-web-2364b48-a244f87.jpg?quality=90&webp=true&resize=291,88\">",
         "button_label": "SEE OUR REVIEWS",
         "button_link": "#judgeme_product_reviews"
       }
@@ -277,7 +278,7 @@
       "disabled": true,
       "settings": {
         "title": "",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=hjKkUGw-UGc",
+        "video_url": "https://www.youtube.com/watch?v=hjKkUGw-UGc",
         "divider": false
       }
     },
@@ -291,7 +292,7 @@
       "type": "apps",
       "blocks": {
         "82c6580b-1521-483b-bfd9-34dc2c17e709": {
-          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
           }
         }
