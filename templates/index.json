@@ -297,7 +297,7 @@
 
       ],
       "settings": {
-        "title": "POPULAR DIY GROWING KITS",
+        "title": "POPULAR GROWING KITS",
         "title_alignment": "left",
         "enable_description": true,
         "description": "Delicious mushrooms from kit to kitchen – free shipping included! ",
@@ -311,6 +311,7 @@
     },
     "featured_collection_iNhC9c": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "GIFT GROWING KITS",
         "title_alignment": "left",
@@ -333,6 +334,7 @@
     },
     "text_and_image_hdnVeG": {
       "type": "text-and-image",
+      "disabled": true,
       "custom_css": [
         ".image-wrap {background: #ffffff;}"
       ],
@@ -540,9 +542,9 @@
     "featured_collection_iNhC9c",
     "1709734695343915d4",
     "text_and_image_hdnVeG",
+    "ea1c3eab-e21f-4c18-9074-32b1f75794a6",
     "5c43a624-463d-4e3a-97e9-384226df35db",
     "b447e8ea-f624-4716-9919-3e5c8efc200a",
-    "ea1c3eab-e21f-4c18-9074-32b1f75794a6",
     "featured_collection_iiJVaJ",
     "f8a896d6-fcdf-4d7d-a94a-dd0b17fe7434",
     "text_and_video_k7w8t8",
