@@ -177,6 +177,21 @@
     })(window, document, "clarity", "script", "om1xzgx7j4");
     </script>
 
+    {% if template == 'product' and product.metafields.custom.product_json %}
+    <script type="application/ld+json">
+      {{ product.metafields.custom.product_json }}
+    </script>
+  {% elsif template == 'article' and article.metafields.custom.article_json %}
+    <script type="application/ld+json">
+      {{ article.metafields.custom.article_json }}
+    </script>
+  {% elsif template == 'page' and page.metafields.custom.page_json %}
+    <script type="application/ld+json">
+      {{ page.metafields.custom.page_json }}
+    </script>
+  {% endif %}
+
+
   {% include 'pagefly-app-header' %}</head>
   <body
     class="template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}{% if request.path == '/challenge' %} template-challange{% endif %}"
