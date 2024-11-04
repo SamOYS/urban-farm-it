@@ -296,16 +296,27 @@
                         </div>
                       {%- endif -%}
 
-                      {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
+                         {%- if shop.taxes_included or shop.shipping_policy.body != blank or product.metafields.custom.kit_type == "Free Shipping" -%}
                         <div class="product__policies rte small--text-center">
+
                           {%- if shop.taxes_included -%}
                             <span style="display: block;">{{ 'products.product.include_taxes' | t }}</span>
                           {%- endif -%}
-                          {%- if shop.shipping_policy.body != blank -%}
-                            <span>
-                              {{- 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url -}}
+                          
+                          {%- if product.metafields.custom.kit_type == "Free Shipping" -%}
+                            <span style="display: block;">
+                              Free <a href="{{ shop.shipping_policy.url }}">Shipping</a>
                             </span>
                           {%- endif -%}
+                              
+                          {%- if shop.shipping_policy.body != blank -%}
+                            {%- unless product.metafields.custom.kit_type == "Free Shipping" -%}
+                              <span>
+                                {{- 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url -}}
+                              </span>
+                            {%- endunless -%}
+                          {%- endif -%}
+                          
                         </div>
                       {%- endif -%}
                     </div>
