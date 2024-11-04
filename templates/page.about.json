@@ -102,7 +102,7 @@
         "h1 {font-size: 80px;}"
       ],
       "settings": {
-        "image": "shopify://shop_images/ufi-teams_2.jpg",
+        "image": "shopify://shop_images/team-photo-ufi.jpg",
         "video": "",
         "text": "<p>WE ARE</p><h1>URBAN FARM-IT</h1><p>For anyone, growing anywhere.</p><p>Welcome to Urban Farm-It! We are an organisation whose aim is to encourage and inspire a positive shift in our culture around sustainable food production and consumption. We wish to introduce people to the wonderful and alternative world of urban farming through accessible education and top quality resources.<br/><br/>Our aim is to become a leader in the global movement to a more sustainable and self-sufficient society, by positively disrupting current food production culture.</p><p><br/>{% render 'social-icons', additional_classes: 'footer__social' %}</p>",
         "inverse": false,
