@@ -140,11 +140,35 @@
             "is_tab": false
           }
         },
-        "272b9d40-c3f8-452d-a77a-6804838a1fd8": {
+        "tab_939whd": {
           "type": "tab",
           "settings": {
-            "title": "WHAT'S IN THE KIT",
-            "content": "{{ product.metafields.custom.product_contents | metafield_tag }}",
+            "title": "Why Choose?",
+            "content": "{{ product.metafields.custom.why_choose | metafield_tag }}",
+            "page": ""
+          }
+        },
+        "tab_6AqhGj": {
+          "type": "tab",
+          "settings": {
+            "title": "Flavour Profile",
+            "content": "{{ product.metafields.custom.flavour_profile | metafield_tag }}",
+            "page": ""
+          }
+        },
+        "tab_W3T4Rr": {
+          "type": "tab",
+          "settings": {
+            "title": "Appearance",
+            "content": "{{ product.metafields.custom.appearance | metafield_tag }}",
+            "page": ""
+          }
+        },
+        "tab_XWiRXT": {
+          "type": "tab",
+          "settings": {
+            "title": "Health Benefits & History",
+            "content": "{{ product.metafields.custom.health_benefits_history | metafield_tag }}",
             "page": ""
           }
         },
@@ -162,6 +186,15 @@
           "settings": {
             "title": "Delivery & Returns",
             "content": "<p><strong>Delivery</strong></p><p><strong>Note: </strong>Please refer to the specific lead times shown on product pages for more accurate delivery times.</p><ol><li><strong>Small Orders (E.g. 100ml Spawn, Plugs)</strong>: Sent via Royal Mail large letters.</li><li><strong>Medium-Sized Orders (under 2kg)</strong>: Royal Mail 24-48 hour tracked parcel.</li><li><strong>Large Orders (2kg+)</strong>: via DPD Express.</li></ol><p><strong>Returns</strong></p><ol><li><strong>Standard Returns</strong>: Returns and exchanges within 14 days of receipt. The item must be unused and in its original packaging. See our <a href=\"/policies/refund-policy\" target=\"_blank\" title=\"Refund Policy\">returns policy here</a>.</li></ol><p>This does not apply to our Gift E-Cards, which are delivered via email.</p>",
+            "page": ""
+          }
+        },
+        "272b9d40-c3f8-452d-a77a-6804838a1fd8": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "title": "WHAT'S IN THE KIT",
+            "content": "{{ product.metafields.custom.product_contents | metafield_tag }}",
             "page": ""
           }
         },
@@ -186,17 +219,10 @@
         },
         "tab_7qzTQa": {
           "type": "tab",
+          "disabled": true,
           "settings": {
             "title": "Nutritional Information",
             "content": "<p>Laborum excepteur non veniam commodo laboris. Minim est ipsum ullamco excepteur. Eu nostrud adipisicing fugiat culpa laboris et cupidatat Lorem labore ex. Esse mollit cillum ipsum sit deserunt eu.</p>",
-            "page": ""
-          }
-        },
-        "tab_939whd": {
-          "type": "tab",
-          "settings": {
-            "title": "test",
-            "content": "<p>Use collapsible tabs for more detailed information that will help customers make a purchasing decision.</p><p>Ex: Shipping and return policies, size guides, and other common questions.</p>",
             "page": ""
           }
         }
@@ -220,13 +246,16 @@
         "e89378ea-77b2-49f4-90ba-5a690c3081f5",
         "fa716552-1943-4ff8-9ab5-8d1aa1f2de27",
         "542a935d-6912-4805-a12c-65c50a875a74",
-        "272b9d40-c3f8-452d-a77a-6804838a1fd8",
+        "tab_939whd",
+        "tab_6AqhGj",
+        "tab_W3T4Rr",
+        "tab_XWiRXT",
         "92107157-941a-481b-b05c-c5bc68088308",
         "0a108145-8c33-4ba3-915f-85eec2eb11e9",
+        "272b9d40-c3f8-452d-a77a-6804838a1fd8",
         "product_bundle_4DqDpw",
         "2b444462-db54-42b7-8c6d-e79319bdb2ed",
-        "tab_7qzTQa",
-        "tab_939whd"
+        "tab_7qzTQa"
       ],
       "custom_css": [
 
