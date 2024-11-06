@@ -12,26 +12,51 @@
     "9624ea0d-516e-42d5-a087-263e8ac67743": {
       "type": "slideshow",
       "blocks": {
-        "template--20076144230680__9624ea0d-516e-42d5-a087-263e8ac67743-image-1": {
+        "7cdf59c5-6a10-43b9-a4b9-2d1efb4a9a4f": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "show_breadcrumbs": false,
             "top_subheading": "",
-            "title": "Introducing\nHydro-Herb \nHydroponic Kits",
-            "title_size": 50,
-            "subheading": "Launch offer: Get 20% off!",
-            "link": "shopify://collections/hydro-herb",
-            "link_text": "Browse the Range",
-            "link_2": "",
-            "link_text_2": "",
+            "title": "GROW YOUR OWN GOURMET MUSHROOMS AT HOME!",
+            "title_size": 65,
+            "subheading": "We Make Growing Your Own Food Simple. Join The Urban Farming Revolution.",
+            "link": "",
+            "link_text": "",
+            "link_2": "shopify://collections/mushroom-growing-kits",
+            "link_text_2": "Shop Mushroom Kits",
             "link_3": "",
-            "link_text_3": "Optional button",
+            "link_text_3": "",
             "link_4": "",
             "link_text_4": "",
-            "color_accent": "rgba(0,0,0,0)",
-            "text_align": "vertical-center horizontal-left",
-            "image": "shopify://shop_images/Box_2.jpg",
+            "color_accent": "#f4b3ba",
+            "text_align": "vertical-bottom horizontal-left",
+            "image": "shopify://shop_images/mushroom-grow-kits.jpg",
+            "image_mobile": "shopify://shop_images/Grow_Kits_-_Mobile_2.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 70,
+            "focal_point": "center center"
+          }
+        },
+        "template--20076144230680__9624ea0d-516e-42d5-a087-263e8ac67743-image-1": {
+          "type": "image",
+          "settings": {
+            "show_breadcrumbs": false,
+            "top_subheading": "",
+            "title": "SUPERIOR MUSHROOM GRAIN AND PLUG SPAWN",
+            "title_size": 65,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "shopify://collections/mushroom-spawn",
+            "link_text_2": "Mushroom Spawn",
+            "link_3": "",
+            "link_text_3": "",
+            "link_4": "",
+            "link_text_4": "",
+            "color_accent": "#b3e5f4",
+            "text_align": "vertical-bottom horizontal-left",
+            "image": "shopify://shop_images/mushroom-spawn.jpg",
+            "image_mobile": "shopify://shop_images/Mushroom_Spawn_-_Mobile_2.jpg",
             "parallax_direction": "top",
             "overlay_opacity": 70,
             "focal_point": "center center"
@@ -39,110 +64,60 @@
         },
         "83db8b86-d6ed-4e05-aced-8451952bc00d": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "show_breadcrumbs": false,
-            "top_subheading": "IN-PERSON COURSE, BELGIUM",
-            "title": "Join a Masterclass in Mushroom Cultivation with Mycelia Academy!",
+            "top_subheading": "",
+            "title": "SEEKING ROBUST AND EFFICIENT MYCELIAL GROWTH?",
             "title_size": 65,
-            "subheading": "Sept 25th-29th 2023 & Nov 13th-17th, 2023, Deinze, Belgium",
-            "link": "shopify://products/mycelia-substrate-production-course",
-            "link_text": "LEARN MORE",
-            "link_2": "",
-            "link_text_2": "",
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "shopify://collections/liquid-cultures",
+            "link_text_2": "Liquid Cultures",
             "link_3": "",
-            "link_text_3": "Optional button",
+            "link_text_3": "",
             "link_4": "",
             "link_text_4": "",
-            "color_accent": "rgba(0,0,0,0)",
-            "text_align": "vertical-center horizontal-left",
-            "image": "shopify://shop_images/20210921_133336-scaled.jpg",
+            "color_accent": "#009f74",
+            "text_align": "vertical-bottom horizontal-left",
+            "image": "shopify://shop_images/liquid-cultures.jpg",
+            "image_mobile": "shopify://shop_images/Liquid_Cultures_-_Mobile_2.jpg",
             "parallax_direction": "top",
-            "overlay_opacity": 40,
+            "overlay_opacity": 60,
             "focal_point": "center center"
           }
         },
         "cd2752eb-c47a-4ef1-925b-d64437848e25": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "show_breadcrumbs": false,
             "top_subheading": "",
-            "title": "THE HOME OF\nGROW YOUR OWN",
-            "title_size": 58,
-            "subheading": "Join the urban farming revolution",
-            "link": "shopify://collections/mushroom-spawn",
-            "link_text": "Shop Mushroom Spawn",
-            "link_2": "shopify://collections/mushroom-growing-kits",
-            "link_text_2": "Shop Mushroom Kits",
-            "link_3": "",
-            "link_text_3": "Optional button",
-            "link_4": "",
-            "link_text_4": "",
-            "color_accent": "rgba(0,0,0,0)",
-            "text_align": "vertical-center horizontal-left",
-            "image": "shopify://shop_images/STILL_THINKING_IT_OVER_600_x_850_px_Website.png",
-            "parallax_direction": "top",
-            "overlay_opacity": 52,
-            "focal_point": "center center"
-          }
-        },
-        "a58ef568-0dfc-4b6a-9d58-1b74af3edcb3": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "show_breadcrumbs": false,
-            "top_subheading": "",
-            "title": "THE HOME OF\nGROW YOUR OWN",
-            "title_size": 58,
-            "subheading": "Join the urban farming revolution",
-            "link": "shopify://collections/mushroom-spawn",
-            "link_text": "Shop Mushroom Spawn",
-            "link_2": "shopify://collections/mushroom-growing-kits",
-            "link_text_2": "Shop Mushroom Kits",
-            "link_3": "",
-            "link_text_3": "Optional button",
-            "link_4": "",
-            "link_text_4": "",
-            "color_accent": "rgba(0,0,0,0)",
-            "text_align": "vertical-center horizontal-left",
-            "image": "shopify://shop_images/STILL_THINKING_IT_OVER_600_x_850_px_Website.png",
-            "parallax_direction": "top",
-            "overlay_opacity": 52,
-            "focal_point": "center center"
-          }
-        },
-        "7cdf59c5-6a10-43b9-a4b9-2d1efb4a9a4f": {
-          "type": "image",
-          "settings": {
-            "show_breadcrumbs": false,
-            "top_subheading": "",
-            "title": "EASILY GROW YOUR OWN \nMUSHROOMS, AT HOME!",
+            "title": "THE UK'S FINEST WHOLESALE MUSHROOM SPAWN",
             "title_size": 65,
-            "subheading": "We Make Growing Your Own Food Simple. Join The Urban Farming Revolution.",
+            "subheading": "",
             "link": "",
             "link_text": "",
-            "link_2": "shopify://collections/mushroom-growing-kits",
-            "link_text_2": "Shop Mushroom Kits",
-            "link_3": "shopify://collections/mushroom-spawn",
-            "link_text_3": "Shop Mushroom Spawn",
+            "link_2": "shopify://collections/wholesale-mushroom-spawn",
+            "link_text_2": "Wholesale",
+            "link_3": "",
+            "link_text_3": "",
             "link_4": "",
             "link_text_4": "",
-            "color_accent": "#ffffff",
+            "color_accent": "#e2bd43",
             "text_align": "vertical-bottom horizontal-left",
-            "image": "shopify://shop_images/lions-mane-urban-farm.jpg",
+            "image": "shopify://shop_images/wholesale.jpg",
+            "image_mobile": "shopify://shop_images/Wholesale_-_Mobile_2.jpg",
             "parallax_direction": "top",
-            "overlay_opacity": 60,
+            "overlay_opacity": 70,
             "focal_point": "center center"
           }
         }
       },
       "block_order": [
+        "7cdf59c5-6a10-43b9-a4b9-2d1efb4a9a4f",
         "template--20076144230680__9624ea0d-516e-42d5-a087-263e8ac67743-image-1",
         "83db8b86-d6ed-4e05-aced-8451952bc00d",
-        "cd2752eb-c47a-4ef1-925b-d64437848e25",
-        "a58ef568-0dfc-4b6a-9d58-1b74af3edcb3",
-        "7cdf59c5-6a10-43b9-a4b9-2d1efb4a9a4f"
+        "cd2752eb-c47a-4ef1-925b-d64437848e25"
       ],
       "custom_css": [
         "@media (min-width: 768px) and (max-width: 1024px) {h1 {font-size: 2rem !important; }}",
@@ -154,8 +129,8 @@
         "parallax": true,
         "enable_trustpilot": true,
         "style": "minimal",
-        "autoplay": false,
-        "autoplay_speed": 5
+        "autoplay": true,
+        "autoplay_speed": 8
       }
     },
     "6b420381-8028-4878-973b-664a38446acb": {
@@ -352,6 +327,21 @@
         "divider": false
       }
     },
+    "ea1c3eab-e21f-4c18-9074-32b1f75794a6": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Mushroom Spawn",
+        "title_alignment": "left",
+        "enable_description": true,
+        "description": "Kickstart your at-home mushroom growing with top-quality spawn.",
+        "home_featured_products": "mushroom-spawn",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": false,
+        "divider": false
+      }
+    },
     "5c43a624-463d-4e3a-97e9-384226df35db": {
       "type": "featured-collections",
       "blocks": {
@@ -439,21 +429,6 @@
         "enable_description": false,
         "description": "",
         "home_featured_products": "hydroponic-kits",
-        "per_row": 4,
-        "rows": 1,
-        "mobile_scrollable": true,
-        "view_all": false,
-        "divider": false
-      }
-    },
-    "ea1c3eab-e21f-4c18-9074-32b1f75794a6": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Mushroom Spawn",
-        "title_alignment": "left",
-        "enable_description": true,
-        "description": "Kickstart your at-home mushroom growing with top-quality spawn.",
-        "home_featured_products": "mushroom-spawn",
         "per_row": 4,
         "rows": 1,
         "mobile_scrollable": true,
