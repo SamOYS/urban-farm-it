@@ -324,6 +324,7 @@
         "step_3YHATh",
         "step_wyE3gY"
       ],
+      "disabled": true,
       "settings": {
         "heading": "How it works",
         "background_color": "#000000"
@@ -415,9 +416,9 @@
   "order": [
     "main",
     "3ca0fa99-c1d5-4c53-b9c4-06410867a8c3",
+    "contact_form_cz7Wwh",
     "sub",
     "c0052226-c7f3-49e8-aca1-96eac60f8288",
-    "contact_form_cz7Wwh",
     "f4c61e29-979f-4658-8271-a34a92f3236c",
     "product-recommendations",
     "416b4aa3-64da-403e-a11d-1377036f97a0",
