@@ -43,6 +43,13 @@
             "code": "Not ready to grow right away, or purchasing as a gift? Select the <b>Gift</b> option. The Mushroom spawn will not be included directly in the kit, but can be redeemed via a free spawn voucher when ready to use."
           }
         },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "surface_pickup_enable": false
+          }
+        },
         "product_bundle_izVcRA": {
           "type": "product_bundle",
           "settings": {
@@ -63,13 +70,6 @@
             "code": "{% assign product_variant =  product.metafields.gift_option.product_variant %}{% if product_variant %}\n<div style=\"padding: 1rem 0.85rem;background:#d9edf7;    max-width: 500px;\">\n<h3 class=\"cross-sell__header\" style=\"font-size: 1rem;-webkit-text-stroke: unset;\">PURCHASING AS A GIFT?</h3>\n<p>This kit includes live mushroom spawn to be used promptly after purchase. For later use or as a gift, consider our gift option with a complimentary spawn voucher, redeemable when ready to grow.</p>\n<div class=\"variant-input-wrap\">\n<a class=\"custom-variant__button-label\" href=\"{{ product_variant[0]  | prepend: \"/products/\"| prepend: shop.url }}\">\n<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"800px\" height=\"800px\" viewBox=\"0 0 24 24\" fill=\"none\">\n<path d=\"M5 10.0802V20.0802H19V14M5 10.0802H4V7.0802H20V10.0802H5ZM12 7.0802C12.8333 5.24687 14.9999 1.5802 16.9999 3.5802C18.9999 5.5802 14.5 6.91353 12 7.0802ZM12 7.0802C11.1667 5.24687 8.99999 1.5802 6.99999 3.5802C4.99999 5.5802 9.5 6.91353 12 7.0802Z\" stroke=\"#000000\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>See Gift Version\n</a>\n</div>\n</div>\n{% endif %}"
           }
         },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": false,
-            "surface_pickup_enable": false
-          }
-        },
         "c11da764-83b0-4131-ba30-5bba256f27a8": {
           "type": "custom",
           "settings": {
@@ -81,8 +81,8 @@
           "settings": {
             "badgeMode": "info",
             "customText": "",
+            "showMoreInfo": "true",
             "showLogo": true,
-            "showMoreInfo": true,
             "showStats": false,
             "showProjects": false,
             "backgroundColor": "#f1f8f5",
@@ -159,10 +159,10 @@
         "5e23a4ef-dbad-4431-a172-eac16aa556c4",
         "variant_picker",
         "618417c1-ec01-45b8-8f31-d4b9a6132113",
+        "buy_buttons",
         "product_bundle_izVcRA",
         "117d5508-99ad-4aa0-a1e3-e8a8ad0c4870",
         "c7cb76d9-e206-4d28-a3fe-1dff3ce406da",
-        "buy_buttons",
         "c11da764-83b0-4131-ba30-5bba256f27a8",
         "b3fc12dd-8538-4787-b64f-7850c280141e",
         "separator",
