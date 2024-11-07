@@ -20,14 +20,12 @@
         },
         "price": {
           "type": "price",
-          "settings": {
-          }
+          "settings": {}
         },
         "5e23a4ef-dbad-4431-a172-eac16aa556c4": {
           "type": "kit_type_modal",
           "disabled": true,
-          "settings": {
-          }
+          "settings": {}
         },
         "variant_picker": {
           "type": "variant_picker",
@@ -40,9 +38,8 @@
         },
         "618417c1-ec01-45b8-8f31-d4b9a6132113": {
           "type": "custom",
-          "disabled": true,
           "settings": {
-            "code": "Not ready to grow right away, or purchasing as a gift? Select the <b>Spawn Voucher</b> option."
+            "code": "<a style=\"font-weight: 500;\" href=\"#section-contact-form\">Have a <span style=\"text-decoration: underline;\">Wholesale</span> Enquiry?</a>"
           }
         },
         "product_bundle_izVcRA": {
@@ -85,8 +82,8 @@
           "settings": {
             "badgeMode": "info",
             "customText": "",
+            "showMoreInfo": "true",
             "showLogo": true,
-            "showMoreInfo": true,
             "showStats": false,
             "showProjects": false,
             "backgroundColor": "#f1f8f5",
@@ -114,18 +111,15 @@
         },
         "share_byzx3k": {
           "type": "share",
-          "settings": {
-          }
+          "settings": {}
         },
         "separator": {
           "type": "separator",
-          "settings": {
-          }
+          "settings": {}
         },
         "e89378ea-77b2-49f4-90ba-5a690c3081f5": {
           "type": "shopify://apps/volume-discounts/blocks/offer_table_block/25745434-52e7-4378-88f1-890df18a0110",
-          "settings": {
-          }
+          "settings": {}
         },
         "fa716552-1943-4ff8-9ab5-8d1aa1f2de27": {
           "type": "custom",
@@ -202,9 +196,7 @@
           "type": "product_bundle",
           "settings": {
             "title": "Bundle & Save",
-            "bundle_products": [
-
-            ]
+            "bundle_products": []
           }
         },
         "2b444462-db54-42b7-8c6d-e79319bdb2ed": {
@@ -257,9 +249,7 @@
         "2b444462-db54-42b7-8c6d-e79319bdb2ed",
         "tab_7qzTQa"
       ],
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
         "sku_enable": false,
         "image_position": "left",
@@ -330,6 +320,15 @@
         "background_color": "#000000"
       }
     },
+    "contact_form_cz7Wwh": {
+      "type": "contact-form",
+      "settings": {
+        "title": "Have a wholesale enquiry?",
+        "text": "",
+        "show_phone": false,
+        "narrow_column": true
+      }
+    },
     "sub": {
       "type": "product-full-width",
       "disabled": true,
@@ -349,15 +348,6 @@
         "text": "",
         "button_label": "SEE OUR REVIEWS",
         "button_link": "#judgeme_product_reviews"
-      }
-    },
-    "contact_form_cz7Wwh": {
-      "type": "contact-form",
-      "settings": {
-        "title": "Have a wholesale enquiry?",
-        "text": "",
-        "show_phone": false,
-        "narrow_column": true
       }
     },
     "f4c61e29-979f-4658-8271-a34a92f3236c": {
@@ -388,8 +378,7 @@
       "blocks": {
         "82c6580b-1521-483b-bfd9-34dc2c17e709": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
@@ -409,8 +398,7 @@
     "collection-return": {
       "type": "collection-return",
       "disabled": true,
-      "settings": {
-      }
+      "settings": {}
     }
   },
   "order": [
