@@ -258,9 +258,7 @@
         "template--20076144230680__fca4059d-473b-43a5-985e-8c38eb77fb54-liquid-1"
       ],
       "disabled": true,
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
         "full_width": false,
         "space_around": false
@@ -268,9 +266,7 @@
     },
     "featured-collection": {
       "type": "featured-collection",
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
         "title": "POPULAR GROWING KITS",
         "title_alignment": "left",
@@ -366,9 +362,9 @@
         "template--17405694869784__5c43a624-463d-4e3a-97e9-384226df35db-1683064678265e7716-2": {
           "type": "collection",
           "settings": {
-            "collection": "mushroom-growing-bags",
+            "collection": "hydroponic-kits",
             "title": "",
-            "custom_image": "shopify://shop_images/3_2429f5d7-a202-42a5-933f-8ab240d7703a.png",
+            "custom_image": "shopify://shop_images/Hydro-Kit.jpg",
             "focal_point": "center center"
           }
         },
