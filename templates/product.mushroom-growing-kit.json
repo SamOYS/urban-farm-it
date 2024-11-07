@@ -20,25 +20,22 @@
         },
         "290ebc3a-ad5c-4fb9-8cbf-5c1eac4185d7": {
           "type": "kit_type_modal",
-          "settings": {
-          }
+          "settings": {}
         },
         "7a230a5e-31ee-4696-b895-46fe2b130119": {
           "type": "custom",
           "settings": {
-            "code": "<div class=\"offer-msg\"  style=\"\">Buy 2 Kits & Save 10%!</div>\n<style>\n.offer-msg {\ncolor: #e52345;\ndisplay: block;margin-top: 1rem;padding: .85rem;border-radius: 3px;position: relative;border: 1px solid #e52345;width: fit-content;}\n.offer-msg::after {\n    content: \"🎁 Bundle & Save\";\n    font-size: .75rem;\n    position: absolute;\n    top: -8px;\n    background: white;\n    left: 10px;\n    padding: 0 0.5rem;\n    color: #e52345;\n}\n</style>"
+            "code": "<div class=\"offers-container\">\n    <div class=\"offer-msg\">Buy 2 Kits & Save 10%!</div>\n    <div class=\"promo-banner\">Free E-Book with every purchase!</div>\n</div>\n\n<style>\n.offers-container {\n    display: flex;\n    align-items: center;\n    gap: 1rem;\n    margin-top: 1rem;\n}\n\n.offer-msg, .promo-banner {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    padding: .85rem;\n    border-radius: 3px;\n    position: relative;\n    width: fit-content;\n}\n\n.offer-msg {\n    color: #e52345;\n    border: 1px solid #e52345;\n}\n\n.offer-msg::after {\n    content: \"🎁 Bundle & Save\";\n    font-size: .75rem;\n    position: absolute;\n    top: -8px;\n    background: white;\n    left: 10px;\n    padding: 0 0.5rem;\n    color: #e52345;\n}\n\n.promo-banner {\n    color: #1e90ff;\n    border: 1px solid #1e90ff;\n}\n\n.promo-banner::after {\n    content: \"📘 Free E-Book\";\n    font-size: .75rem;\n    position: absolute;\n    top: -8px;\n    background: white;\n    left: 10px;\n    padding: 0 0.5rem;\n    color: #1e90ff;\n}\n\n@media (max-width: 768px) {\n    .offers-container {\n        display: block;\n        text-align: center;\n    }\n\n    .offer-msg, .promo-banner {\n        margin-top: 1rem;\n        margin-right: auto;\n        margin-left: auto;\n    }\n}\n</style>"
           }
         },
         "ffe2e6a5-222e-42ee-bc16-50a8dcd53672": {
           "type": "species",
           "disabled": true,
-          "settings": {
-          }
+          "settings": {}
         },
         "price": {
           "type": "price",
-          "settings": {
-          }
+          "settings": {}
         },
         "variant_picker": {
           "type": "variant_picker",
@@ -89,13 +86,11 @@
         },
         "separator": {
           "type": "separator",
-          "settings": {
-          }
+          "settings": {}
         },
         "e89378ea-77b2-49f4-90ba-5a690c3081f5": {
           "type": "shopify://apps/volume-discounts/blocks/offer_table_block/25745434-52e7-4378-88f1-890df18a0110",
-          "settings": {
-          }
+          "settings": {}
         },
         "b3fc12dd-8538-4787-b64f-7850c280141e": {
           "type": "shopify://apps/planet/blocks/shopify-planet/12047591-3a2d-45cc-9dfd-2ce5eaa45dee",
@@ -131,8 +126,7 @@
         },
         "share": {
           "type": "share",
-          "settings": {
-          }
+          "settings": {}
         },
         "10bfbe09-dcc6-4c95-96e8-c55ca8765219": {
           "type": "custom",
@@ -357,8 +351,7 @@
       "blocks": {
         "82c6580b-1521-483b-bfd9-34dc2c17e709": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
@@ -386,8 +379,7 @@
     "collection-return": {
       "type": "collection-return",
       "disabled": true,
-      "settings": {
-      }
+      "settings": {}
     }
   },
   "order": [
