@@ -18,15 +18,19 @@
             "code": "<div\n          style=\"\n            margin-top: 0 !important;\n            font-size: 0.85rem;\n          \"\n          class=\"jdgm-widget jdgm-preview-badge\"\n          data-id=\"{{ product.id }}\"\n          data-template=\"manual-installation\"\n        >\n          {{ product.metafields.judgeme.badge }}\n        </div>"
           }
         },
-        "price": {
-          "type": "price",
-          "settings": {
-          }
-        },
         "5e23a4ef-dbad-4431-a172-eac16aa556c4": {
           "type": "kit_type_modal",
+          "settings": {}
+        },
+        "custom_BTNBjR": {
+          "type": "custom",
           "settings": {
+            "code": "<div class=\"offers-container\">\n    <div class=\"offer-msg\">Buy 2 Kits & Save 10%!</div>\n    <div class=\"promo-banner\">Free E-Book with every purchase!</div>\n</div>\n\n<style>\n.offers-container {\n    display: flex;\n    align-items: center;\n    gap: 1rem;\n    margin-top: 1rem;\n}\n\n.offer-msg, .promo-banner {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    padding: .85rem;\n    border-radius: 3px;\n    position: relative;\n    width: fit-content;\n}\n\n.offer-msg {\n    color: #e52345;\n    border: 1px solid #e52345;\n}\n\n.offer-msg::after {\n    content: \"🎁 Bundle & Save\";\n    font-size: .75rem;\n    position: absolute;\n    top: -8px;\n    background: white;\n    left: 10px;\n    padding: 0 0.5rem;\n    color: #e52345;\n}\n\n.promo-banner {\n    color: #1e90ff;\n    border: 1px solid #1e90ff;\n}\n\n.promo-banner::after {\n    content: \"📘 Free E-Book\";\n    font-size: .75rem;\n    position: absolute;\n    top: -8px;\n    background: white;\n    left: 10px;\n    padding: 0 0.5rem;\n    color: #1e90ff;\n}\n\n@media (max-width: 768px) {\n    .offers-container {\n        display: block;\n        text-align: center;\n    }\n\n    .offer-msg, .promo-banner {\n        margin-top: 1rem;\n        margin-right: auto;\n        margin-left: auto;\n    }\n}\n</style>"
           }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
         },
         "variant_picker": {
           "type": "variant_picker",
@@ -89,13 +93,11 @@
         },
         "separator": {
           "type": "separator",
-          "settings": {
-          }
+          "settings": {}
         },
         "e89378ea-77b2-49f4-90ba-5a690c3081f5": {
           "type": "shopify://apps/volume-discounts/blocks/offer_table_block/25745434-52e7-4378-88f1-890df18a0110",
-          "settings": {
-          }
+          "settings": {}
         },
         "fa716552-1943-4ff8-9ab5-8d1aa1f2de27": {
           "type": "custom",
@@ -148,8 +150,9 @@
       },
       "block_order": [
         "b499b114-20e9-405a-ab8e-20e639dafbf1",
-        "price",
         "5e23a4ef-dbad-4431-a172-eac16aa556c4",
+        "custom_BTNBjR",
+        "price",
         "variant_picker",
         "618417c1-ec01-45b8-8f31-d4b9a6132113",
         "117d5508-99ad-4aa0-a1e3-e8a8ad0c4870",
@@ -166,9 +169,7 @@
         "92107157-941a-481b-b05c-c5bc68088308",
         "0a108145-8c33-4ba3-915f-85eec2eb11e9"
       ],
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
         "sku_enable": false,
         "image_position": "left",
@@ -293,8 +294,7 @@
       "blocks": {
         "82c6580b-1521-483b-bfd9-34dc2c17e709": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
@@ -314,8 +314,7 @@
     "collection-return": {
       "type": "collection-return",
       "disabled": true,
-      "settings": {
-      }
+      "settings": {}
     }
   },
   "order": [
