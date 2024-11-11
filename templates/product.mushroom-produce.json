@@ -338,6 +338,7 @@
     },
     "c0052226-c7f3-49e8-aca1-96eac60f8288": {
       "type": "product-banner-image",
+      "disabled": true,
       "settings": {
         "parallax": true,
         "image": "{{ product.metafields.custom.banner_image.value }}",
