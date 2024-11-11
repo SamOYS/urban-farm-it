@@ -37,6 +37,31 @@
             "focal_point": "center center"
           }
         },
+        "image_wqQ8Mb": {
+          "type": "image",
+          "settings": {
+            "show_breadcrumbs": false,
+            "top_subheading": "",
+            "title": "Just Launched: \nFresh Lion's Mane Mushrooms",
+            "title_size": 65,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "shopify://collections/mushroom-produce",
+            "link_text_2": "Shop All",
+            "link_3": "",
+            "link_text_3": "",
+            "link_4": "",
+            "link_text_4": "",
+            "color_accent": "#e75503",
+            "text_align": "vertical-bottom horizontal-left",
+            "image": "shopify://shop_images/fresh-dry-lions-mane.jpg",
+            "image_mobile": "shopify://shop_images/UFI_Fresh_Lion_s_Mane_Mushrooms_-_Mobile.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 70,
+            "focal_point": "center center"
+          }
+        },
         "template--20076144230680__9624ea0d-516e-42d5-a087-263e8ac67743-image-1": {
           "type": "image",
           "settings": {
@@ -115,6 +140,7 @@
       },
       "block_order": [
         "7cdf59c5-6a10-43b9-a4b9-2d1efb4a9a4f",
+        "image_wqQ8Mb",
         "template--20076144230680__9624ea0d-516e-42d5-a087-263e8ac67743-image-1",
         "83db8b86-d6ed-4e05-aced-8451952bc00d",
         "cd2752eb-c47a-4ef1-925b-d64437848e25"
