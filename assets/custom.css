@@ -770,7 +770,7 @@ html {
 
 @media screen and (max-width: 749px) {
   .smile-improved-mobile-launcher {
-      left: 0;
+      left: 2;
   }
   .prompt-body {
     display: none;
