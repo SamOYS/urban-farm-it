@@ -772,7 +772,7 @@ html {
   .smile-improved-mobile-launcher {
       left: 10px;
   }
-  .prompt-body {
+  .smile-prompt-frame {
     display: none;
   }
 }
