@@ -249,34 +249,6 @@
             "image": "shopify://shop_images/the-sun-newspapers.svg",
             "link": ""
           }
-        },
-        "logo_image_aCFGaC": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/blue-diamond.png",
-            "link": ""
-          }
-        },
-        "logo_image_Xz63Pw": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/WR_Logo_1white_single_2.png",
-            "link": ""
-          }
-        },
-        "logo_image_py6LLM": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/ncgm-logo-white.png",
-            "link": ""
-          }
-        },
-        "logo_image_MKBkkA": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/B_Q_company_logo_svg.png",
-            "link": ""
-          }
         }
       },
       "block_order": [
@@ -284,18 +256,14 @@
         "template--17405694869784__fb8bbd2c-3caa-4673-bb63-5d53b4609210-1674494534c4fab4ed-1",
         "5af45e65-2f30-4155-9a57-d7866c94b4a1",
         "logo_image_QH3GgM",
-        "logo_image_jxA4HJ",
-        "logo_image_aCFGaC",
-        "logo_image_Xz63Pw",
-        "logo_image_py6LLM",
-        "logo_image_MKBkkA"
+        "logo_image_jxA4HJ"
       ],
       "custom_css": [
         "{/*background: #f3f3f3;*/ margin-top: 2rem; padding: 35px 0; margin-bottom: 4rem;}",
         ".logo-bar__item img {height: 60px; object-fit: contain;}"
       ],
       "settings": {
-        "title": "Trusted by",
+        "title": "Featured in",
         "logo_opacity": 100,
         "divider": false
       }
