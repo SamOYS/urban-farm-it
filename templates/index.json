@@ -249,6 +249,41 @@
             "image": "shopify://shop_images/the-sun-newspapers.svg",
             "link": ""
           }
+        },
+        "logo_image_VNcCwC": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/blue-diamond.png",
+            "link": ""
+          }
+        },
+        "logo_image_TM6EUA": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/WR_Logo_1white_single_2.png",
+            "link": ""
+          }
+        },
+        "logo_image_6xGFPc": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/ncgm-logo-white.png",
+            "link": ""
+          }
+        },
+        "logo_image_VyTeHD": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/Dobbies_Logo_new.png",
+            "link": ""
+          }
+        },
+        "logo_image_xGXk6h": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/B_Q_company_logo_svg.png",
+            "link": ""
+          }
         }
       },
       "block_order": [
@@ -256,14 +291,19 @@
         "template--17405694869784__fb8bbd2c-3caa-4673-bb63-5d53b4609210-1674494534c4fab4ed-1",
         "5af45e65-2f30-4155-9a57-d7866c94b4a1",
         "logo_image_QH3GgM",
-        "logo_image_jxA4HJ"
+        "logo_image_jxA4HJ",
+        "logo_image_VNcCwC",
+        "logo_image_TM6EUA",
+        "logo_image_6xGFPc",
+        "logo_image_VyTeHD",
+        "logo_image_xGXk6h"
       ],
       "custom_css": [
         "{/*background: #f3f3f3;*/ margin-top: 2rem; padding: 35px 0; margin-bottom: 4rem;}",
-        ".logo-bar__item img {height: 60px; object-fit: contain;}"
+        ".logo-bar__item img {height: 50px; object-fit: contain;}"
       ],
       "settings": {
-        "title": "Featured in",
+        "title": "Trusted by",
         "logo_opacity": 100,
         "divider": false
       }
