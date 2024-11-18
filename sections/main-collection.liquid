@@ -6,9 +6,9 @@
   endfor
 -%}
 <div
-  class="collection-content"
-  data-section-id="{{ section.id }}"
-  data-section-type="collection-grid"
+        class="collection-content"
+        data-section-id="{{ section.id }}"
+        data-section-type="collection-grid"
 >
   <div id="CollectionAjaxContent">
     <div class="page-width">
@@ -16,9 +16,9 @@
         <div class="collection-grid__header grid__item">
           {%- render 'breadcrumbs' -%}
           <h1 class="section-header__title">{{- collection.title -}}</h1>
-            {%- if collection.handle == 'wholesale-mushroom-spawn' -%}
-              <div
-                style="
+          {%- if collection.handle == 'wholesale-mushroom-spawn' -%}
+            <div
+                    style="
                   display: flex;
                   align-items: center;
                   font-size: 12px;
@@ -29,15 +29,15 @@
                   margin-bottom: 0.5rem;
                   border-radius: 2px;
                 "
+            >
+              <div>In Partnership with</div>
+              <img
+                      src="https://cdn.shopify.com/s/files/1/0699/1940/8408/files/Logo-Mycelia-zonder-achtergrond.png?v=1700584470"
+                      style="width: 60px;"
               >
-                <div>In Partnership with</div>
-                <img
-                  src="https://cdn.shopify.com/s/files/1/0699/1940/8408/files/Logo-Mycelia-zonder-achtergrond.png?v=1700584470"
-                  style="width: 60px;"
-                >
-              </div>
-            {%- endif -%}
-                
+            </div>
+          {%- endif -%}
+
           {%- if collection.description != blank and current_filter_size == 0 -%}
             <div class="rte">
               <div class="collection__description" active>
@@ -45,14 +45,14 @@
                   {{ collection.description }}
                 </div>
                 <div
-                  class="collection__description--read-more"
-                  data-alternate-labels='["Read More", "Read Less"]'
+                        class="collection__description--read-more"
+                        data-alternate-labels='["Read More", "Read Less"]'
                 >
                   Read More
                 </div>
               </div>
               {% if collection.handle == 'mushroom-growing-kits' or collection.handle == 'mushroom-log-kits' or collection.handle == 'black-friday' %}
-              <!-- <div class="medium-up--hide" {% unless collection.metafields.custom.related_collections %}style="margin-bottom: .5rem;"{% endunless %}>
+                <!-- <div class="medium-up--hide" {% unless collection.metafields.custom.related_collections %}style="margin-bottom: .5rem;"{% endunless %}>
                   <a
                   data-micromodal-trigger="modal-1"
                   style="
@@ -76,25 +76,25 @@
                       xml:space="preserve"
                     >
                       <g>
-                      	<path d="M356.004,61.156c-81.37-81.47-213.377-81.551-294.848-0.182c-81.47,81.371-81.552,213.379-0.181,294.85   c81.369,81.47,213.378,81.551,294.849,0.181C437.293,274.636,437.375,142.626,356.004,61.156z M237.6,340.786   c0,3.217-2.607,5.822-5.822,5.822h-46.576c-3.215,0-5.822-2.605-5.822-5.822V167.885c0-3.217,2.607-5.822,5.822-5.822h46.576   c3.215,0,5.822,2.604,5.822,5.822V340.786z M208.49,137.901c-18.618,0-33.766-15.146-33.766-33.765   c0-18.617,15.147-33.766,33.766-33.766c18.619,0,33.766,15.148,33.766,33.766C242.256,122.755,227.107,137.901,208.49,137.901z"/>
+                          <path d="M356.004,61.156c-81.37-81.47-213.377-81.551-294.848-0.182c-81.47,81.371-81.552,213.379-0.181,294.85   c81.369,81.47,213.378,81.551,294.849,0.181C437.293,274.636,437.375,142.626,356.004,61.156z M237.6,340.786   c0,3.217-2.607,5.822-5.822,5.822h-46.576c-3.215,0-5.822-2.605-5.822-5.822V167.885c0-3.217,2.607-5.822,5.822-5.822h46.576   c3.215,0,5.822,2.604,5.822,5.822V340.786z M208.49,137.901c-18.618,0-33.766-15.146-33.766-33.765   c0-18.617,15.147-33.766,33.766-33.766c18.619,0,33.766,15.148,33.766,33.766C242.256,122.755,227.107,137.901,208.49,137.901z"/>
                       </g>
                     </svg>
                   </span>
                   <span class="info-text">Kit Types Explained</span></a
                 >
-                  
+
                 </div> -->
-                {% endif %}
+              {% endif %}
             </div>
           {%- endif -%}
         </div>
         <div class="collection-grid__sidebar grid__item">
           {%- render 'collection-grid-filters',
-            collection: collection,
-            enable_sidebar: section.settings.enable_sidebar,
-            filter_style: section.settings.filter_style,
-            collapsed: section.settings.collapsed,
-            enable_color_swatches: section.settings.enable_color_swatches
+                  collection: collection,
+                  enable_sidebar: section.settings.enable_sidebar,
+                  filter_style: section.settings.filter_style,
+                  collapsed: section.settings.collapsed,
+                  enable_color_swatches: section.settings.enable_color_swatches
           -%}
         </div>
         <div class="collection-grid__product-grid grid__item">
@@ -109,10 +109,10 @@
           {%- paginate collection.products by paginate_by -%}
             {%- for block in section.blocks -%}
               <div
-                {{ block.shopify_attributes }}
-                {%- if block.type == 'product-grid' -%}
-                  data-scroll-to
-                {%- endif -%}
+                      {{ block.shopify_attributes }}
+                      {%- if block.type == 'product-grid' -%}
+                        data-scroll-to
+                      {%- endif -%}
               >
                 {%- case block.type -%}
                   {%- when 'collection_description' -%}
@@ -142,19 +142,76 @@
                   {%- when 'product_grid' -%}
                     <div data-scroll-to>
                       {% render 'collection-grid',
-                        collection: collection,
-                        items: collection.products,
-                        enable_sidebar: section.settings.enable_sidebar,
-                        filter_style: section.settings.filter_style,
-                        enable_sort: section.settings.enable_sort,
-                        enable_collection_count: block.settings.enable_collection_count,
-                        per_row: block.settings.per_row,
-                        mobile_flush_grid: block.settings.mobile_flush_grid,
-                        quick_shop_enable: settings.quick_shop_enable
+                              collection: collection,
+                              items: collection.products,
+                              enable_sidebar: section.settings.enable_sidebar,
+                              filter_style: section.settings.filter_style,
+                              enable_sort: section.settings.enable_sort,
+                              enable_collection_count: block.settings.enable_collection_count,
+                              per_row: block.settings.per_row,
+                              mobile_flush_grid: block.settings.mobile_flush_grid,
+                              quick_shop_enable: settings.quick_shop_enable
                       %}
                       {%- if paginate.pages > 1 -%}
                         {%- render 'pagination', paginate: paginate -%}
                       {%- endif -%}
+                    </div>
+
+                  {%- when 'two_column_product' -%}
+                    <div class="tw-grid tw-grid-cols-2 lg:tw-gap-10 tw-gap-4 tw-h-full tw-pt-4 lg:tw-pt-10 w-full md:tw-px-6 md:tw-mx-auto md:tw-max-w-[768px] lg:tw-max-w-[1000px]">
+                      <div class="tw-w-full tw-h-full">
+                        <div class="tw-flex tw-flex-col tw-justify-center tw-items-center lg:tw-gap-4 tw-p-4 lg:tw-p-10 tw-rounded-lg tw-text-center tw-h-full" style="background-color: {{ block.settings.background_color }};">
+                          {%- if block.settings.image -%}
+                              <img class="tw-w-24 tw-h-auto lg:tw-w-full lg:tw-h-48" src="{{ block.settings.image | img_url: 'medium' }}" alt="Product Image">
+                          {%- endif -%}
+                          {%- if block.settings.rich_text -%}
+                            <p class="">{{ block.settings.rich_text }}</p>
+                          {%- endif -%}
+                          {%- if block.settings.link -%}
+                            <a href="{{ block.settings.link }}" class="btn xl:tw-w-1/2 tw-w-full tw-rounded-full !tw-text-white tw-normal-case tw-font-normal tw-tracking-normal tw-text-xs sm:tw-text-sm md:tw-text-base" style="background-color: {{ block.settings.button_background_color }};">{{ block.settings.button_text }}</a>
+                          {%- endif -%}
+                        </div>
+                      </div>
+
+                      <div class="tw-w-full tw-h-full">
+                        <div class="tw-flex tw-flex-col tw-items-center tw-gap-1 md:tw-gap-3 tw-h-full">
+                          {%- if block.settings.secondary_image -%}
+                          <div class="tw-bg-[#F2F2F2] tw-w-full tw-h-full tw-p-4  tw-rounded-lg">
+                            <img
+                                    class="tw-w-full tw-object-center tw-object-contain tw-h-full lg:tw-h-[350px] xl:tw-h-[400px]"
+                                    src="{{ block.settings.secondary_image | img_url: '1200x1200' }}"
+                                    alt="Product Image 2"
+                            >
+                          </div>
+                          {%- endif -%}
+
+                          {%- if block.settings.tertiary_image -%}
+
+                              <img
+                                      class="tw-w-14 md:tw-w-24 tw-h-auto tw-mr-auto"
+                                      src="{{ block.settings.tertiary_image | img_url: 'medium' }}"
+                                      alt="Product Image 3"
+                              >
+
+                          {%- endif -%}
+
+                          <div class="tw-w-full tw-mt-auto">
+                            {%- if block.settings.text -%}
+                              <p class="tw-text-left tw-mb-2 lg:tw-mb-4 tw-text-lg lg:tw-text-3xl tw-leading-tight tw-font-medium">{{ block.settings.text }}</p>
+                            {%- endif -%}
+                            {%- if block.settings.secondary_link -%}
+                              <a
+                                      href="{{ block.settings.secondary_link }}"
+                                      class="btn xl:tw-w-1/2 tw-w-full tw-rounded-full tw-bg-[#0560C7] tw-border-blue-500 !tw-text-white tw-normal-case tw-font-normal tw-tracking-normal tw-text-xs sm:tw-text-sm md:tw-text-base hover:!tw-bg-blue-500"
+                              >
+                                {{ block.settings.secondary_button_text }}
+                              </a>
+                            {%- endif -%}
+                          </div>
+                        </div>
+                      </div>
+
+
                     </div>
                 {%- endcase -%}
               </div>
@@ -193,7 +250,7 @@
     }
   }
 
-  
+
   let collectionReloaded = false;
 
   function initializeCustomJS() {
@@ -210,8 +267,8 @@
 </script>
 
 {%- if section.settings.enable_sidebar == false
-  or section.settings.filter_style == 'drawer'
-  or collection.filters.size == 0
+or section.settings.filter_style == 'drawer'
+or collection.filters.size == 0
 -%}
   {% comment %}
     Override grid styles if sidebar is disabled
@@ -227,11 +284,11 @@
   {
     "@context": "http://schema.org",
     "@type": "CollectionPage",
-    {% if collection.description != blank %}
+{% if collection.description != blank %}
       "description": {{ collection.description | strip_html | json }},
     {% endif %}
     {% if page_image %}
-      {% assign image_size = page_image.width | append: 'x' %}
+{% assign image_size = page_image.width | append: 'x' %}
       "image": {
         "@type": "ImageObject",
         "height": {{ page_image.height | json }},
@@ -239,7 +296,7 @@
         "width": {{ page_image.width | json }}
       },
     {% endif %}
-    "name": {{ collection.title | json }}
+  "name": {{ collection.title | json }}
   }
 </script>
 
@@ -355,6 +412,67 @@
         }
       ],
       "limit": 1
+    },
+    {
+      "type": "two_column_product",
+      "name": "Two Column Product",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "richtext",
+          "id": "rich_text",
+          "label": "Rich Text"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link (Button)"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button Text"
+        },
+        {
+          "type": "color",
+          "id": "background_color",
+          "label": "Background Colour"
+        },
+        {
+          "type": "color",
+          "id": "button_background_color",
+          "label": "Button Background Colour"
+        },
+        {
+          "type": "image_picker",
+          "id": "secondary_image",
+          "label": "Image 2"
+        },
+        {
+          "type": "image_picker",
+          "id": "tertiary_image",
+          "label": "Image 3"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text"
+        },
+        {
+          "type": "url",
+          "id": "secondary_link",
+          "label": "Secondary Link (Button)"
+        },
+        {
+          "type": "text",
+          "id": "secondary_button_text",
+          "label": "Secondary Button Text"
+        }
+      ]
     }
   ]
 }
