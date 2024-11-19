@@ -160,9 +160,9 @@
                   {%- when 'two_column_product' -%}
                     <div class="tw-grid tw-grid-cols-2 lg:tw-gap-10 tw-gap-4 tw-h-full tw-pt-4 lg:tw-pt-10 w-full md:tw-px-6 md:tw-mx-auto md:tw-max-w-[768px] lg:tw-max-w-[1000px]">
                       <div class="tw-w-full tw-h-full">
-                        <div class="tw-flex tw-flex-col tw-justify-center tw-items-center lg:tw-gap-4 tw-p-4 lg:tw-p-10 tw-rounded-lg tw-text-center tw-h-full" style="background-color: {{ block.settings.background_color }};">
+                        <div class="tw-flex tw-flex-col tw-justify-center tw-items-center lg:tw-gap-4 xl:tw-gap-2 tw-p-4 lg:tw-p-10 tw-rounded-lg tw-text-center tw-h-full" style="background-color: {{ block.settings.background_color }};">
                           {%- if block.settings.image -%}
-                              <img class="tw-w-24 tw-h-auto lg:tw-w-full lg:tw-h-48" src="{{ block.settings.image | img_url: 'medium' }}" alt="Product Image">
+                              <img class="tw-w-24 tw-h-auto md:tw-w-40 lg:tw-w-80 lg:tw-h-56" src="{{ block.settings.image | img_url: 'medium' }}" alt="Product Image">
                           {%- endif -%}
                           {%- if block.settings.rich_text -%}
                             <p class="">{{ block.settings.rich_text }}</p>
