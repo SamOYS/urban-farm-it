@@ -53,7 +53,7 @@
         "full_width": true,
         "text_color": "#000000",
         "background_color": "#e5d626",
-        "overlay_color": "#000000",
+        "overlay_color": "rgba(0,0,0,0)",
         "overlay_opacity": 0,
         "focal_point": "center",
         "mobile_image_focal_point": "top"
@@ -169,7 +169,7 @@
         "product_grid_3DHPhi"
       ],
       "custom_css": [
-        ".collection-grid__wrapper{display: none;}"
+        ".collection-grid__wrapper {display: none;}"
       ],
       "settings": {
         "enable_sidebar": true,
