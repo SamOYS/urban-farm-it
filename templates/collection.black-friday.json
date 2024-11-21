@@ -28,7 +28,7 @@
             "heading": "Black Friday Now Live",
             "heading_size": "h2",
             "text": "",
-            "content_alignment": "left"
+            "content_alignment": "center"
           }
         },
         "timer_JjEegr": {
@@ -56,7 +56,7 @@
         "overlay_color": "rgba(0,0,0,0)",
         "overlay_opacity": 0,
         "focal_point": "center",
-        "mobile_image_focal_point": "top"
+        "mobile_image_focal_point": "center"
       }
     },
     "main-collection": {
