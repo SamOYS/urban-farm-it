@@ -168,6 +168,9 @@
         "two_column_product_LbqB3c",
         "product_grid_3DHPhi"
       ],
+      "custom_css": [
+        ".collection-grid__wrapper{display: none;}"
+      ],
       "settings": {
         "enable_sidebar": true,
         "collapsed": true,
