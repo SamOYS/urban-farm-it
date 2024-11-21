@@ -195,6 +195,7 @@
 
 
   {% include 'pagefly-app-header' %}
+  <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.6.0/webcomponents-bundle.js"></script>
   </head>
   <body
     class="template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}{% if request.path == '/challenge' %} template-challange{% endif %}"
