@@ -50,9 +50,9 @@
       "settings": {
         "layout": "banner",
         "full_width": true,
-        "text_color": "#000",
+        "text_color": "#000000",
         "background_color": "#e5d626",
-        "overlay_color": "#000",
+        "overlay_color": "#000000",
         "overlay_opacity": 0,
         "focal_point": "center",
         "mobile_image_focal_point": "top"
@@ -132,6 +132,23 @@
             "secondary_link": "shopify://products/oyster-mushroom-growing-kit-full-set-gift-option",
             "secondary_button_text": "Choose selection"
           }
+        },
+        "two_column_product_LbqB3c": {
+          "type": "two_column_product",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/frsh-lions-mane-offer.svg",
+            "rich_text": "",
+            "link": "shopify://products/fresh-lions-mane",
+            "button_text": "Saving £2.25",
+            "background_color": "#61d52d",
+            "button_background_color": "",
+            "secondary_image": "shopify://shop_images/mushroom-mane-lions.png",
+            "tertiary_image": "shopify://shop_images/5-star-reviews.svg",
+            "text": "15% Off Fresh Lion’s Mane",
+            "secondary_link": "shopify://products/fresh-lions-mane",
+            "secondary_button_text": "Buy Now"
+          }
         }
       },
       "block_order": [
@@ -139,7 +156,8 @@
         "two_column_product_pgxD7q",
         "two_column_product_aUcPLL",
         "two_column_product_dbNM6C",
-        "two_column_product_HnEcwM"
+        "two_column_product_HnEcwM",
+        "two_column_product_LbqB3c"
       ],
       "settings": {
         "enable_sidebar": true,
