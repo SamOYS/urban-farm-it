@@ -6322,6 +6322,8 @@ lazySizesConfig.expFactor = 4;
         `${this.year}-${this.month}-${this.day}T${this.hour}:${this.minute}:00`
       ).getTime() - +new Date().getTime();
 
+      console.log(this.year, this.month, this.day, this.hour, this.minute);
+
       // If time difference is greater than 0, calculate remaining time
       if (timeDifference > 0) {
         const intervals = {
