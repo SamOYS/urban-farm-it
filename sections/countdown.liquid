@@ -57,18 +57,6 @@
               background-image: url({{ section.settings.background_image | image_url: width: '2400' }});
             }
           {% endstyle %}
-          {% if section.settings.overlay_opacity > 0 %}
-            {% assign overlay_alpha = section.settings.overlay_opacity | divided_by: 100.0 %}
-              <div
-                class="
-                  countdown__overlay
-                  {% if section.settings.mobile_image != blank %}small--hide{% endif %}
-                "
-                style="
-                  --countdown-overlay-rgba: {{ section.settings.overlay_color  | color_modify: 'alpha', overlay_alpha }}
-                "
-              ></div>
-          {% endif %}
         </div>
       {% endif %}
       {% if section.settings.mobile_image != blank %}
@@ -82,15 +70,6 @@
               alt="{{ section.settings.mobile_image.alt | escape }}"
               style="object-position: {{ section.settings.mobile_image_focal_point }}"
             >
-            {% if section.settings.overlay_opacity > 0 %}
-              {% assign overlay_alpha = section.settings.overlay_opacity | divided_by: 100.0 %}
-                <div
-                  class="countdown__overlay medium-up--hide"
-                  style="
-                    --countdown-overlay-rgba: {{ section.settings.overlay_color  | color_modify: 'alpha', overlay_alpha }}
-                  "
-                ></div>
-            {% endif %}
           </div>
       {% endif %}
       {% for block in section.blocks %}
