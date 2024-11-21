@@ -67,7 +67,6 @@
         },
         "two_column_product_pgxD7q": {
           "type": "two_column_product",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/UFI-offer-BF1.svg",
             "rich_text": "",
@@ -77,7 +76,7 @@
             "button_background_color": "",
             "secondary_image": "shopify://shop_images/50_-off-UFI.png",
             "tertiary_image": "shopify://shop_images/5-star-reviews.svg",
-            "text": "Buy 1 Get 50% Off",
+            "text": "Buy 1 Get 1 50% Off",
             "secondary_link": "shopify://collections/mushroom-growing-kits",
             "secondary_button_text": "Choose selection"
           }
@@ -118,9 +117,8 @@
         },
         "two_column_product_HnEcwM": {
           "type": "two_column_product",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/ugg-ufi-bf.svg",
+            "image": "shopify://shop_images/full-set-ultimate.svg",
             "rich_text": "",
             "link": "shopify://products/oyster-mushroom-growing-kit-full-set-gift-option",
             "button_text": "Saving £9.97",
@@ -135,7 +133,6 @@
         },
         "two_column_product_LbqB3c": {
           "type": "two_column_product",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/frsh-lions-mane-offer.svg",
             "rich_text": "",
