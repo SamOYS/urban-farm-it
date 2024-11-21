@@ -151,9 +151,8 @@
         },
         "product_grid_3DHPhi": {
           "type": "product_grid",
-          "disabled": true,
           "settings": {
-            "enable_collection_count": true,
+            "enable_collection_count": false,
             "per_row": 4,
             "rows_per_page": 7,
             "mobile_flush_grid": false
