@@ -18,6 +18,46 @@
         "parallax_direction": "left"
       }
     },
+    "countdown_GTR8EW": {
+      "type": "countdown",
+      "blocks": {
+        "content_kr38aJ": {
+          "type": "content",
+          "settings": {
+            "heading": "BLACK FRIDAY SALE",
+            "heading_size": "h2",
+            "text": "",
+            "content_alignment": "left"
+          }
+        },
+        "timer_JjEegr": {
+          "type": "timer",
+          "settings": {
+            "year": "2024",
+            "month": "12",
+            "day": "2",
+            "hour": "00",
+            "minute": "00",
+            "hide_timer": false,
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "content_kr38aJ",
+        "timer_JjEegr"
+      ],
+      "settings": {
+        "layout": "banner",
+        "full_width": true,
+        "text_color": "#000",
+        "background_color": "#e5d626",
+        "overlay_color": "#000",
+        "overlay_opacity": 0,
+        "focal_point": "center",
+        "mobile_image_focal_point": "top"
+      }
+    },
     "main-collection": {
       "type": "main-collection",
       "blocks": {
@@ -167,6 +207,7 @@
   },
   "order": [
     "collection-header",
+    "countdown_GTR8EW",
     "main-collection",
     "5c64be49-d8ae-494f-9c21-7ad06915b6a2",
     "7fbc978c-7036-491e-b07e-9e4c3146b695",
