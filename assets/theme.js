@@ -6318,9 +6318,9 @@ lazySizesConfig.expFactor = 4;
     _calculate() {
       // Find time difference and convert to integer
       const timeDifference =
-        +new Date(
-          `${this.year}-${this.month}-${this.day} ${this.hour}:${this.minute}:00`
-        ).getTime() - +new Date().getTime();
+      +new Date(
+        `${this.year}-${this.month}-${this.day}T${this.hour}:${this.minute}:00`
+      ).getTime() - +new Date().getTime();
 
       // If time difference is greater than 0, calculate remaining time
       if (timeDifference > 0) {
