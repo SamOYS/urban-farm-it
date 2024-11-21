@@ -11,6 +11,7 @@
   "sections": {
     "collection-header": {
       "type": "collection-header",
+      "disabled": true,
       "settings": {
         "enable": false,
         "collection_image_enable": true,
@@ -63,6 +64,7 @@
       "blocks": {
         "collection_description": {
           "type": "collection_description",
+          "disabled": true,
           "settings": {}
         },
         "two_column_product_pgxD7q": {
@@ -172,18 +174,21 @@
     },
     "7fbc978c-7036-491e-b07e-9e4c3146b695": {
       "type": "collection-faq",
+      "disabled": true,
       "settings": {
         "title": "FAQs"
       }
     },
     "a72ec282-a591-4dfe-8375-e3c7b2469963": {
       "type": "collection-articles",
+      "disabled": true,
       "settings": {
         "title": "Related Guides"
       }
     },
     "94fe4d44-2152-4965-83e7-fc4b474eaf2c": {
       "type": "collection-popup",
+      "disabled": true,
       "settings": {
         "mode": true,
         "disable_for_account_holders": false,
@@ -214,6 +219,7 @@
       "block_order": [
         "template--21519337816344__ebc8e702-1d24-4e35-a716-a33d9dc70ac5-liquid-1"
       ],
+      "disabled": true,
       "settings": {
         "full_width": false,
         "space_around": false
