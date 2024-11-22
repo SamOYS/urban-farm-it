@@ -12,6 +12,81 @@
     "9624ea0d-516e-42d5-a087-263e8ac67743": {
       "type": "slideshow",
       "blocks": {
+        "template--20076144230680__9624ea0d-516e-42d5-a087-263e8ac67743-image-1": {
+          "type": "image",
+          "settings": {
+            "show_breadcrumbs": false,
+            "top_subheading": "",
+            "title": "Buy 1 Get 1 50% Off\nOn Growing Kits",
+            "title_size": 65,
+            "subheading": "Promotion auto-applies at checkout",
+            "link": "",
+            "link_text": "",
+            "link_2": "shopify://collections/mushroom-growing-kits",
+            "link_text_2": "Choose selection",
+            "link_3": "",
+            "link_text_3": "",
+            "link_4": "",
+            "link_text_4": "",
+            "color_accent": "#e5d626",
+            "text_align": "vertical-bottom horizontal-left",
+            "image": "shopify://shop_images/50_Off_Desktop_2.jpg",
+            "image_mobile": "shopify://shop_images/50_Off_Mobile.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 70,
+            "focal_point": "center center"
+          }
+        },
+        "83db8b86-d6ed-4e05-aced-8451952bc00d": {
+          "type": "image",
+          "settings": {
+            "show_breadcrumbs": false,
+            "top_subheading": "",
+            "title": "Ultimate Grower’s Gift Set\n£9.97 Off!",
+            "title_size": 65,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "shopify://products/oyster-mushroom-growing-kit-full-set-gift-option",
+            "link_text_2": "Buy Now",
+            "link_3": "",
+            "link_text_3": "",
+            "link_4": "",
+            "link_text_4": "",
+            "color_accent": "#0560c7",
+            "text_align": "vertical-bottom horizontal-left",
+            "image": "shopify://shop_images/Growing_Kits.jpg",
+            "image_mobile": "shopify://shop_images/Growing_Kits_Mobile.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 60,
+            "focal_point": "center center"
+          }
+        },
+        "cd2752eb-c47a-4ef1-925b-d64437848e25": {
+          "type": "image",
+          "settings": {
+            "show_breadcrumbs": false,
+            "top_subheading": "",
+            "title": "Fresh Lion's Mane\n15% Off",
+            "title_size": 65,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "shopify://products/fresh-lions-mane",
+            "link_text_2": "Buy Now",
+            "link_3": "",
+            "link_text_3": "",
+            "link_4": "",
+            "link_text_4": "",
+            "color_accent": "#61d52d",
+            "text_align": "vertical-bottom horizontal-left",
+            "image": "shopify://shop_images/15_Off_Desktop_3.jpg",
+            "image_mobile": "shopify://shop_images/15_Off_Mobile.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 70,
+            "focal_point": "center center"
+          }
+        },
         "7cdf59c5-6a10-43b9-a4b9-2d1efb4a9a4f": {
           "type": "image",
           "settings": {
@@ -61,92 +136,14 @@
             "overlay_opacity": 70,
             "focal_point": "center center"
           }
-        },
-        "template--20076144230680__9624ea0d-516e-42d5-a087-263e8ac67743-image-1": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "show_breadcrumbs": false,
-            "top_subheading": "",
-            "title": "Buy 1 Get 1 50% Off\nOn Growing Kits",
-            "title_size": 65,
-            "subheading": "Promotion auto-applies at checkout",
-            "link": "",
-            "link_text": "",
-            "link_2": "shopify://collections/mushroom-growing-kits",
-            "link_text_2": "Choose selection",
-            "link_3": "",
-            "link_text_3": "",
-            "link_4": "",
-            "link_text_4": "",
-            "color_accent": "#e5d626",
-            "text_align": "vertical-bottom horizontal-left",
-            "image": "shopify://shop_images/50_Off_Desktop_2.jpg",
-            "image_mobile": "shopify://shop_images/50_Off_Mobile.jpg",
-            "parallax_direction": "top",
-            "overlay_opacity": 70,
-            "focal_point": "center center"
-          }
-        },
-        "83db8b86-d6ed-4e05-aced-8451952bc00d": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "show_breadcrumbs": false,
-            "top_subheading": "",
-            "title": "Ultimate Grower’s Gift Set\n£9.97 Off!",
-            "title_size": 65,
-            "subheading": "",
-            "link": "",
-            "link_text": "",
-            "link_2": "shopify://products/oyster-mushroom-growing-kit-full-set-gift-option",
-            "link_text_2": "Buy Now",
-            "link_3": "",
-            "link_text_3": "",
-            "link_4": "",
-            "link_text_4": "",
-            "color_accent": "#0560c7",
-            "text_align": "vertical-bottom horizontal-left",
-            "image": "shopify://shop_images/Growing_Kits.jpg",
-            "image_mobile": "shopify://shop_images/Growing_Kits_Mobile.jpg",
-            "parallax_direction": "top",
-            "overlay_opacity": 60,
-            "focal_point": "center center"
-          }
-        },
-        "cd2752eb-c47a-4ef1-925b-d64437848e25": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "show_breadcrumbs": false,
-            "top_subheading": "",
-            "title": "Fresh Lion's Mane\n15% Off",
-            "title_size": 65,
-            "subheading": "",
-            "link": "",
-            "link_text": "",
-            "link_2": "shopify://products/fresh-lions-mane",
-            "link_text_2": "Buy Now",
-            "link_3": "",
-            "link_text_3": "",
-            "link_4": "",
-            "link_text_4": "",
-            "color_accent": "#61d52d",
-            "text_align": "vertical-bottom horizontal-left",
-            "image": "shopify://shop_images/15_Off_Desktop_3.jpg",
-            "image_mobile": "shopify://shop_images/15_Off_Mobile.jpg",
-            "parallax_direction": "top",
-            "overlay_opacity": 70,
-            "focal_point": "center center"
-          }
         }
       },
       "block_order": [
-        "7cdf59c5-6a10-43b9-a4b9-2d1efb4a9a4f",
-        "image_wqQ8Mb",
         "template--20076144230680__9624ea0d-516e-42d5-a087-263e8ac67743-image-1",
         "83db8b86-d6ed-4e05-aced-8451952bc00d",
-        "cd2752eb-c47a-4ef1-925b-d64437848e25"
+        "cd2752eb-c47a-4ef1-925b-d64437848e25",
+        "7cdf59c5-6a10-43b9-a4b9-2d1efb4a9a4f",
+        "image_wqQ8Mb"
       ],
       "custom_css": [
         "@media (min-width: 768px) and (max-width: 1024px) {h1 {font-size: 2rem !important; }}",
