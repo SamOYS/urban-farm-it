@@ -39,6 +39,7 @@
         },
         "83db8b86-d6ed-4e05-aced-8451952bc00d": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "show_breadcrumbs": false,
             "top_subheading": "",
