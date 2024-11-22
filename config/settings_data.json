@@ -181,6 +181,9 @@
           "5d753a88-d8ce-49ef-b981-c609a0cef4e1",
           "1524768779513"
         ],
+        "custom_css": [
+          ".site-nav__item:first-of-type .site-nav__link {color: #e5d626;}"
+        ],
         "settings": {
           "main_menu_link_list": "desktop-navigation",
           "mega_menu_images": false,
@@ -374,54 +377,44 @@
           "footer-promotions-1",
           "footer-promotions-2"
         ],
-        "custom_css": [
-
-        ],
+        "custom_css": [],
         "settings": {
           "hide_homepage": false,
           "image_size": "wide"
         }
       }
     },
-    "content_for_index": [
-
-    ],
+    "content_for_index": [],
     "blocks": {
       "14060646107696862457": {
         "type": "shopify://apps/judge-me-product-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "558381514691908246": {
         "type": "shopify://apps/volumeboost-volume-discount/blocks/app-embed/25745434-52e7-4378-88f1-890df18a0110",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "855628211100114053": {
         "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "6858403126979251294": {
         "type": "shopify://apps/omega-cookie-banner/blocks/omega-cookies-notification/13cba824-a338-452e-9b8e-c83046a79f21",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "6174324309569838175": {
         "type": "shopify://apps/smile-loyalty-rewards/blocks/smile-shopify-app/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "pagefly-page-builder": {
         "type": "shopify://apps/pagefly-page-builder/blocks/app-embed/83e179f7-59a0-4589-8c66-c0dddf959200",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       }
     }
   },
@@ -573,15 +566,13 @@
             "reminder-block": {
               "type": "header",
               "disabled": true,
-              "settings": {
-              }
+              "settings": {}
             }
           },
           "block_order": [
             "reminder-block"
           ],
-          "settings": {
-          }
+          "settings": {}
         },
         "collection-header": {
           "type": "collection-header",
@@ -923,8 +914,7 @@
           "blocks": {
             "1524768779513": {
               "type": "logo",
-              "settings": {
-              }
+              "settings": {}
             }
           },
           "block_order": [
@@ -945,8 +935,7 @@
           "blocks": {
             "1494292487693": {
               "type": "newsletter",
-              "settings": {
-              }
+              "settings": {}
             },
             "1526406521795": {
               "type": "menu",
@@ -973,8 +962,7 @@
         },
         "newsletter-popup": {
           "type": "newsletter-popup",
-          "settings": {
-          }
+          "settings": {}
         },
         "collection-header": {
           "type": "collection-header",
