@@ -74,7 +74,7 @@
           "settings": {
             "badgeMode": "info",
             "customText": "",
-            "showMoreInfo": "true",
+            "showMoreInfo": "modal",
             "showLogo": true,
             "showStats": false,
             "showProjects": false,

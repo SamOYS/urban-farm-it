@@ -22,26 +22,25 @@
         "b499b114-20e9-405a-ab8e-20e639dafbf1": {
           "type": "custom",
           "settings": {
-            "code": "<div\n          \n          class=\"jdgm-widget jdgm-preview-badge\"\n          data-id=\"{{ product.id }}\"\n          data-template=\"manual-installation\"\n        >\n          {{ product.metafields.judgeme.badge }}\n        <\/div>"
+            "code": "<div\n          \n          class=\"jdgm-widget jdgm-preview-badge\"\n          data-id=\"{{ product.id }}\"\n          data-template=\"manual-installation\"\n        >\n          {{ product.metafields.judgeme.badge }}\n        </div>"
           }
         },
         "de54a8a6-5a13-4172-b6df-cf6d5d01998a": {
           "type": "text",
           "disabled": true,
           "settings": {
-            "text": "Next shipping date: 30\/11\/2023"
+            "text": "Next shipping date: 30/11/2023"
           }
         },
         "price": {
           "type": "price",
-          "settings": {
-          }
+          "settings": {}
         },
         "194ded2d-f119-4381-a208-2d5d04229c50": {
           "type": "custom",
           "disabled": true,
           "settings": {
-            "code": "<div id=\"christmas-section\">\n    <h4>Buying for Christmas?<\/h4>\n    <p>Planning to gift this kit for Christmas? For optimal freshness and yield, we recommend opting in for delivery closer to the holiday. This ensures a more fruitful and enjoyable growing experience.<\/p>\n    <!--<label>\n        <input type=\"checkbox\" id=\"christmasCheckbox\"> Deliver in time for Christmas\n    <\/label>\n<\/div>\n<script>document.addEventListener('DOMContentLoaded', function() {\n    \/\/ Locate the checkbox and textarea by their IDs\n    const christmasCheckbox = document.getElementById('christmasCheckbox');\n    const cartNoteDrawer = document.getElementById('CartNoteDrawer');\n\n    \/\/ Check the initial state of the textarea and checkbox\n    updateTextArea();\n\n    \/\/ Event listener for when the checkbox state changes\n    christmasCheckbox.addEventListener('change', function() {\n        updateTextArea();\n    });\n\n    function updateTextArea() {\n        const currentNote = cartNoteDrawer.value;\n        const christmasTag = \"[Christmas_Delivery_Selected]\";\n\n        \/\/ Check if the tag is already in the textarea\n        const tagExists = currentNote.includes(christmasTag);\n\n        if (christmasCheckbox.checked) {\n            \/\/ Append the tag if it doesn't already exist\n            if (!tagExists) {\n                cartNoteDrawer.value = `${currentNote} ${christmasTag}`;\n            }\n        } else {\n            \/\/ Remove the tag if it exists\n            if (tagExists) {\n                cartNoteDrawer.value = currentNote.replace(christmasTag, \"\").trim();\n            }\n        }\n    }\n});\n<\/script>-->"
+            "code": "<div id=\"christmas-section\">\n    <h4>Buying for Christmas?</h4>\n    <p>Planning to gift this kit for Christmas? For optimal freshness and yield, we recommend opting in for delivery closer to the holiday. This ensures a more fruitful and enjoyable growing experience.</p>\n    <!--<label>\n        <input type=\"checkbox\" id=\"christmasCheckbox\"> Deliver in time for Christmas\n    </label>\n</div>\n<script>document.addEventListener('DOMContentLoaded', function() {\n    // Locate the checkbox and textarea by their IDs\n    const christmasCheckbox = document.getElementById('christmasCheckbox');\n    const cartNoteDrawer = document.getElementById('CartNoteDrawer');\n\n    // Check the initial state of the textarea and checkbox\n    updateTextArea();\n\n    // Event listener for when the checkbox state changes\n    christmasCheckbox.addEventListener('change', function() {\n        updateTextArea();\n    });\n\n    function updateTextArea() {\n        const currentNote = cartNoteDrawer.value;\n        const christmasTag = \"[Christmas_Delivery_Selected]\";\n\n        // Check if the tag is already in the textarea\n        const tagExists = currentNote.includes(christmasTag);\n\n        if (christmasCheckbox.checked) {\n            // Append the tag if it doesn't already exist\n            if (!tagExists) {\n                cartNoteDrawer.value = `${currentNote} ${christmasTag}`;\n            }\n        } else {\n            // Remove the tag if it exists\n            if (tagExists) {\n                cartNoteDrawer.value = currentNote.replace(christmasTag, \"\").trim();\n            }\n        }\n    }\n});\n</script>-->"
           }
         },
         "variant_picker": {
@@ -56,7 +55,7 @@
         "c7cb76d9-e206-4d28-a3fe-1dff3ce406da": {
           "type": "custom",
           "settings": {
-            "code": "{% assign product_variant =  product.metafields.gift_option.product_variant %}{% if product_variant %}\n<label>PURCHASING AS A GIFT?<\/label>\n<div class=\"variant-input-wrap\">\n<a class=\"custom-variant__button-label\" href=\"{{ product_variant[0]  | prepend: \"\/products\/\"| prepend: shop.url }}\">\n<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"800px\" height=\"800px\" viewBox=\"0 0 24 24\" fill=\"none\">\n<path d=\"M5 10.0802V20.0802H19V14M5 10.0802H4V7.0802H20V10.0802H5ZM12 7.0802C12.8333 5.24687 14.9999 1.5802 16.9999 3.5802C18.9999 5.5802 14.5 6.91353 12 7.0802ZM12 7.0802C11.1667 5.24687 8.99999 1.5802 6.99999 3.5802C4.99999 5.5802 9.5 6.91353 12 7.0802Z\" stroke=\"#000000\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\/>\n<\/svg>See Gift Version\n<\/a>\n<\/div>\n{% endif %}"
+            "code": "{% assign product_variant =  product.metafields.gift_option.product_variant %}{% if product_variant %}\n<label>PURCHASING AS A GIFT?</label>\n<div class=\"variant-input-wrap\">\n<a class=\"custom-variant__button-label\" href=\"{{ product_variant[0]  | prepend: \"/products/\"| prepend: shop.url }}\">\n<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"800px\" height=\"800px\" viewBox=\"0 0 24 24\" fill=\"none\">\n<path d=\"M5 10.0802V20.0802H19V14M5 10.0802H4V7.0802H20V10.0802H5ZM12 7.0802C12.8333 5.24687 14.9999 1.5802 16.9999 3.5802C18.9999 5.5802 14.5 6.91353 12 7.0802ZM12 7.0802C11.1667 5.24687 8.99999 1.5802 6.99999 3.5802C4.99999 5.5802 9.5 6.91353 12 7.0802Z\" stroke=\"#000000\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>See Gift Version\n</a>\n</div>\n{% endif %}"
           }
         },
         "c11da764-83b0-4131-ba30-5bba256f27a8": {
@@ -68,7 +67,7 @@
         "text_BXfGwj": {
           "type": "text",
           "settings": {
-            "text": "IMPORTANT: Order by 14\/06\/2024 for Father's Day Delivery"
+            "text": "IMPORTANT: Order by 14/06/2024 for Father's Day Delivery"
           }
         },
         "buy_buttons": {
@@ -79,7 +78,7 @@
           }
         },
         "smile_loyalty_rewards_smile_points_on_product_page_MNQ97z": {
-          "type": "shopify:\/\/apps\/smile-io\/blocks\/smile-points-on-product-page\/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
+          "type": "shopify://apps/smile-io/blocks/smile-points-on-product-page/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
           "settings": {
             "primary_colour": "#121212",
             "secondary_colour": "#f8f8f8",
@@ -87,11 +86,11 @@
           }
         },
         "b3fc12dd-8538-4787-b64f-7850c280141e": {
-          "type": "shopify:\/\/apps\/planet\/blocks\/shopify-planet\/12047591-3a2d-45cc-9dfd-2ce5eaa45dee",
+          "type": "shopify://apps/planet/blocks/shopify-planet/12047591-3a2d-45cc-9dfd-2ce5eaa45dee",
           "settings": {
             "badgeMode": "info",
             "showLogo": true,
-            "showMoreInfo": true,
+            "showMoreInfo": "modal",
             "showStats": false,
             "showProjects": false,
             "backgroundColor": "#f1f8f5",
@@ -105,13 +104,11 @@
         },
         "separator": {
           "type": "separator",
-          "settings": {
-          }
+          "settings": {}
         },
         "e89378ea-77b2-49f4-90ba-5a690c3081f5": {
-          "type": "shopify:\/\/apps\/volume-discounts\/blocks\/offer_table_block\/25745434-52e7-4378-88f1-890df18a0110",
-          "settings": {
-          }
+          "type": "shopify://apps/volume-discounts/blocks/offer_table_block/25745434-52e7-4378-88f1-890df18a0110",
+          "settings": {}
         },
         "fa716552-1943-4ff8-9ab5-8d1aa1f2de27": {
           "type": "custom",
@@ -157,7 +154,7 @@
           "type": "tab",
           "settings": {
             "title": "Delivery & Returns",
-            "content": "<p><strong>Delivery<\/strong><\/p><p><strong>Note: <\/strong>Please refer to the specific lead times shown on product pages for more accurate delivery times.<\/p><ol><li><strong>Small Orders (E.g. 100ml Spawn, Plugs)<\/strong>: Sent via Royal Mail large letters.<\/li><li><strong>Medium-Sized Orders (under 2kg)<\/strong>: Royal Mail 24-48 hour tracked parcel.<\/li><li><strong>Large Orders (2kg+)<\/strong>: via DPD Express.<\/li><\/ol><p><strong>Returns<\/strong><\/p><ol><li><strong>Standard Returns<\/strong>: Returns and exchanges within 14 days of receipt. The item must be unused and in its original packaging. See our <a href=\"\/policies\/refund-policy\" target=\"_blank\" title=\"Refund Policy\">returns policy here<\/a>.<\/li><\/ol><p>This does not apply to our Gift E-Cards, which are delivered via email.<\/p>",
+            "content": "<p><strong>Delivery</strong></p><p><strong>Note: </strong>Please refer to the specific lead times shown on product pages for more accurate delivery times.</p><ol><li><strong>Small Orders (E.g. 100ml Spawn, Plugs)</strong>: Sent via Royal Mail large letters.</li><li><strong>Medium-Sized Orders (under 2kg)</strong>: Royal Mail 24-48 hour tracked parcel.</li><li><strong>Large Orders (2kg+)</strong>: via DPD Express.</li></ol><p><strong>Returns</strong></p><ol><li><strong>Standard Returns</strong>: Returns and exchanges within 14 days of receipt. The item must be unused and in its original packaging. See our <a href=\"/policies/refund-policy\" target=\"_blank\" title=\"Refund Policy\">returns policy here</a>.</li></ol><p>This does not apply to our Gift E-Cards, which are delivered via email.</p>",
             "page": ""
           }
         }
@@ -184,9 +181,7 @@
         "92107157-941a-481b-b05c-c5bc68088308",
         "0a108145-8c33-4ba3-915f-85eec2eb11e9"
       ],
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
         "sku_enable": false,
         "image_position": "left",
@@ -206,7 +201,7 @@
         "8f15b725-34d2-41de-9ce0-9f16a0e0ac5c": {
           "type": "step",
           "settings": {
-            "image": "shopify:\/\/shop_images\/DSF0313_1.jpg",
+            "image": "shopify://shop_images/DSF0313_1.jpg",
             "step_title": "CUT HOLES",
             "step_description": "Using clean scissors or blade, cut a cross on one face of the substrate block and a slash along the top of the bag"
           }
@@ -214,7 +209,7 @@
         "f63ca0e8-94c7-4eba-b06d-8bf8b5f2bacf": {
           "type": "step",
           "settings": {
-            "image": "shopify:\/\/shop_images\/DSF0339_1.jpg",
+            "image": "shopify://shop_images/DSF0339_1.jpg",
             "step_title": "PLACE HUMIDITY DOME",
             "step_description": "Take the skewers and place in the top of the substrate block. Ensure the humidity bag can fit over them like a sleeve!"
           }
@@ -222,7 +217,7 @@
         "f9b0111b-c432-4178-99df-a91c0d6da62f": {
           "type": "step",
           "settings": {
-            "image": "shopify:\/\/shop_images\/DSF0347_1.jpg",
+            "image": "shopify://shop_images/DSF0347_1.jpg",
             "step_title": "SPRAY",
             "step_description": "Using the provided spray bottle, maintain moisture the block's environment by misting twice a day"
           }
@@ -230,7 +225,7 @@
         "d06c94c2-4061-46c6-8fb5-a6ddfe97e82b": {
           "type": "step",
           "settings": {
-            "image": "shopify:\/\/shop_images\/DSF0276_1_1.jpg",
+            "image": "shopify://shop_images/DSF0276_1_1.jpg",
             "step_title": "FRUIT!",
             "step_description": "After 10-15 days, you'll see the fruits of your labour!"
           }
@@ -277,7 +272,7 @@
         "subtitle": "",
         "heading": "\"[ONE OF] THE BEST MUSHROOM GROWING KITS TO BUY IN THE UK RIGHT NOW\"",
         "heading_type": "h2",
-        "text": "<img style=\"display: block; height: 45px;\" src=\"https:\/\/images.immediate.co.uk\/production\/volatile\/sites\/4\/2022\/08\/cropped-BBC-Science-Focus-logo-2018-web-2364b48-a244f87.jpg?quality=90&webp=true&resize=291,88\">",
+        "text": "<img style=\"display: block; height: 45px;\" src=\"https://images.immediate.co.uk/production/volatile/sites/4/2022/08/cropped-BBC-Science-Focus-logo-2018-web-2364b48-a244f87.jpg?quality=90&webp=true&resize=291,88\">",
         "button_label": "SEE OUR REVIEWS",
         "button_link": "#judgeme_product_reviews"
       }
@@ -290,7 +285,7 @@
           "settings": {
             "subheading": "",
             "heading": "KIT BOX & GROWING ENVIRONMENT",
-            "content": "<p>More than just packaging - the 100% recyclable kit box can be used to build a growing environment for your kit. Simply line the box with the providing lining and place your grow bag in.<\/p>",
+            "content": "<p>More than just packaging - the 100% recyclable kit box can be used to build a growing environment for your kit. Simply line the box with the providing lining and place your grow bag in.</p>",
             "button_text": "",
             "button_link": "",
             "vertical": 26,
@@ -302,7 +297,7 @@
           "settings": {
             "subheading": "",
             "heading": "DETAILED INSTRUCTIONS & TIPS",
-            "content": "<p>Detailed step-by-step guides to walk you through all the key steps to successfully growing your own mushrooms. The perfect handbook for troubleshooting!<\/p>",
+            "content": "<p>Detailed step-by-step guides to walk you through all the key steps to successfully growing your own mushrooms. The perfect handbook for troubleshooting!</p>",
             "button_text": "",
             "button_link": "",
             "vertical": 24,
@@ -314,7 +309,7 @@
           "settings": {
             "subheading": "",
             "heading": "TOP QUALITY MUSHROOM SPAWN",
-            "content": "<p>Our top-tier mushroom grain spawn, meticulously crafted in Mycelia's cutting-edge facilities.<\/p>",
+            "content": "<p>Our top-tier mushroom grain spawn, meticulously crafted in Mycelia's cutting-edge facilities.</p>",
             "button_text": "",
             "button_link": "",
             "vertical": 48,
@@ -326,7 +321,7 @@
           "settings": {
             "subheading": "",
             "heading": "SUBSTRATE & GROW BAG",
-            "content": "<p>A heat resistant growing bag prefilled with a chopped wheatstraw substrate. Perfect for oysters mushrooms!<\/p>",
+            "content": "<p>A heat resistant growing bag prefilled with a chopped wheatstraw substrate. Perfect for oysters mushrooms!</p>",
             "button_text": "",
             "button_link": "",
             "vertical": 54,
@@ -338,7 +333,7 @@
           "settings": {
             "subheading": "",
             "heading": "WHITE LINER",
-            "content": "<p>Use this to line the inside of the kit box and transform into an optimal growing environment.<\/p>",
+            "content": "<p>Use this to line the inside of the kit box and transform into an optimal growing environment.</p>",
             "button_text": "",
             "button_link": "",
             "vertical": 73,
@@ -372,7 +367,7 @@
       "disabled": true,
       "settings": {
         "title": "",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=hjKkUGw-UGc",
+        "video_url": "https://www.youtube.com/watch?v=hjKkUGw-UGc",
         "divider": false
       }
     },
@@ -387,9 +382,8 @@
       "type": "apps",
       "blocks": {
         "82c6580b-1521-483b-bfd9-34dc2c17e709": {
-          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-          }
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
         }
       },
       "block_order": [
@@ -409,8 +403,7 @@
     "collection-return": {
       "type": "collection-return",
       "disabled": true,
-      "settings": {
-      }
+      "settings": {}
     }
   },
   "order": [

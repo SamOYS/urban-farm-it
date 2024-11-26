@@ -15,36 +15,33 @@
         "bb0702de-fed0-43dc-920a-b81896582e0b": {
           "type": "custom",
           "settings": {
-            "code": "<div\n          style=\"\n            margin-top: 0 !important;\n            font-size: 0.85rem;\n          \"\n          class=\"jdgm-widget jdgm-preview-badge\"\n          data-id=\"{{ product.id }}\"\n          data-template=\"manual-installation\"\n        >\n          {{ product.metafields.judgeme.badge }}\n        <\/div>"
+            "code": "<div\n          style=\"\n            margin-top: 0 !important;\n            font-size: 0.85rem;\n          \"\n          class=\"jdgm-widget jdgm-preview-badge\"\n          data-id=\"{{ product.id }}\"\n          data-template=\"manual-installation\"\n        >\n          {{ product.metafields.judgeme.badge }}\n        </div>"
           }
         },
         "7a230a5e-31ee-4696-b895-46fe2b130119": {
           "type": "custom",
           "settings": {
-            "code": "{% if product.metafields.custom.species_latin %}\n<div class=\"species\">\n<div class=\"species__img\">\n<img src=\"{{product.featured_image | image_url }}\"><\/div>\n<div class=\"species__strain\">Strain: <a href=\"#\" style=\"text-decoration: underline\">{{ product.metafields.custom.species_latin }}<\/a><\/div>\n<\/div>\n\n<style>\n.species {\n    display: flex;\n    align-items: center;\n    background: #F3F3F3;\n    padding: 0.25rem 1rem;\n    gap: 1rem;\n    justify-content: center;\n    width: fit-content;\n}\n\n.species__img {\nheight: 30px;\nwidth: 30px;\nborder-radius: 50px;\noverflow: hidden;\n}\n\n.species__img img {\nobject-fit: cover;\n    display: block;\n    height: 100%;\n    width: 100%;\n}\n\n@media only screen and (max-width: 767px) {\n.species {\n\n}\n}\n<\/style>\n{% endif %}"
+            "code": "{% if product.metafields.custom.species_latin %}\n<div class=\"species\">\n<div class=\"species__img\">\n<img src=\"{{product.featured_image | image_url }}\"></div>\n<div class=\"species__strain\">Strain: <a href=\"#\" style=\"text-decoration: underline\">{{ product.metafields.custom.species_latin }}</a></div>\n</div>\n\n<style>\n.species {\n    display: flex;\n    align-items: center;\n    background: #F3F3F3;\n    padding: 0.25rem 1rem;\n    gap: 1rem;\n    justify-content: center;\n    width: fit-content;\n}\n\n.species__img {\nheight: 30px;\nwidth: 30px;\nborder-radius: 50px;\noverflow: hidden;\n}\n\n.species__img img {\nobject-fit: cover;\n    display: block;\n    height: 100%;\n    width: 100%;\n}\n\n@media only screen and (max-width: 767px) {\n.species {\n\n}\n}\n</style>\n{% endif %}"
           }
         },
         "751dd55d-e011-4693-ae20-0df4e239c30b": {
           "type": "species",
-          "settings": {
-          }
+          "settings": {}
         },
         "e54ec1d8-baaa-4463-ba01-653ba36610ba": {
           "type": "lead_time",
           "disabled": true,
-          "settings": {
-          }
+          "settings": {}
         },
         "price": {
           "type": "price",
-          "settings": {
-          }
+          "settings": {}
         },
         "bb725c5b-dc4f-4a63-a48a-6de181dc49ed": {
           "type": "custom",
           "disabled": true,
           "settings": {
-            "code": "{% assign lead_time = product.metafields.custom.lead_time %}\n{% if lead_time != blank %}\n<div class=\"lead-time\"><div class=\"lead-time__icon\"><svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"800px\" height=\"800px\" viewBox=\"0 0 24 24\" fill=\"none\">\n<path opacity=\"1\" d=\"M10 7L2 7\" stroke=\"#fff\" stroke-width=\"1.5\" stroke-linecap=\"round\"><\/path>\n<path opacity=\"1\" d=\"M8 12H2\" stroke=\"#fff\" stroke-width=\"1.5\" stroke-linecap=\"round\"><\/path>\n<path opacity=\"1\" d=\"M10 17H2\" stroke=\"#fff\" stroke-width=\"1.5\" stroke-linecap=\"round\"><\/path>\n<circle cx=\"17\" cy=\"12\" r=\"5\" stroke=\"#fff\" stroke-width=\"1.5\"><\/circle>\n<path d=\"M17 10V11.8462L18 13\" stroke=\"#1C274C\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<\/svg><\/div><div class=\"lead-time__text\">Lead time: {{ lead_time }}<\/div><\/div>\n\n<style>\n.lead-time {\ndisplay: flex;\nalign-items: center;\ngap: .5rem;\nbackground: #000;\ncolor: #fff;\npadding: 0 .75rem;\nwidth: fit-content;\nborder-radius: 2px;\n}\n\n.lead-time__icon {\ndisplay: flex;\n}\n\n.lead-time__icon svg {\nheight: 30px;\nwidth: 30px;\nfill: #fff;\n}\n\n<\/style>\n{% endif %}"
+            "code": "{% assign lead_time = product.metafields.custom.lead_time %}\n{% if lead_time != blank %}\n<div class=\"lead-time\"><div class=\"lead-time__icon\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"800px\" height=\"800px\" viewBox=\"0 0 24 24\" fill=\"none\">\n<path opacity=\"1\" d=\"M10 7L2 7\" stroke=\"#fff\" stroke-width=\"1.5\" stroke-linecap=\"round\"></path>\n<path opacity=\"1\" d=\"M8 12H2\" stroke=\"#fff\" stroke-width=\"1.5\" stroke-linecap=\"round\"></path>\n<path opacity=\"1\" d=\"M10 17H2\" stroke=\"#fff\" stroke-width=\"1.5\" stroke-linecap=\"round\"></path>\n<circle cx=\"17\" cy=\"12\" r=\"5\" stroke=\"#fff\" stroke-width=\"1.5\"></circle>\n<path d=\"M17 10V11.8462L18 13\" stroke=\"#1C274C\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n</svg></div><div class=\"lead-time__text\">Lead time: {{ lead_time }}</div></div>\n\n<style>\n.lead-time {\ndisplay: flex;\nalign-items: center;\ngap: .5rem;\nbackground: #000;\ncolor: #fff;\npadding: 0 .75rem;\nwidth: fit-content;\nborder-radius: 2px;\n}\n\n.lead-time__icon {\ndisplay: flex;\n}\n\n.lead-time__icon svg {\nheight: 30px;\nwidth: 30px;\nfill: #fff;\n}\n\n</style>\n{% endif %}"
           }
         },
         "variant_picker": {
@@ -71,8 +68,7 @@
         },
         "separator": {
           "type": "separator",
-          "settings": {
-          }
+          "settings": {}
         },
         "fa716552-1943-4ff8-9ab5-8d1aa1f2de27": {
           "type": "custom",
@@ -82,10 +78,10 @@
           }
         },
         "558825a1-3d9f-4c62-93f5-9164b72db797": {
-          "type": "shopify:\/\/apps\/planet\/blocks\/shopify-planet\/12047591-3a2d-45cc-9dfd-2ce5eaa45dee",
+          "type": "shopify://apps/planet/blocks/shopify-planet/12047591-3a2d-45cc-9dfd-2ce5eaa45dee",
           "settings": {
             "showLogo": true,
-            "showMoreInfo": true,
+            "showMoreInfo": "modal",
             "showStats": false,
             "showProjects": false,
             "backgroundColor": "#F1F8F5",
@@ -98,14 +94,12 @@
           }
         },
         "3b0aa7e7-e6bb-4e1b-ac9e-bf72faa3eca6": {
-          "type": "shopify:\/\/apps\/volume-discounts\/blocks\/offer_table_block\/25745434-52e7-4378-88f1-890df18a0110",
-          "settings": {
-          }
+          "type": "shopify://apps/volume-discounts/blocks/offer_table_block/25745434-52e7-4378-88f1-890df18a0110",
+          "settings": {}
         },
         "share": {
           "type": "share",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
@@ -190,14 +184,13 @@
         },
         "8acac207-1ebd-4a59-aa5b-4702c5c56023": {
           "type": "share",
-          "settings": {
-          }
+          "settings": {}
         },
         "f9e4feee-c497-488d-843b-e19bb15d48fe": {
           "type": "tab",
           "settings": {
             "title": "Shipping information",
-            "content": "<p>Use collapsible tabs for more detailed information that will help customers make a purchasing decision.<\/p><p>Ex: Shipping and return policies, size guides, and other common questions.<\/p>",
+            "content": "<p>Use collapsible tabs for more detailed information that will help customers make a purchasing decision.</p><p>Ex: Shipping and return policies, size guides, and other common questions.</p>",
             "page": ""
           }
         }
@@ -216,9 +209,8 @@
       "type": "apps",
       "blocks": {
         "82c6580b-1521-483b-bfd9-34dc2c17e709": {
-          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-          }
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
         }
       },
       "block_order": [
@@ -237,8 +229,7 @@
     },
     "collection-return": {
       "type": "collection-return",
-      "settings": {
-      }
+      "settings": {}
     }
   },
   "order": [

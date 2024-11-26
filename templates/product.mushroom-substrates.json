@@ -15,18 +15,17 @@
         "d8ea0744-223c-4daa-b30d-64f81a9cc2f3": {
           "type": "custom",
           "settings": {
-            "code": "<div\n          style=\"\n            margin-top: 0 !important;\n            font-size: 0.85rem;\n          \"\n          class=\"jdgm-widget jdgm-preview-badge\"\n          data-id=\"{{ product.id }}\"\n          data-template=\"manual-installation\"\n        >\n          {{ product.metafields.judgeme.badge }}\n        <\/div>"
+            "code": "<div\n          style=\"\n            margin-top: 0 !important;\n            font-size: 0.85rem;\n          \"\n          class=\"jdgm-widget jdgm-preview-badge\"\n          data-id=\"{{ product.id }}\"\n          data-template=\"manual-installation\"\n        >\n          {{ product.metafields.judgeme.badge }}\n        </div>"
           }
         },
         "price": {
           "type": "price",
-          "settings": {
-          }
+          "settings": {}
         },
         "bb725c5b-dc4f-4a63-a48a-6de181dc49ed": {
           "type": "custom",
           "settings": {
-            "code": "{% assign lead_time = product.metafields.custom.lead_time %}\n{% if lead_time != blank %}\n<div class=\"lead-time\"><div class=\"lead-time__icon\"><svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"800px\" height=\"800px\" viewBox=\"0 0 24 24\" fill=\"none\">\n<path opacity=\"1\" d=\"M10 7L2 7\" stroke=\"#fff\" stroke-width=\"1.5\" stroke-linecap=\"round\"><\/path>\n<path opacity=\"1\" d=\"M8 12H2\" stroke=\"#fff\" stroke-width=\"1.5\" stroke-linecap=\"round\"><\/path>\n<path opacity=\"1\" d=\"M10 17H2\" stroke=\"#fff\" stroke-width=\"1.5\" stroke-linecap=\"round\"><\/path>\n<circle cx=\"17\" cy=\"12\" r=\"5\" stroke=\"#fff\" stroke-width=\"1.5\"><\/circle>\n<path d=\"M17 10V11.8462L18 13\" stroke=\"#1C274C\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<\/svg><\/div><div class=\"lead-time__text\">Lead time: {{ lead_time }}<\/div><\/div>\n\n<style>\n.lead-time {\ndisplay: flex;\nalign-items: center;\ngap: .5rem;\nbackground: #000;\ncolor: #fff;\npadding: 0 .75rem;\nwidth: fit-content;\nborder-radius: 2px;\n}\n\n.lead-time__icon {\ndisplay: flex;\n}\n\n.lead-time__icon svg {\nheight: 30px;\nwidth: 30px;\nfill: #fff;\n}\n\n<\/style>\n{% endif %}"
+            "code": "{% assign lead_time = product.metafields.custom.lead_time %}\n{% if lead_time != blank %}\n<div class=\"lead-time\"><div class=\"lead-time__icon\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"800px\" height=\"800px\" viewBox=\"0 0 24 24\" fill=\"none\">\n<path opacity=\"1\" d=\"M10 7L2 7\" stroke=\"#fff\" stroke-width=\"1.5\" stroke-linecap=\"round\"></path>\n<path opacity=\"1\" d=\"M8 12H2\" stroke=\"#fff\" stroke-width=\"1.5\" stroke-linecap=\"round\"></path>\n<path opacity=\"1\" d=\"M10 17H2\" stroke=\"#fff\" stroke-width=\"1.5\" stroke-linecap=\"round\"></path>\n<circle cx=\"17\" cy=\"12\" r=\"5\" stroke=\"#fff\" stroke-width=\"1.5\"></circle>\n<path d=\"M17 10V11.8462L18 13\" stroke=\"#1C274C\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n</svg></div><div class=\"lead-time__text\">Lead time: {{ lead_time }}</div></div>\n\n<style>\n.lead-time {\ndisplay: flex;\nalign-items: center;\ngap: .5rem;\nbackground: #000;\ncolor: #fff;\npadding: 0 .75rem;\nwidth: fit-content;\nborder-radius: 2px;\n}\n\n.lead-time__icon {\ndisplay: flex;\n}\n\n.lead-time__icon svg {\nheight: 30px;\nwidth: 30px;\nfill: #fff;\n}\n\n</style>\n{% endif %}"
           }
         },
         "fa716552-1943-4ff8-9ab5-8d1aa1f2de27": {
@@ -38,7 +37,7 @@
         "c7cb76d9-e206-4d28-a3fe-1dff3ce406da": {
           "type": "custom",
           "settings": {
-            "code": "{% assign product_variant =  product.metafields.gift_option.product_variant %}{% if product_variant %}\n<label>OPTIONS<\/label>\n<div class=\"variant-input-wrap\">\n<a class=\"custom-variant__button-label\" href=\"{{ product_variant[0]  | prepend: \"\/products\/\"| prepend: shop.url }}\">\n<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"800px\" height=\"800px\" viewBox=\"0 0 24 24\" fill=\"none\">\n<path d=\"M5 10.0802V20.0802H19V14M5 10.0802H4V7.0802H20V10.0802H5ZM12 7.0802C12.8333 5.24687 14.9999 1.5802 16.9999 3.5802C18.9999 5.5802 14.5 6.91353 12 7.0802ZM12 7.0802C11.1667 5.24687 8.99999 1.5802 6.99999 3.5802C4.99999 5.5802 9.5 6.91353 12 7.0802Z\" stroke=\"#000000\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\/>\n<\/svg>Gift Option\n<\/a>\n<\/div>\n{% endif %}"
+            "code": "{% assign product_variant =  product.metafields.gift_option.product_variant %}{% if product_variant %}\n<label>OPTIONS</label>\n<div class=\"variant-input-wrap\">\n<a class=\"custom-variant__button-label\" href=\"{{ product_variant[0]  | prepend: \"/products/\"| prepend: shop.url }}\">\n<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"800px\" height=\"800px\" viewBox=\"0 0 24 24\" fill=\"none\">\n<path d=\"M5 10.0802V20.0802H19V14M5 10.0802H4V7.0802H20V10.0802H5ZM12 7.0802C12.8333 5.24687 14.9999 1.5802 16.9999 3.5802C18.9999 5.5802 14.5 6.91353 12 7.0802ZM12 7.0802C11.1667 5.24687 8.99999 1.5802 6.99999 3.5802C4.99999 5.5802 9.5 6.91353 12 7.0802Z\" stroke=\"#000000\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>Gift Option\n</a>\n</div>\n{% endif %}"
           }
         },
         "variant_picker": {
@@ -58,8 +57,7 @@
         },
         "separator": {
           "type": "separator",
-          "settings": {
-          }
+          "settings": {}
         },
         "buy_buttons": {
           "type": "buy_buttons",
@@ -69,9 +67,8 @@
           }
         },
         "3b0aa7e7-e6bb-4e1b-ac9e-bf72faa3eca6": {
-          "type": "shopify:\/\/apps\/volume-discounts\/blocks\/offer_table_block\/25745434-52e7-4378-88f1-890df18a0110",
-          "settings": {
-          }
+          "type": "shopify://apps/volume-discounts/blocks/offer_table_block/25745434-52e7-4378-88f1-890df18a0110",
+          "settings": {}
         },
         "818e236d-b279-4f2c-9a4c-83c68f99180b": {
           "type": "description",
@@ -83,7 +80,7 @@
           "type": "tab",
           "settings": {
             "title": "Additional information",
-            "content": "<p>{{ product.metafields.custom.additional_information | metafield_tag }}<\/p>",
+            "content": "<p>{{ product.metafields.custom.additional_information | metafield_tag }}</p>",
             "page": ""
           }
         },
@@ -91,20 +88,19 @@
           "type": "tab",
           "settings": {
             "title": "Shipping information",
-            "content": "<p>Use collapsible tabs for more detailed information that will help customers make a purchasing decision.<\/p><p>Ex: Shipping and return policies, size guides, and other common questions.<\/p>",
+            "content": "<p>Use collapsible tabs for more detailed information that will help customers make a purchasing decision.</p><p>Ex: Shipping and return policies, size guides, and other common questions.</p>",
             "page": ""
           }
         },
         "share": {
           "type": "share",
-          "settings": {
-          }
+          "settings": {}
         },
         "af1172e4-7ef3-443d-a863-b9bb61530f2d": {
-          "type": "shopify:\/\/apps\/planet\/blocks\/shopify-planet\/12047591-3a2d-45cc-9dfd-2ce5eaa45dee",
+          "type": "shopify://apps/planet/blocks/shopify-planet/12047591-3a2d-45cc-9dfd-2ce5eaa45dee",
           "settings": {
             "showLogo": true,
-            "showMoreInfo": true,
+            "showMoreInfo": "modal",
             "showStats": false,
             "showProjects": false,
             "backgroundColor": "#F1F8F5",
@@ -169,15 +165,14 @@
         "8acac207-1ebd-4a59-aa5b-4702c5c56023": {
           "type": "share",
           "disabled": true,
-          "settings": {
-          }
+          "settings": {}
         },
         "f9e4feee-c497-488d-843b-e19bb15d48fe": {
           "type": "tab",
           "disabled": true,
           "settings": {
             "title": "Shipping information",
-            "content": "<p>Use collapsible tabs for more detailed information that will help customers make a purchasing decision.<\/p><p>Ex: Shipping and return policies, size guides, and other common questions.<\/p>",
+            "content": "<p>Use collapsible tabs for more detailed information that will help customers make a purchasing decision.</p><p>Ex: Shipping and return policies, size guides, and other common questions.</p>",
             "page": ""
           }
         }
@@ -195,8 +190,7 @@
     "ef80c7e7-4570-44d1-be8f-495b987e45e2": {
       "type": "cultivation-table",
       "disabled": true,
-      "settings": {
-      }
+      "settings": {}
     },
     "717fc96e-a89c-400d-9e4c-05bf3ed17b74": {
       "type": "advanced-content",
@@ -240,16 +234,14 @@
     },
     "collection-return": {
       "type": "collection-return",
-      "settings": {
-      }
+      "settings": {}
     },
     "1695632346453097a4": {
       "type": "apps",
       "blocks": {
         "1d77b6b6-e18c-42c8-91b9-974ae6e6b8f2": {
-          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-          }
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
         }
       },
       "block_order": [
