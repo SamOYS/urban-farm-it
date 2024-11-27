@@ -158,6 +158,7 @@
           },
           "5d753a88-d8ce-49ef-b981-c609a0cef4e1": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "Hassle-free returns",
               "link_text": "14-day returns",
