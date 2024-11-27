@@ -43,9 +43,9 @@
           "settings": {
             "show_breadcrumbs": false,
             "top_subheading": "",
-            "title": "Ultimate Grower’s Gift Set\n£9.97 Off!",
+            "title": "Save 30% THIS BLACK FRIDAY",
             "title_size": 65,
-            "subheading": "",
+            "subheading": "On the Ultimate Grower’s Gift Set",
             "link": "",
             "link_text": "",
             "link_2": "shopify://products/oyster-mushroom-growing-kit-full-set-gift-option",
@@ -90,6 +90,7 @@
         },
         "7cdf59c5-6a10-43b9-a4b9-2d1efb4a9a4f": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "show_breadcrumbs": false,
             "top_subheading": "",
@@ -115,6 +116,7 @@
         },
         "image_wqQ8Mb": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "show_breadcrumbs": false,
             "top_subheading": "",
