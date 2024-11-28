@@ -89,14 +89,14 @@
           "settings": {
             "image": "shopify://shop_images/UFI-offer-BF2.svg",
             "rich_text": "",
-            "link": "shopify://products/mushroom-growing-kit-bundle",
+            "link": "shopify://collections/mushroom-growing-kits",
             "button_text": "Saving £19.99",
             "background_color": "#191919",
             "button_background_color": "#c70329",
             "secondary_image": "shopify://shop_images/buy-2-ufi-1free.png",
             "tertiary_image": "shopify://shop_images/5-star-reviews.svg",
             "text": "Buy 2 Get 1 Free",
-            "secondary_link": "shopify://products/mushroom-growing-kit-bundle",
+            "secondary_link": "shopify://collections/mushroom-growing-kits",
             "secondary_button_text": "Choose selection"
           }
         },
