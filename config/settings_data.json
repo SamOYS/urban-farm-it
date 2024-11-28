@@ -75,7 +75,7 @@
     "cart_icon": "cart",
     "cart_additional_buttons": false,
     "cart_notes_enable": true,
-    "cart_terms_conditions_enable": true,
+    "cart_terms_conditions_enable": false,
     "cart_terms_conditions_page": "shopify://policies/terms-of-service",
     "social_facebook_link": "https://www.facebook.com/urban.farm.it/",
     "social_instagram_link": "https://instagram.com/urban.farm.it",
