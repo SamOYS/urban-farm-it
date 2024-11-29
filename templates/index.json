@@ -40,17 +40,16 @@
         },
         "83db8b86-d6ed-4e05-aced-8451952bc00d": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "show_breadcrumbs": false,
             "top_subheading": "",
-            "title": "Save 30% THIS BLACK FRIDAY",
+            "title": "BLACK FRIDAY SALE NOW ON!",
             "title_size": 65,
-            "subheading": "On the Ultimate Grower’s Gift Set",
+            "subheading": "Our biggest savings yet on growing kits",
             "link": "",
             "link_text": "",
-            "link_2": "shopify://products/oyster-mushroom-growing-kit-full-set-gift-option",
-            "link_text_2": "Buy Now",
+            "link_2": "shopify://collections/black-friday",
+            "link_text_2": "SAVE UP TO 30%",
             "link_3": "",
             "link_text_3": "",
             "link_4": "",
@@ -66,6 +65,7 @@
         },
         "image_wqQ8Mb": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "show_breadcrumbs": false,
             "top_subheading": "",
