@@ -85,7 +85,6 @@
         },
         "two_column_product_aUcPLL": {
           "type": "two_column_product",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/UFI-offer-BF2.svg",
             "rich_text": "",
@@ -102,7 +101,6 @@
         },
         "two_column_product_dbNM6C": {
           "type": "two_column_product",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/UFI-offer-BF3.svg",
             "rich_text": "",
@@ -119,6 +117,7 @@
         },
         "two_column_product_HnEcwM": {
           "type": "two_column_product",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/full-set-ultimate.svg",
             "rich_text": "",
