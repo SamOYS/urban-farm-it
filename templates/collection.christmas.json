@@ -47,12 +47,13 @@
         "content_CN6atf",
         "timer_kYXWkm"
       ],
+      "disabled": true,
       "settings": {
         "layout": "banner",
         "full_width": true,
         "text_color": "#ffffff",
         "background_color": "#c70329",
-        "overlay_color": "#000",
+        "overlay_color": "#000000",
         "overlay_opacity": 0,
         "focal_point": "center",
         "mobile_image_focal_point": "top"
@@ -63,6 +64,7 @@
       "blocks": {
         "two_column_product_YyqKiw": {
           "type": "two_column_product",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/UFI-offer-BF1.svg",
             "rich_text": "",
@@ -79,6 +81,7 @@
         },
         "two_column_product_9aPp6D": {
           "type": "two_column_product",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/ugg-ufi-bf.svg",
             "rich_text": "",
@@ -95,6 +98,7 @@
         },
         "two_column_product_fdrWxM": {
           "type": "two_column_product",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/frsh-lions-mane-offer.svg",
             "rich_text": "",
