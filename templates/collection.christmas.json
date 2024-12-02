@@ -24,7 +24,7 @@
         "content_CN6atf": {
           "type": "content",
           "settings": {
-            "heading": "Christmas Deals",
+            "heading": "Christmas Deals Now Live",
             "heading_size": "h2",
             "text": "",
             "content_alignment": "left"
@@ -50,8 +50,8 @@
       "settings": {
         "layout": "banner",
         "full_width": true,
-        "text_color": "#000",
-        "background_color": "#FFF",
+        "text_color": "#ffffff",
+        "background_color": "#c70329",
         "overlay_color": "#000",
         "overlay_opacity": 0,
         "focal_point": "center",
@@ -61,23 +61,62 @@
     "main-collection": {
       "type": "main-collection",
       "blocks": {
-        "collection_description": {
-          "type": "collection_description",
-          "settings": {}
-        },
-        "product_grid": {
-          "type": "product_grid",
+        "two_column_product_YyqKiw": {
+          "type": "two_column_product",
           "settings": {
-            "enable_collection_count": true,
-            "per_row": 3,
-            "rows_per_page": 7,
-            "mobile_flush_grid": false
+            "image": "shopify://shop_images/UFI-offer-BF1.svg",
+            "rich_text": "",
+            "link": "shopify://collections/mushroom-growing-kits",
+            "button_text": "Saving £9.99",
+            "background_color": "#e5d626",
+            "button_background_color": "",
+            "secondary_image": "shopify://shop_images/50_-off-UFI.png",
+            "tertiary_image": "shopify://shop_images/5-star-reviews.svg",
+            "text": "Buy 1 Get 1 50% Off Growing Kits",
+            "secondary_link": "shopify://collections/mushroom-growing-kits",
+            "secondary_button_text": "Choose selection"
+          }
+        },
+        "two_column_product_9aPp6D": {
+          "type": "two_column_product",
+          "settings": {
+            "image": "shopify://shop_images/ugg-ufi-bf.svg",
+            "rich_text": "",
+            "link": "shopify://products/oyster-mushroom-growing-kit-full-set-gift-option",
+            "button_text": "Saving £9.97",
+            "background_color": "#e2e2e2",
+            "button_background_color": "#0560c7",
+            "secondary_image": "shopify://shop_images/ugg-ufi-product-saving.png",
+            "tertiary_image": "shopify://shop_images/5-star-reviews.svg",
+            "text": "£9.97 Off Grower’s Full Set",
+            "secondary_link": "shopify://products/oyster-mushroom-growing-kit-full-set-gift-option",
+            "secondary_button_text": "Choose selection"
+          }
+        },
+        "two_column_product_fdrWxM": {
+          "type": "two_column_product",
+          "settings": {
+            "image": "shopify://shop_images/frsh-lions-mane-offer.svg",
+            "rich_text": "",
+            "link": "shopify://products/fresh-lions-mane",
+            "button_text": "Saving £2.25",
+            "background_color": "#61d52d",
+            "button_background_color": "",
+            "secondary_image": "shopify://shop_images/mushroom-mane-lions.png",
+            "tertiary_image": "shopify://shop_images/5-star-reviews.svg",
+            "text": "15% Off Fresh Lion’s Mane",
+            "secondary_link": "shopify://products/fresh-lions-mane",
+            "secondary_button_text": "Buy Now"
           }
         }
       },
       "block_order": [
-        "collection_description",
-        "product_grid"
+        "two_column_product_YyqKiw",
+        "two_column_product_9aPp6D",
+        "two_column_product_fdrWxM"
+      ],
+      "custom_css": [
+        ".collection-grid__wrapper {display: none;}"
       ],
       "settings": {
         "enable_sidebar": true,
