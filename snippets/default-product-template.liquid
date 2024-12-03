@@ -172,7 +172,7 @@
                   {%- when 'usp_banner' -%}
                     {% render 'sd-pdp-usp-banner-1' %}
                   {%- when 'cross_sell_products' -%}
-                    {% render 'cross-sell-module', section_header: block.settings.section_header %}
+                    {% render 'cross-sell-module', form_id: form_id, section_header: block.settings.section_header %}
                   {%- when '@app' -%}
                     {% render block %}
                   {%- when 'lead_time' -%}

@@ -2871,6 +2871,7 @@ lazySizesConfig.expFactor = 4;
         status.loading = true;
 
         const data = new URLSearchParams(theme.utils.serialize(this.form));
+
         let items = [
           {
             id: data.get('id'),
@@ -7551,6 +7552,12 @@ lazySizesConfig.expFactor = 4;
       initAjaxProductForm: function () {
         if (theme.settings.cartType === 'drawer') {
           new theme.AjaxProduct(this.cache.form);
+
+          const forms = document.querySelectorAll('.product-single__form.cross-sells-form')
+
+          forms.forEach((form) => {
+            new theme.AjaxProduct(form)
+          })
         }
       },
 

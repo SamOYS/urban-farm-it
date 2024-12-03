@@ -5,47 +5,101 @@
     <h4 class="cross-sell__header">Customer's Also Buy</h4>
     {%- for cross_sell_product in cross_sell_products -%}
         {% assign custom_price = cross_sell_product.variants.first.price %}
-    <label for="cross-sell-{{ forloop.index }}" class="cross-sell__product">
+        {% assign timestamp = 'now' | date: '%s' %}
+        {% assign unique_id = 'id-' | append: timestamp %}
+        {% assign form_id = 'AddToCartForm-template--' | append: unique_id | append: cross_sell_product.id %}
+        <label for="cross-sell-{{ forloop.index }}" class="cross-sell__product">
         <div class="cross-sell__product-image">
-        <img
-            src="{{ cross_sell_product.featured_image.src | img_url: 'small' }}"
-            data-src="{{ cross_sell_product.featured_image.src | img_url: 'medium' }}"
-            alt="{{ cross_sell_product.title | escape }}"
-            height="100"
-            width="100"
-            loading="lazy"
-            class="lazyload"
-        >
+            <img
+                src="{{ cross_sell_product.featured_image.src | img_url: 'small' }}"
+                data-src="{{ cross_sell_product.featured_image.src | img_url: 'medium' }}"
+                alt="{{ cross_sell_product.title | escape }}"
+                height="100"
+                width="100"
+                loading="lazy"
+                class="lazyload"
+            >
         </div>
-        <div class="cross-sell__product-details">
-        <input
-            type="checkbox"
-            id="cross-sell-{{ forloop.index }}"
-            name="cross-sell"
-            value="{{ cross_sell_product.variants.first.id }}"
-            data-price="{{ custom_price | money }}"
-            data-quantity="1"
-            class="cross-sell__checkbox"
-        >
-        <div class="cross-sell__product-info">
-            <span class="cross-sell__product-title">{{ cross_sell_product.title }}</span>
-            <span class="cross-sell__product-price">{{ custom_price | money }}</span>
 
-            {% render 'quantity-input', min: 1, qty: 1, custom_class: 'cross-sell__product-qty' %}
+        <div class="cross-sell__product-details tw-flex">
+            {%- form 'product', product, id: form_id, class: 'product-single__form tw-flex tw-items-start tw-flex-wrap tw-justify-start sm:tw-justify-between cross-sells-form tw-gap-y-[5px] lg:tw-gap-[5px]' -%}
+                <div>
+                    <span class="tw-text-left tw-text-wrap cross-sell__product-title">{{ cross_sell_product.title }}</span>
+                    <span class="tw-text-left cross-sell__product-price">{{ custom_price | money }}</span>
 
-            {%- if cross_sell_product.variants.size > 1 -%}
-            <select class="cross-sell__variant-select">
-                {%- for variant in cross_sell_product.variants -%}
-                <option value="{{ variant.id }}" data-price="{{ variant.price | money }}">
-                    {{ variant.title }}
-                </option>
-                {%- endfor -%}
-            </select>
-            {%- endif -%}
+                    <div class="cross-sell__product-info tw-flex lg:!tw-flex-nowrap tw-gap-[5px]">
+                        {% render 'quantity-input', form_id: form_id, min: 1, qty: 1, custom_class: 'cross-sell__product-qty' %}
+
+                        <select name="id" data-product-select class="cross-sell__variant-select !tw-mt-0 {% if cross_sell_product.variants.size == 1 %} no-js product-single__variants{% endif %}">
+                            {%- for variant in cross_sell_product.variants -%}
+                                test
+                                {%- if variant.available -%}
+                                    <option
+                                            {% if variant == cross_sell_product.selected_or_first_available_variant %}
+                                                selected="selected"
+                                            {% endif %}
+                                            value="{{ variant.id }}"
+                                    >
+                                        {{ variant.title }} - {{ variant.price | money_with_currency }}
+                                    </option>
+                                {%- else -%}
+                                    <option disabled="disabled">{{ variant.title }} - {{ 'products.product.sold_out' | t }}</option>
+                                {%- endif -%}
+                            {%- endfor -%}
+                        </select>
+                    </div>
+
+                    {%- liquid
+                        assign enable_dynamic_buttons = false
+                        if show_dynamic_checkout and template != 'cross_sell_product.preorder'
+                            assign enable_dynamic_buttons = true
+                        endif
+                    -%}
+
+                    {%- if enable_dynamic_buttons -%}
+                        <div class="payment-buttons">
+                    {%- endif -%}
+                    {%- liquid
+                        assign default_text = 'cross_sell_products.product.add_to_cart' | t
+
+                        assign price_text = cross_sell_product.price | money
+                        if cross_sell_product.selected_variant
+                            assign price_text = cross_sell_product.selected_variant.price | money
+                        endif
+                        if template contains 'preorder'
+                            assign default_text = 'products.product.preorder' | t
+                            assign price_text = ''
+                        endif
+                        unless current_variant.available
+                            assign default_text = 'products.product.sold_out' | t
+                            assign price_text = ''
+                        endunless
+                    -%}
+                </div>
+
+                <button
+                        type="submit"
+                        name="add"
+                        data-add-to-cart
+                        class="btn tw-w-full lg:tw-w-auto add-to-cart tw-bg-black tw-py-[6px] hover:tw-bg-primary tw-font-normal tw-text-sm tw-border-1  tw-border-black tw-text-white"
+                        onclick="gtag('event', 'conversion', {'send_to': 'AW-455174778/larqCN-cmdsZEPrUhdkB'});"
+                >
+                    Add
+                </button>
+
+                {%- if enable_dynamic_buttons -%}
+                    {{ form | payment_button }}
+                {%- endif -%}
+
+                {%- if enable_dynamic_buttons -%}
+                    </div>
+                {%- endif -%}
+
+                <div class="shopify-payment-terms product__policies">{{ form | payment_terms }}</div>
+            {%- endform -%}
         </div>
-        <span class="cross-sell__added-label">Added</span>
-        <span class="cross-sell__label"></span>
-        </div>
+
+
     </label>
     {%- endfor -%}
 </cross-sell>
