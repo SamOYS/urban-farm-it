@@ -13,31 +13,28 @@
       "type": "product-mushroom-growing-log-kit",
       "blocks": {
         "cbbd1b44-07b6-4f8e-8b22-537aa1ac1537": {
-          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-          }
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
         },
         "7a230a5e-31ee-4696-b895-46fe2b130119": {
           "type": "custom",
           "disabled": true,
           "settings": {
-            "code": "<div style=\"font-style:italic\" id=\"featured-review\"><\/div>"
+            "code": "<div style=\"font-style:italic\" id=\"featured-review\"></div>"
           }
         },
         "ffe2e6a5-222e-42ee-bc16-50a8dcd53672": {
           "type": "species",
-          "settings": {
-          }
+          "settings": {}
         },
         "price": {
           "type": "price",
-          "settings": {
-          }
+          "settings": {}
         },
         "c7cb76d9-e206-4d28-a3fe-1dff3ce406da": {
           "type": "custom",
           "settings": {
-            "code": "{% assign product_variant =  product.metafields.gift_option.product_variant %}{% if product_variant %}\n<label>OPTIONS<\/label>\n<div class=\"variant-input-wrap\">\n<a class=\"custom-variant__button-label\" href=\"{{ product_variant[0]  | prepend: \"\/products\/\"| prepend: shop.url }}\">\n<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"800px\" height=\"800px\" viewBox=\"0 0 24 24\" fill=\"none\">\n<path d=\"M5 10.0802V20.0802H19V14M5 10.0802H4V7.0802H20V10.0802H5ZM12 7.0802C12.8333 5.24687 14.9999 1.5802 16.9999 3.5802C18.9999 5.5802 14.5 6.91353 12 7.0802ZM12 7.0802C11.1667 5.24687 8.99999 1.5802 6.99999 3.5802C4.99999 5.5802 9.5 6.91353 12 7.0802Z\" stroke=\"#000000\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\/>\n<\/svg>Gift Option\n<\/a>\n<\/div>\n{% endif %}"
+            "code": "{% assign product_variant =  product.metafields.gift_option.product_variant %}{% if product_variant %}\n<label>OPTIONS</label>\n<div class=\"variant-input-wrap\">\n<a class=\"custom-variant__button-label\" href=\"{{ product_variant[0]  | prepend: \"/products/\"| prepend: shop.url }}\">\n<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"800px\" height=\"800px\" viewBox=\"0 0 24 24\" fill=\"none\">\n<path d=\"M5 10.0802V20.0802H19V14M5 10.0802H4V7.0802H20V10.0802H5ZM12 7.0802C12.8333 5.24687 14.9999 1.5802 16.9999 3.5802C18.9999 5.5802 14.5 6.91353 12 7.0802ZM12 7.0802C11.1667 5.24687 8.99999 1.5802 6.99999 3.5802C4.99999 5.5802 9.5 6.91353 12 7.0802Z\" stroke=\"#000000\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>Gift Option\n</a>\n</div>\n{% endif %}"
           }
         },
         "variant_picker": {
@@ -49,16 +46,9 @@
             "color_swatches": false
           }
         },
-        "2e86a558-9b9f-449d-b17d-47e517604184": {
-          "type": "custom",
-          "settings": {
-            "code": "{% render 'component-cross-sell' %}"
-          }
-        },
         "separator": {
           "type": "separator",
-          "settings": {
-          }
+          "settings": {}
         },
         "buy_buttons": {
           "type": "buy_buttons",
@@ -67,10 +57,15 @@
             "surface_pickup_enable": false
           }
         },
-        "e89378ea-77b2-49f4-90ba-5a690c3081f5": {
-          "type": "shopify:\/\/apps\/volume-discounts\/blocks\/offer_table_block\/25745434-52e7-4378-88f1-890df18a0110",
+        "2e86a558-9b9f-449d-b17d-47e517604184": {
+          "type": "custom",
           "settings": {
+            "code": "{% render 'component-cross-sell' %}"
           }
+        },
+        "e89378ea-77b2-49f4-90ba-5a690c3081f5": {
+          "type": "shopify://apps/volume-discounts/blocks/offer_table_block/25745434-52e7-4378-88f1-890df18a0110",
+          "settings": {}
         },
         "fa716552-1943-4ff8-9ab5-8d1aa1f2de27": {
           "type": "custom",
@@ -106,7 +101,7 @@
           "type": "custom",
           "disabled": true,
           "settings": {
-            "code": "<div style=\"background: #000; color: #fff;padding:.25rem;border-top-left-radius:3px;border-top-right-radius:3px;font-size:.85rem;\">Useful Info<\/div>\n<ul class=\"pdp-table\">\n<li>Skill level: <span style=\"background-color: black; color: white;padding:0.25rem;border-radius:3px;\">{{ product.metafields.custom.skill_level }}<\/span><\/li>\n<li>Incubation time: <span style=\"background-color: black; color: white;padding:0.25rem;border-radius:3px;\">{{ product.metafields.custom.incubation_time }}<\/span><\/li>\n<li>Fruiting time: <span style=\"background-color: black; color: white;padding:0.25rem;border-radius:3px;\">{{ product.metafields.custom.time_to_grow }}<\/span><\/li>\n<li>Growing location: {{ product.metafields.custom.growing_location}}<\/li>\n<li>Season: {{ product.metafields.custom.season}}<\/li>\n<li>Optimal growing temperature: {{ product.metafields.custom.temperature}}<\/li>\n<\/ul>\n<style>\n.pdp-table {\nmargin: 0;\nfont-size: .85rem;\npadding: 0.25rem;\n    background: #f3f3f3;\n    border-radius: 3px;\n}\n.pdp-table li {\nlist-style: none;\npadding: 0.35rem 0.5rem;\n    }\n<\/style>"
+            "code": "<div style=\"background: #000; color: #fff;padding:.25rem;border-top-left-radius:3px;border-top-right-radius:3px;font-size:.85rem;\">Useful Info</div>\n<ul class=\"pdp-table\">\n<li>Skill level: <span style=\"background-color: black; color: white;padding:0.25rem;border-radius:3px;\">{{ product.metafields.custom.skill_level }}</span></li>\n<li>Incubation time: <span style=\"background-color: black; color: white;padding:0.25rem;border-radius:3px;\">{{ product.metafields.custom.incubation_time }}</span></li>\n<li>Fruiting time: <span style=\"background-color: black; color: white;padding:0.25rem;border-radius:3px;\">{{ product.metafields.custom.time_to_grow }}</span></li>\n<li>Growing location: {{ product.metafields.custom.growing_location}}</li>\n<li>Season: {{ product.metafields.custom.season}}</li>\n<li>Optimal growing temperature: {{ product.metafields.custom.temperature}}</li>\n</ul>\n<style>\n.pdp-table {\nmargin: 0;\nfont-size: .85rem;\npadding: 0.25rem;\n    background: #f3f3f3;\n    border-radius: 3px;\n}\n.pdp-table li {\nlist-style: none;\npadding: 0.35rem 0.5rem;\n    }\n</style>"
           }
         },
         "tab": {
@@ -114,26 +109,24 @@
           "disabled": true,
           "settings": {
             "title": "Useful info",
-            "content": "<ul><li>Skill level: Beginner<\/li><li>Incubation time: 2-3 weeks<\/li><li>Fruiting time: 1-2 weeks<\/li><li>Growing location: <\/li><li>Season: <\/li><li>Optimal growing temperature: <\/li><\/ul>",
+            "content": "<ul><li>Skill level: Beginner</li><li>Incubation time: 2-3 weeks</li><li>Fruiting time: 1-2 weeks</li><li>Growing location: </li><li>Season: </li><li>Optimal growing temperature: </li></ul>",
             "page": ""
           }
         },
         "share": {
           "type": "share",
-          "settings": {
-          }
+          "settings": {}
         },
         "10bfbe09-dcc6-4c95-96e8-c55ca8765219": {
           "type": "custom",
           "settings": {
-            "code": "<div data-revy-bundle-id='af0b8958-cecc-4bf9-8ddc-df8fdb823d7e'><\/div>"
+            "code": "<div data-revy-bundle-id='af0b8958-cecc-4bf9-8ddc-df8fdb823d7e'></div>"
           }
         },
         "9d15a9f0-7273-4e2d-8464-5e72c963526b": {
-          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "disabled": true,
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
@@ -143,9 +136,9 @@
         "price",
         "c7cb76d9-e206-4d28-a3fe-1dff3ce406da",
         "variant_picker",
-        "2e86a558-9b9f-449d-b17d-47e517604184",
         "separator",
         "buy_buttons",
+        "2e86a558-9b9f-449d-b17d-47e517604184",
         "e89378ea-77b2-49f4-90ba-5a690c3081f5",
         "fa716552-1943-4ff8-9ab5-8d1aa1f2de27",
         "sales_point",
@@ -186,7 +179,7 @@
         "subtitle": "",
         "heading": "\"[ONE OF] THE BEST MUSHROOM GROWING KITS TO BUY IN THE UK RIGHT NOW\"",
         "heading_type": "h2",
-        "text": "<img style=\"display: block; height: 45px;\" src=\"https:\/\/images.immediate.co.uk\/production\/volatile\/sites\/4\/2022\/08\/cropped-BBC-Science-Focus-logo-2018-web-2364b48-a244f87.jpg?quality=90&webp=true&resize=291,88\">",
+        "text": "<img style=\"display: block; height: 45px;\" src=\"https://images.immediate.co.uk/production/volatile/sites/4/2022/08/cropped-BBC-Science-Focus-logo-2018-web-2364b48-a244f87.jpg?quality=90&webp=true&resize=291,88\">",
         "button_label": "SEE OUR REVIEWS",
         "button_link": "#judgeme_product_reviews"
       }
@@ -199,7 +192,7 @@
           "settings": {
             "subheading": "MORE THAN JUST PACKAGING",
             "heading": "KIT BOX & GROWING ENVIRONMENT",
-            "content": "<p>Something about the box.<\/p>",
+            "content": "<p>Something about the box.</p>",
             "button_text": "",
             "button_link": "",
             "vertical": 26,
@@ -211,7 +204,7 @@
           "settings": {
             "subheading": "STEP-BY-STEP GUIDANCE",
             "heading": "DETAILED INSTRUCTIONS & TIPS",
-            "content": "<p>Something about the guides.<\/p>",
+            "content": "<p>Something about the guides.</p>",
             "button_text": "",
             "button_link": "",
             "vertical": 24,
@@ -223,7 +216,7 @@
           "settings": {
             "subheading": "BEST QUALITY SPAWN IN THE UK",
             "heading": "HIGH QUALITY MUSHROOM SPAWN",
-            "content": "<p>The not-so secret ingredient to growing amazing mushrooms.<\/p>",
+            "content": "<p>The not-so secret ingredient to growing amazing mushrooms.</p>",
             "button_text": "",
             "button_link": "",
             "vertical": 48,
@@ -273,7 +266,7 @@
         "f63ca0e8-94c7-4eba-b06d-8bf8b5f2bacf": {
           "type": "step",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2_4becb18a-1a09-4a69-9c7a-6c710e95dcf7.png",
+            "image": "shopify://shop_images/2_4becb18a-1a09-4a69-9c7a-6c710e95dcf7.png",
             "step_title": "DRILL HOLES",
             "step_description": "Drill evenly spaced holes into the log with the provided drill bit"
           }
@@ -281,7 +274,7 @@
         "f9b0111b-c432-4178-99df-a91c0d6da62f": {
           "type": "step",
           "settings": {
-            "image": "shopify:\/\/shop_images\/3_d59425df-08a0-4791-ae0e-9dece030f01d.png",
+            "image": "shopify://shop_images/3_d59425df-08a0-4791-ae0e-9dece030f01d.png",
             "step_title": "INSERT PLUGS",
             "step_description": "Inoculate the log by inserting the included mushroom plugs"
           }
@@ -289,7 +282,7 @@
         "731c258f-d64d-470b-91f7-30802adc9469": {
           "type": "step",
           "settings": {
-            "image": "shopify:\/\/shop_images\/4_be51e085-650a-4ae1-ad1d-6fb85b4f4aff.png",
+            "image": "shopify://shop_images/4_be51e085-650a-4ae1-ad1d-6fb85b4f4aff.png",
             "step_title": "HEAT WAX",
             "step_description": "Melt the wax to prepare for the sealing process"
           }
@@ -297,7 +290,7 @@
         "8f1b30ac-23fa-4b3d-83ee-8772a8eb05cc": {
           "type": "step",
           "settings": {
-            "image": "shopify:\/\/shop_images\/6_9477f8ac-ad54-4399-8945-fdc25deb2a04.png",
+            "image": "shopify://shop_images/6_9477f8ac-ad54-4399-8945-fdc25deb2a04.png",
             "step_title": "SEAL PLUGS",
             "step_description": "Seal the inserted plugs for protection & to retain moisture"
           }
@@ -305,7 +298,7 @@
         "575f3986-f381-4e2e-8b92-ebdec9d1cf88": {
           "type": "step",
           "settings": {
-            "image": "shopify:\/\/shop_images\/7_0e055bd2-63d2-459c-89e6-68a695fd262d.png",
+            "image": "shopify://shop_images/7_0e055bd2-63d2-459c-89e6-68a695fd262d.png",
             "step_title": "FRUIT!",
             "step_description": "Place your log in a suitable setting and wait for those delicious mushrooms!"
           }
@@ -333,9 +326,8 @@
       "type": "apps",
       "blocks": {
         "82c6580b-1521-483b-bfd9-34dc2c17e709": {
-          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-          }
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
         }
       },
       "block_order": [
@@ -363,8 +355,7 @@
     "collection-return": {
       "type": "collection-return",
       "disabled": true,
-      "settings": {
-      }
+      "settings": {}
     }
   },
   "order": [
