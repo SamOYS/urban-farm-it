@@ -24,7 +24,7 @@
         "content_CN6atf": {
           "type": "content",
           "settings": {
-            "heading": "Christmas Deals Now Live",
+            "heading": "Christmas Deals Now Live!",
             "heading_size": "h2",
             "text": "",
             "content_alignment": "center"
@@ -32,6 +32,7 @@
         },
         "timer_kYXWkm": {
           "type": "timer",
+          "disabled": true,
           "settings": {
             "year": "2023",
             "month": "01",
