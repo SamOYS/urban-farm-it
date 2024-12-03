@@ -64,7 +64,6 @@
       "blocks": {
         "two_column_product_YyqKiw": {
           "type": "two_column_product",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/white-ufi-christmas-deal.svg",
             "rich_text": "",
@@ -81,7 +80,6 @@
         },
         "two_column_product_9aPp6D": {
           "type": "two_column_product",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/ufi-gift-set-white.svg",
             "rich_text": "",
@@ -98,7 +96,6 @@
         },
         "two_column_product_fdrWxM": {
           "type": "two_column_product",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/fresh-lions-mane-white.svg",
             "rich_text": "",
