@@ -79,13 +79,13 @@
         },
         "c11da764-83b0-4131-ba30-5bba256f27a8": {
           "type": "custom",
-          "disabled": true,
           "settings": {
             "code": "{% render 'component-cross-sell' %}"
           }
         },
         "buy_buttons": {
           "type": "buy_buttons",
+          "disabled": true,
           "settings": {
             "show_dynamic_checkout": false,
             "surface_pickup_enable": false
@@ -108,8 +108,8 @@
           "settings": {
             "badgeMode": "info",
             "customText": "",
-            "showLogo": true,
             "showMoreInfo": "modal",
+            "showLogo": true,
             "showStats": false,
             "showProjects": false,
             "backgroundColor": "#f1f8f5",
