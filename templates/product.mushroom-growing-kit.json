@@ -267,7 +267,7 @@
         "custom_id": "kit_contents",
         "heading_size": "h2",
         "heading_position": "left",
-        "optional_text": "<p>This kit contains living mushroom mycelium, if you are not using immediately then store the sawdust block in the fridge.</p>{{ product.metafields.custom.product_contents | metafield_tag }}",
+        "optional_text": "<p></p>{{ product.metafields.custom.product_contents | metafield_tag }}",
         "image": "{{ product.metafields.custom.image_slot_1.value }}",
         "indent_image": false,
         "image_position": "left",
