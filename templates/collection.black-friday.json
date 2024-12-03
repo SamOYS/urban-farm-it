@@ -24,6 +24,7 @@
       "blocks": {
         "content_kr38aJ": {
           "type": "content",
+          "disabled": true,
           "settings": {
             "heading": "Black Friday Now Live",
             "heading_size": "h2",
@@ -33,6 +34,7 @@
         },
         "timer_JjEegr": {
           "type": "timer",
+          "disabled": true,
           "settings": {
             "year": "2024",
             "month": "12",
@@ -48,6 +50,7 @@
         "content_kr38aJ",
         "timer_JjEegr"
       ],
+      "disabled": true,
       "settings": {
         "layout": "banner",
         "full_width": true,
@@ -69,6 +72,7 @@
         },
         "two_column_product_pgxD7q": {
           "type": "two_column_product",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/UFI-offer-BF1.svg",
             "rich_text": "",
@@ -85,6 +89,7 @@
         },
         "two_column_product_aUcPLL": {
           "type": "two_column_product",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/UFI-offer-BF2.svg",
             "rich_text": "",
@@ -101,6 +106,7 @@
         },
         "two_column_product_dbNM6C": {
           "type": "two_column_product",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/UFI-offer-BF3.svg",
             "rich_text": "",
@@ -134,6 +140,7 @@
         },
         "two_column_product_LbqB3c": {
           "type": "two_column_product",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/frsh-lions-mane-offer.svg",
             "rich_text": "",
