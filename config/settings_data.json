@@ -135,7 +135,7 @@
             "type": "announcement",
             "settings": {
               "text": "Save up to 25% on Growing Kits",
-              "link_text": "Shop Now for the Perfect Christmas Gift",
+              "link_text": "",
               "link": "shopify://collections/christmas"
             }
           },
