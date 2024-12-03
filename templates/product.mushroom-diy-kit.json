@@ -56,6 +56,7 @@
         },
         "product_bundle_izVcRA": {
           "type": "product_bundle",
+          "disabled": true,
           "settings": {
             "title": "Buy Another Kit & Save 10%",
             "bundle_products": "{{ product.metafields[\"cross-sell\"].bundle_option_1.value }}"
