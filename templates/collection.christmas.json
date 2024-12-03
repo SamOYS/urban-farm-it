@@ -27,7 +27,7 @@
             "heading": "Christmas Deals Now Live",
             "heading_size": "h2",
             "text": "",
-            "content_alignment": "left"
+            "content_alignment": "center"
           }
         },
         "timer_kYXWkm": {
@@ -63,13 +63,14 @@
       "blocks": {
         "two_column_product_YyqKiw": {
           "type": "two_column_product",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/white-ufi-christmas-deal.svg",
             "rich_text": "",
             "link": "shopify://collections/mushroom-growing-kits",
             "button_text": "Saving £9.99",
             "background_color": "#c70329",
-            "button_background_color": "#000000",
+            "button_background_color": "#ffffff",
             "secondary_image": "shopify://shop_images/50_-off-UFI.png",
             "tertiary_image": "shopify://shop_images/5-star-reviews.svg",
             "text": "Buy 1 Get 1 50% Off Growing Kits",
@@ -79,13 +80,14 @@
         },
         "two_column_product_9aPp6D": {
           "type": "two_column_product",
+          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/ugg-ufi-bf.svg",
+            "image": "shopify://shop_images/ufi-gift-set-white.svg",
             "rich_text": "",
             "link": "shopify://products/oyster-mushroom-growing-kit-full-set-gift-option",
             "button_text": "Saving £9.97",
-            "background_color": "#e2e2e2",
-            "button_background_color": "#0560c7",
+            "background_color": "#003b1b",
+            "button_background_color": "#ffffff",
             "secondary_image": "shopify://shop_images/ugg-ufi-product-saving.png",
             "tertiary_image": "shopify://shop_images/5-star-reviews.svg",
             "text": "£9.97 Off Grower’s Full Set",
@@ -97,12 +99,12 @@
           "type": "two_column_product",
           "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/frsh-lions-mane-offer.svg",
+            "image": "shopify://shop_images/fresh-lions-mane-white.svg",
             "rich_text": "",
             "link": "shopify://products/fresh-lions-mane",
             "button_text": "Saving £2.25",
-            "background_color": "#61d52d",
-            "button_background_color": "",
+            "background_color": "#00873e",
+            "button_background_color": "#ffffff",
             "secondary_image": "shopify://shop_images/mushroom-mane-lions.png",
             "tertiary_image": "shopify://shop_images/5-star-reviews.svg",
             "text": "15% Off Fresh Lion’s Mane",
@@ -117,7 +119,8 @@
         "two_column_product_fdrWxM"
       ],
       "custom_css": [
-        ".collection-grid__wrapper {display: none;}"
+        ".collection-grid__wrapper {display: none;}",
+        ".promo-grid .button-text {color: black !important;}"
       ],
       "settings": {
         "enable_sidebar": true,
