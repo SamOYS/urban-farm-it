@@ -121,7 +121,7 @@
         ".promo-grid .button-text {color: black !important;}"
       ],
       "settings": {
-        "enable_sidebar": true,
+        "enable_sidebar": false,
         "collapsed": true,
         "filter_style": "sidebar",
         "enable_color_swatches": false,
@@ -136,18 +136,21 @@
     },
     "7fbc978c-7036-491e-b07e-9e4c3146b695": {
       "type": "collection-faq",
+      "disabled": true,
       "settings": {
         "title": "FAQs"
       }
     },
     "a72ec282-a591-4dfe-8375-e3c7b2469963": {
       "type": "collection-articles",
+      "disabled": true,
       "settings": {
         "title": "Related Guides"
       }
     },
     "94fe4d44-2152-4965-83e7-fc4b474eaf2c": {
       "type": "collection-popup",
+      "disabled": true,
       "settings": {
         "mode": true,
         "disable_for_account_holders": false,
