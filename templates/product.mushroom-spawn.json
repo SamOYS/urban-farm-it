@@ -61,6 +61,7 @@
         },
         "product_bundle_Wte7Dy": {
           "type": "product_bundle",
+          "disabled": true,
           "settings": {
             "title": "Select Substrate",
             "bundle_products": "{{ product.metafields[\"cross-sell\"].bundle_option_1.value }}"
@@ -68,9 +69,17 @@
         },
         "product_bundle_Xh7rWb": {
           "type": "product_bundle",
+          "disabled": true,
           "settings": {
             "title": "Select Growing Bag",
             "bundle_products": "{{ product.metafields[\"cross-sell\"].bundle_option_2.value }}"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "surface_pickup_enable": false
           }
         },
         "e89378ea-77b2-49f4-90ba-5a690c3081f5": {
@@ -81,14 +90,6 @@
           "type": "custom",
           "settings": {
             "code": "{% render 'component-cross-sell' %}"
-          }
-        },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "disabled": true,
-          "settings": {
-            "show_dynamic_checkout": false,
-            "surface_pickup_enable": false
           }
         },
         "klarna_on_site_messaging_app_block_xGGgMN": {
@@ -174,9 +175,9 @@
         "variant_picker",
         "product_bundle_Wte7Dy",
         "product_bundle_Xh7rWb",
+        "buy_buttons",
         "e89378ea-77b2-49f4-90ba-5a690c3081f5",
         "c11da764-83b0-4131-ba30-5bba256f27a8",
-        "buy_buttons",
         "klarna_on_site_messaging_app_block_xGGgMN",
         "b3fc12dd-8538-4787-b64f-7850c280141e",
         "separator",
