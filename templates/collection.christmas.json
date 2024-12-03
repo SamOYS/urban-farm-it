@@ -47,7 +47,6 @@
         "content_CN6atf",
         "timer_kYXWkm"
       ],
-      "disabled": true,
       "settings": {
         "layout": "banner",
         "full_width": true,
@@ -66,12 +65,12 @@
           "type": "two_column_product",
           "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/UFI-offer-BF1.svg",
+            "image": "shopify://shop_images/white-ufi-christmas-deal.svg",
             "rich_text": "",
             "link": "shopify://collections/mushroom-growing-kits",
             "button_text": "Saving £9.99",
-            "background_color": "#e5d626",
-            "button_background_color": "",
+            "background_color": "#c70329",
+            "button_background_color": "#ffffff",
             "secondary_image": "shopify://shop_images/50_-off-UFI.png",
             "tertiary_image": "shopify://shop_images/5-star-reviews.svg",
             "text": "Buy 1 Get 1 50% Off Growing Kits",
@@ -120,7 +119,8 @@
         "two_column_product_fdrWxM"
       ],
       "custom_css": [
-        ".collection-grid__wrapper {display: none;}"
+        ".collection-grid__wrapper {display: none;}",
+        ".btn {color: black;}"
       ],
       "settings": {
         "enable_sidebar": true,
