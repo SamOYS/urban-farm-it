@@ -51,6 +51,7 @@
         },
         "0c09090f-ffd9-407c-96ad-f566fbd00d26": {
           "type": "cross_sell_products",
+          "disabled": true,
           "settings": {
             "section_header": "Customers Also Buy:"
           }
@@ -64,6 +65,12 @@
           "settings": {
             "show_dynamic_checkout": false,
             "surface_pickup_enable": false
+          }
+        },
+        "custom_tWhHx3": {
+          "type": "custom",
+          "settings": {
+            "code": "{% render 'component-cross-sell' %}"
           }
         },
         "3b0aa7e7-e6bb-4e1b-ac9e-bf72faa3eca6": {
@@ -99,13 +106,15 @@
         "af1172e4-7ef3-443d-a863-b9bb61530f2d": {
           "type": "shopify://apps/planet/blocks/shopify-planet/12047591-3a2d-45cc-9dfd-2ce5eaa45dee",
           "settings": {
-            "showLogo": true,
+            "badgeMode": "info",
+            "customText": "",
             "showMoreInfo": "modal",
+            "showLogo": true,
             "showStats": false,
             "showProjects": false,
-            "backgroundColor": "#F1F8F5",
-            "textColor": "#1D4136",
-            "borderColor": "#95C9B4",
+            "backgroundColor": "#f1f8f5",
+            "textColor": "#1d4136",
+            "borderColor": "#95c9b4",
             "fullWidth": true,
             "marginTop": 0,
             "marginBottom": 0,
@@ -123,6 +132,7 @@
         "0c09090f-ffd9-407c-96ad-f566fbd00d26",
         "separator",
         "buy_buttons",
+        "custom_tWhHx3",
         "3b0aa7e7-e6bb-4e1b-ac9e-bf72faa3eca6",
         "818e236d-b279-4f2c-9a4c-83c68f99180b",
         "tab",
