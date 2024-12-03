@@ -63,14 +63,13 @@
       "blocks": {
         "two_column_product_YyqKiw": {
           "type": "two_column_product",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/white-ufi-christmas-deal.svg",
             "rich_text": "",
             "link": "shopify://collections/mushroom-growing-kits",
             "button_text": "Saving £9.99",
             "background_color": "#c70329",
-            "button_background_color": "#ffffff",
+            "button_background_color": "#000000",
             "secondary_image": "shopify://shop_images/50_-off-UFI.png",
             "tertiary_image": "shopify://shop_images/5-star-reviews.svg",
             "text": "Buy 1 Get 1 50% Off Growing Kits",
@@ -80,7 +79,6 @@
         },
         "two_column_product_9aPp6D": {
           "type": "two_column_product",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/ugg-ufi-bf.svg",
             "rich_text": "",
@@ -119,8 +117,7 @@
         "two_column_product_fdrWxM"
       ],
       "custom_css": [
-        ".collection-grid__wrapper {display: none;}",
-        ".btn {color: black;}"
+        ".collection-grid__wrapper {display: none;}"
       ],
       "settings": {
         "enable_sidebar": true,
