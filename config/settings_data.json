@@ -182,7 +182,9 @@
           "5d753a88-d8ce-49ef-b981-c609a0cef4e1",
           "1524768779513"
         ],
-        "custom_css": [],
+        "custom_css": [
+          ".site-nav__item:first-of-type .site-nav__link {color: #fabc02;}"
+        ],
         "settings": {
           "main_menu_link_list": "desktop-navigation",
           "mega_menu_images": false,
