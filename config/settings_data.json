@@ -183,7 +183,7 @@
           "1524768779513"
         ],
         "custom_css": [
-          ".site-nav__item:first-of-type .site-nav__link {color: #FFF;}"
+          ".site-nav__item:first-of-type .site-nav__link {color: #e6022e;}"
         ],
         "settings": {
           "main_menu_link_list": "desktop-navigation",

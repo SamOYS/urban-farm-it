@@ -30,10 +30,10 @@
             "link_text_4": "",
             "color_accent": "#c70329",
             "text_align": "vertical-bottom horizontal-left",
-            "image": "shopify://shop_images/Festive_Gifting_Desktop.jpg",
+            "image": "shopify://shop_images/christmas-deals-ufi.jpg",
             "image_mobile": "shopify://shop_images/Festive_Gifting_Mobile.jpg",
             "parallax_direction": "top",
-            "overlay_opacity": 66,
+            "overlay_opacity": 70,
             "focal_point": "center center"
           }
         },
