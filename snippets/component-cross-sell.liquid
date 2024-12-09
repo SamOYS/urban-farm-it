@@ -22,7 +22,7 @@
         </div>
 
         <div class="cross-sell__product-details tw-flex">
-            {%- form 'product', product, id: form_id, class: 'product-single__form tw-flex tw-items-start tw-flex-wrap tw-justify-start sm:tw-justify-between cross-sells-form tw-gap-y-[5px] lg:tw-gap-[5px]' -%}
+            {%- form 'product', product, id: form_id, class: 'product-single__form tw-grid lg:tw-grid-cols-2 cross-sells-form tw-gap-y-[5px] lg:tw-gap-[5px]' -%}
                 <div>
                     <span class="tw-text-left tw-text-wrap cross-sell__product-title">{{ cross_sell_product.title }}</span>
                     <span class="tw-text-left cross-sell__product-price">{{ custom_price | money }}</span>
@@ -81,7 +81,7 @@
                         type="submit"
                         name="add"
                         data-add-to-cart
-                        class="btn tw-w-full lg:tw-w-auto add-to-cart tw-bg-black tw-py-[6px] hover:tw-bg-primary tw-font-normal tw-text-sm tw-border-1  tw-border-black tw-text-white"
+                        class="btn tw-w-full tw-ml-auto lg:tw-w-fit tw-h-fit add-to-cart tw-bg-black tw-py-[6px] hover:tw-bg-primary tw-font-normal tw-text-sm tw-border-1  tw-border-black tw-text-white"
                         onclick="gtag('event', 'conversion', {'send_to': 'AW-455174778/larqCN-cmdsZEPrUhdkB'});"
                 >
                     Add
