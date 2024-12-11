@@ -63,7 +63,7 @@
         }
       </style>
       <div class="grid grid--uniform">
-        {%- for article in blog.articles limit: 6 -%}
+        {%- for article in blog.articles limit: 20 -%}
           {%- render 'article-grid-item'
             , article: article,
             grid_item_width: 'medium-up--one-third',
