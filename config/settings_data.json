@@ -142,8 +142,8 @@
           "3c024fc5-7c27-4438-91dc-b78f73c72af3": {
             "type": "announcement",
             "settings": {
-              "text": "Order by 19th December for Guaranteed Christmas Delivery",
-              "link_text": "",
+              "text": "Order by 19th December for",
+              "link_text": "Guaranteed Christmas Delivery",
               "link": "shopify://collections/christmas"
             }
           },
