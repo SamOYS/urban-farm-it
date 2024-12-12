@@ -81,7 +81,7 @@
         "two_column_product_9aPp6D": {
           "type": "two_column_product",
           "settings": {
-            "image": "shopify://shop_images/ufi-gift-set-white.svg",
+            "image": "shopify://shop_images/ufi-15_-mgk.svg",
             "rich_text": "",
             "link": "shopify://products/oyster-mushroom-growing-kit-full-set-gift-option",
             "button_text": "Saving £11.97",
@@ -89,7 +89,7 @@
             "button_background_color": "#ffffff",
             "secondary_image": "shopify://shop_images/ufi-gk-15.png",
             "tertiary_image": "shopify://shop_images/5-star-reviews.svg",
-            "text": "£11.97 Off Grower’s Full Set",
+            "text": "15% Off Grower’s Full Set",
             "secondary_link": "shopify://products/oyster-mushroom-growing-kit-full-set-gift-option",
             "secondary_button_text": "Choose selection"
           }
