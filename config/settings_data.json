@@ -143,9 +143,9 @@
             "type": "announcement",
             "disabled": true,
             "settings": {
-              "text": "Valentines Deal: Get 15% Off Pink Oyster Kits",
-              "link_text": "Use code MUSHROOMLOVE15 at checkout",
-              "link": "shopify://products/pink-oyster-mushroom-growing-kit"
+              "text": "Order by 19th December for Guaranteed Christmas Delivery",
+              "link_text": "",
+              "link": "shopify://collections/christmas"
             }
           },
           "fc411552-7273-4ad3-8661-7c1b0535016f": {
