@@ -143,7 +143,7 @@
             "type": "announcement",
             "settings": {
               "text": "Order by 19th December for",
-              "link_text": "Guaranteed Christmas Delivery",
+              "link_text": "Guaranteed Christmas Dispatch",
               "link": "shopify://collections/christmas"
             }
           },
