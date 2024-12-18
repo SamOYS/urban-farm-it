@@ -1,0 +1,202 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection-header": {
+      "type": "collection-header",
+      "settings": {
+        "enable": false,
+        "collection_image_enable": true,
+        "parallax": false,
+        "parallax_direction": "left"
+      }
+    },
+    "countdown_JmDJUm": {
+      "type": "countdown",
+      "blocks": {
+        "content_CN6atf": {
+          "type": "content",
+          "settings": {
+            "heading": "Christmas Deals Now Live!",
+            "heading_size": "h2",
+            "text": "",
+            "content_alignment": "center"
+          }
+        },
+        "timer_kYXWkm": {
+          "type": "timer",
+          "disabled": true,
+          "settings": {
+            "year": "2023",
+            "month": "01",
+            "day": "1",
+            "hour": "03",
+            "minute": "00",
+            "hide_timer": false,
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "content_CN6atf",
+        "timer_kYXWkm"
+      ],
+      "settings": {
+        "layout": "banner",
+        "full_width": true,
+        "text_color": "#ffffff",
+        "background_color": "#c70329",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "focal_point": "center",
+        "mobile_image_focal_point": "top"
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "two_column_product_YyqKiw": {
+          "type": "two_column_product",
+          "settings": {
+            "image": "shopify://shop_images/buy-2-get-10.svg",
+            "rich_text": "",
+            "link": "shopify://collections/mushroom-growing-kits",
+            "button_text": "Saving 10%",
+            "background_color": "#c70329",
+            "button_background_color": "#ffffff",
+            "secondary_image": "shopify://shop_images/10_-off-mgk-ufi.png",
+            "tertiary_image": "shopify://shop_images/5-star-reviews.svg",
+            "text": "Buy 2 Get 10% Off",
+            "secondary_link": "shopify://collections/mushroom-growing-kits",
+            "secondary_button_text": "Choose selection"
+          }
+        },
+        "two_column_product_9aPp6D": {
+          "type": "two_column_product",
+          "settings": {
+            "image": "shopify://shop_images/ufi-15_-mgk.svg",
+            "rich_text": "",
+            "link": "shopify://products/oyster-mushroom-growing-kit-full-set-gift-option",
+            "button_text": "Saving £11.97",
+            "background_color": "#003b1b",
+            "button_background_color": "#ffffff",
+            "secondary_image": "shopify://shop_images/ufi-gk-15.png",
+            "tertiary_image": "shopify://shop_images/5-star-reviews.svg",
+            "text": "15% Off Grower’s Full Set",
+            "secondary_link": "shopify://products/oyster-mushroom-growing-kit-full-set-gift-option",
+            "secondary_button_text": "Choose selection"
+          }
+        },
+        "two_column_product_fdrWxM": {
+          "type": "two_column_product",
+          "settings": {
+            "image": "shopify://shop_images/fresh-lions-mane-white.svg",
+            "rich_text": "",
+            "link": "shopify://products/fresh-lions-mane",
+            "button_text": "Saving £2.25",
+            "background_color": "#00873e",
+            "button_background_color": "#ffffff",
+            "secondary_image": "shopify://shop_images/mushroom-mane-lions.png",
+            "tertiary_image": "shopify://shop_images/5-star-reviews.svg",
+            "text": "15% Off Fresh Lion’s Mane",
+            "secondary_link": "shopify://products/fresh-lions-mane",
+            "secondary_button_text": "Buy Now"
+          }
+        }
+      },
+      "block_order": [
+        "two_column_product_YyqKiw",
+        "two_column_product_9aPp6D",
+        "two_column_product_fdrWxM"
+      ],
+      "custom_css": [
+        ".collection-grid__wrapper {display: none;}",
+        ".promo-grid .button-text {color: black !important;}"
+      ],
+      "settings": {
+        "enable_sidebar": false,
+        "collapsed": true,
+        "filter_style": "sidebar",
+        "enable_color_swatches": false,
+        "enable_sort": true
+      }
+    },
+    "5c64be49-d8ae-494f-9c21-7ad06915b6a2": {
+      "type": "collection-extended-copy",
+      "settings": {
+        "title": "FAQs"
+      }
+    },
+    "7fbc978c-7036-491e-b07e-9e4c3146b695": {
+      "type": "collection-faq",
+      "disabled": true,
+      "settings": {
+        "title": "FAQs"
+      }
+    },
+    "a72ec282-a591-4dfe-8375-e3c7b2469963": {
+      "type": "collection-articles",
+      "disabled": true,
+      "settings": {
+        "title": "Related Guides"
+      }
+    },
+    "94fe4d44-2152-4965-83e7-fc4b474eaf2c": {
+      "type": "collection-popup",
+      "disabled": true,
+      "settings": {
+        "mode": true,
+        "disable_for_account_holders": false,
+        "popup_seconds": 3,
+        "popup_days": 1,
+        "popup_title": "SEE OUR WHOLESALE RANGE",
+        "popup_text": "<p>60+ Species & Volume Discounts</p>",
+        "popup_image": "shopify://shop_images/8B65D04E-9684-442D-B389-BFC688DA5FA2_5ce35557-ec25-4eee-a8bf-b71f75e9f1a4.jpg",
+        "image_position": "right",
+        "show_social_icons": false,
+        "enable_newsletter": false,
+        "button_label": "SHOP WHOLESALE",
+        "button_link": "shopify://collections/wholesale-mushroom-spawn"
+      }
+    },
+    "ebc8e702-1d24-4e35-a716-a33d9dc70ac5": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--21519337816344__ebc8e702-1d24-4e35-a716-a33d9dc70ac5-liquid-1": {
+          "type": "liquid",
+          "disabled": true,
+          "settings": {
+            "code": "<style>\nbody.template-collection {\nbackground-color: #D6001C;\n}\nbody.template-collection .main-content *:not(.modal.micromodal-slide *, button.js-drawer-open-collection-filters, button.js-drawer-open-collection-filters svg path, select, .grid-product__price--original, select option), body.template-collection \n #shopify-section-footer, #shopify-section-footer-promotions, body.template-collection .shopify-section.index-section *:not(button.js-drawer-open-collection-filters, button.js-drawer-open-collection-filters svg path, select, .grid-product__price--original) {\ncolor: #000 !important;\n}\n\nbody.template-collection .info-icon svg {\nfill: #fff !important;}\n\nbody.template-collection .main-content select, body.template-collection .main-content input, button.js-drawer-open-collection-filters, button.js-drawer-open-collection-filters svg path {\ncolor: #000 !important;\n}\n\n</style>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--21519337816344__ebc8e702-1d24-4e35-a716-a33d9dc70ac5-liquid-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "space_around": false
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "countdown_JmDJUm",
+    "main-collection",
+    "5c64be49-d8ae-494f-9c21-7ad06915b6a2",
+    "7fbc978c-7036-491e-b07e-9e4c3146b695",
+    "a72ec282-a591-4dfe-8375-e3c7b2469963",
+    "94fe4d44-2152-4965-83e7-fc4b474eaf2c",
+    "ebc8e702-1d24-4e35-a716-a33d9dc70ac5"
+  ]
+}
