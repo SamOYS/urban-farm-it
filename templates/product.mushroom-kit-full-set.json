@@ -124,6 +124,14 @@
             "inventory_transfers_enable": true
           }
         },
+        "tab_b8f7L4": {
+          "type": "tab",
+          "settings": {
+            "title": "Delivery & Returns",
+            "content": "<p><strong>Delivery</strong></p><p><strong>We cannot guarantee that orders placed after 19th January will arrive in time for Christmas. </strong></p><p>We are able to ship to Northern Ireland, the Scottish Islands, the Scottish Highlands, the Isle of Wight, and the Channel Islands. However, these shipments are arranged on a case-by-case basis to ensure the best possible service.<br/><br/>If you are located in one of these areas, please contact us directly at hello@urban-farm-it.com to place your order.</p><p><strong>Note: </strong>Please refer to the specific lead times shown on product pages for more accurate delivery times.</p><ol><li><strong>Small Orders (E.g. 100ml Spawn, Plugs)</strong>: Sent via Royal Mail large letters.</li><li><strong>Medium-Sized Orders (under 2kg)</strong>: Royal Mail 24-48 hour tracked parcel.</li><li><strong>Large Orders (2kg+)</strong>: via DPD Express.</li></ol><p><strong>Returns</strong></p><ol><li><strong>Standard Returns</strong>: Returns and exchanges within 14 days of receipt. The item must be unused and in its original packaging. See our <a href=\"https://urban-farm-it.com/policies/refund-policy\" target=\"_blank\" title=\"Refund Policy\">returns policy here</a>.</li></ol><p>This does not apply to our Gift E-Cards, which are delivered via email. </p>",
+            "page": ""
+          }
+        },
         "share": {
           "type": "share",
           "settings": {}
@@ -154,6 +162,7 @@
         "b3fc12dd-8538-4787-b64f-7850c280141e",
         "sales_point",
         "inventory_status",
+        "tab_b8f7L4",
         "share",
         "10bfbe09-dcc6-4c95-96e8-c55ca8765219"
       ],
