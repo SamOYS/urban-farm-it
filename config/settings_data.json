@@ -135,12 +135,13 @@
             "type": "announcement",
             "settings": {
               "text": "Save up to 15% on Growing Kits",
-              "link_text": "Shop Now for the Perfect Christmas Gift",
-              "link": "shopify://collections/christmas"
+              "link_text": "Shop Now",
+              "link": "shopify://collections/deals"
             }
           },
           "3c024fc5-7c27-4438-91dc-b78f73c72af3": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "Order by 19th December for",
               "link_text": "Guaranteed Christmas Dispatch",
@@ -182,7 +183,7 @@
           "1524768779513"
         ],
         "custom_css": [
-          ".site-nav__item:first-of-type .site-nav__link {color: #0560C7;}"
+          ".site-nav__item:first-of-type .site-nav__link {color: #0560c7;}"
         ],
         "settings": {
           "main_menu_link_list": "desktop-navigation",
