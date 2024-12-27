@@ -48,7 +48,6 @@
         "content_CN6atf",
         "timer_kYXWkm"
       ],
-      "disabled": true,
       "settings": {
         "layout": "banner",
         "full_width": true,
@@ -117,7 +116,6 @@
         "two_column_product_9aPp6D",
         "two_column_product_fdrWxM"
       ],
-      "disabled": true,
       "custom_css": [
         ".collection-grid__wrapper {display: none;}",
         ".promo-grid .button-text {color: black !important;}"
