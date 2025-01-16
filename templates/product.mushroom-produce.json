@@ -36,6 +36,12 @@
             "color_swatches": false
           }
         },
+        "text_iK4DKi": {
+          "type": "text",
+          "settings": {
+            "text": "We are temporarily closing our mushroom farm for maintenance. While we're making improvements, you’re still welcome to place orders for our fresh Lion’s Mane mushrooms. However, please note that any  orders containing fresh Lion’s Mane will be on hold until 10/02."
+          }
+        },
         "618417c1-ec01-45b8-8f31-d4b9a6132113": {
           "type": "custom",
           "settings": {
@@ -118,7 +124,7 @@
           "settings": {}
         },
         "e89378ea-77b2-49f4-90ba-5a690c3081f5": {
-          "type": "shopify://apps/volume-discounts/blocks/offer_table_block/25745434-52e7-4378-88f1-890df18a0110",
+          "type": "shopify://apps/hulk-discounts/blocks/offer_table_block/25745434-52e7-4378-88f1-890df18a0110",
           "settings": {}
         },
         "fa716552-1943-4ff8-9ab5-8d1aa1f2de27": {
@@ -224,6 +230,7 @@
         "price",
         "5e23a4ef-dbad-4431-a172-eac16aa556c4",
         "variant_picker",
+        "text_iK4DKi",
         "618417c1-ec01-45b8-8f31-d4b9a6132113",
         "product_bundle_izVcRA",
         "117d5508-99ad-4aa0-a1e3-e8a8ad0c4870",
