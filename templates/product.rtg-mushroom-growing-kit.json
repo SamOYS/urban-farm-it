@@ -41,6 +41,12 @@
           "type": "price",
           "settings": {}
         },
+        "text_zzqFdp": {
+          "type": "text",
+          "settings": {
+            "text": "Your Lion's Mane Kit includes a live fruiting block! Be sure to check the kit for instructions on proper storage."
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -48,12 +54,6 @@
             "picker_type": "button",
             "product_dynamic_variants_enable": false,
             "color_swatches": false
-          }
-        },
-        "194ded2d-f119-4381-a208-2d5d04229c50": {
-          "type": "custom",
-          "settings": {
-            "code": "<p>Remember, Lion's Mane kits are fresh and perishable! Simply choose the right delivery option for you and we’ll handle the rest.<p>\n    <!--\n    <label>\n        <input type=\"checkbox\" id=\"christmasCheckbox\"> Deliver in time for Christmas\n    </label>\n    -->\n</div>\n\n<script>\n    document.addEventListener('DOMContentLoaded', function() {\n        // Locate the checkbox and textarea by their IDs\n        const christmasCheckbox = document.getElementById('christmasCheckbox');\n        const cartNoteDrawer = document.getElementById('CartNoteDrawer');\n\n        if (christmasCheckbox && cartNoteDrawer) {\n            // Check the initial state of the textarea and checkbox\n            updateTextArea();\n\n            // Event listener for when the checkbox state changes\n            christmasCheckbox.addEventListener('change', function() {\n                updateTextArea();\n            });\n        }\n\n        function updateTextArea() {\n            const currentNote = cartNoteDrawer.value;\n            const christmasTag = \"[Christmas_Delivery_Selected]\";\n\n            // Check if the tag is already in the textarea\n            const tagExists = currentNote.includes(christmasTag);\n\n            if (christmasCheckbox.checked) {\n                // Append the tag if it doesn't already exist\n                if (!tagExists) {\n                    cartNoteDrawer.value = `${currentNote} ${christmasTag}`;\n                }\n            } else {\n                // Remove the tag if it exists\n                if (tagExists) {\n                    cartNoteDrawer.value = currentNote.replace(christmasTag, \"\").trim();\n                }\n            }\n        }\n    });\n</script>"
           }
         },
         "buy_buttons": {
@@ -168,8 +168,8 @@
         "de54a8a6-5a13-4172-b6df-cf6d5d01998a",
         "custom_F8HN6i",
         "price",
+        "text_zzqFdp",
         "variant_picker",
-        "194ded2d-f119-4381-a208-2d5d04229c50",
         "buy_buttons",
         "smile_loyalty_rewards_smile_points_on_product_page_MNQ97z",
         "c7cb76d9-e206-4d28-a3fe-1dff3ce406da",
