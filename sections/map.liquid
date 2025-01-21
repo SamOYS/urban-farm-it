@@ -49,7 +49,7 @@
             {%- if section.settings.address != blank -%}
               <div class="rte-setting text-spacing">{{ section.settings.address }}</div>
               {%- if section.settings.show_button -%}
-                <a href="https://maps.google.com?daddr={{ section.settings.map_address | escape }}" class="btn btn--small" target="_blank" rel="noopener" aria-label="{{ section.settings.map_title }}">{{ 'sections.map.get_directions' | t }}</a>
+                <a href="{{ section.settings.map_address | escape }}" class="btn btn--small" target="_blank" rel="noopener" aria-label="{{ section.settings.map_title }}">{{ 'sections.map.get_directions' | t }}</a>
               {%- endif -%}
             {%- endif -%}
           </div>
@@ -57,7 +57,7 @@
       </div>
     </div>
   {%- endif -%}
-  <a class="map-section__link" href="https://www.google.com/maps/place/{{ section.settings.map_address | escape }}" target="_blank" rel="noopener" aria-label="{{ section.settings.map_address | escape }}"></a>
+  <a class="map-section__link" href="{{ section.settings.map_address | escape }}" target="_blank" rel="noopener" aria-label="{{ section.settings.map_address | escape }}"></a>
   {%- if onboarding -%}
     <div class="map-onboarding">
       {{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' }}
