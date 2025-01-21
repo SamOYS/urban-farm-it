@@ -12,8 +12,7 @@
     "main": {
       "type": "main-page",
       "disabled": true,
-      "settings": {
-      }
+      "settings": {}
     },
     "slideshow": {
       "type": "slideshow",
@@ -386,7 +385,7 @@
       "settings": {
         "map_title": "OPENING HOURS",
         "address": "<p>Lower Goldstone Farm, Ash, Canterbury, CT3 2DT</p><p>Mon - Fri, 9am - 5pm<br/>Saturday, Closed<br/>Sunday, Closed</p>",
-        "map_address": "",
+        "map_address": "https://maps.app.goo.gl/UcdKpmaKghuZrFVH6",
         "api_key": "",
         "show_button": true,
         "background_image": "shopify://shop_images/ufi-location.png",
