@@ -24,7 +24,7 @@
       .map-{{ section.id }} {
         background-size: cover;
         background-position: center;
-        background-image: url("{{ bg_image | img_url: '1800x' }}");
+        background-image: url("{{ bg_image | img_url: '1800x1800' }}");
         background-position: {{ section.settings.background_image_position | default: 'center center' }};
       }
 
