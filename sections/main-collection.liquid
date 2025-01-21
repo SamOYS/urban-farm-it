@@ -177,11 +177,13 @@
                         <div class="tw-flex tw-flex-col tw-items-center tw-gap-1 md:tw-gap-3 tw-h-full">
                           {%- if block.settings.secondary_image -%}
                           <div class="tw-bg-[#F2F2F2] tw-w-full tw-h-full tw-p-4  tw-rounded-lg">
-                            <img
-                                    class="tw-w-full tw-object-center tw-object-contain tw-h-full lg:tw-h-[350px] xl:tw-h-[400px]"
-                                    src="{{ block.settings.secondary_image | img_url: '1200x1200' }}"
-                                    alt="Product Image 2"
-                            >
+                            <a href="{{ block.settings.link }}">
+                              <img
+                                      class="tw-w-full tw-object-center tw-object-contain tw-h-full lg:tw-h-[350px] xl:tw-h-[400px]"
+                                      src="{{ block.settings.secondary_image | img_url: '1200x1200' }}"
+                                      alt="Product Image 2"
+                              >
+                            </a>
                           </div>
                           {%- endif -%}
 
