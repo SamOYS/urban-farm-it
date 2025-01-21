@@ -12,8 +12,15 @@ header#SiteHeader.site-header--stuck {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
 }
-.grid-product__price {
-  font-size: 1.2rem;
+@media only screen and (max-width: 768px) {
+  .grid-product__price {
+    font-size: 1rem !important;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .grid-product__price {
+    font-size: 1.2rem !important;
+  }
 }
 .logo-bar__item img {
   filter: grayscale(100%);
@@ -95,7 +102,6 @@ header#SiteHeader.site-header--stuck {
 
 .template-collection .grid-product__title {
   font-weight: bolder !important;
-  font-size: 20px !important;
 }
 
 .template-collection .grid-product__price--elem {
