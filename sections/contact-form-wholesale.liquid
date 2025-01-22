@@ -5,69 +5,32 @@
         collection.handle == 'mushroom-bags-containers' or
         collection.handle == 'mushroom-growing-supplies'
 -%}
-  <div id="section-contact-form" class="index-section !tw-bg-[#DACFB6] !tw-mb-0 !tw-mt-0">
-    <div class="page-width{% if section.settings.narrow_column %} page-width--narrow{% endif %}">
-        {%- if section.settings.title != blank -%}
-        <div class="!tw-bg-[#DACFB6] !lg:tw-px-20 !tw-py-8">
-          <div class="section-header !tw-mb-5">
-            <h2 class="section-header__title tw-flex tw-justify-center">
-              {{ section.settings.title }}
-            </h2>
-            {%- if section.settings.text != blank -%}
-              <div class="rte  tw-flex tw-justify-center tw-text-center section-header__rte">{{ section.settings.text }}</div>
-            {%- endif -%}
-          </div>
-          {% endif %}
-
-          <div class="">
-            {%- assign form_id = 'contact-' | append: section.id -%}
-            {%- form 'contact', id: form_id -%}
-
-              {%- if form.posted_successfully? -%}
-                <p class="note note--success">
-                  {{ 'contact.form.post_success' | t }}
-                </p>
-              {%- endif -%}
-
-              {{ form.errors | default_errors }}
-
-              <div class="grid grid--small">
-                <div class="grid__item medium-up--one-half">
-                  <input placeholder="Full name" type="text" id="ContactFormName-{{ section.id }}" class="input-full tw-rounded-sm !tw-mb-2 md:!tw-mb-4 tw-bg-white" name="contact[name]" autocapitalize="words" value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}">
+    <div id="section-contact-form" class="index-section !tw-bg-[#DACFB6] !tw-mb-0 !tw-mt-0">
+        <div class="page-width{% if section.settings.narrow_column %} page-width--narrow{% endif %}">
+            {%- if section.settings.title != blank -%}
+            <div class="!tw-bg-[#DACFB6] !lg:tw-px-20 !tw-py-8">
+                <div class="section-header !tw-mb-0">
+                    <h2 class="section-header__title tw-flex tw-justify-center">
+                        {{ section.settings.title }}
+                    </h2>
+                    {%- if section.settings.text != blank -%}
+                        <div class="rte tw-flex tw-justify-center tw-text-center section-header__rte">{{ section.settings.text }}</div>
+                    {%- endif -%}
                 </div>
+                {% endif %}
 
-                <div class="grid__item medium-up--one-half">
-                  <input placeholder="Email address" type="email" id="ContactFormEmail-{{ section.id }}" class="input-full tw-rounded-sm !tw-mb-2 md:!tw-mb-4 tw-bg-white" name="contact[email]" autocorrect="off" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}">
+                <div class="">
+                    {%- for block in section.blocks -%}
+                        {% render block %}
+                    {%- endfor -%}
+
+                    <p class="tw-uppercase tw-text-center tw-font-bold tw-mb-0 tw-mt-5">
+                        Please <a href="https://www.flipsnack.com/A9A7BF5569B/wholesale-website/full-view.html" target="_blank" class="tw-underline !tw-text-black">download our brochure</a> for more products and information.
+                    </p>
                 </div>
-              </div>
-
-              {%- if section.settings.show_phone -%}
-                <input placeholder="Phone number" type="tel" id="ContactFormPhone-{{ section.id }}" class="input-full tw-rounded-sm !tw-mb-2 md:!tw-mb-4 tw-bg-white" name="contact[phone]" pattern="[0-9\-]*" value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}">
-              {%- endif -%}
-
-              {% comment %}<label for="ContactFormMessage-{{ section.id }}">{{ 'contact.form.message' | t }}</label>{% endcomment %}
-              {% comment %}<textarea rows="5" id="ContactFormMessage-{{ section.id }}" class="input-full" name="contact[body]">{% if form.body %}{{ form.body }}{% endif %}</textarea>{% endcomment %}
-
-              <label for="contact-form-submit-{{ section.id }}" class="hidden-label">{{ 'contact.form.send' | t }}</label>
-              <button type="submit" id="contact-form-submit-{{ section.id }}" class="btn !tw-mb-2 tw-w-full">
-                {{ 'contact.form.send' | t }}
-              </button>
-
-              {% comment %}
-                Remove the following three lines of code to remove the note
-                about being protected by Google's reCAPTCHA service.
-                By removing it, the small reCAPTCHA widget will appear in the
-                bottom right corner of the page.
-              {% endcomment %}
-              {{ 'shopify.online_store.spam_detection.disclaimer_html' | t }}
-
-              <p class="tw-uppercase tw-text-center tw-font-bold tw-mb-0">Please <a href="https://www.flipsnack.com/A9A7BF5569B/wholesale-website/full-view.html" target="_blank" class="tw-underline !tw-text-black">download our brochure</a> for more products and information</p>
-
-            {%- endform -%}
-          </div>
+            </div>
         </div>
     </div>
-  </div>
 {% endif %}
 
 {% schema %}
@@ -92,14 +55,14 @@
     },
     {
       "type": "checkbox",
-      "id": "show_phone",
-      "label": "t:sections.contact-form.settings.show_phone.label"
-    },
-    {
-      "type": "checkbox",
       "id": "narrow_column",
       "label": "t:sections.contact-form.settings.narrow_column.label",
       "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "@app"
     }
   ],
   "presets": [
@@ -109,4 +72,3 @@
   ]
 }
 {% endschema %}
-
