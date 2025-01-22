@@ -9,6 +9,41 @@
  */
 {
   "sections": {
+    "contact_form_wholesale_pWWCXN": {
+      "type": "contact-form-wholesale",
+      "blocks": {
+        "forms_inline_V6Wb4d": {
+          "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
+          "disabled": true,
+          "settings": {
+            "form_id": "321005",
+            "text_color": "#111111",
+            "button_background_color": "#111111",
+            "button_label_color": "#FFFFFF",
+            "links_color": "#111111",
+            "errors_color": "#E02229",
+            "text_alignment": "center",
+            "form_alignment": "center",
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "padding_right": 0,
+            "padding_left": 0
+          }
+        }
+      },
+      "block_order": [
+        "forms_inline_V6Wb4d"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".index-section {margin-top: 0rem; margin-bottom: 1rem;}"
+      ],
+      "settings": {
+        "title": "WHOLESALE ENQUIRIES",
+        "text": "<p><strong>ENQUIRY AVAILABLE FOR LARGER ORDERS OR CUSTOM REQUESTS</strong></p>",
+        "narrow_column": false
+      }
+    },
     "collection-header": {
       "type": "collection-header",
       "settings": {
@@ -85,6 +120,7 @@
     }
   },
   "order": [
+    "contact_form_wholesale_pWWCXN",
     "collection-header",
     "main-collection",
     "5c64be49-d8ae-494f-9c21-7ad06915b6a2",
