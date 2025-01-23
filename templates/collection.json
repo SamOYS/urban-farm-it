@@ -14,14 +14,13 @@
       "blocks": {
         "forms_inline_V6Wb4d": {
           "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
-          "disabled": true,
           "settings": {
             "form_id": "321005",
             "text_color": "#111111",
             "button_background_color": "#111111",
-            "button_label_color": "#FFFFFF",
+            "button_label_color": "#ffffff",
             "links_color": "#111111",
-            "errors_color": "#E02229",
+            "errors_color": "#e02229",
             "text_alignment": "center",
             "form_alignment": "center",
             "padding_top": 0,
@@ -34,7 +33,6 @@
       "block_order": [
         "forms_inline_V6Wb4d"
       ],
-      "disabled": true,
       "custom_css": [
         ".index-section {margin-top: 0rem; margin-bottom: 1rem;}"
       ],
@@ -117,6 +115,37 @@
         "button_label": "SHOP WHOLESALE",
         "button_link": "shopify://collections/wholesale-mushroom-spawn"
       }
+    },
+    "contact_form_wholesale_wBDkiq": {
+      "type": "contact-form-wholesale",
+      "blocks": {
+        "forms_inline_gcz37Y": {
+          "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
+          "settings": {
+            "form_id": "321005",
+            "text_color": "#202020",
+            "button_background_color": "#202020",
+            "button_label_color": "#FFFFFF",
+            "links_color": "#000000",
+            "errors_color": "#E02229",
+            "text_alignment": "center",
+            "form_alignment": "center",
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "padding_right": 0,
+            "padding_left": 0
+          }
+        }
+      },
+      "block_order": [
+        "forms_inline_gcz37Y"
+      ],
+      "custom_css": [],
+      "settings": {
+        "title": "WHOLESALE ENQUIRIES",
+        "text": "<p><strong>ENQUIRY AVAILABLE FOR LARGER ORDERS OR CUSTOM REQUESTS</strong></p>",
+        "narrow_column": true
+      }
     }
   },
   "order": [
@@ -126,6 +155,7 @@
     "5c64be49-d8ae-494f-9c21-7ad06915b6a2",
     "7fbc978c-7036-491e-b07e-9e4c3146b695",
     "a72ec282-a591-4dfe-8375-e3c7b2469963",
-    "94fe4d44-2152-4965-83e7-fc4b474eaf2c"
+    "94fe4d44-2152-4965-83e7-fc4b474eaf2c",
+    "contact_form_wholesale_wBDkiq"
   ]
 }
