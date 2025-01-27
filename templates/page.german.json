@@ -1,0 +1,68 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow_gzyF7X": {
+      "type": "slideshow",
+      "blocks": {
+        "image_PHLPH3": {
+          "type": "image",
+          "settings": {
+            "show_breadcrumbs": false,
+            "top_subheading": "",
+            "title": "THANKS FOR CONTACTING US.",
+            "title_size": 65,
+            "subheading": "We'll get back to you as soon as possible.",
+            "link": "",
+            "link_text": "",
+            "link_2": "https://www.flipsnack.com/A9A7BF5569B/wholesale-website/full-view.html",
+            "link_text_2": "Download our brochure",
+            "link_3": "",
+            "link_text_3": "",
+            "link_4": "https://urban-farm-it.com/",
+            "link_text_4": "Back to home",
+            "color_accent": "#ffffff",
+            "text_align": "vertical-bottom horizontal-left",
+            "image": "shopify://shop_images/mushroom-grow-kits.jpg",
+            "image_mobile": "shopify://shop_images/Grow_Kits_-_Mobile_2.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 70,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "image_PHLPH3"
+      ],
+      "custom_css": [
+        "@media (min-width: 768px) and (max-width: 1024px) {h1 {font-size: 2rem !important; }}",
+        "@media (max-width: 767px) {h1 {font-size: 1.5rem !important; }}"
+      ],
+      "settings": {
+        "section_height": "550px",
+        "mobile_height": "auto",
+        "parallax": true,
+        "enable_trustpilot": true,
+        "style": "bars",
+        "autoplay": true,
+        "autoplay_speed": 5
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    }
+  },
+  "order": [
+    "slideshow_gzyF7X",
+    "main"
+  ]
+}
