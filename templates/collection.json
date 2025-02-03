@@ -12,15 +12,26 @@
     "contact_form_wholesale_pWWCXN": {
       "type": "contact-form-wholesale",
       "blocks": {
-        "klaviyo_email_marketing_sms_form_embed_block_LtbAYK": {
-          "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
+        "forms_inline_XaAnzw": {
+          "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
           "settings": {
-            "formId": "TbjFG5"
+            "form_id": "321005",
+            "text_color": "#202020",
+            "button_background_color": "#202020",
+            "button_label_color": "#FFFFFF",
+            "links_color": "#000000",
+            "errors_color": "#E02229",
+            "text_alignment": "center",
+            "form_alignment": "center",
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "padding_right": 0,
+            "padding_left": 0
           }
         }
       },
       "block_order": [
-        "klaviyo_email_marketing_sms_form_embed_block_LtbAYK"
+        "forms_inline_XaAnzw"
       ],
       "custom_css": [
         ".index-section {margin-top: 0rem; margin-bottom: 1rem;}"
@@ -28,7 +39,7 @@
       "settings": {
         "title": "WHOLESALE ENQUIRIES",
         "text": "<p><strong>ENQUIRY AVAILABLE FOR LARGER ORDERS OR CUSTOM REQUESTS</strong></p>",
-        "narrow_column": true
+        "narrow_column": false
       }
     },
     "collection-header": {
