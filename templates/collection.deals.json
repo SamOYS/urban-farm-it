@@ -62,6 +62,22 @@
     "main-collection": {
       "type": "main-collection",
       "blocks": {
+        "two_column_product_yGTyaa": {
+          "type": "two_column_product",
+          "settings": {
+            "image": "shopify://shop_images/pink-oyster-sale.svg",
+            "rich_text": "",
+            "link": "shopify://products/pink-oyster-mushroom-growing-kit",
+            "button_text": "Saving £3",
+            "background_color": "#ff5f7b",
+            "button_background_color": "#ffffff",
+            "secondary_image": "shopify://shop_images/pink-oyster-sale-product.png",
+            "tertiary_image": "shopify://shop_images/5-star-reviews.svg",
+            "text": "15% Off Pink Oyster Mushroom",
+            "secondary_link": "shopify://products/pink-oyster-mushroom-growing-kit",
+            "secondary_button_text": "Buy Now"
+          }
+        },
         "two_column_product_YyqKiw": {
           "type": "two_column_product",
           "settings": {
@@ -109,29 +125,13 @@
             "secondary_link": "shopify://products/fresh-lions-mane",
             "secondary_button_text": "Buy Now"
           }
-        },
-        "two_column_product_yGTyaa": {
-          "type": "two_column_product",
-          "settings": {
-            "image": "shopify://shop_images/pink-oyster-sale.svg",
-            "rich_text": "",
-            "link": "shopify://products/pink-oyster-mushroom-growing-kit",
-            "button_text": "Saving £3",
-            "background_color": "#b30000",
-            "button_background_color": "#ffffff",
-            "secondary_image": "shopify://shop_images/pink-oyster-sale-product.png",
-            "tertiary_image": "shopify://shop_images/5-star-reviews.svg",
-            "text": "15% Off Pink Oyster Mushroom",
-            "secondary_link": "shopify://products/pink-oyster-mushroom-growing-kit",
-            "secondary_button_text": "Buy Now"
-          }
         }
       },
       "block_order": [
+        "two_column_product_yGTyaa",
         "two_column_product_YyqKiw",
         "two_column_product_9aPp6D",
-        "two_column_product_fdrWxM",
-        "two_column_product_yGTyaa"
+        "two_column_product_fdrWxM"
       ],
       "custom_css": [
         ".collection-grid__wrapper {display: none;}",
