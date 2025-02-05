@@ -60,7 +60,6 @@
                 {% endif %}
             {%- endfor -%}
 
-            {{ article.content }}
             {%- for i in (0..len) -%}
                 {%- assign block_id = i -%}
                 {% case block_type[i] %}
