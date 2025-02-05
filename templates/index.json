@@ -301,6 +301,7 @@
         "logo_image_VyTeHD",
         "logo_image_xGXk6h"
       ],
+      "disabled": true,
       "custom_css": [
         "{/*background: #f3f3f3;*/ margin-top: 2rem; padding: 35px 0; margin-bottom: 4rem;}",
         ".logo-bar__item img {height: 50px; object-fit: contain;}"
