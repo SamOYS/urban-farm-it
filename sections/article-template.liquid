@@ -21,41 +21,72 @@
 %}
 
 <div
-  id="article_wrapper"
-  class="grid page-width page-width--article page-content"
-  style="display: flex; gap: 1.5rem;">
+        id="article_wrapper"
+        class="grid page-width page-width--article page-content"
+        style="display: flex; gap: 1.5rem;">
   {% comment %} {% render 'contents-bar-old', len: len, block_heading: block_heading, block_heading_type: block_heading_type %} {% endcomment %}
-  
+
   <article class="article">
     <div class="article__body rte">
-      {{ article.content }}
-        {%- for i in (0..len) -%}
-          {%- assign block_id = i -%}
-            {% case block_type[i] %}
-            <!--           {% when 'text-image' %}
-            {% render 'article-content-block__text-image',
-            image: block_image[i],
-            subheading: block_subheading[i],
-            text: block_text[i],
-            reverse_col: reverse_col_direction[i],
-            block_id: block_id
-            %} -->
-            {% when 'full-width' %}
+      {%- assign paragraphs = article.content | split: '</p>' -%}
+      {%- assign midpoint = paragraphs.size | divided_by: 2 -%}
+
+      {%- for paragraph in paragraphs -%}
+        {{ paragraph }}</p>
+
+        {% if forloop.index == midpoint %}
+          <!-- CTA Block -->
+            {% if article.metafields.custom.blog_cta_link %}
+                {% assign cta_link = article.metafields.custom.blog_cta_link.value | parse_json %}
+                <a class="!tw-border-none !tw-static !tw-no-underline !tw-mb-8 !tw-mt-4 md:!tw-mb-10" href="{{ cta_link.url }}">
+                <div class="cta-block tw-gap-2 tw-p-6 md:tw-p-8 md:tw-flex tw-rounded-md tw-items-center tw-text-center tw-shadow-sm" style="background-color: {{ article.metafields.custom.blog_cta_colour }}; border: solid hsla(206, 7%, 44%, .3);">
+                    <div class="md:tw-w-[40%] tw-w-full">
+                      {% if article.metafields.custom.blog_cta_image %}
+                          <img class="lg:!tw-h-[325px] tw-mx-auto md:tw-mx-0 !tw-h-[250px] tw-w-auto" src="{{ article.metafields.custom.blog_cta_image | img_url: '1200x1200' }}" alt="CTA Image">
+                      {% endif %}
+                    </div>
+                    <div class="md:tw-w-[60%] tw-mt-2 md:tw-mt-0 tw-w-full">
+                      {% if article.metafields.custom.blog_cta_text %}
+                        <h2 class="!tw-mb-4 h2 !tw-text-black">{{ article.metafields.custom.blog_cta_text }}</h2>
+                      {% endif %}
+                        <span class="btn !tw-w-full md:!tw-w-1/2 !tw-rounded-full !tw-bg-[#0560C7] !tw-border-[#0560C7] !tw-text-white !tw-normal-case !tw-font-normal !tw-tracking-normal !tw-text-xs sm:!tw-text-sm md:!tw-text-base">
+                          {{ cta_link.text }}
+                        </span>
+                    </div>
+                  </div>
+                </a>
+            {% endif %}
+
+        {% endif %}
+      {%- endfor -%}
+
+      {%- for i in (0..len) -%}
+        {%- assign block_id = i -%}
+        {% case block_type[i] %}
+                <!--           {% when 'text-image' %}
+          {% render 'article-content-block__text-image',
+                image: block_image[i],
+                subheading: block_subheading[i],
+                text: block_text[i],
+                reverse_col: reverse_col_direction[i],
+                block_id: block_id
+        %} -->
+          {% when 'full-width' %}
             {% render 'article-content-block__text'
-             , heading: block_heading[i],
-             heading_type: block_heading_type[i],
-             content: block_content[i],
-             block_id: block_id %}
-          {% endcase %}
-        {%- endfor -%}
-        
+                    , heading: block_heading[i],
+                    heading_type: block_heading_type[i],
+                    content: block_content[i],
+                    block_id: block_id %}
+        {% endcase %}
+      {%- endfor -%}
+
     </div>
 
     {%- if section.settings.social_sharing_blog -%}
       {%- render 'social-sharing'
-        , share_title: article.title,
-        share_permalink: article.url,
-        share_image: article.image -%}
+              , share_title: article.title,
+              share_permalink: article.url,
+              share_image: article.image -%}
     {%- endif -%}
 
     {%- if blog.comments_enabled? -%}
@@ -116,31 +147,31 @@
                 <div class="grid__item medium-up--one-half">
                   <label for="CommentAuthor">{{ 'blogs.comments.name' | t }}</label>
                   <input
-                    class="input-full{% if form.errors contains 'author' %} error{% endif %}"
-                    type="text"
-                    name="comment[author]"
-                    id="CommentAuthor"
-                    value="{{ form.author }}"
-                    autocapitalize="words">
+                          class="input-full{% if form.errors contains 'author' %} error{% endif %}"
+                          type="text"
+                          name="comment[author]"
+                          id="CommentAuthor"
+                          value="{{ form.author }}"
+                          autocapitalize="words">
                 </div>
                 <div class="grid__item medium-up--one-half">
                   <label for="CommentEmail">{{ 'blogs.comments.email' | t }}</label>
                   <input
-                    class="input-full{% if form.errors contains 'email' %} error{% endif %}"
-                    type="email"
-                    name="comment[email]"
-                    id="CommentEmail"
-                    value="{{ form.email }}"
-                    autocorrect="off"
-                    autocapitalize="off">
+                          class="input-full{% if form.errors contains 'email' %} error{% endif %}"
+                          type="email"
+                          name="comment[email]"
+                          id="CommentEmail"
+                          value="{{ form.email }}"
+                          autocorrect="off"
+                          autocapitalize="off">
                 </div>
               </div>
 
               <label for="CommentBody">{{ 'blogs.comments.message' | t }}</label>
               <textarea
-                class="input-full{% if form.errors contains 'body' %} error{% endif %}"
-                name="comment[body]"
-                id="CommentBody">{{ form.body }}</textarea>
+                      class="input-full{% if form.errors contains 'body' %} error{% endif %}"
+                      name="comment[body]"
+                      id="CommentBody">{{ form.body }}</textarea>
 
               {%- if blog.moderated? -%}
                 <p>
@@ -152,12 +183,6 @@
                 {{ 'blogs.comments.post' | t }}
               </button>
 
-              {% comment %}
-              Remove the following three lines of code to remove the note
-              about being protected by Google's reCAPTCHA service.
-              By removing it, the small reCAPTCHA widget will appear in the
-              bottom right corner of the page.
-              {% endcomment %}
               {{ 'shopify.online_store.spam_detection.disclaimer_html' | t }}
             {%- endform -%}
           </div>
@@ -167,151 +192,4 @@
 
     <hr class="hr--large">
   </article>
-
-  <!--
-  <div class="text-center">
-  <a href="{{ blog.url }}" class="btn return-link"><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-arrow-left" viewBox="0 0 50 15"><path d="M50 5.38v4.25H15V15L0 7.5 15 0v5.38z"/></svg> {{ 'blogs.article.back_to_blog' | t: title: blog.title }}</a>
-  </div>
-  --></div>
-
-{% if template contains 'article' %}
-  {% assign author_name = article.author.name | default: shop.name %}
-  {% assign date_published = article.published_at | date: '%Y-%m-%dT%H:%M:%S%z' %}
-  {% assign date_modified = article.updated_at | date: '%Y-%m-%dT%H:%M:%S%z' %}
-  {% assign image_url = article.image.src | default: shop.logo | img_url: 'master' %}
-
-  {% assign article_authors_string = article.metafields.custom.article_authors | remove: '["' | remove: '"]' %}
-  {% assign article_authors = article_authors_string | split: '","' %}
-  {% assign reviewer = article.metafields.custom.reviewer.value %}
-
-  <script type="application/ld+json">
-    {
-    "@context": "https://schema.org",
-                  "@graph": [
-                    {
-                      "@type": "WebPage",
-                      "@id": {{ shop.url | append: article.url | json }},
-    "url": {{ shop.url | append: article.url | json }},
-    "name": {{ article.title | json }},
-    "breadcrumb": {
-                        "@type": "BreadcrumbList",
-                        "itemListElement": [
-                          {
-                            "@type": "ListItem",
-                            "position": 1,
-                            "item": {
-                              "@id": {{ shop.url | json }},
-    "name": {{ shop.name | json }}
-    }
-    },
-                          {
-                            "@type": "ListItem",
-                            "position": 2,
-                            "item": {
-                              "@id": {{ shop.url | append: article.url | json }},
-    "name": {{ article.title | json }}
-    }
-    }
-                        ]
-                      },
-                      "mainEntity": {
-                        "@id": {{ shop.url | append: article.url | append: '#article' | json }}
-    },
-    {% if reviewer %}
-      "reviewedBy": {
-      "@type": "Person",
-      "name": "{{ reviewer.author_name }}",
-      "url": "{{ shop.url }}/blogs/authors/{{ reviewer.author_name | downcase | replace: " ", "-" }}"
-      "sameAs": "{{ shop.url }}/blogs/authors/{{ reviewer.author_name | downcase | replace: " ", "-" }}"
-},
-    {% endif %}
-    "potentialAction": {
-    "@type": "ReadAction",
-                        "target": {{ shop.url | append: article.url | json }}
-    }
-    },
-                    {
-                      "@type": "Article",
-                      "@id": {{ shop.url | append: article.url | append: '#article' | json }},
-    "headline": {{ article.title | json }},
-    "description": {{ article.content | strip_html | truncatewords: 25 | json }},
-    "image": {
-                        "@type": "ImageObject",
-                        "url": {{ image_url | json }},
-    "height": 1200,
-                        "width": 1200
-                      },
-                      "author": [
-    {% for author in article.metafields.custom.author_metaobject.value %}
-      {
-      "@type": "Person",
-                                "name": {{ author['author_name'] | json }},
-      "url": "{{ shop.url }}/blogs/authors/{{ author['author_name'] | downcase | replace: " ", "-" }}"
-      }
-      {% unless forloop.last %},{% endunless %}
-    {% endfor %}
-    ],
-    "mainEntityOfPage": {
-                        "@type": "WebPage",
-                        "@id": {{ shop.url | append: article.url | json }}
-    },
-    "datePublished": {{ date_published | json }},
-    "dateModified": {{ date_modified | json }},
-    "publisher": {
-                  "@type": "Organization",
-                  "name": {{ shop.name | json }},
-    "logo": {
-                    "@type": "ImageObject",
-                    "url": {{ shop.logo | img_url: 'master' | json }},
-    "height": 60,
-                    "width": 60
-                  }
-                }
-                }
-                ]
-                }</script>
-{% endif %}
-
-<script src="{{ 'article.js' | asset_url }}" defer="defer"></script>
-
-{% schema %}
-  {
-    "name": "t:sections.article-template.name",
-    "settings": [
-      {
-        "type": "checkbox",
-        "id": "image_hero",
-        "label": "t:sections.article-template.settings.image_hero.label",
-        "info": "t:sections.article-template.settings.image_hero.info",
-        "default": false
-      },
-      {
-        "type": "checkbox",
-        "id": "blog_show_tags",
-        "label": "t:sections.article-template.settings.blog_show_tags.label",
-        "default": true
-      },
-      {
-        "type": "checkbox",
-        "id": "blog_show_date",
-        "label": "t:sections.article-template.settings.blog_show_date.label",
-        "default": true
-      },
-      {
-        "type": "checkbox",
-        "id": "blog_show_comments",
-        "label": "t:sections.article-template.settings.blog_show_comments.label",
-        "default": true
-      }, {
-        "type": "checkbox",
-        "id": "blog_show_author",
-        "label": "t:sections.article-template.settings.blog_show_author.label"
-      }, {
-        "type": "checkbox",
-        "id": "social_sharing_blog",
-        "label": "t:sections.article-template.settings.social_sharing_blog.label",
-        "default": true
-      }
-    ]
-  }
-{% endschema %}
+</div>
