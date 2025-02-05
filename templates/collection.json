@@ -12,26 +12,15 @@
     "contact_form_wholesale_pWWCXN": {
       "type": "contact-form-wholesale",
       "blocks": {
-        "forms_inline_XaAnzw": {
-          "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
+        "klaviyo_email_marketing_sms_form_embed_block_xbpTHf": {
+          "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
           "settings": {
-            "form_id": "321005",
-            "text_color": "#202020",
-            "button_background_color": "#202020",
-            "button_label_color": "#FFFFFF",
-            "links_color": "#000000",
-            "errors_color": "#E02229",
-            "text_alignment": "center",
-            "form_alignment": "center",
-            "padding_top": 0,
-            "padding_bottom": 0,
-            "padding_right": 0,
-            "padding_left": 0
+            "formId": "TbjFG5"
           }
         }
       },
       "block_order": [
-        "forms_inline_XaAnzw"
+        "klaviyo_email_marketing_sms_form_embed_block_xbpTHf"
       ],
       "custom_css": [
         ".index-section {margin-top: 0rem; margin-bottom: 1rem;}"
@@ -119,26 +108,15 @@
     "contact_form_wholesale_wBDkiq": {
       "type": "contact-form-wholesale",
       "blocks": {
-        "forms_inline_gfFWJD": {
-          "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
+        "klaviyo_email_marketing_sms_form_embed_block_X6zicj": {
+          "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
           "settings": {
-            "form_id": "321005",
-            "text_color": "#202020",
-            "button_background_color": "#202020",
-            "button_label_color": "#FFFFFF",
-            "links_color": "#000000",
-            "errors_color": "#E02229",
-            "text_alignment": "center",
-            "form_alignment": "center",
-            "padding_top": 0,
-            "padding_bottom": 0,
-            "padding_right": 0,
-            "padding_left": 0
+            "formId": "TbjFG5"
           }
         }
       },
       "block_order": [
-        "forms_inline_gfFWJD"
+        "klaviyo_email_marketing_sms_form_embed_block_X6zicj"
       ],
       "custom_css": [],
       "settings": {
