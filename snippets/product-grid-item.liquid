@@ -276,9 +276,9 @@
         >
           {{ product.metafields.judgeme.badge }}
         </div>
-        <div class="h2 grid-product__title grid-product__title--{{ settings.type_product_style }}">
+        <h2 class="h2 grid-product__title grid-product__title--{{ settings.type_product_style }}" style="letter-spacing: normal !important; -webkit-text-stroke: 0px;">
           {{ product.title }}
-        </div>
+        </h2>
         <!-- {% render 'product-lead-time', product: product %} -->
     {% case kit_type %}
       {% when 'Gift Option' %}
