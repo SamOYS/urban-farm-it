@@ -12,6 +12,31 @@
     "9624ea0d-516e-42d5-a087-263e8ac67743": {
       "type": "slideshow",
       "blocks": {
+        "83db8b86-d6ed-4e05-aced-8451952bc00d": {
+          "type": "image",
+          "settings": {
+            "show_breadcrumbs": false,
+            "top_subheading": "",
+            "title": "VALENTINE'S DAY SAVINGS",
+            "title_size": 65,
+            "subheading": "Save 15% on Pink Oyster Growing Kits this Valentine's Day",
+            "link": "shopify://products/pink-oyster-mushroom-growing-kit",
+            "link_text": "Shop Now",
+            "link_2": "",
+            "link_text_2": "",
+            "link_3": "",
+            "link_text_3": "",
+            "link_4": "",
+            "link_text_4": "",
+            "color_accent": "#f85f7b",
+            "text_align": "vertical-bottom horizontal-left",
+            "image": "shopify://shop_images/Valentine_s_Gift_Desktop_3acb9fde-b864-4f0c-86c0-311d23dc01ef.jpg",
+            "image_mobile": "shopify://shop_images/Valentine_s_Gift_Mobile_5f08ad1c-78b1-4647-bde8-6e923f9dd68f.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 60,
+            "focal_point": "center center"
+          }
+        },
         "template--20076144230680__9624ea0d-516e-42d5-a087-263e8ac67743-image-1": {
           "type": "image",
           "settings": {
@@ -59,32 +84,6 @@
             "image_mobile": "shopify://shop_images/Copy_of_UFI-Nov24-046A6748.jpg",
             "parallax_direction": "top",
             "overlay_opacity": 70,
-            "focal_point": "center center"
-          }
-        },
-        "83db8b86-d6ed-4e05-aced-8451952bc00d": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "show_breadcrumbs": false,
-            "top_subheading": "",
-            "title": "VALENTINE'S DAY SAVINGS",
-            "title_size": 65,
-            "subheading": "Save 15% on Pink Oyster Growing Kits this Valentine's Day",
-            "link": "shopify://products/pink-oyster-mushroom-growing-kit",
-            "link_text": "Shop Now",
-            "link_2": "",
-            "link_text_2": "",
-            "link_3": "",
-            "link_text_3": "",
-            "link_4": "",
-            "link_text_4": "",
-            "color_accent": "#f85f7b",
-            "text_align": "vertical-bottom horizontal-left",
-            "image": "shopify://shop_images/Valentine_s_Gift_Desktop.jpg",
-            "image_mobile": "shopify://shop_images/Valentine_s_Gift_Mobile.jpg",
-            "parallax_direction": "top",
-            "overlay_opacity": 60,
             "focal_point": "center center"
           }
         },
@@ -142,9 +141,9 @@
         }
       },
       "block_order": [
+        "83db8b86-d6ed-4e05-aced-8451952bc00d",
         "template--20076144230680__9624ea0d-516e-42d5-a087-263e8ac67743-image-1",
         "cd2752eb-c47a-4ef1-925b-d64437848e25",
-        "83db8b86-d6ed-4e05-aced-8451952bc00d",
         "image_wqQ8Mb",
         "7cdf59c5-6a10-43b9-a4b9-2d1efb4a9a4f"
       ],
