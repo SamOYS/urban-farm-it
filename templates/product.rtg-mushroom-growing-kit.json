@@ -43,13 +43,13 @@
         },
         "custom_YD9wPp": {
           "type": "custom",
+          "disabled": true,
           "settings": {
             "code": "<p style=\"color: #b30000; font-weight: 600;\">Our Lion's Mane kits are so popular, they've temporarily sold out! But don’t worry—you can still pre-order, and we’ll start shipping them out to you from 10/02.</p>"
           }
         },
         "text_zzqFdp": {
           "type": "text",
-          "disabled": true,
           "settings": {
             "text": "Your Lion's Mane Kit includes a live fruiting block! Be sure to check the kit for instructions on proper storage."
           }
