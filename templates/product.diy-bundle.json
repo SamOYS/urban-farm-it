@@ -58,12 +58,6 @@
             "surface_pickup_enable": true
           }
         },
-        "c11da764-83b0-4131-ba30-5bba256f27a8": {
-          "type": "custom",
-          "settings": {
-            "code": "{% render 'component-cross-sell' %}"
-          }
-        },
         "b3fc12dd-8538-4787-b64f-7850c280141e": {
           "type": "shopify://apps/planet/blocks/shopify-planet/12047591-3a2d-45cc-9dfd-2ce5eaa45dee",
           "settings": {
@@ -154,6 +148,12 @@
             "content": "<p><strong>Delivery</strong></p><p><strong>Note: </strong>Please refer to the specific lead times shown on product pages for more accurate delivery times.</p><ol><li><strong>Small Orders (E.g. 100ml Spawn, Plugs)</strong>: Sent via Royal Mail large letters.</li><li><strong>Medium-Sized Orders (under 2kg)</strong>: Royal Mail 24-48 hour tracked parcel.</li><li><strong>Large Orders (2kg+)</strong>: via DPD Express.</li></ol><p><strong>Returns</strong></p><ol><li><strong>Standard Returns</strong>: Returns and exchanges within 14 days of receipt. The item must be unused and in its original packaging. See our <a href=\"/policies/refund-policy\" target=\"_blank\" title=\"Refund Policy\">returns policy here</a>.</li></ol><p>This does not apply to our Gift E-Cards, which are delivered via email.</p>",
             "page": ""
           }
+        },
+        "c11da764-83b0-4131-ba30-5bba256f27a8": {
+          "type": "custom",
+          "settings": {
+            "code": "{% render 'component-cross-sell' %}"
+          }
         }
       },
       "block_order": [
@@ -165,7 +165,6 @@
         "variant_picker",
         "c7cb76d9-e206-4d28-a3fe-1dff3ce406da",
         "buy_buttons",
-        "c11da764-83b0-4131-ba30-5bba256f27a8",
         "b3fc12dd-8538-4787-b64f-7850c280141e",
         "separator",
         "e89378ea-77b2-49f4-90ba-5a690c3081f5",
@@ -176,7 +175,8 @@
         "31944c6c-628a-475e-8400-65bd4bcf9f5a",
         "5a0922fd-2ef3-4e7e-85c2-06789d658d7f",
         "d14decae-ddfe-4e21-a42a-ddb0d276a201",
-        "0a108145-8c33-4ba3-915f-85eec2eb11e9"
+        "0a108145-8c33-4ba3-915f-85eec2eb11e9",
+        "c11da764-83b0-4131-ba30-5bba256f27a8"
       ],
       "custom_css": [],
       "settings": {
