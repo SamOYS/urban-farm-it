@@ -65,12 +65,6 @@
             "surface_pickup_enable": false
           }
         },
-        "c11da764-83b0-4131-ba30-5bba256f27a8": {
-          "type": "custom",
-          "settings": {
-            "code": "{%- liquid\n  assign current_time = 'now' | date: '%s'\n  assign start_time = '2023-11-23 23:30' | date: '%s'\n  assign end_time = '2023-11-28 00:00' | date: '%s'\n-%}\n\n{%- unless current_time >= start_time and current_time < end_time -%}\n{% render 'component-cross-sell' %}{% endunless %}"
-          }
-        },
         "eee7c48e-06e0-48de-8bd3-15b4972501e2": {
           "type": "custom",
           "disabled": true,
@@ -142,6 +136,12 @@
           "settings": {
             "code": "<h4 style=\"font-size: 1.5rem\" class=\"h4\">BUY 2 KITS, SAVE 10%</h4>\n<div data-revy-bundle-id='af0b8958-cecc-4bf9-8ddc-df8fdb823d7e'></div>"
           }
+        },
+        "c11da764-83b0-4131-ba30-5bba256f27a8": {
+          "type": "custom",
+          "settings": {
+            "code": "{%- liquid\n  assign current_time = 'now' | date: '%s'\n  assign start_time = '2023-11-23 23:30' | date: '%s'\n  assign end_time = '2023-11-28 00:00' | date: '%s'\n-%}\n\n{%- unless current_time >= start_time and current_time < end_time -%}\n{% render 'component-cross-sell' %}{% endunless %}"
+          }
         }
       },
       "block_order": [
@@ -154,7 +154,6 @@
         "559b8842-dfe9-4639-95e4-122eeabea670",
         "c7cb76d9-e206-4d28-a3fe-1dff3ce406da",
         "buy_buttons",
-        "c11da764-83b0-4131-ba30-5bba256f27a8",
         "eee7c48e-06e0-48de-8bd3-15b4972501e2",
         "fa716552-1943-4ff8-9ab5-8d1aa1f2de27",
         "separator",
@@ -164,7 +163,8 @@
         "inventory_status",
         "tab_b8f7L4",
         "share",
-        "10bfbe09-dcc6-4c95-96e8-c55ca8765219"
+        "10bfbe09-dcc6-4c95-96e8-c55ca8765219",
+        "c11da764-83b0-4131-ba30-5bba256f27a8"
       ],
       "settings": {
         "sku_enable": false,
