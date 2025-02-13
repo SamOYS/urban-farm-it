@@ -225,7 +225,7 @@
               data-widths="[360, 540, 720, 1000]"
               data-aspectratio="{{ second_image.aspect_ratio }}"
               data-sizes="auto"
-              alt="{{ second_image.alt }}"
+              alt="{{ product.title | escape }}"
             >
           </div>
         {%- endif -%}
