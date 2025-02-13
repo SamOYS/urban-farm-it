@@ -187,7 +187,7 @@
               data-widths="[360, 540, 720, 900, 1080]"
               data-aspectratio="{{ preview_image.aspect_ratio }}"
               data-sizes="auto"
-              alt="{{ preview_image.alt | escape }}"
+              alt="{{ product.title | escape }}"
             >
           </div>
         {%- else -%}
@@ -201,13 +201,13 @@
               data-widths="[360, 540, 720, 900, 1080]"
               data-aspectratio="{{ preview_image.aspect_ratio }}"
               data-sizes="auto"
-              alt="{{ preview_image.alt | escape }}"
+              alt="{{ product.title | escape }}"
             >
             <noscript>
               <img
                 class="grid-product__image lazyloaded"
                 src="{{ preview_image | img_url: '400x' }}"
-                alt="{{ preview_image.alt | escape }}"
+                alt="{{ product.title | escape }}"
               >
             </noscript>
           </div>
