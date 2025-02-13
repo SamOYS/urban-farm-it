@@ -109,7 +109,7 @@
         <noscript>
           <img class="lazyloaded"
             src="{{ media | img_url: '1400x' }}"
-            alt="{{ media.alt | escape }}">
+            alt="{{ product.title | escape }}">
         </noscript>
 
         {%- if product_zoom_enable and media.media_type == 'image' -%}
