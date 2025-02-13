@@ -16,15 +16,12 @@
     if product.selected_variant
       assign price_text = product.selected_variant.price | money
     endif
+     
     if template contains 'preorder'
       assign default_text = 'products.product.preorder' | t
       assign price_text = '' 
     endif
-
-    if product.id == 14639444099446
-      assign default_text = 'products.product.preorder' | t
-    endif
-     
+   
     unless current_variant.available
       assign default_text = 'products.product.sold_out' | t
       assign price_text = ''
