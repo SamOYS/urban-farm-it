@@ -107,12 +107,12 @@
                         data-widths="[120, 360, 540, 720]"
                         data-aspectratio="{{ media.preview_image.aspect_ratio }}"
                         data-sizes="auto"
-                        alt="{{ media.alt | escape | split: '#' | first }}">
+                        alt="{{ product.title | escape }}">
 
                     <noscript>
                       <img class="lazyloaded"
                         src="{{ media | img_url: '400x' }}"
-                        alt="{{ media.alt | escape }}">
+                        alt="{{ product.title | escape }}">
                     </noscript>
                   </a>
                 </div>
