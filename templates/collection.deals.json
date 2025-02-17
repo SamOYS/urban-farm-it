@@ -64,6 +64,7 @@
       "blocks": {
         "two_column_product_yGTyaa": {
           "type": "two_column_product",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/pink-oyster-sale.svg",
             "rich_text": "",
