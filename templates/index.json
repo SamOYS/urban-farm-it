@@ -12,6 +12,31 @@
     "9624ea0d-516e-42d5-a087-263e8ac67743": {
       "type": "slideshow",
       "blocks": {
+        "7cdf59c5-6a10-43b9-a4b9-2d1efb4a9a4f": {
+          "type": "image",
+          "settings": {
+            "show_breadcrumbs": false,
+            "top_subheading": "",
+            "title": "READY, SET, SPRING!",
+            "title_size": 65,
+            "subheading": "Get your garden ready for growing mushrooms this season",
+            "link": "",
+            "link_text": "Shop Now",
+            "link_2": "shopify://collections/mushroom-growing-kits",
+            "link_text_2": "Learn How",
+            "link_3": "https://urban-farm-it.com/blogs/mushroom-cultivation",
+            "link_text_3": "",
+            "link_4": "",
+            "link_text_4": "",
+            "color_accent": "#fbc960",
+            "text_align": "vertical-bottom horizontal-left",
+            "image": "shopify://shop_images/GET_YOUR_GARDEN_READY_FOR_GROWING_MUSHROOMS_THIS_SEASON_2.png",
+            "image_mobile": "shopify://shop_images/SPRING_BANNER_MOBILE_672_x_941_px_2.png",
+            "parallax_direction": "top",
+            "overlay_opacity": 70,
+            "focal_point": "center center"
+          }
+        },
         "template--20076144230680__9624ea0d-516e-42d5-a087-263e8ac67743-image-1": {
           "type": "image",
           "settings": {
@@ -39,6 +64,7 @@
         },
         "cd2752eb-c47a-4ef1-925b-d64437848e25": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "show_breadcrumbs": false,
             "top_subheading": "",
@@ -87,38 +113,13 @@
             "overlay_opacity": 70,
             "focal_point": "center center"
           }
-        },
-        "7cdf59c5-6a10-43b9-a4b9-2d1efb4a9a4f": {
-          "type": "image",
-          "settings": {
-            "show_breadcrumbs": false,
-            "top_subheading": "",
-            "title": "READY, SET, SPRING!",
-            "title_size": 65,
-            "subheading": "Get your garden ready for growing mushrooms this season",
-            "link": "",
-            "link_text": "Shop Now",
-            "link_2": "shopify://collections/mushroom-growing-kits",
-            "link_text_2": "Learn How",
-            "link_3": "https://urban-farm-it.com/blogs/mushroom-cultivation",
-            "link_text_3": "",
-            "link_4": "",
-            "link_text_4": "",
-            "color_accent": "#fbc960",
-            "text_align": "vertical-bottom horizontal-left",
-            "image": "shopify://shop_images/GET_YOUR_GARDEN_READY_FOR_GROWING_MUSHROOMS_THIS_SEASON_2.png",
-            "image_mobile": "shopify://shop_images/SPRING_BANNER_MOBILE_672_x_941_px_2.png",
-            "parallax_direction": "top",
-            "overlay_opacity": 70,
-            "focal_point": "center center"
-          }
         }
       },
       "block_order": [
+        "7cdf59c5-6a10-43b9-a4b9-2d1efb4a9a4f",
         "template--20076144230680__9624ea0d-516e-42d5-a087-263e8ac67743-image-1",
         "cd2752eb-c47a-4ef1-925b-d64437848e25",
-        "image_wqQ8Mb",
-        "7cdf59c5-6a10-43b9-a4b9-2d1efb4a9a4f"
+        "image_wqQ8Mb"
       ],
       "custom_css": [
         "@media (min-width: 768px) and (max-width: 1024px) {h1 {font-size: 2rem !important; }}",
