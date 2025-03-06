@@ -263,7 +263,7 @@
           {%- endfor -%}
         {%- endif -%}
       </div>
-
+    <div class="grid-product-margin{% if template.name == 'collection' %} grid-product-margin--collection{% endif %}">
       <div class="grid-product__meta">
         <div
           style="
@@ -360,6 +360,10 @@
           {%- endif -%}
         </div>
       </div>
+      <div class="quick-product-view__btn">
+        <span class="">BUY NOW</span>
+      </div>
+    </div>
     </a>
   </div>
   {%- if settings.enable_swatches -%}
