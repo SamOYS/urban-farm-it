@@ -60,7 +60,7 @@
           }
         },
         "e89378ea-77b2-49f4-90ba-5a690c3081f5": {
-          "type": "shopify://apps/volume-discounts/blocks/offer_table_block/25745434-52e7-4378-88f1-890df18a0110",
+          "type": "shopify://apps/hulk-discounts/blocks/offer_table_block/25745434-52e7-4378-88f1-890df18a0110",
           "settings": {}
         },
         "c11da764-83b0-4131-ba30-5bba256f27a8": {
@@ -94,8 +94,8 @@
           "settings": {
             "badgeMode": "info",
             "customText": "",
-            "showLogo": true,
             "showMoreInfo": "modal",
+            "showLogo": true,
             "showStats": false,
             "showProjects": false,
             "backgroundColor": "#f1f8f5",
@@ -198,7 +198,7 @@
       "settings": {
         "show_product_recommendations": true,
         "product_recommendations_heading": "You may also like",
-        "related_count": 5
+        "related_count": 4
       }
     },
     "a13d1d24-3ca7-4099-9c3d-a788691ae16b": {
