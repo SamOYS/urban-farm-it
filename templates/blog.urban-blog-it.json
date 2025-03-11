@@ -1,0 +1,97 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "blog-template",
+      "settings": {
+        "blog_show_tag_filter": false,
+        "blog_show_rss": false,
+        "blog_show_tags": false,
+        "blog_show_date": true,
+        "blog_show_comments": true,
+        "blog_show_author": true,
+        "blog_show_excerpt": false,
+        "blog_image_size": "wide"
+      }
+    },
+    "9d1ba44e-2814-4e64-aca5-41c67985724c": {
+      "type": "blog-posts",
+      "settings": {
+        "title": "MUSHROOM CULTIVATION BASICS",
+        "blog": "mushroom-cultivation",
+        "filter_tag": "cultivation_basics",
+        "post_limit": 3,
+        "blog_show_tags": false,
+        "blog_show_date": true,
+        "blog_show_comments": true,
+        "blog_show_author": true,
+        "view_all": false,
+        "blog_image_size": "wide",
+        "divider": false
+      }
+    },
+    "93fd3abd-a669-4d8a-ad1f-c5ee35a3dd28": {
+      "type": "blog-posts",
+      "settings": {
+        "title": "By Species",
+        "blog": "mushroom-cultivation",
+        "filter_tag": "by_species",
+        "post_limit": 3,
+        "blog_show_tags": false,
+        "blog_show_date": true,
+        "blog_show_comments": true,
+        "blog_show_author": true,
+        "view_all": false,
+        "blog_image_size": "wide",
+        "divider": false
+      }
+    },
+    "5be3955a-355d-4069-a0aa-8d8fd0453e5d": {
+      "type": "blog-posts",
+      "settings": {
+        "title": "By Method",
+        "blog": "mushroom-cultivation",
+        "filter_tag": "by_method",
+        "post_limit": 3,
+        "blog_show_tags": false,
+        "blog_show_date": true,
+        "blog_show_comments": true,
+        "blog_show_author": true,
+        "view_all": false,
+        "blog_image_size": "wide",
+        "divider": false
+      }
+    },
+    "7520da0b-31d3-4c18-9fa8-41c8f49ecb6d": {
+      "type": "blog-posts",
+      "settings": {
+        "title": "RUNNING A GROWING BUSINESS",
+        "blog": "mushroom-cultivation",
+        "filter_tag": "business",
+        "post_limit": 3,
+        "blog_show_tags": false,
+        "blog_show_date": true,
+        "blog_show_comments": true,
+        "blog_show_author": true,
+        "view_all": false,
+        "blog_image_size": "wide",
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "9d1ba44e-2814-4e64-aca5-41c67985724c",
+    "93fd3abd-a669-4d8a-ad1f-c5ee35a3dd28",
+    "5be3955a-355d-4069-a0aa-8d8fd0453e5d",
+    "7520da0b-31d3-4c18-9fa8-41c8f49ecb6d"
+  ]
+}
