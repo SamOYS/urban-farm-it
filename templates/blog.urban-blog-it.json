@@ -207,6 +207,21 @@
         "blog_image_size": "wide",
         "divider": false
       }
+    },
+    "featured_collection_QknBxU": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Popular Growing Kits",
+        "title_alignment": "left",
+        "enable_description": true,
+        "description": "Delicious mushrooms from kit to kitchen – delivered to your doorstep! ",
+        "home_featured_products": "mushroom-growing-kits",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": false,
+        "divider": true
+      }
     }
   },
   "order": [
@@ -220,6 +235,7 @@
     "9d1ba44e-2814-4e64-aca5-41c67985724c",
     "93fd3abd-a669-4d8a-ad1f-c5ee35a3dd28",
     "5be3955a-355d-4069-a0aa-8d8fd0453e5d",
-    "7520da0b-31d3-4c18-9fa8-41c8f49ecb6d"
+    "7520da0b-31d3-4c18-9fa8-41c8f49ecb6d",
+    "featured_collection_QknBxU"
   ]
 }
