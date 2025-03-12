@@ -177,7 +177,39 @@
     })(window, document, "clarity", "script", "om1xzgx7j4");
     </script>
 
-    
+    {% if template == 'index' %}
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "name": "Urban Farm-it",
+          "image": "https://urban-farm-it.com/cdn/shop/files/Urban-Farm-It-black-web-large_50x@2x.png",
+          "@id": "ufi",
+          "url": "https://urban-farm-it.com/",
+          "telephone": "01227 532664",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Lower Goldstone Farm",
+            "addressLocality": "Canterbury",
+            "postalCode": "CT3 2DT",
+            "addressCountry": "GB"
+          },
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "09:00",
+            "closes": "17:00"
+          }
+        }
+        </script>
+    {% endif %}
+
 
     {% if template == 'product' and product.metafields.custom.product_json %}
     <script type="application/ld+json">
