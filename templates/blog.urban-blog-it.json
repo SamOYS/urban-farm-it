@@ -9,8 +9,50 @@
  */
 {
   "sections": {
+    "slideshow_iPjR3y": {
+      "type": "slideshow",
+      "blocks": {
+        "image_f7Nixh": {
+          "type": "image",
+          "settings": {
+            "show_breadcrumbs": false,
+            "top_subheading": "",
+            "title": "Urban Blog It",
+            "title_size": 80,
+            "subheading": "Welcome to our blog page!",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "link_3": "",
+            "link_text_3": "",
+            "link_4": "",
+            "link_text_4": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/team-ufi-_b_w.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 70,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "image_f7Nixh"
+      ],
+      "settings": {
+        "section_height": "550px",
+        "mobile_height": "auto",
+        "parallax": true,
+        "enable_trustpilot": true,
+        "style": "bars",
+        "autoplay": true,
+        "autoplay_speed": 5
+      }
+    },
     "main": {
       "type": "blog-template",
+      "disabled": true,
       "settings": {
         "blog_show_tag_filter": false,
         "blog_show_rss": false,
@@ -20,6 +62,22 @@
         "blog_show_author": true,
         "blog_show_excerpt": false,
         "blog_image_size": "wide"
+      }
+    },
+    "blog_posts_gpGkLJ": {
+      "type": "blog-posts",
+      "settings": {
+        "title": "Featured",
+        "blog": "mushroom-cultivation",
+        "filter_tag": "featured",
+        "post_limit": 3,
+        "blog_show_tags": false,
+        "blog_show_date": true,
+        "blog_show_comments": true,
+        "blog_show_author": true,
+        "view_all": false,
+        "blog_image_size": "wide",
+        "divider": false
       }
     },
     "9d1ba44e-2814-4e64-aca5-41c67985724c": {
@@ -88,7 +146,9 @@
     }
   },
   "order": [
+    "slideshow_iPjR3y",
     "main",
+    "blog_posts_gpGkLJ",
     "9d1ba44e-2814-4e64-aca5-41c67985724c",
     "93fd3abd-a669-4d8a-ad1f-c5ee35a3dd28",
     "5be3955a-355d-4069-a0aa-8d8fd0453e5d",
