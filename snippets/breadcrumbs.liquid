@@ -18,9 +18,9 @@
 </g>
 </svg></a>
         {% render 'breadcrumb-divider' -%} -->
-      {%- else -%}
-        <a href="{{ routes.root_url }}" title="{{ 'general.breadcrumbs.home_link_title' | t }}">Home</a>
-      {%- endif -%}
+      {%- endif -%
+         <a href="{{ routes.root_url }}" title="{{ 'general.breadcrumbs.home_link_title' | t }}">Home</a>
+        {% render 'breadcrumb-divider' -%}
       <a href="{{ cat.value.url }}">{% unless cat.value.metafields.custom.breadcrumb_title != blank %}{{ cat.value.title }}{% else %}{{ cat.value.metafields.custom.breadcrumb_title }}{% endunless %}</a>
     {%- endif -%}
     {% render 'breadcrumb-divider' -%}
@@ -37,8 +37,7 @@
         <a href="{{ collection.url }}">{{ collection.title }}</a>
         {% render 'breadcrumb-divider' -%}
       {% endif %} -->
-      <!-- <a href="{{ routes.root_url }}" title="{{ 'general.breadcrumbs.home_link_title' | t }}">Home</a>
-    {% endfor %} -->
+    {% endfor %}
     {% unless has_parent  %}
       <a href="{{ routes.root_url }}" title="{{ 'general.breadcrumbs.home_link_title' | t }}">Home</a>
     {% render 'breadcrumb-divider' -%}
