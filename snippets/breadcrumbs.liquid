@@ -37,6 +37,7 @@
         <a href="{{ collection.url }}">{{ collection.title }}</a>
         {% render 'breadcrumb-divider' -%}
       {% endif %} -->
+      <a href="{{ routes.root_url }}" title="{{ 'general.breadcrumbs.home_link_title' | t }}">Home</a>
     {% endfor %}
     {% unless has_parent  %}
       <a href="{{ routes.root_url }}" title="{{ 'general.breadcrumbs.home_link_title' | t }}">Home</a>
