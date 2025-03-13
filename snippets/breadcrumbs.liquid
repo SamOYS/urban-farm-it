@@ -32,11 +32,11 @@
     {% assign parent_collection_id = parent_collection_metafield | split: '/' | last | plus: 0 %}
     {% assign has_parent = false %}
     {% for collection in collections %}
-      {% if collection.id == parent_collection_id %}
+      <!-- {% if collection.id == parent_collection_id %}
         {% assign has_parent = true %}
         <a href="{{ collection.url }}">{{ collection.title }}</a>
         {% render 'breadcrumb-divider' -%}
-      {% endif %}
+      {% endif %} -->
     {% endfor %}
     {% unless has_parent  %}
       <a href="{{ routes.root_url }}" title="{{ 'general.breadcrumbs.home_link_title' | t }}">Home</a>
