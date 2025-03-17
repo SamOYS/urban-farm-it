@@ -134,7 +134,7 @@
           "bf9a644c-e65f-4b90-ad04-48245e2abbc0": {
             "type": "announcement",
             "settings": {
-              "text": "Save up to 10% on Growing Kits",
+              "text": "10% off Mother's Day gifts!",
               "link_text": "Shop Now",
               "link": "shopify://collections/mothers-day"
             }
@@ -183,7 +183,7 @@
           "1524768779513"
         ],
         "custom_css": [
-          ".site-nav__item:first-of-type .site-nav__link {color: #FFBFFF;}",
+          ".site-nav__item:first-of-type .site-nav__link {color: #ffbfff;}",
           ".announcement-link {color: #000;}"
         ],
         "settings": {
