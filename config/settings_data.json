@@ -22,7 +22,7 @@
     "color_large_image_bg": "#111111",
     "color_header": "#1a1a1a",
     "color_header_text": "#ffffff",
-    "color_announcement": "#ff3107",
+    "color_announcement": "#ffbfff",
     "color_announcement_text": "#ffffff",
     "color_footer": "#ffffff",
     "color_footer_text": "#000000",
@@ -183,7 +183,8 @@
           "1524768779513"
         ],
         "custom_css": [
-          ".site-nav__item:first-of-type .site-nav__link {color: #ff3107;}"
+          ".site-nav__item:first-of-type .site-nav__link {color: #ff3107;}",
+          ".announcement-link {color: #000;}"
         ],
         "settings": {
           "main_menu_link_list": "desktop-navigation",
