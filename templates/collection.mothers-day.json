@@ -48,6 +48,7 @@
         "content_CN6atf",
         "timer_kYXWkm"
       ],
+      "disabled": true,
       "settings": {
         "layout": "banner",
         "full_width": true,
@@ -81,6 +82,7 @@
         },
         "two_column_product_YyqKiw": {
           "type": "two_column_product",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/buy-2-get-10.svg",
             "rich_text": "",
@@ -97,6 +99,7 @@
         },
         "two_column_product_9aPp6D": {
           "type": "two_column_product",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/ufi-15_-mgk.svg",
             "rich_text": "",
