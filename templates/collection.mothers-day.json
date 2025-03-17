@@ -24,7 +24,7 @@
         "content_CN6atf": {
           "type": "content",
           "settings": {
-            "heading": "Selected Offers Now Live!",
+            "heading": "Mother's Day Offers Now Live!",
             "heading_size": "h2",
             "text": "",
             "content_alignment": "center"
@@ -48,12 +48,11 @@
         "content_CN6atf",
         "timer_kYXWkm"
       ],
-      "disabled": true,
       "settings": {
         "layout": "banner",
         "full_width": true,
-        "text_color": "#ffffff",
-        "background_color": "#c06dff",
+        "text_color": "#302441",
+        "background_color": "#ffbfff",
         "overlay_color": "#000000",
         "overlay_opacity": 0,
         "focal_point": "center",
@@ -82,15 +81,14 @@
         },
         "two_column_product_YyqKiw": {
           "type": "two_column_product",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/buy-2-get-10.svg",
+            "image": "shopify://shop_images/purple-offer-01.svg",
             "rich_text": "",
             "link": "shopify://collections/mushroom-growing-kits",
             "button_text": "Saving 10%",
-            "background_color": "#c06dff",
-            "button_background_color": "#ffffff",
-            "secondary_image": "shopify://shop_images/10_-off-mgk-ufi.png",
+            "background_color": "#ffbfff",
+            "button_background_color": "#302441",
+            "secondary_image": "shopify://shop_images/offer-ufi-bundle.png",
             "tertiary_image": "shopify://shop_images/5-star-reviews.svg",
             "text": "Buy 2 Get 10% Off",
             "secondary_link": "shopify://collections/mushroom-growing-kits",
@@ -121,8 +119,8 @@
             "rich_text": "",
             "link": "shopify://products/fresh-lions-mane",
             "button_text": "Saving £2.25",
-            "background_color": "#00873e",
-            "button_background_color": "#ffffff",
+            "background_color": "#ff3107",
+            "button_background_color": "#302441",
             "secondary_image": "shopify://shop_images/mushroom-mane-lions.png",
             "tertiary_image": "shopify://shop_images/5-star-reviews.svg",
             "text": "15% Off Fresh Lion’s Mane",
@@ -139,7 +137,7 @@
       ],
       "custom_css": [
         ".collection-grid__wrapper {display: none;}",
-        ".promo-grid .button-text {color: black !important;}"
+        ".promo-grid .button-text {color: white !important;}"
       ],
       "settings": {
         "enable_sidebar": false,
