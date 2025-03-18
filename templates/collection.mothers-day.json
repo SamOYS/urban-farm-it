@@ -84,14 +84,14 @@
           "settings": {
             "image": "shopify://shop_images/purple-offer-01.svg",
             "rich_text": "",
-            "link": "shopify://collections/mushroom-growing-kits",
+            "link": "shopify://collections/growing-gifts",
             "button_text": "Saving 10%",
             "background_color": "#ffbfff",
             "button_background_color": "#302441",
             "secondary_image": "shopify://shop_images/offer-ufi-bundle.png",
             "tertiary_image": "shopify://shop_images/5-star-reviews.svg",
             "text": "Buy 2 Get 10% Off",
-            "secondary_link": "shopify://collections/mushroom-growing-kits",
+            "secondary_link": "shopify://collections/growing-gifts",
             "secondary_button_text": "Choose selection"
           }
         },
