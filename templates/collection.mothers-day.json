@@ -114,6 +114,7 @@
         },
         "two_column_product_fdrWxM": {
           "type": "two_column_product",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/fresh-lions-mane-white.svg",
             "rich_text": "",
