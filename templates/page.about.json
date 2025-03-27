@@ -383,11 +383,11 @@
     "map": {
       "type": "map",
       "settings": {
-        "map_title": "OPENING HOURS",
-        "address": "<p>Lower Goldstone Farm, Ash, Canterbury, CT3 2DT</p><p>Mon - Fri, 9am - 5pm<br/>Saturday, Closed<br/>Sunday, Closed</p>",
+        "map_title": "Where We Are Based",
+        "address": "<p>Lower Goldstone Farm, Ash, Canterbury, CT3 2DT</p><p>Mon - Fri, 9am - 5pm<br/>Saturday, Closed<br/>Sunday, Closed</p><p>Please note: Urban Farm-It is an online-only store. We do not have a physical retail location and cannot accommodate walk-in customers. All orders must be placed through our website.</p>",
         "map_address": "https://maps.app.goo.gl/UcdKpmaKghuZrFVH6",
         "api_key": "",
-        "show_button": true,
+        "show_button": false,
         "background_image": "shopify://shop_images/ufi-map_24855f4a-4b71-472b-9b60-d6b03737e755.png",
         "background_image_position": "center center"
       }
