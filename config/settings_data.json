@@ -22,7 +22,7 @@
     "color_large_image_bg": "#111111",
     "color_header": "#1a1a1a",
     "color_header_text": "#ffffff",
-    "color_announcement": "#ffbfff",
+    "color_announcement": "#fbc960",
     "color_announcement_text": "#ffffff",
     "color_footer": "#ffffff",
     "color_footer_text": "#000000",
@@ -134,9 +134,9 @@
           "bf9a644c-e65f-4b90-ad04-48245e2abbc0": {
             "type": "announcement",
             "settings": {
-              "text": "10% off Mother's Day gifts!",
-              "link_text": "Shop Now",
-              "link": "shopify://collections/mothers-day"
+              "text": "Get 10% off your first order!",
+              "link_text": "Subscribe now",
+              "link": "#subscribeFormBlock"
             }
           },
           "3c024fc5-7c27-4438-91dc-b78f73c72af3": {
@@ -183,7 +183,8 @@
           "1524768779513"
         ],
         "custom_css": [
-          ".announcement-link {color: #000;}"
+          ".announcement-link {color: #000;}",
+          ".announcement-text {color: #000;}"
         ],
         "settings": {
           "main_menu_link_list": "desktop-navigation",
