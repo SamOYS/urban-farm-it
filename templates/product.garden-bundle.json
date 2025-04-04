@@ -203,15 +203,6 @@
     "advanced_content_kfHNDt": {
       "type": "advanced-content",
       "blocks": {
-        "image_wxYNKQ": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/782AF728-2B6F-4E99-BDF4-A599151651F3.jpg",
-            "link": "",
-            "width": "33%",
-            "alignment": "center"
-          }
-        },
         "liquid_fXwhhQ": {
           "type": "liquid",
           "settings": {
@@ -222,9 +213,9 @@
         }
       },
       "block_order": [
-        "image_wxYNKQ",
         "liquid_fXwhhQ"
       ],
+      "custom_css": [],
       "settings": {
         "full_width": false,
         "space_around": true
