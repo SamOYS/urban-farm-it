@@ -200,24 +200,50 @@
         "button_link": ""
       }
     },
-    "blog_posts_e6QWgA": {
-      "type": "blog-posts",
+    "advanced_content_kfHNDt": {
+      "type": "advanced-content",
+      "blocks": {
+        "image_wxYNKQ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/782AF728-2B6F-4E99-BDF4-A599151651F3.jpg",
+            "link": "",
+            "width": "33%",
+            "alignment": "center"
+          }
+        },
+        "liquid_fXwhhQ": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h3>learn how to grow wine cap mushrooms</h3>\n</p><a href=\"https://urban-farm-it.com/blogs/mushroom-cultivation/how-to-grow-wine-cap-mushrooms?_pos=2&_sid=ac6eaa685&_ss=r\" target=\"_blank\" style=\"display:inline-block; padding: 12px 20px; background-color: #FBC960; color: black; text-align: center; text-decoration: none; border-radius: 5px; font-size: 16px;\">check out out blog post for more info</a>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "image_wxYNKQ",
+        "liquid_fXwhhQ"
+      ],
       "settings": {
-        "title": "Blog posts",
-        "blog": "mushroom-cultivation",
-        "filter_tag": "",
-        "post_limit": 3,
-        "blog_show_tags": false,
-        "blog_show_date": true,
-        "blog_show_comments": false,
-        "blog_show_author": false,
-        "view_all": false,
-        "blog_image_size": "wide",
-        "divider": false
+        "full_width": false,
+        "space_around": true
       }
     },
     "3ca0fa99-c1d5-4c53-b9c4-06410867a8c3": {
       "type": "oyster-kits__how-it-works",
+      "blocks": {
+        "step_EqHTzE": {
+          "type": "step",
+          "settings": {
+            "step_title": "",
+            "step_description": ""
+          }
+        }
+      },
+      "block_order": [
+        "step_EqHTzE"
+      ],
       "disabled": true,
       "settings": {
         "heading": "How it works",
@@ -285,7 +311,7 @@
   "order": [
     "main",
     "product_banner_image_nAzBCP",
-    "blog_posts_e6QWgA",
+    "advanced_content_kfHNDt",
     "3ca0fa99-c1d5-4c53-b9c4-06410867a8c3",
     "f4c61e29-979f-4658-8271-a34a92f3236c",
     "product-recommendations",
