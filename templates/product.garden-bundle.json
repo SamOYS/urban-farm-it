@@ -206,8 +206,8 @@
         "liquid_fXwhhQ": {
           "type": "liquid",
           "settings": {
-            "code": "<h3>learn how to grow wine cap mushrooms</h3>\n</p><a href=\"https://urban-farm-it.com/blogs/mushroom-cultivation/how-to-grow-wine-cap-mushrooms?_pos=2&_sid=ac6eaa685&_ss=r\" target=\"_blank\" style=\"display:inline-block; padding: 12px 20px; background-color: #FBC960; color: black; text-align: center; text-decoration: none; border-radius: 5px; font-size: 16px;\">check out out blog post for more info</a>",
-            "width": "50%",
+            "code": "<div style=\"display: flex; justify-content: center; align-items: center; height: 10vh; width: 100%; text-align: center;\">\n  <div>\n    <h3 style=\"font-size: 24px;\">Check out our blog post for more info</h3>\n  \n    <a href=\"https://urban-farm-it.com/blogs/mushroom-cultivation/how-to-grow-wine-cap-mushrooms?_pos=2&_sid=ac6eaa685&_ss=r\" target=\"_blank\" style=\"display:inline-block; padding: 12px 20px; background-color: #FBC960; color: black; text-align: center; text-decoration: none; border-radius: 5px; font-size: 16px;\">How to Grow Wine Cap Mushrooms</a>\n  </div>\n</div>",
+            "width": "100%",
             "alignment": "center"
           }
         }
