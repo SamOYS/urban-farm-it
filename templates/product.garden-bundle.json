@@ -200,6 +200,22 @@
         "button_link": ""
       }
     },
+    "blog_posts_e6QWgA": {
+      "type": "blog-posts",
+      "settings": {
+        "title": "Blog posts",
+        "blog": "urban-blog-it",
+        "filter_tag": "",
+        "post_limit": 3,
+        "blog_show_tags": false,
+        "blog_show_date": true,
+        "blog_show_comments": false,
+        "blog_show_author": false,
+        "view_all": true,
+        "blog_image_size": "wide",
+        "divider": false
+      }
+    },
     "3ca0fa99-c1d5-4c53-b9c4-06410867a8c3": {
       "type": "oyster-kits__how-it-works",
       "disabled": true,
@@ -269,6 +285,7 @@
   "order": [
     "main",
     "product_banner_image_nAzBCP",
+    "blog_posts_e6QWgA",
     "3ca0fa99-c1d5-4c53-b9c4-06410867a8c3",
     "f4c61e29-979f-4658-8271-a34a92f3236c",
     "product-recommendations",
