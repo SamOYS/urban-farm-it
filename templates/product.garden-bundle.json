@@ -189,7 +189,7 @@
       "type": "product-banner-image",
       "custom_css": [],
       "settings": {
-        "parallax": false,
+        "parallax": true,
         "image": "shopify://shop_images/WindmillBeds-046A7141_1f102f5f-1c95-4e9d-98f1-ef1effc7caec.jpg",
         "image_alt_text": "",
         "subtitle": "",
