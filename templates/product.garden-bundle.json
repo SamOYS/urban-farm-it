@@ -190,14 +190,14 @@
       "custom_css": [],
       "settings": {
         "parallax": false,
-        "image": "shopify://shop_images/WindmillBeds-046A7141.jpg",
+        "image": "shopify://shop_images/WindmillBeds-046A7141_1f102f5f-1c95-4e9d-98f1-ef1effc7caec.jpg",
         "image_alt_text": "",
         "subtitle": "",
-        "heading": "",
-        "heading_type": "h1",
-        "text": "",
-        "button_label": "",
-        "button_link": ""
+        "heading": "Want to learn more?",
+        "heading_type": "h2",
+        "text": "Grab Elliot's book",
+        "button_label": "Buy Now",
+        "button_link": "shopify://products/growing-mushrooms-at-home-the-complete-guide"
       }
     },
     "advanced_content_kfHNDt": {
