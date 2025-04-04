@@ -38,7 +38,7 @@
         "618417c1-ec01-45b8-8f31-d4b9a6132113": {
           "type": "custom",
           "settings": {
-            "code": "Not ready to grow right away, or purchasing as a gift? Select the <b>Gift</b> option. The Mushroom spawn will not be included directly in the kit, but can be redeemed via a free spawn voucher when ready to use."
+            "code": "Before purchasing, please make sure that you have selected the correct size bundle for your growing space."
           }
         },
         "buy_buttons": {
@@ -185,18 +185,19 @@
         "product_video_style": "muted"
       }
     },
-    "c0052226-c7f3-49e8-aca1-96eac60f8288": {
+    "product_banner_image_nAzBCP": {
       "type": "product-banner-image",
+      "custom_css": [],
       "settings": {
-        "parallax": true,
-        "image": "{{ product.metafields.custom.banner_image.value }}",
+        "parallax": false,
+        "image": "shopify://shop_images/WindmillBeds-046A7141.jpg",
         "image_alt_text": "",
         "subtitle": "",
-        "heading": "\"[ONE OF] THE BEST MUSHROOM GROWING KITS TO BUY IN THE UK RIGHT NOW\"",
-        "heading_type": "h2",
-        "text": "<img style=\"display: block; height: 45px;\" src=\"https://images.immediate.co.uk/production/volatile/sites/4/2022/08/cropped-BBC-Science-Focus-logo-2018-web-2364b48-a244f87.jpg?quality=90&webp=true&resize=291,88\">",
-        "button_label": "SEE OUR REVIEWS",
-        "button_link": "#judgeme_product_reviews"
+        "heading": "",
+        "heading_type": "h1",
+        "text": "",
+        "button_label": "",
+        "button_link": ""
       }
     },
     "3ca0fa99-c1d5-4c53-b9c4-06410867a8c3": {
@@ -211,7 +212,7 @@
       "type": "featured-video",
       "settings": {
         "title": "",
-        "video_url": "https://www.youtube.com/watch?v=hjKkUGw-UGc",
+        "video_url": "https://youtu.be/EAWIfCBMHLQ?si=X72pPelPio63dT67",
         "divider": false
       }
     },
@@ -267,7 +268,7 @@
   },
   "order": [
     "main",
-    "c0052226-c7f3-49e8-aca1-96eac60f8288",
+    "product_banner_image_nAzBCP",
     "3ca0fa99-c1d5-4c53-b9c4-06410867a8c3",
     "f4c61e29-979f-4658-8271-a34a92f3236c",
     "product-recommendations",
