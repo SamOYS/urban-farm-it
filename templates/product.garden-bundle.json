@@ -20,6 +20,7 @@
         },
         "5e23a4ef-dbad-4431-a172-eac16aa556c4": {
           "type": "kit_type_modal",
+          "disabled": true,
           "settings": {}
         },
         "price": {
