@@ -46,7 +46,7 @@
         "custom_YD7WB6": {
           "type": "custom",
           "settings": {
-            "code": "<p style=\"color: #b30000; font-weight: 600;\">Thanks to all the love for our fresh Lion's Mane, it is currently sold out. But don't worry – we're working hard at the farm to get it back online!</p>"
+            "code": "{% if product.available %}\n  <!-- Product is available (whether or not inventory is tracked) -->\n  <!-- You could show \"In stock\" here if needed -->\n{% else %}\n  <!-- Product is unavailable -->\n<p style=\"color: #b30000; font-weight: 600;\">Thanks to all the love for our fresh Lion's Mane, it is currently sold out. But don't worry – we're working hard at the farm to get it back online!</p>\n{% endif %}"
           }
         },
         "618417c1-ec01-45b8-8f31-d4b9a6132113": {
