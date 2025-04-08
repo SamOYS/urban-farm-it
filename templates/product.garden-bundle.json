@@ -122,7 +122,7 @@
         "272b9d40-c3f8-452d-a77a-6804838a1fd8": {
           "type": "tab",
           "settings": {
-            "title": "WHAT'S IN THE KIT",
+            "title": "WHAT'S IN THE BUNDLE",
             "content": "{{ product.metafields.custom.product_contents | metafield_tag }}",
             "page": ""
           }
@@ -189,7 +189,7 @@
     "product_banner_image_nAzBCP": {
       "type": "product-banner-image",
       "custom_css": [
-        ".background-media-text__aligner {display: flex;justify-content: end;}"
+        ".background-media-text__aligner {display: flex; justify-content: end;}"
       ],
       "settings": {
         "parallax": true,
