@@ -141,10 +141,9 @@
           },
           "3c024fc5-7c27-4438-91dc-b78f73c72af3": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
-              "text": "Order by 19th December for",
-              "link_text": "Guaranteed Christmas Dispatch",
+              "text": "We will be closed for the bank holiday weekend. Orders will be shipped from 22/04.",
+              "link_text": "",
               "link": "shopify://collections/christmas"
             }
           },
