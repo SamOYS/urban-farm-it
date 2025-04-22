@@ -18,10 +18,6 @@
             "code": "<div\n          style=\"\n            margin-top: 0 !important;\n            font-size: 0.85rem;\n          \"\n          class=\"jdgm-widget jdgm-preview-badge\"\n          data-id=\"{{ product.id }}\"\n          data-template=\"manual-installation\"\n        >\n          {{ product.metafields.judgeme.badge }}\n        </div>"
           }
         },
-        "5e23a4ef-dbad-4431-a172-eac16aa556c4": {
-          "type": "kit_type_modal",
-          "settings": {}
-        },
         "custom_pnThYD": {
           "type": "custom",
           "settings": {
@@ -40,6 +36,10 @@
             "product_dynamic_variants_enable": false,
             "color_swatches": false
           }
+        },
+        "5e23a4ef-dbad-4431-a172-eac16aa556c4": {
+          "type": "kit_type_modal",
+          "settings": {}
         },
         "618417c1-ec01-45b8-8f31-d4b9a6132113": {
           "type": "custom",
@@ -158,10 +158,10 @@
       },
       "block_order": [
         "b499b114-20e9-405a-ab8e-20e639dafbf1",
-        "5e23a4ef-dbad-4431-a172-eac16aa556c4",
         "custom_pnThYD",
         "price",
         "variant_picker",
+        "5e23a4ef-dbad-4431-a172-eac16aa556c4",
         "618417c1-ec01-45b8-8f31-d4b9a6132113",
         "buy_buttons",
         "product_bundle_izVcRA",
