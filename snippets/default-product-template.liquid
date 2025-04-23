@@ -205,7 +205,13 @@
                       </g>
                     </svg>
                   </span>
-                  <span class="info-text">Which kit should I choose?</span></a
+                   <span class="info-text">
+                    {% if template == 'product.wine-cap-bed-grow' %}
+                      Size Guide
+                    {% else %}
+                      Which kit should I choose?
+                    {% endif %}
+                  </span></a
                 >
               </div>
               <style>
