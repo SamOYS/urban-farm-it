@@ -139,14 +139,6 @@
               "link": "#subscribeFormBlock"
             }
           },
-          "3c024fc5-7c27-4438-91dc-b78f73c72af3": {
-            "type": "announcement",
-            "settings": {
-              "text": "We will be closed for the bank holiday weekend. Orders will be shipped from 22/04.",
-              "link_text": "",
-              "link": "shopify://collections/christmas"
-            }
-          },
           "fc411552-7273-4ad3-8661-7c1b0535016f": {
             "type": "announcement",
             "settings": {
@@ -176,7 +168,6 @@
         "block_order": [
           "97e18c3e-b8f2-4f28-aeff-a3ad269babe3",
           "bf9a644c-e65f-4b90-ad04-48245e2abbc0",
-          "3c024fc5-7c27-4438-91dc-b78f73c72af3",
           "fc411552-7273-4ad3-8661-7c1b0535016f",
           "5d753a88-d8ce-49ef-b981-c609a0cef4e1",
           "1524768779513"
