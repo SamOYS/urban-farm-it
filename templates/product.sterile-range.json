@@ -59,6 +59,12 @@
             "color_swatches": false
           }
         },
+        "text_tFMiep": {
+          "type": "text",
+          "settings": {
+            "text": "Text block"
+          }
+        },
         "product_bundle_Wte7Dy": {
           "type": "product_bundle",
           "disabled": true,
@@ -141,7 +147,7 @@
           "type": "tab",
           "settings": {
             "title": "Storage information",
-            "content": "{{ product.metafields.custom.storage_information | metafield_tag }}",
+            "content": "<p></p>{{ product.metafields.custom.storage_information | metafield_tag }}",
             "page": ""
           }
         },
@@ -177,6 +183,7 @@
         "text_MyMiXX",
         "c7cb76d9-e206-4d28-a3fe-1dff3ce406da",
         "variant_picker",
+        "text_tFMiep",
         "product_bundle_Wte7Dy",
         "product_bundle_Xh7rWb",
         "buy_buttons",
