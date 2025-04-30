@@ -137,20 +137,19 @@
             "is_tab": true
           }
         },
+        "tab_n6BDN8": {
+          "type": "tab",
+          "settings": {
+            "title": "Storage information",
+            "content": "{{ product.metafields.custom.storage_information | metafield_tag }}",
+            "page": ""
+          }
+        },
         "beb400ec-913b-41fd-9329-63ae4ba9d16c": {
           "type": "html-tab",
           "settings": {
             "title": "Cultivation information",
             "content": "{%- assign cultivation_info = product.metafields.custom.cultivation_information.value -%}\n{%- unless cultivation_info == blank -%}\n{% render 'cultivation-info', cultivation_info: cultivation_info %}\n{%- endunless -%}",
-            "page": ""
-          }
-        },
-        "437a2aa8-a506-4820-be57-c14929fd6242": {
-          "type": "tab",
-          "disabled": true,
-          "settings": {
-            "title": "Flavour Profile",
-            "content": "{{ product.metafields.custom.flavour_profile | metafield_tag }}",
             "page": ""
           }
         },
@@ -188,8 +187,8 @@
         "separator",
         "61d9c3e4-1568-4e40-b270-323a2bb74cd3",
         "542a935d-6912-4805-a12c-65c50a875a74",
+        "tab_n6BDN8",
         "beb400ec-913b-41fd-9329-63ae4ba9d16c",
-        "437a2aa8-a506-4820-be57-c14929fd6242",
         "0a108145-8c33-4ba3-915f-85eec2eb11e9",
         "custom_jiqFkW"
       ],
