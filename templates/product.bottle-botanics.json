@@ -131,6 +131,14 @@
             "page": ""
           }
         },
+        "tab_rfYz4j": {
+          "type": "tab",
+          "settings": {
+            "title": "What does 'Hydroponic' Mean?",
+            "content": "<p>Hydroponic growing means growing plants in water instead of soil. The roots sit in a nutrient-rich solution, getting exactly what they need to grow strong and healthy – no dirt, no mess. It’s clean, simple, and perfect for small spaces like windowsills and kitchens.</p>",
+            "page": ""
+          }
+        },
         "0a108145-8c33-4ba3-915f-85eec2eb11e9": {
           "type": "tab",
           "settings": {
@@ -163,6 +171,7 @@
         "542a935d-6912-4805-a12c-65c50a875a74",
         "272b9d40-c3f8-452d-a77a-6804838a1fd8",
         "92107157-941a-481b-b05c-c5bc68088308",
+        "tab_rfYz4j",
         "0a108145-8c33-4ba3-915f-85eec2eb11e9",
         "c11da764-83b0-4131-ba30-5bba256f27a8"
       ],
