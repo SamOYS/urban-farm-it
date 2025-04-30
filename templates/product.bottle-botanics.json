@@ -21,7 +21,7 @@
         "custom_pnThYD": {
           "type": "custom",
           "settings": {
-            "code": "<div class=\"offers-container\">\n    <div class=\"offer-msg\">Buy 2 Get 10% Off!</div>\n    <div class=\"promo-banner\">Free E-Book with every purchase!</div>\n</div>\n\n<style>\n.offers-container {\n    display: flex;\n    align-items: center;\n    gap: 1rem;\n    margin-top: 1rem;\n}\n\n.offer-msg, .promo-banner {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    padding: .85rem;\n    border-radius: 3px;\n    position: relative;\n    width: fit-content;\n}\n\n.offer-msg {\n    color: #e52345;\n    border: 1px solid #e52345;\n}\n\n.offer-msg::after {\n    content: \"🎁 Bundle & Save\";\n    font-size: .75rem;\n    position: absolute;\n    top: -8px;\n    background: white;\n    left: 10px;\n    padding: 0 0.5rem;\n    color: #e52345;\n}\n\n.promo-banner {\n    color: #1e90ff;\n    border: 1px solid #1e90ff;\n}\n\n.promo-banner::after {\n    content: \"📘 Free E-Book\";\n    font-size: .75rem;\n    position: absolute;\n    top: -8px;\n    background: white;\n    left: 10px;\n    padding: 0 0.5rem;\n    color: #1e90ff;\n}\n\n@media (max-width: 768px) {\n    .offers-container {\n        display: block;\n        text-align: center;\n    }\n\n    .offer-msg, .promo-banner {\n        margin-top: 1rem;\n        margin-right: auto;\n        margin-left: auto;\n    }\n}\n</style>"
+            "code": "<div class=\"offers-container\">\n    <div class=\"offer-msg\">Buy 2 Get 10% Off!</div>\n\n<style>\n.offers-container {\n    display: flex;\n    align-items: center;\n    gap: 1rem;\n    margin-top: 1rem;\n}\n\n.offer-msg, .promo-banner {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    padding: .85rem;\n    border-radius: 3px;\n    position: relative;\n    width: fit-content;\n}\n\n.offer-msg {\n    color: #e52345;\n    border: 1px solid #e52345;\n}\n\n.offer-msg::after {\n    content: \"🎁 Bundle & Save\";\n    font-size: .75rem;\n    position: absolute;\n    top: -8px;\n    background: white;\n    left: 10px;\n    padding: 0 0.5rem;\n    color: #e52345;\n}\n\n.promo-banner {\n    color: #1e90ff;\n    border: 1px solid #1e90ff;\n}\n\n.promo-banner::after {\n    content: \"📘 Free E-Book\";\n    font-size: .75rem;\n    position: absolute;\n    top: -8px;\n    background: white;\n    left: 10px;\n    padding: 0 0.5rem;\n    color: #1e90ff;\n}\n\n@media (max-width: 768px) {\n    .offers-container {\n        display: block;\n        text-align: center;\n    }\n\n    .offer-msg, .promo-banner {\n        margin-top: 1rem;\n        margin-right: auto;\n        margin-left: auto;\n    }\n}\n</style>"
           }
         },
         "price": {
@@ -35,16 +35,6 @@
             "picker_type": "button",
             "product_dynamic_variants_enable": false,
             "color_swatches": false
-          }
-        },
-        "5e23a4ef-dbad-4431-a172-eac16aa556c4": {
-          "type": "kit_type_modal",
-          "settings": {}
-        },
-        "618417c1-ec01-45b8-8f31-d4b9a6132113": {
-          "type": "custom",
-          "settings": {
-            "code": "Not ready to grow right away, or purchasing as a gift? Select the <b>Gift</b> option. The Mushroom spawn will not be included directly in the kit, but can be redeemed via a free spawn voucher when ready to use."
           }
         },
         "buy_buttons": {
@@ -161,8 +151,6 @@
         "custom_pnThYD",
         "price",
         "variant_picker",
-        "5e23a4ef-dbad-4431-a172-eac16aa556c4",
-        "618417c1-ec01-45b8-8f31-d4b9a6132113",
         "buy_buttons",
         "product_bundle_izVcRA",
         "117d5508-99ad-4aa0-a1e3-e8a8ad0c4870",
@@ -218,7 +206,7 @@
       "type": "featured-video",
       "settings": {
         "title": "",
-        "video_url": "https://www.youtube.com/watch?v=hjKkUGw-UGc",
+        "video_url": "",
         "divider": false
       }
     },
