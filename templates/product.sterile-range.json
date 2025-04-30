@@ -62,7 +62,7 @@
         "text_tFMiep": {
           "type": "text",
           "settings": {
-            "text": "Text block"
+            "text": "{{ product.metafields.custom.cross_sell.value }}"
           }
         },
         "product_bundle_Wte7Dy": {
