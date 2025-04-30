@@ -1,0 +1,139 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "contact_form_wholesale_pWWCXN": {
+      "type": "contact-form-wholesale",
+      "blocks": {
+        "klaviyo_email_marketing_sms_form_embed_block_xbpTHf": {
+          "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
+          "settings": {
+            "formId": "TbjFG5"
+          }
+        }
+      },
+      "block_order": [
+        "klaviyo_email_marketing_sms_form_embed_block_xbpTHf"
+      ],
+      "custom_css": [
+        ".index-section {margin-top: 0rem; margin-bottom: 1rem;}"
+      ],
+      "settings": {
+        "title": "WHOLESALE ENQUIRIES",
+        "text": "<p><strong>ENQUIRY AVAILABLE FOR LARGER ORDERS OR CUSTOM REQUESTS</strong></p>",
+        "narrow_column": false
+      }
+    },
+    "collection-header": {
+      "type": "collection-header",
+      "settings": {
+        "enable": false,
+        "collection_image_enable": true,
+        "parallax": false,
+        "parallax_direction": "left"
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "collection_description_gnhrmt": {
+          "type": "collection_description",
+          "settings": {}
+        },
+        "product_grid_3RGktM": {
+          "type": "product_grid",
+          "settings": {
+            "enable_collection_count": true,
+            "per_row": 3,
+            "rows_per_page": 7,
+            "mobile_flush_grid": false
+          }
+        }
+      },
+      "block_order": [
+        "collection_description_gnhrmt",
+        "product_grid_3RGktM"
+      ],
+      "custom_css": [],
+      "settings": {
+        "enable_sidebar": true,
+        "collapsed": true,
+        "filter_style": "sidebar",
+        "enable_color_swatches": false,
+        "enable_sort": true
+      }
+    },
+    "5c64be49-d8ae-494f-9c21-7ad06915b6a2": {
+      "type": "collection-extended-copy",
+      "settings": {
+        "title": "FAQs"
+      }
+    },
+    "7fbc978c-7036-491e-b07e-9e4c3146b695": {
+      "type": "collection-faq",
+      "settings": {
+        "title": "FAQs"
+      }
+    },
+    "a72ec282-a591-4dfe-8375-e3c7b2469963": {
+      "type": "collection-articles",
+      "settings": {
+        "title": "Related Guides"
+      }
+    },
+    "94fe4d44-2152-4965-83e7-fc4b474eaf2c": {
+      "type": "collection-popup",
+      "settings": {
+        "mode": true,
+        "disable_for_account_holders": false,
+        "popup_seconds": 3,
+        "popup_days": 1,
+        "popup_title": "SEE OUR WHOLESALE RANGE",
+        "popup_text": "<p>60+ Species & Volume Discounts</p>",
+        "popup_image": "shopify://shop_images/8B65D04E-9684-442D-B389-BFC688DA5FA2_5ce35557-ec25-4eee-a8bf-b71f75e9f1a4.jpg",
+        "image_position": "right",
+        "show_social_icons": false,
+        "enable_newsletter": false,
+        "button_label": "SHOP WHOLESALE",
+        "button_link": "shopify://collections/wholesale-mushroom-spawn"
+      }
+    },
+    "contact_form_wholesale_wBDkiq": {
+      "type": "contact-form-wholesale",
+      "blocks": {
+        "klaviyo_email_marketing_sms_form_embed_block_X6zicj": {
+          "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
+          "settings": {
+            "formId": "TbjFG5"
+          }
+        }
+      },
+      "block_order": [
+        "klaviyo_email_marketing_sms_form_embed_block_X6zicj"
+      ],
+      "custom_css": [],
+      "settings": {
+        "title": "WHOLESALE ENQUIRIES",
+        "text": "<p><strong>ENQUIRY AVAILABLE FOR LARGER ORDERS OR CUSTOM REQUESTS</strong></p>",
+        "narrow_column": false
+      }
+    }
+  },
+  "order": [
+    "contact_form_wholesale_pWWCXN",
+    "collection-header",
+    "main-collection",
+    "5c64be49-d8ae-494f-9c21-7ad06915b6a2",
+    "7fbc978c-7036-491e-b07e-9e4c3146b695",
+    "a72ec282-a591-4dfe-8375-e3c7b2469963",
+    "94fe4d44-2152-4965-83e7-fc4b474eaf2c",
+    "contact_form_wholesale_wBDkiq"
+  ]
+}
