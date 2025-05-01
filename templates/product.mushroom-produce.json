@@ -43,12 +43,6 @@
             "text": "We are temporarily closing our mushroom farm for maintenance. While we're making improvements, you’re still welcome to place orders for our fresh Lion’s Mane mushrooms. However, please note that any  orders containing fresh Lion’s Mane will be on hold until 10/02."
           }
         },
-        "custom_YD7WB6": {
-          "type": "custom",
-          "settings": {
-            "code": "{% if product.available %}\n  <!-- Product is available (whether or not inventory is tracked) -->\n  <!-- You could show \"In stock\" here if needed -->\n{% else %}\n  <!-- Product is unavailable -->\n<p style=\"color: #b30000; font-weight: 600;\">Thanks to all the love for our fresh Lion's Mane, it is currently sold out. But don't worry – we're working hard at the farm to get it back online!</p>\n{% endif %}"
-          }
-        },
         "618417c1-ec01-45b8-8f31-d4b9a6132113": {
           "type": "custom",
           "settings": {
@@ -180,7 +174,7 @@
           "type": "tab",
           "settings": {
             "title": "Delivery & Returns",
-            "content": "<p><strong>*We can only ship our fresh produce within Mainland UK*</strong></p><p><strong>Delivery</strong></p><p><strong>1. Service </strong></p><p>Orders for fresh produce are delivered via APC’s 24-hour delivery service. </p><p><strong>2. Processing Time </strong></p><p>Orders are typically harvested and prepared on-site. In most cases, orders are collected from the farm within 24 hours of placement. Orders placed on Fridays, Saturdays, and Sundays will be processed the following Monday.</p><p><strong>3. Shipment Delays  </strong></p><p>Urban Farm-It is committed to delivering fresh, high-quality produce. To ensure quality, we may delay harvest and shipment by up to 3 working days if necessary.</p><p><strong>Returns</strong></p><p><strong>1. Receiving Deliveries </strong></p><p>It is the customer’s responsibility to ensure someone is available to receive the order. Please refrigerate produce immediately upon receipt.</p><p><strong>2. Returns and Refunds </strong></p><p>Urban Farm-It offers returns or refunds only in cases of courier delay or product damage during transit. If you receive a damaged or delayed Organic Mushroom Box, please contact us within 24 hours, providing images of the issue for evaluation.</p><p><strong>3. Customer Responsibility Post-Delivery  </strong></p><p>Once delivery is completed, the customer is responsible for proper handling and storage of the produce. </p><p>These terms and conditions are designed to ensure the highest quality experience for our customers. Please contact us with any questions or concerns about your order.</p>",
+            "content": "<p><strong>*We can only ship our fresh produce within Mainland UK*</strong></p><p><strong>Delivery</strong></p><p><strong>1. Service </strong></p><p>Orders for fresh produce are delivered via APC’s 24-hour delivery service. </p><p><strong>2. Processing Time </strong></p><p>Orders are typically harvested and prepared on-site. In most cases, orders are collected from the farm within 24 hours of placement. We aim to process orders placed on Fridays, Saturdays, and Sundays the following Monday.</p><p><strong>Due to the bank holiday, orders placed after 30/04 will be shipped from 06/05.</strong></p><p><strong>3. Shipment Delays  </strong></p><p>Urban Farm-It is committed to delivering fresh, high-quality produce. To ensure quality, we may delay harvest and shipment by up to 3 working days if necessary.</p><p><strong>Returns</strong></p><p><strong>1. Receiving Deliveries </strong></p><p>It is the customer’s responsibility to ensure someone is available to receive the order. Please refrigerate produce immediately upon receipt.</p><p><strong>2. Returns and Refunds </strong></p><p>Urban Farm-It offers returns or refunds only in cases of courier delay or product damage during transit. If you receive a damaged or delayed Organic Mushroom Box, please contact us within 24 hours, providing images of the issue for evaluation.</p><p><strong>3. Customer Responsibility Post-Delivery  </strong></p><p>Once delivery is completed, the customer is responsible for proper handling and storage of the produce. </p><p>These terms and conditions are designed to ensure the highest quality experience for our customers. Please contact us with any questions or concerns about your order.</p>",
             "page": ""
           }
         },
@@ -232,7 +226,6 @@
         "5e23a4ef-dbad-4431-a172-eac16aa556c4",
         "variant_picker",
         "text_iK4DKi",
-        "custom_YD7WB6",
         "618417c1-ec01-45b8-8f31-d4b9a6132113",
         "product_bundle_izVcRA",
         "117d5508-99ad-4aa0-a1e3-e8a8ad0c4870",
