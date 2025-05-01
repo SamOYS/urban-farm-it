@@ -12,7 +12,22 @@
     {% if canonical_url contains 'dp_' %}
       {% assign modified_canonical_url = canonical_url | remove: 'dp_' %}
     {% endif %}
-    <link rel="canonical" href="{{ modified_canonical_url }}">
+
+    {% if request.path == '/collections/diy-mushroom-growing-kits' %}
+      <link rel="canonical" href="https://urban-farm-it.com/collections/mushroom-growing-kits" />
+    {% elsif request.path == '/collections/ready-to-fruit-mushroom-growing-kits' %}
+      <link rel="canonical" href="https://urban-farm-it.com/collections/mushroom-growing-kits" />
+    {% elsif request.path == '/collections/mushroom-growing-kits-gift' %}
+      <link rel="canonical" href="https://urban-farm-it.com/collections/mushroom-growing-kits" />
+    {% elsif request.path == '/products/shiitake-mushroom-growing-kits-gift-option' %}
+      <link rel="canonical" href="https://urban-farm-it.com/products/shiitake-mushroom-log-growing-kit" />
+    {% elsif request.path == '/products/mushroom-growing-kit-bundle' %}
+      <link rel="canonical" href="https://urban-farm-it.com/collections/mushroom-growing-kits" />
+    {% elsif request.path == '/products/oyster-mushroom-growing-kit-gift-option' %}
+      <link rel="canonical" href="https://urban-farm-it.com/products/blue-grey-oyster-mushroom-growing-kit" />
+    {% else %}
+      <link rel="canonical" href="{{ modified_canonical_url }}">
+    {% endif %}
 
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
     <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
