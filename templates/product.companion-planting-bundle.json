@@ -120,6 +120,14 @@
             "page": ""
           }
         },
+        "tab_ePLV3k": {
+          "type": "tab",
+          "settings": {
+            "title": "GOOD PLANTING COMPANIONS",
+            "content": "<ul><li>Brassicas like cabbage, kale and broccoli. </li><li>Strawberries </li><li>Corn</li><li>Tomatoes </li></ul>",
+            "page": ""
+          }
+        },
         "92107157-941a-481b-b05c-c5bc68088308": {
           "type": "tab",
           "disabled": true,
@@ -160,6 +168,7 @@
         "2b444462-db54-42b7-8c6d-e79319bdb2ed",
         "542a935d-6912-4805-a12c-65c50a875a74",
         "272b9d40-c3f8-452d-a77a-6804838a1fd8",
+        "tab_ePLV3k",
         "92107157-941a-481b-b05c-c5bc68088308",
         "0a108145-8c33-4ba3-915f-85eec2eb11e9",
         "c11da764-83b0-4131-ba30-5bba256f27a8"
