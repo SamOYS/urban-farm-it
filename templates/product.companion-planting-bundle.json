@@ -35,12 +35,6 @@
           "type": "kit_type_modal",
           "settings": {}
         },
-        "618417c1-ec01-45b8-8f31-d4b9a6132113": {
-          "type": "custom",
-          "settings": {
-            "code": "Please ensure that you have selected the right size for your growing space."
-          }
-        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -155,7 +149,6 @@
         "price",
         "variant_picker",
         "5e23a4ef-dbad-4431-a172-eac16aa556c4",
-        "618417c1-ec01-45b8-8f31-d4b9a6132113",
         "buy_buttons",
         "product_bundle_izVcRA",
         "117d5508-99ad-4aa0-a1e3-e8a8ad0c4870",
@@ -202,27 +195,6 @@
         "button_link": "shopify://products/growing-mushrooms-at-home-the-complete-guide"
       }
     },
-    "advanced_content_kfHNDt": {
-      "type": "advanced-content",
-      "blocks": {
-        "liquid_fXwhhQ": {
-          "type": "liquid",
-          "settings": {
-            "code": "<div style=\"display: flex; justify-content: center; align-items: center; height: 30vh; width: 100%; text-align: center;\">\n  <div>\n    <h3 style=\"font-size: 20px;\">Check out our blog post for a step-by-step guide</h3>\n  \n    <a href=\"https://urban-farm-it.com/blogs/mushroom-cultivation/how-to-grow-wine-cap-mushrooms?_pos=2&_sid=ac6eaa685&_ss=r\" target=\"_blank\" style=\"display:inline-block; padding: 12px 25px; background-color: #FBC960; color: black; text-align: center; text-decoration: none; border-radius: 5px; font-size: 20px;\">How to Grow Wine Cap Mushrooms</a>\n  </div>\n</div>",
-            "width": "100%",
-            "alignment": "center"
-          }
-        }
-      },
-      "block_order": [
-        "liquid_fXwhhQ"
-      ],
-      "custom_css": [],
-      "settings": {
-        "full_width": false,
-        "space_around": true
-      }
-    },
     "3ca0fa99-c1d5-4c53-b9c4-06410867a8c3": {
       "type": "oyster-kits__how-it-works",
       "blocks": {
@@ -243,11 +215,54 @@
         "background_color": "#000000"
       }
     },
+    "rich_text_QKMVcU": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_iAFaW3": {
+          "type": "heading",
+          "settings": {
+            "title": "what is companion growing?"
+          }
+        },
+        "text_kgXQGR": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p><strong>Companion growing</strong> is when you grow different living things — like plants, mushrooms, or beneficial microbes — close together because they support each other. Some can help by boosting growth, keeping pests away, improving the environment, or attracting helpful insects or organisms.</p>"
+          }
+        },
+        "heading_GpQwRE": {
+          "type": "heading",
+          "settings": {
+            "title": "Why use mushrooms?"
+          }
+        },
+        "text_ExGCDn": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<ul><li><strong>Soil enrichers: </strong>Many mushrooms, including Wine Caps, break down woody material and release nutrients, enriching the soil for nearby plants. </li><li><strong>Moisture Retention: </strong>Fungi help the soil hold water, which benefits shallow-rooted crops like onions and spinach. </li><li><strong>Weed suppression: </strong>A thick layer of mushroom mycelium or wood chip substrate can reduce weed growth. </li><li><strong>Low competition: </strong>Unlike many plants, mushrooms don't compete for sunlight, so they can grow under other crops or in shaded areas. This makes them a great planting companion for leafy greens. </li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_iAFaW3",
+        "text_kgXQGR",
+        "heading_GpQwRE",
+        "text_ExGCDn"
+      ],
+      "name": "t:sections.rich-text.presets.rich_text.name",
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
     "f4c61e29-979f-4658-8271-a34a92f3236c": {
       "type": "featured-video",
       "settings": {
         "title": "",
-        "video_url": "https://www.youtube.com/watch?v=EAWIfCBMHLQ",
+        "video_url": "https://youtu.be/7myAyursqBk?feature=shared",
         "divider": false
       }
     },
@@ -304,8 +319,8 @@
   "order": [
     "main",
     "product_banner_image_nAzBCP",
-    "advanced_content_kfHNDt",
     "3ca0fa99-c1d5-4c53-b9c4-06410867a8c3",
+    "rich_text_QKMVcU",
     "f4c61e29-979f-4658-8271-a34a92f3236c",
     "product-recommendations",
     "sub",
