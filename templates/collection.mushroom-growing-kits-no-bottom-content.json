@@ -98,16 +98,10 @@
         "enable_sort": true
       }
     },
-    "5c64be49-d8ae-494f-9c21-7ad06915b6a2": {
-      "type": "collection-extended-copy",
+    "collection_secondary_extended_copy_RjzGkm": {
+      "type": "collection-secondary-extended-copy",
       "settings": {
         "title": "FAQs"
-      }
-    },
-    "7fbc978c-7036-491e-b07e-9e4c3146b695": {
-      "type": "collection-faq",
-      "settings": {
-        "title": "Mushroom Growing Kit FAQs"
       }
     },
     "a72ec282-a591-4dfe-8375-e3c7b2469963": {
@@ -132,12 +126,6 @@
         "button_label": "SHOP WHOLESALE",
         "button_link": "shopify://collections/wholesale-mushroom-spawn"
       }
-    },
-    "collection_secondary_extended_copy_RjzGkm": {
-      "type": "collection-secondary-extended-copy",
-      "settings": {
-        "title": "FAQs"
-      }
     }
   },
   "order": [
@@ -145,8 +133,6 @@
     "fd336701-8d9e-493a-9547-4eccbcd6950f",
     "main-collection",
     "collection_secondary_extended_copy_RjzGkm",
-    "7fbc978c-7036-491e-b07e-9e4c3146b695",
-    "5c64be49-d8ae-494f-9c21-7ad06915b6a2",
     "a72ec282-a591-4dfe-8375-e3c7b2469963",
     "94fe4d44-2152-4965-83e7-fc4b474eaf2c"
   ]
