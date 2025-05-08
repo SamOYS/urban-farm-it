@@ -60,7 +60,7 @@
               {% for label in megamenu_labels %}
                 {% if label == link.title %}
                   {% assign index = forloop.index0 %}      
-                  {% unless menu_titles[index] == blank %}<h4 class="megamenu__title">{{ menu_titles[index] }}</h4>{% endunless %}  
+                  {% unless menu_titles[index] == blank %}<div class="megamenu__title">{{ menu_titles[index] }}</div>{% endunless %}  
                   {% break %}
                   {% endif %}
               {% endfor %}
