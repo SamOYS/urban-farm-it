@@ -46,7 +46,7 @@
         "618417c1-ec01-45b8-8f31-d4b9a6132113": {
           "type": "custom",
           "settings": {
-            "code": "<a style=\"font-weight: 500;\" href=\"#section-contact-form\">Have a <span style=\"text-decoration: underline;\">Wholesale</span> Enquiry?</a>"
+            "code": "<a style=\"font-weight: 500;\" href=\"#section-contact-form\">For larger orders, please fill out our <span style=\"text-decoration: underline;\">wholesale</span> form below.</a>"
           }
         },
         "product_bundle_izVcRA": {
