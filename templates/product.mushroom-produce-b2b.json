@@ -352,14 +352,6 @@
         "button_link": "#judgeme_product_reviews"
       }
     },
-    "f4c61e29-979f-4658-8271-a34a92f3236c": {
-      "type": "featured-video",
-      "settings": {
-        "title": "",
-        "video_url": "https://www.youtube.com/watch?v=hjKkUGw-UGc",
-        "divider": false
-      }
-    },
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
@@ -409,7 +401,6 @@
     "contact_form_cz7Wwh",
     "sub",
     "c0052226-c7f3-49e8-aca1-96eac60f8288",
-    "f4c61e29-979f-4658-8271-a34a92f3236c",
     "product-recommendations",
     "416b4aa3-64da-403e-a11d-1377036f97a0",
     "1678998823c02fa016",
