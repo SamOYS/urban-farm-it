@@ -12,9 +12,9 @@
       <div class="page-width">
         <div class="section-header{% if section.settings.view_all %}{% unless settings.type_headers_align_text %} section-header--with-link{% endunless %}{% endif %}" style="text-align: {{ section.settings.title_alignment }} !important;">
           <div class="tw-flex md:tw-space-x-10 tw-space-x-6 tw-items-center">
-            <h2 class="section-header__title" style="text-align: {{ section.settings.title_alignment }} !important;">
+            <p class="section-header__title" style="text-align: {{ section.settings.title_alignment }} !important;">
               {{ section.settings.title }}
-            </h2>
+            </p>
             <div class="tw-border tw-border-solid tw-borer-black tw-px-4 tw-py-2 tw--mt-2 tw-w-[60%] sm:tw-w-auto">
               <a href="{{ collections[section.settings.home_featured_products].url }}" class="tw-uppercase tw-flex tw-justify-center">View all →</a>
               {%- if section.settings.view_all and section.settings.rows == 1 -%}
