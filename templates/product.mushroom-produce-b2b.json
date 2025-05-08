@@ -325,7 +325,7 @@
       "type": "contact-form",
       "settings": {
         "title": "Have a wholesale enquiry?",
-        "text": "",
+        "text": "<p>Please fill out the form below, and a member  of the team will be in touch shortly. </p>",
         "show_phone": false,
         "narrow_column": true
       }
