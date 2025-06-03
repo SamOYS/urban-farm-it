@@ -33,7 +33,7 @@
             "image": "shopify://shop_images/father_s_day_5.png",
             "image_mobile": "shopify://shop_images/father_s_day_7.png",
             "parallax_direction": "top",
-            "overlay_opacity": 70,
+            "overlay_opacity": 44,
             "focal_point": "center center"
           }
         },
