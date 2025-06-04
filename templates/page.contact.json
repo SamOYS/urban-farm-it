@@ -60,6 +60,7 @@
         "template--21131886428440__b35c0917-f59d-4c0c-ae1c-80c14da32d9e-text_block-1",
         "template--21131886428440__b35c0917-f59d-4c0c-ae1c-80c14da32d9e-text_block-2"
       ],
+      "disabled": true,
       "custom_css": [
         "{background: #f5f5f5; padding-bottom: 2rem;}",
         "* {margin: 0; padding: 0;}",
