@@ -30,20 +30,6 @@
           "type": "price",
           "settings": {}
         },
-        "text_eW6qtD": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "⚠️ Due to high temperatures, spawn product shipments may experience delays."
-          }
-        },
-        "text_MyMiXX": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "⚠️ Due to high temperatures, all spawn product shipments are paused and will resume on 01/08/2024."
-          }
-        },
         "c7cb76d9-e206-4d28-a3fe-1dff3ce406da": {
           "type": "custom",
           "settings": {
@@ -57,12 +43,6 @@
             "picker_type": "button",
             "product_dynamic_variants_enable": false,
             "color_swatches": false
-          }
-        },
-        "text_tFMiep": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.metafields.custom.cross_sell.value }}"
           }
         },
         "product_bundle_Wte7Dy": {
@@ -163,14 +143,8 @@
           "type": "tab",
           "settings": {
             "title": "Delivery & Returns",
-            "content": "<p><strong>Delivery</strong></p><p>We are able to ship to Northern Ireland, the Scottish Islands, the Scottish Highlands, the Isle of Wight, and the Channel Islands. However, these shipments are arranged on a case-by-case basis to ensure the best possible service.<br/><br/>If you are located in one of these areas, please contact us directly at hello@urban-farm-it.com to place your order. </p><p><strong>Note: </strong>Please refer to the specific lead times shown on product pages for more accurate delivery times.</p><ol><li><strong>Small Orders (E.g. 100ml Spawn, Plugs)</strong>: Sent via Royal Mail large letters.</li><li><strong>Medium-Sized Orders (under 2kg)</strong>: Royal Mail 24-48 hour tracked parcel.</li><li><strong>Large Orders (2kg+)</strong>: via DPD Express.</li></ol><p><strong>Returns</strong></p><ol><li><strong>Standard Returns</strong>: Returns and exchanges within 14 days of receipt. The item must be unused and in its original packaging. See our <a href=\"/policies/refund-policy\" target=\"_blank\" title=\"Refund Policy\">returns policy here</a>.</li></ol><p>This does not apply to our Gift E-Cards, which are delivered via email.</p>",
+            "content": "<p><strong>Delivery</strong></p><p>We are able to ship to Northern Ireland, the Scottish Islands, the Scottish Highlands, the Isle of Wight, and the Channel Islands. However, these shipments are arranged on a case-by-case basis to ensure the best possible service.<br/><br/>If you are located in one of these areas, please contact us directly at hello@urban-farm-it.com to place your order. </p><p><strong>Note: </strong>Please refer to the specific lead times shown on product pages for more accurate delivery times.</p><ol><li><strong>Small Orders (E.g. 100ml Spawn, Plugs)</strong>: Sent via Royal Mail large letters.</li><li><strong>Medium-Sized Orders (under 2kg)</strong>: Royal Mail 24-48 hour tracked parcel.</li><li><strong>Large Orders (2kg+)</strong>: via DPD Express or APC. </li></ol><p>If you'd like your parcel left in a safe place, this needs to be arranged directly through the courier's website or delivery notification.</p><p>To enable this function you must leave a valid email address. Once your order is on its way, you should receive a notification from the courier with a link to manage your delivery. Simply follow that link to choose a safe place or make any other delivery preferences.</p><p>Unfortunately, we’re unable to set a safe place on your behalf.</p><p><strong>Returns</strong></p><ul><li>Due to the perishable nature of these products, we are unable to accept returns.</li><li>If your mushroom spawn arrives damaged, defective, or not as described, please contact us at hello@urban-farm-it.com within <strong>24 hours of receiving the item</strong>. You will be eligible for a replacement or refund if we are notified within this timeframe, along with supporting documentation such as photos of the item and packaging.</li><li>Refunds or replacements will not be issued for reports received beyond the 24-hour window, as the quality of perishable items can degrade rapidly.</li></ul><p>See our <a href=\"/policies/refund-policy\" target=\"_blank\" title=\"Refund Policy\">returns policy here</a>.</p><p>This does not apply to our Gift E-Cards, which are delivered via email.</p>",
             "page": ""
-          }
-        },
-        "custom_jiqFkW": {
-          "type": "custom",
-          "settings": {
-            "code": "{% render 'component-cross-sell' %}"
           }
         }
       },
@@ -179,11 +153,8 @@
         "29f7da99-c8d4-472f-bd1c-d1012889b418",
         "7acfde4c-9d88-4255-88dc-485e464b2d5b",
         "price",
-        "text_eW6qtD",
-        "text_MyMiXX",
         "c7cb76d9-e206-4d28-a3fe-1dff3ce406da",
         "variant_picker",
-        "text_tFMiep",
         "product_bundle_Wte7Dy",
         "product_bundle_Xh7rWb",
         "buy_buttons",
@@ -196,8 +167,7 @@
         "542a935d-6912-4805-a12c-65c50a875a74",
         "tab_n6BDN8",
         "beb400ec-913b-41fd-9329-63ae4ba9d16c",
-        "0a108145-8c33-4ba3-915f-85eec2eb11e9",
-        "custom_jiqFkW"
+        "0a108145-8c33-4ba3-915f-85eec2eb11e9"
       ],
       "custom_css": [],
       "settings": {
