@@ -36,12 +36,6 @@
             "color_swatches": false
           }
         },
-        "618417c1-ec01-45b8-8f31-d4b9a6132113": {
-          "type": "custom",
-          "settings": {
-            "code": "Includes enough for two grows!"
-          }
-        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -156,7 +150,6 @@
         "5e23a4ef-dbad-4431-a172-eac16aa556c4",
         "price",
         "variant_picker",
-        "618417c1-ec01-45b8-8f31-d4b9a6132113",
         "buy_buttons",
         "product_bundle_izVcRA",
         "117d5508-99ad-4aa0-a1e3-e8a8ad0c4870",
