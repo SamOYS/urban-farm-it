@@ -109,7 +109,7 @@
             "color_accent": "#fbc960",
             "text_align": "vertical-bottom horizontal-left",
             "image": "shopify://shop_images/banner_sr.png",
-            "image_mobile": "shopify://shop_images/50_Off_Mobile.jpg",
+            "image_mobile": "shopify://shop_images/banner_sr.png",
             "parallax_direction": "top",
             "overlay_opacity": 70,
             "focal_point": "center center"
