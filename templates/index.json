@@ -111,7 +111,7 @@
             "image": "shopify://shop_images/banner_sr.png",
             "image_mobile": "shopify://shop_images/banner_sr.png",
             "parallax_direction": "top",
-            "overlay_opacity": 70,
+            "overlay_opacity": 52,
             "focal_point": "center center"
           }
         }
