@@ -46,6 +46,12 @@
             "color_swatches": false
           }
         },
+        "fa716552-1943-4ff8-9ab5-8d1aa1f2de27": {
+          "type": "custom",
+          "settings": {
+            "code": "Due to the warm weather, we recommend our <a href=\"https://urban-farm-it.com/products/pink-oyster-mushroom-growing-kit?_pos=4&_fid=5b4b33190&_ss=c\" target=\"_blank\" style=\"text-decoration: underline; font-weight: bold;\">Pink Oyster kit</a> — they thrive in temperatures between 22°C and 28°C."
+          }
+        },
         "559b8842-dfe9-4639-95e4-122eeabea670": {
           "type": "custom",
           "settings": {
@@ -72,7 +78,7 @@
             "code": "<p style=\"font-size:14px; display: flex; align-items: center; gap: .25rem;\"> <img src=\"https://cdn-icons-png.flaticon.com/512/1670/1670915.png\" style=\"height:25px;float:left;margin-right:10px;padding-bottom: 4px;\"/>\nGet it by<strong><span id=\"toDate\"></span></strong></p>\n{{ '//cdnjs.cloudflare.com/ajax/libs/datejs/1.0/date.min.js' | script_tag }}\n<script>\nvar fromDate = Date.today().addDays(2);\nif (fromDate.is().sunday()) {\nfromDate = fromDate.next().monday();\n}\nvar toDate = Date.today().addDays(5);\nif (toDate.is().sunday()) {\ntoDate = toDate.next().monday();\n}\n\ndocument.getElementById('toDate').innerHTML = toDate.toString('dddd MMMM dS');\n</script>"
           }
         },
-        "fa716552-1943-4ff8-9ab5-8d1aa1f2de27": {
+        "custom_FFYbRF": {
           "type": "custom",
           "settings": {
             "code": "{{ product.metafields.custom.excerpt }}"
@@ -151,11 +157,12 @@
         "ffe2e6a5-222e-42ee-bc16-50a8dcd53672",
         "price",
         "variant_picker",
+        "fa716552-1943-4ff8-9ab5-8d1aa1f2de27",
         "559b8842-dfe9-4639-95e4-122eeabea670",
         "c7cb76d9-e206-4d28-a3fe-1dff3ce406da",
         "buy_buttons",
         "eee7c48e-06e0-48de-8bd3-15b4972501e2",
-        "fa716552-1943-4ff8-9ab5-8d1aa1f2de27",
+        "custom_FFYbRF",
         "separator",
         "e89378ea-77b2-49f4-90ba-5a690c3081f5",
         "b3fc12dd-8538-4787-b64f-7850c280141e",
